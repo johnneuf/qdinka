@@ -37,7 +37,7 @@ abstract class TemplateBase {
     {
         //check to see if we are in maintenance and if we should redirect
         if (SYSTEM_SETTING_MAINTENANCE && !$this->maintenance) {
-            header('Location: /maintenance.php');
+            header('Location: http://' . url('/maintenance.php'));
             return;
         }
 
