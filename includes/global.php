@@ -28,5 +28,5 @@ function param($parameter)
  */
 function url($dir)
 {
-    return $_SERVER['SERVER_NAME'] . $dir;
+    return SERVER_IN_USE . $dir;
 }
