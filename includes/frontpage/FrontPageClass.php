@@ -12,9 +12,9 @@ namespace includes\frontpage;
 use includes\template\TemplateBase;
 
 class FrontPage extends TemplateBase {
-    function __construct($noTemplate = false, $maintenance = false)
+    function __construct($title, $noTemplate = false, $maintenance = false)
     {
-        parent::__construct($noTemplate, $maintenance);
+        parent::__construct($title, $noTemplate, $maintenance);
     }
 
     protected function body()
