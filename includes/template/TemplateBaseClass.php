@@ -40,9 +40,55 @@ abstract class TemplateBase {
             header('Location: /maintenance.php');
             return;
         }
+
+        //Render the correct template
+        if ($this->noTemplate) {
+            $this->render_html_noTempalate();
+        } else {
+            $this->render_html_template();
+        }
     }
 
-    private function html_start()
+    /**
+     * Renders out the page with out the template
+     */
+    private function render_html_noTempalate()
+    {
+        ?>
+        <!DOCTYPE HTML>
+
+        <html>
+        <head>
+            <!--        meta data-->
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+            <!--        CSS-->
+            <link rel="stylesheet" type="text/css" href="/stylesheets/base.css">
+            <?php $this->render_css(); ?>
+
+            <!--        JS-->
+            <script src="/javascript/jquery-2.1.3.min.js"></script>
+            <?php $this->render_js(); ?>
+            <title><?php echo $this->title; ?></title>
+        </head>
+
+        <body>
+
+        <section>
+            <div class="template-noTemplate-wrapper">
+                <?php $this->body(); ?>
+            </div>
+        </section>
+
+        </body>
+        </html>
+    <?php
+    }
+
+    /**
+     * Renders the Page with the Template
+     */
+    private function render_html_template()
     {
         ?>
         <!DOCTYPE HTML>
@@ -61,6 +107,29 @@ abstract class TemplateBase {
         <?php $this->render_js(); ?>
         <title><?php echo $this->title; ?></title>
     </head>
+
+    <body>
+
+    <header>
+<!--        TODO:: Add Headers-->
+    </header>
+
+    <section>
+        <div class="template-wrapper">
+            <div class="template-side-menu-wrapper">
+<!--                TODO:: Add Menu-->
+            </div>
+            <div class="template-content-wrapper">
+                <?php $this->body(); ?>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+<!--        TODO:: Add Footer-->
+    </footer>
+
+    </body>
     </html>
     <?php
     }
