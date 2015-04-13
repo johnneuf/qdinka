@@ -31,6 +31,7 @@ abstract class TemplateBase {
         //Set flags
         $this->noTemplate = $noTemplate;
         $this->maintenance = $maintenance;
+        $this->title = $title;
     }
 
     public function render()
@@ -43,7 +44,7 @@ abstract class TemplateBase {
 
         //Render the correct template
         if ($this->noTemplate) {
-            $this->render_html_noTempalate();
+            $this->render_html_noTemplate();
         } else {
             $this->render_html_template();
         }
@@ -52,7 +53,7 @@ abstract class TemplateBase {
     /**
      * Renders out the page with out the template
      */
-    private function render_html_noTempalate()
+    private function render_html_noTemplate()
     {
         ?>
         <!DOCTYPE HTML>
@@ -60,6 +61,7 @@ abstract class TemplateBase {
         <html>
         <head>
             <!--        meta data-->
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
             <!--        CSS-->
@@ -96,6 +98,7 @@ abstract class TemplateBase {
         <html>
     <head>
 <!--        meta data-->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!--        CSS-->

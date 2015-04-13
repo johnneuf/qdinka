@@ -6,7 +6,7 @@
 * @email kendalldarkmere@gmail.com
 */
 
+require('./includes/autoload.php');
 
-//TODO:: Make a page to handle the maintenance
-
-echo 'Yay maintenance';
+$page = new \includes\pages\Maintenance('Maintenance');
+$page->render();
