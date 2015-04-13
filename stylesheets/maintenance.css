@@ -1,0 +1,49 @@
+/* line 4, ../sass/maintenance.scss */
+h1 {
+  margin: 0;
+}
+
+/* line 9, ../sass/maintenance.scss */
+.bubble-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 10px;
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -300px;
+}
+
+/* line 19, ../sass/maintenance.scss */
+.bubble-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  content: '';
+  display: table;
+  clear: both;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 3px;
+  overflow: hidden;
+}
+
+/* line 27, ../sass/maintenance.scss */
+.bubble-image-wrapper {
+  width: 20%;
+  float: left;
+}
+
+/* line 32, ../sass/maintenance.scss */
+.bubble-wording-wrapper {
+  width: 80%;
+  float: left;
+  font-size: 10pt;
+  font-weight: bold;
+}

@@ -5,3 +5,15 @@ body {
   color: #6a6a6a;
   font-size: 8pt;
 }
+
+/* line 11, ../sass/base.scss */
+h1 {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+/* line 16, ../sass/base.scss */
+h2 {
+  font-size: 10pt;
+  font-weight: bold;
+}

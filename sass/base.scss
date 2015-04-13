@@ -7,3 +7,13 @@ body {
   color: $fontColor;
   font-size: $bodyFontSize;
 }
+
+h1 {
+  font-size: $bodyHeaderSize;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: $bodySubHeaderSize;
+  font-weight: bold;
+}

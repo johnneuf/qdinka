@@ -26,3 +26,17 @@ $bodySubHeaderSize: 10pt;
   display: table;
   clear: both;
 }
+
+//Bubbles
+@mixin bubble_outer() {
+  background: $backgroundOffset;
+  border: 1px solid $lineColorLight;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+@mixin bubble_inner() {
+  background: $backgroundColor;
+  border: 1px solid $lineColorLight;
+  border-radius: 3px;
+}

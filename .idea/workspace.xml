@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939fa10b-9963-4683-ba97-9711511ba3d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/maintenance.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/constants.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/constants.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base.scss" afterPath="$PROJECT_DIR$/sass/base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/constants.scss" afterPath="$PROJECT_DIR$/sass/constants.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/pages/maintenanceclass.php" afterPath="$PROJECT_DIR$/includes/pages/maintenanceclass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -53,11 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maintenanceclass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maintenanceclass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/pages/maintenanceclass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31264368" vertical-offset="0" max-vertical-offset="870">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="663">
+              <caret line="30" column="163" selection-start-line="30" selection-start-column="163" selection-end-line="30" selection-end-column="163" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maintenance.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/maintenance.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29310346" vertical-offset="0" max-vertical-offset="870">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -76,8 +92,8 @@
       <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="238">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -86,8 +102,8 @@
       <file leaf-file-name="constants.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/constants.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="799">
+              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -117,6 +133,7 @@
         <option value="$PROJECT_DIR$/includes/pages/maintenanceclass.php" />
         <option value="$PROJECT_DIR$/sass/constants.scss" />
         <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/sass/maintenance.scss" />
       </list>
     </option>
   </component>
@@ -418,7 +435,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39891893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -644,26 +661,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/base.scss">
+    <entry file="file://$PROJECT_DIR$/sass/constants.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="238">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="799">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/constants.scss">
+    <entry file="file://$PROJECT_DIR$/sass/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/pages/maintenanceclass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31264368" vertical-offset="0" max-vertical-offset="870">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="30" column="163" selection-start-line="30" selection-start-column="163" selection-end-line="30" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/maintenance.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29310346" vertical-offset="0" max-vertical-offset="870">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding />
         </state>
       </provider>
