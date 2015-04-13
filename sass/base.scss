@@ -1,0 +1,9 @@
+@import "constants";
+
+//Standard HTML tags
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: $backgroundColor;
+  color: $fontColor;
+  font-size: $bodyFontSize;
+}

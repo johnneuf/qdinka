@@ -1,0 +1,28 @@
+//Color Constants
+$qdinkaBlue: #416ad2;
+$qdinkaPurple: #662d91;
+$fontColor: #6a6a6a;
+$backgroundOffset: #f1f1f1;
+$backgroundColor: #ffffff;
+$lineColorDark: #666;
+$lineColorLight: #e5e5e5;
+
+//Font Sizes
+$bodyFontSize: 8pt;
+$bodyHeaderSize: 12pt;
+$bodySubHeaderSize: 10pt;
+
+//Utilities
+@mixin box() {
+  //Border boxes what ever you use it in.
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin next_row() {
+  //Clears floats. To be used with ::after
+  content: '';
+  display: table;
+  clear: both;
+}

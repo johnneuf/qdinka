@@ -17,7 +17,9 @@ class Maintenance extends template\TemplateBase {
 
     protected function body()
     {
-        echo 'Yay we made it here';
+        ?>
+
+    <?php
     }
 
 }
