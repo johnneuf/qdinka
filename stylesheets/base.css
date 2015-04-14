@@ -173,9 +173,20 @@ h2 {
   border: 1px solid #666;
   border-radius: 3px;
   margin-bottom: 5px;
+  width: 100%;
 }
-/* line 154, ../sass/base.scss */
-.template-side-menu-content ul li img {
+/* line 155, ../sass/base.scss */
+.template-side-menu-content ul li a {
+  color: #6a6a6a;
+  font-weight: bold;
+  font-size: 10pt;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+  display: block;
+}
+/* line 165, ../sass/base.scss */
+.template-side-menu-content ul li a img {
   width: 15px;
   margin-left: -1px;
   background: #416ad2;
@@ -183,12 +194,7 @@ h2 {
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
 }
-/* line 163, ../sass/base.scss */
-.template-side-menu-content ul li a {
-  color: #6a6a6a;
-  font-weight: bold;
-  font-size: 10pt;
-  text-decoration: none;
-  margin-left: 5px;
-  vertical-align: middle;
+/* line 177, ../sass/base.scss */
+.template-side-menu-content ul li:hover {
+  background: #f1f1f1;
 }

@@ -208,9 +208,9 @@ abstract class TemplateBase {
             <h1>Browse Products</h1>
             <div class="template-side-menu-content">
                 <ul>
-                    <li><img src="/images/icons/all-products.png" alt="all products" /><a href="">All Products</a></li>
-                    <li><img src="/images/icons/Accessories.png" alt="Accessories" /><a href="">Accessories</a></li>
-                    <li><img src="/images/icons/ApparelAccessories.gif" alt="Apparel" /><a href="">Apparel</a></li>
+                    <li><a href=""><img src="/images/icons/all-products.png" alt="all products" /> All Products</a></li>
+                    <li><a href=""><img src="/images/icons/Accessories.png" alt="Accessories" /> Accessories</a></li>
+                    <li><a href=""><img src="/images/icons/Apparel.png" alt="Apparel" /> Apparel</a></li>
                 </ul>
             </div>
         </div>
