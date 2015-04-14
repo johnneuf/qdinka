@@ -17,3 +17,157 @@ h2 {
   font-size: $bodySubHeaderSize;
   font-weight: bold;
 }
+
+//Header Bar
+.template-header-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $backgroundOffset;
+  border-bottom: 1px solid $lineColorLight;
+  @include next_row;
+  padding: 5px;
+}
+
+.template-logo-wrapper {
+  width: 200px;
+  float: left;
+}
+
+.template-search-bar-wrapper {
+  width: 600px;
+  float: left;
+  margin-top: 14px;
+
+  input[type='text'] {
+    color: $fontColor;
+    font-size: $bodySubHeaderSize;
+    background: $backgroundColor;
+    border-left: 1px solid $lineColorDark;
+    border-top: 1px solid $lineColorDark;
+    border-bottom: 1px solid $lineColorDark;
+    border-radius: 3px 0 0 3px;
+    vertical-align: middle;
+    padding: 5px;
+    width: 500px;
+  }
+
+  input[type='text']:focus {
+    outline: none;
+  }
+
+  input[type='image'] {
+    width: 15px;
+    vertical-align: middle;
+    background: $qdinkaBlue;
+    border-top: 1px solid $lineColorDark;
+    border-right: 1px solid $lineColorDark;
+    border-bottom: 1px solid $lineColorDark;
+    border-radius: 0 3px 3px 0;
+    padding: 5px 10px;
+    margin-left: -4px;
+  }
+}
+
+.template-header-menu {
+  float: right;
+  width: auto;
+
+  ul {
+    list-style-type: none;
+    background: $qdinkaBlue;
+    margin-right: 10px;
+    padding: 0;
+    border: 1px solid $lineColorDark;
+    border-radius: 3px;
+
+    li {
+      display: inline;
+
+      a {
+
+        img {
+          width: 20px;
+          padding: 5px 15px;
+        }
+
+        .template-header-menu-right {
+          border-right: 1px solid $lineColorDark;
+        }
+      }
+    }
+  }
+}
+
+//Content area
+.template-wrapper {
+  @include next_row;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.template-side-menu-wrapper {
+  @include box;
+  width: 300px;
+  padding-left: 5px;
+  float: left;
+}
+
+.template-content-wrapper {
+  @include box;
+  width: auto;
+  padding: 0 5px;
+  float: left;
+}
+
+.template-side-menu {
+  @include box;
+  @include bubble_outer;
+  width: 100%;
+  padding: 10px;
+
+  h1 {
+    margin: 0;
+    color: $qdinkaPurple;
+  }
+}
+
+.template-side-menu-content {
+  @include box;
+  @include bubble_inner;
+  width: 100%;
+  padding: 5px 5px 0 5px;
+  margin-top: 10px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      border: 1px solid $lineColorDark;
+      border-radius: 3px;
+      margin-bottom: 5px;
+
+      img {
+        width: 15px;
+        margin-left: -1px;
+        background: $qdinkaBlue;
+        padding: 5px;
+        border-radius: 3px 0 0 3px;
+        vertical-align: middle;
+      }
+
+      a {
+        color: $fontColor;
+        font-weight: bold;
+        font-size: $bodySubHeaderSize;
+        text-decoration: none;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

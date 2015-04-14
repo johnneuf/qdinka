@@ -19,6 +19,7 @@ abstract class TemplateBase {
 
     //Required methods
     abstract protected function body(); //The body of the
+    abstract protected function side_bar(); //The side bar
 
     /**
      * Template constructor
@@ -114,13 +115,30 @@ abstract class TemplateBase {
     <body>
 
     <header>
-<!--        TODO:: Add Headers-->
+    <div class="template-header-wrapper">
+        <div class="template-logo-wrapper">
+            <a href="<?php echo 'http://' . $_SERVER['SERVER_NAME']; ?>"><img src="/images/QdinkaFull25.png" /></a>
+        </div>
+        <div class="template-search-bar-wrapper">
+            <form action="" method="post">
+                <input type="text" name="txtSearch"/>
+                <input type="image" name="btnSubmit" src="/images/icons/search.png" />
+            </form>
+        </div>
+        <div class="template-header-menu">
+            <ul>
+                <li><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>
+                <li><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
+                <li><a href="/index.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>
+            </ul>
+        </div>
+    </div>
     </header>
 
     <section>
         <div class="template-wrapper">
             <div class="template-side-menu-wrapper">
-<!--                TODO:: Add Menu-->
+                <?php $this->side_bar(); ?>
             </div>
             <div class="template-content-wrapper">
                 <?php $this->body(); ?>
@@ -181,5 +199,21 @@ abstract class TemplateBase {
     protected function add_js($fileName)
     {
         $this->js[] = $fileName;
+    }
+
+    protected function side_menu()
+    {
+        ?>
+        <div class="template-side-menu">
+            <h1>Browse Products</h1>
+            <div class="template-side-menu-content">
+                <ul>
+                    <li><img src="/images/icons/all-products.png" alt="all products" /><a href="">All Products</a></li>
+                    <li><img src="/images/icons/Accessories.png" alt="Accessories" /><a href="">Accessories</a></li>
+                    <li><img src="/images/icons/ApparelAccessories.gif" alt="Apparel" /><a href="">Apparel</a></li>
+                </ul>
+            </div>
+        </div>
+    <?php
     }
 }

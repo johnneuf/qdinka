@@ -21,4 +21,10 @@ class FrontPage extends TemplateBase {
     {
         echo 'weeeeee';
     }
+
+    protected function side_bar()
+    {
+        $this->side_menu();
+    }
+
 }
