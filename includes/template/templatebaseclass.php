@@ -211,6 +211,18 @@ abstract class TemplateBase {
                     <li><a href=""><img src="/images/icons/all-products.png" alt="all products" /> All Products</a></li>
                     <li><a href=""><img src="/images/icons/Accessories.png" alt="Accessories" /> Accessories</a></li>
                     <li><a href=""><img src="/images/icons/Apparel.png" alt="Apparel" /> Apparel</a></li>
+                    <li><a href=""><img src="/images/icons/video-film.png" alt="Film and Video" /> Film/Video</a></li>
+                    <li><a href=""><img src="/images/icons/games.png" alt="Games" /> Games</a></li>
+                    <li><a href=""><img src="/images/icons/home.png" alt="Home Living" /> Home Living</a></li>
+                    <li><a href=""><img src="/images/icons/sports.png" alt="Sports" /> Sports</a></li>
+                    <li><a href=""><img src="/images/icons/technology.png" alt="Technology" /> Technology</a></li>
+                </ul>
+            </div>
+            <div class="template-side-menu-content">
+                <ul>
+                    <li><a href=""><img src="/images/icons/fastest.png" alt="Fastest Selling" /> Fastest Selling</a></li>
+                    <li><a href=""><img src="/images/icons/recent.png" alt="Recently Added" /> Recently Added</a></li>
+                    <li><a href=""><img src="/images/icons/staff-pick.png" alt="Staff Picks" /> Staff Picks</a></li>
                 </ul>
             </div>
         </div>

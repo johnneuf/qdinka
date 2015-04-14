@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="939fa10b-9963-4683-ba97-9711511ba3d4" name="Default" comment="">
       <change type="MOVED" beforePath="C:\Ravenmere\Projects\qdinka3\includes\frontpage\FrontPageClass.php" afterPath="$PROJECT_DIR$/includes/frontpage/frontpageclass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base.scss" afterPath="$PROJECT_DIR$/sass/base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/template/templatebaseclass.php" afterPath="$PROJECT_DIR$/includes/template/templatebaseclass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,14 +29,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="templatebaseclass.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="templatebaseclass.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/template/templatebaseclass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-39.384617" vertical-offset="2580" max-vertical-offset="3808">
-              <caret line="212" column="89" selection-start-line="212" selection-start-column="89" selection-end-line="212" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.9219288" vertical-offset="3005" max-vertical-offset="4012">
+              <caret line="224" column="73" selection-start-line="224" selection-start-column="73" selection-end-line="224" selection-end-column="73" />
               <folding>
                 <element signature="e#6#96#0#PHP" expanded="true" />
-                <marker date="1429028489358" expanded="true" signature="4290:4310" placeholder="..." />
+                <marker date="1429030548846" expanded="true" signature="4290:4310" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -48,7 +45,7 @@
       <file leaf-file-name="system.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/system.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
               <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding>
                 <element signature="e#6#136#0#PHP" expanded="true" />
@@ -79,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84385765" vertical-offset="2257" max-vertical-offset="3179">
+            <state vertical-scroll-proportion="-28.26923" vertical-offset="2257" max-vertical-offset="3179">
               <caret line="176" column="4" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
               <folding />
             </state>
@@ -122,8 +119,8 @@
         <option value="$PROJECT_DIR$/includes/pages/maintenanceclass.php" />
         <option value="$PROJECT_DIR$/system/system.php" />
         <option value="$PROJECT_DIR$/includes/frontpage/frontpageclass.php" />
-        <option value="$PROJECT_DIR$/includes/template/templatebaseclass.php" />
         <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/includes/template/templatebaseclass.php" />
       </list>
     </option>
   </component>
@@ -430,7 +427,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1429028489358" expanded="true" signature="4290:4310" placeholder="..." />
+            <marker date="1429030548846" expanded="true" signature="4290:4310" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -501,7 +498,7 @@
           <caret line="63" column="65" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1429028489358" expanded="true" signature="4290:4310" placeholder="..." />
+            <marker date="1429030548846" expanded="true" signature="4290:4310" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -579,7 +576,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1429028489358" expanded="true" signature="4290:4310" placeholder="..." />
+            <marker date="1429030548846" expanded="true" signature="4290:4310" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -660,16 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="e#6#136#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/maintenance.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29276693" vertical-offset="0" max-vertical-offset="871">
@@ -704,6 +691,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.26923" vertical-offset="2257" max-vertical-offset="3179">
+          <caret line="176" column="4" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/frontpage/frontpageclass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
@@ -712,22 +707,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/template/templatebaseclass.php">
+    <entry file="file://$PROJECT_DIR$/system/system.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-39.384617" vertical-offset="2580" max-vertical-offset="3808">
-          <caret line="212" column="89" selection-start-line="212" selection-start-column="89" selection-end-line="212" selection-end-column="89" />
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
-            <element signature="e#6#96#0#PHP" expanded="true" />
-            <marker date="1429028489358" expanded="true" signature="4290:4310" placeholder="..." />
+            <element signature="e#6#136#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/base.scss">
+    <entry file="file://$PROJECT_DIR$/includes/template/templatebaseclass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84385765" vertical-offset="2257" max-vertical-offset="3179">
-          <caret line="176" column="4" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
-          <folding />
+        <state vertical-scroll-proportion="0.9219288" vertical-offset="3005" max-vertical-offset="4012">
+          <caret line="224" column="73" selection-start-line="224" selection-start-column="73" selection-end-line="224" selection-end-column="73" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <marker date="1429030548846" expanded="true" signature="4290:4310" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
