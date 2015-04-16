@@ -1,0 +1,50 @@
+//For the main layouts
+@import "constants";
+
+.front-page-header-wrapper {
+  h1, h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    color: $qdinkaPurple;
+  }
+}
+
+.front-page-section-wrapper {
+  @include bubble_outer;
+  margin: 10px 0 0 305px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .front-page-section-content {
+    @include bubble_inner;
+    @include box;
+    padding: 10px 0 10px 10px;
+    overflow: hidden;
+
+    .card-wrapper {
+      @include box;
+      width: 25%;
+      float: left;
+      padding-right: 10px;
+
+      .card-content-wrapper {
+        @include bubble_outer;
+        @include box;
+
+        .card-image {
+          width: 100%;
+
+          img {
+            width: 100%;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}

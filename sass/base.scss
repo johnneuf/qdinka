@@ -46,17 +46,20 @@ h3 {
   float: left;
   margin-top: 14px;
 
+  form {
+    border: 1px solid $lineColorDark;
+    border-radius: 3px;
+  }
+
   input[type='text'] {
     color: $fontColor;
     font-size: $bodySubHeaderSize;
     background: $backgroundColor;
-    border-left: 1px solid $lineColorDark;
-    border-top: 1px solid $lineColorDark;
-    border-bottom: 1px solid $lineColorDark;
+    border: none;
     border-radius: 3px 0 0 3px;
     vertical-align: middle;
     padding: 5px;
-    width: 500px;
+    width: 553px;
   }
 
   input[type='text']:focus {
@@ -66,10 +69,6 @@ h3 {
   input[type='image'] {
     width: 15px;
     vertical-align: middle;
-//    background: $qdinkaBlue;
-    border-top: 1px solid $lineColorDark;
-    border-right: 1px solid $lineColorDark;
-    border-bottom: 1px solid $lineColorDark;
     border-radius: 0 3px 3px 0;
     padding: 6px 10px 7px 10px;
     margin-left: -5px;
@@ -82,10 +81,8 @@ h3 {
 
   ul {
     list-style-type: none;
-//    background: $qdinkaBlue;
     margin-right: 10px;
     padding: 0;
-//    border: 1px solid $lineColorDark;
     border-radius: 3px;
 
     li {
@@ -102,10 +99,6 @@ h3 {
 
     }
   }
-}
-
-.template-header-menu-right {
-//  border-right: 1px solid $lineColorDark;
 }
 
 //Content area
@@ -125,9 +118,9 @@ h3 {
 
 .template-content-wrapper {
   @include box;
-  width: auto;
+//  width: auto;
   padding: 0 5px;
-  float: left;
+//  float: left;
 }
 
 .template-side-menu {
@@ -155,7 +148,6 @@ h3 {
     margin: 0;
 
     li {
-//      border: 1px solid $lineColorDark;
       border-radius: 3px;
       margin-bottom: 5px;
       width: 100%;
@@ -165,7 +157,6 @@ h3 {
         font-weight: bold;
         font-size: $bodyFontSize;
         text-decoration: none;
-//        margin-left: 5px;
         vertical-align: middle;
         width: 100%;
         display: block;
@@ -173,7 +164,6 @@ h3 {
         img {
           width: 15px;
           margin-left: -1px;
-//          background: $qdinkaBlue;
           padding: 5px;
           border-radius: 3px 0 0 3px;
           vertical-align: middle;
@@ -182,12 +172,10 @@ h3 {
 
     }
 
-    li:hover {
+    a:hover, a:active {
       background: $qdinkaBlue;
-
-      a {
-        color: $backgroundColor;
-      }
+      border-radius: 3px;
+      color: $backgroundColor;
     }
   }
 }

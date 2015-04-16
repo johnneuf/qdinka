@@ -1,0 +1,61 @@
+/* line 5, ../sass/layout.scss */
+.front-page-header-wrapper h1, .front-page-header-wrapper h2 {
+  text-align: center;
+  margin: 0;
+}
+/* line 10, ../sass/layout.scss */
+.front-page-header-wrapper h1 {
+  color: #662d91;
+}
+
+/* line 15, ../sass/layout.scss */
+.front-page-section-wrapper {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 0 0 305px;
+}
+/* line 19, ../sass/layout.scss */
+.front-page-section-wrapper h2 {
+  margin: 0;
+}
+/* line 23, ../sass/layout.scss */
+.front-page-section-wrapper .front-page-section-content {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 0 10px 10px;
+  overflow: hidden;
+}
+/* line 29, ../sass/layout.scss */
+.front-page-section-wrapper .front-page-section-content .card-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+/* line 35, ../sass/layout.scss */
+.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 39, ../sass/layout.scss */
+.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-image {
+  width: 100%;
+}
+/* line 42, ../sass/layout.scss */
+.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-image img {
+  width: 100%;
+  border-radius: 3px;
+}

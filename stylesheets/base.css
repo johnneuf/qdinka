@@ -8,13 +8,13 @@ body {
 
 /* line 11, ../sass/base.scss */
 h1 {
-  font-size: 14pt;
+  font-size: 28pt;
   font-weight: bold;
 }
 
 /* line 16, ../sass/base.scss */
 h2 {
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: bold;
 }
 
@@ -52,57 +52,57 @@ h3 {
   margin-top: 14px;
 }
 /* line 49, ../sass/base.scss */
+.template-search-bar-wrapper form {
+  border: 1px solid #666;
+  border-radius: 3px;
+}
+/* line 54, ../sass/base.scss */
 .template-search-bar-wrapper input[type='text'] {
   color: #6a6a6a;
-  font-size: 12pt;
+  font-size: 14pt;
   background: #ffffff;
-  border-left: 1px solid #666;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+  border: none;
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
   padding: 5px;
-  width: 500px;
+  width: 553px;
 }
-/* line 62, ../sass/base.scss */
+/* line 65, ../sass/base.scss */
 .template-search-bar-wrapper input[type='text']:focus {
   outline: none;
 }
-/* line 66, ../sass/base.scss */
+/* line 69, ../sass/base.scss */
 .template-search-bar-wrapper input[type='image'] {
   width: 15px;
   vertical-align: middle;
-  border-top: 1px solid #666;
-  border-right: 1px solid #666;
-  border-bottom: 1px solid #666;
   border-radius: 0 3px 3px 0;
   padding: 6px 10px 7px 10px;
   margin-left: -5px;
 }
 
-/* line 79, ../sass/base.scss */
+/* line 78, ../sass/base.scss */
 .template-header-menu {
   float: right;
   width: auto;
 }
-/* line 83, ../sass/base.scss */
+/* line 82, ../sass/base.scss */
 .template-header-menu ul {
   list-style-type: none;
   margin-right: 10px;
   padding: 0;
   border-radius: 3px;
 }
-/* line 91, ../sass/base.scss */
+/* line 88, ../sass/base.scss */
 .template-header-menu ul li {
   display: inline;
 }
-/* line 96, ../sass/base.scss */
+/* line 93, ../sass/base.scss */
 .template-header-menu ul li a img {
   width: 20px;
   padding: 5px 15px;
 }
 
-/* line 112, ../sass/base.scss */
+/* line 105, ../sass/base.scss */
 .template-wrapper {
   content: '';
   display: table;
@@ -112,7 +112,7 @@ h3 {
   margin-top: 75px;
 }
 
-/* line 119, ../sass/base.scss */
+/* line 112, ../sass/base.scss */
 .template-side-menu-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -122,17 +122,15 @@ h3 {
   float: left;
 }
 
-/* line 126, ../sass/base.scss */
+/* line 119, ../sass/base.scss */
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: auto;
   padding: 0 5px;
-  float: left;
 }
 
-/* line 133, ../sass/base.scss */
+/* line 126, ../sass/base.scss */
 .template-side-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -144,13 +142,13 @@ h3 {
   width: 100%;
   margin-top: 10px;
 }
-/* line 139, ../sass/base.scss */
+/* line 132, ../sass/base.scss */
 .template-side-menu h3 {
   margin: 0;
   color: #662d91;
 }
 
-/* line 145, ../sass/base.scss */
+/* line 138, ../sass/base.scss */
 .template-side-menu-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -161,19 +159,19 @@ h3 {
   width: 100%;
   padding: 5px 5px 0 5px;
 }
-/* line 152, ../sass/base.scss */
+/* line 145, ../sass/base.scss */
 .template-side-menu-content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 157, ../sass/base.scss */
+/* line 150, ../sass/base.scss */
 .template-side-menu-content ul li {
   border-radius: 3px;
   margin-bottom: 5px;
   width: 100%;
 }
-/* line 163, ../sass/base.scss */
+/* line 155, ../sass/base.scss */
 .template-side-menu-content ul li a {
   color: #6a6a6a;
   font-weight: bold;
@@ -183,7 +181,7 @@ h3 {
   width: 100%;
   display: block;
 }
-/* line 173, ../sass/base.scss */
+/* line 164, ../sass/base.scss */
 .template-side-menu-content ul li a img {
   width: 15px;
   margin-left: -1px;
@@ -191,23 +189,21 @@ h3 {
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
 }
-/* line 185, ../sass/base.scss */
-.template-side-menu-content ul li:hover {
+/* line 175, ../sass/base.scss */
+.template-side-menu-content ul a:hover, .template-side-menu-content ul a:active {
   background: #416ad2;
-}
-/* line 188, ../sass/base.scss */
-.template-side-menu-content ul li:hover a {
+  border-radius: 3px;
   color: #ffffff;
 }
 
-/* line 196, ../sass/base.scss */
+/* line 184, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 204, ../sass/base.scss */
+/* line 192, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;
