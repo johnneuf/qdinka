@@ -40,17 +40,18 @@ h3 {
 
 /* line 38, ../sass/base.scss */
 .template-logo-wrapper {
-  width: 200px;
+  width: 300px;
   float: left;
+  margin-top: 6px;
 }
 
-/* line 43, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 .template-search-bar-wrapper {
   width: 600px;
   float: left;
   margin-top: 14px;
 }
-/* line 48, ../sass/base.scss */
+/* line 49, ../sass/base.scss */
 .template-search-bar-wrapper input[type='text'] {
   color: #6a6a6a;
   font-size: 12pt;
@@ -63,11 +64,11 @@ h3 {
   padding: 5px;
   width: 500px;
 }
-/* line 61, ../sass/base.scss */
+/* line 62, ../sass/base.scss */
 .template-search-bar-wrapper input[type='text']:focus {
   outline: none;
 }
-/* line 65, ../sass/base.scss */
+/* line 66, ../sass/base.scss */
 .template-search-bar-wrapper input[type='image'] {
   width: 15px;
   vertical-align: middle;
@@ -76,16 +77,16 @@ h3 {
   border-right: 1px solid #666;
   border-bottom: 1px solid #666;
   border-radius: 0 3px 3px 0;
-  padding: 5px 10px;
-  margin-left: -4px;
+  padding: 6px 10px 7px 10px;
+  margin-left: -5px;
 }
 
-/* line 78, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 .template-header-menu {
   float: right;
   width: auto;
 }
-/* line 82, ../sass/base.scss */
+/* line 83, ../sass/base.scss */
 .template-header-menu ul {
   list-style-type: none;
   background: #416ad2;
@@ -94,21 +95,21 @@ h3 {
   border: 1px solid #666;
   border-radius: 3px;
 }
-/* line 90, ../sass/base.scss */
+/* line 91, ../sass/base.scss */
 .template-header-menu ul li {
   display: inline;
 }
-/* line 95, ../sass/base.scss */
+/* line 96, ../sass/base.scss */
 .template-header-menu ul li a img {
   width: 20px;
   padding: 5px 15px;
 }
-/* line 100, ../sass/base.scss */
+/* line 101, ../sass/base.scss */
 .template-header-menu ul li a .template-header-menu-right {
   border-right: 1px solid #666;
 }
 
-/* line 109, ../sass/base.scss */
+/* line 110, ../sass/base.scss */
 .template-wrapper {
   content: '';
   display: table;
@@ -118,7 +119,7 @@ h3 {
   margin-top: 75px;
 }
 
-/* line 116, ../sass/base.scss */
+/* line 117, ../sass/base.scss */
 .template-side-menu-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -128,7 +129,7 @@ h3 {
   float: left;
 }
 
-/* line 123, ../sass/base.scss */
+/* line 124, ../sass/base.scss */
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -138,7 +139,7 @@ h3 {
   float: left;
 }
 
-/* line 130, ../sass/base.scss */
+/* line 131, ../sass/base.scss */
 .template-side-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -150,13 +151,13 @@ h3 {
   width: 100%;
   margin-top: 10px;
 }
-/* line 136, ../sass/base.scss */
+/* line 137, ../sass/base.scss */
 .template-side-menu h3 {
   margin: 0;
   color: #662d91;
 }
 
-/* line 142, ../sass/base.scss */
+/* line 143, ../sass/base.scss */
 .template-side-menu-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -168,20 +169,20 @@ h3 {
   padding: 5px 5px 0 5px;
   margin-top: 10px;
 }
-/* line 149, ../sass/base.scss */
+/* line 150, ../sass/base.scss */
 .template-side-menu-content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 154, ../sass/base.scss */
+/* line 155, ../sass/base.scss */
 .template-side-menu-content ul li {
   border: 1px solid #666;
   border-radius: 3px;
   margin-bottom: 5px;
   width: 100%;
 }
-/* line 160, ../sass/base.scss */
+/* line 161, ../sass/base.scss */
 .template-side-menu-content ul li a {
   color: #6a6a6a;
   font-weight: bold;
@@ -191,7 +192,7 @@ h3 {
   width: 100%;
   display: block;
 }
-/* line 170, ../sass/base.scss */
+/* line 171, ../sass/base.scss */
 .template-side-menu-content ul li a img {
   width: 15px;
   margin-left: -1px;
@@ -200,19 +201,19 @@ h3 {
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
 }
-/* line 182, ../sass/base.scss */
+/* line 183, ../sass/base.scss */
 .template-side-menu-content ul li:hover {
   background: #f1f1f1;
 }
 
-/* line 189, ../sass/base.scss */
+/* line 190, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 197, ../sass/base.scss */
+/* line 198, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;

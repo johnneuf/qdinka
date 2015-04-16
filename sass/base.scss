@@ -36,8 +36,9 @@ h3 {
 }
 
 .template-logo-wrapper {
-  width: 200px;
+  width: 300px;
   float: left;
+  margin-top: 6px;
 }
 
 .template-search-bar-wrapper {
@@ -70,8 +71,8 @@ h3 {
     border-right: 1px solid $lineColorDark;
     border-bottom: 1px solid $lineColorDark;
     border-radius: 0 3px 3px 0;
-    padding: 5px 10px;
-    margin-left: -4px;
+    padding: 6px 10px 7px 10px;
+    margin-left: -5px;
   }
 }
 
