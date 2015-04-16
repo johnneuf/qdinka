@@ -8,9 +8,10 @@ $lineColorDark: #666;
 $lineColorLight: #e5e5e5;
 
 //Font Sizes
-$bodyFontSize: 8pt;
-$bodyHeaderSize: 12pt;
-$bodySubHeaderSize: 10pt;
+$bodyFontSize: 10pt;
+$bodyHeaderSize: 14pt;
+$bodySubHeaderSize: 12pt;
+$bodySmallSize: 8pt;
 
 //Utilities
 @mixin box() {

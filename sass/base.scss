@@ -18,6 +18,11 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: $bodyFontSize;
+  font-weight: bold;
+}
+
 //Header Bar
 .template-header-wrapper {
   position: fixed;
@@ -126,9 +131,9 @@ h2 {
   @include box;
   @include bubble_outer;
   width: 100%;
-  padding: 10px;
+  margin-top: 10px;
 
-  h1 {
+  h3 {
     margin: 0;
     color: $qdinkaPurple;
   }
@@ -155,7 +160,7 @@ h2 {
       a {
         color: $fontColor;
         font-weight: bold;
-        font-size: $bodySubHeaderSize;
+        font-size: $bodyFontSize;
         text-decoration: none;
 //        margin-left: 5px;
         vertical-align: middle;
@@ -177,5 +182,20 @@ h2 {
     li:hover {
       background: $backgroundOffset;
     }
+  }
+}
+
+.template-copyright {
+  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: $bodySmallSize;
+  }
+}
+
+.template-disclaimer {
+  p {
+    text-align: justify;
+    font-size: 4pt;
   }
 }
