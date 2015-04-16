@@ -147,7 +147,7 @@ h3 {
   @include bubble_inner;
   width: 100%;
   padding: 5px 5px 0 5px;
-  margin-top: 10px;
+//  margin-top: 10px;
 
   ul {
     list-style-type: none;
@@ -183,7 +183,11 @@ h3 {
     }
 
     li:hover {
-      background: $backgroundOffset;
+      background: $qdinkaBlue;
+
+      a {
+        color: $backgroundColor;
+      }
     }
   }
 }

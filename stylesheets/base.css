@@ -160,7 +160,6 @@ h3 {
   border-radius: 3px;
   width: 100%;
   padding: 5px 5px 0 5px;
-  margin-top: 10px;
 }
 /* line 152, ../sass/base.scss */
 .template-side-menu-content ul {
@@ -194,17 +193,21 @@ h3 {
 }
 /* line 185, ../sass/base.scss */
 .template-side-menu-content ul li:hover {
-  background: #f1f1f1;
+  background: #416ad2;
+}
+/* line 188, ../sass/base.scss */
+.template-side-menu-content ul li:hover a {
+  color: #ffffff;
 }
 
-/* line 192, ../sass/base.scss */
+/* line 196, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 200, ../sass/base.scss */
+/* line 204, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;

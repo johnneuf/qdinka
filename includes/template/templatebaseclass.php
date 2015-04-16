@@ -205,7 +205,7 @@ abstract class TemplateBase {
     {
         ?>
         <div class="template-side-menu">
-            <h3>Browse Products</h3>
+<!--            <h3>Browse Products</h3>-->
             <div class="template-side-menu-content">
                 <ul>
                     <li><a href=""><img src="/images/icons/all-products.png" alt="all products" /> All Products</a></li>
@@ -218,7 +218,7 @@ abstract class TemplateBase {
                     <li><a href=""><img src="/images/icons/technology.png" alt="Technology" /> Technology</a></li>
                 </ul>
             </div>
-            <div class="template-side-menu-content">
+            <div class="template-side-menu-content" style="margin-top: 10px;">
                 <ul>
                     <li><a href=""><img src="/images/icons/fastest.png" alt="Fastest Selling" /> Fastest Selling</a></li>
                     <li><a href=""><img src="/images/icons/recent.png" alt="Recently Added" /> Recently Added</a></li>
