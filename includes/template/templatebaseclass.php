@@ -127,8 +127,8 @@ abstract class TemplateBase {
         </div>
         <div class="template-header-menu">
             <ul>
-                <li><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>
-                <li><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
+                <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>
+                <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
                 <li><a href="/index.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>
             </ul>
         </div>

@@ -66,7 +66,7 @@ h3 {
   input[type='image'] {
     width: 15px;
     vertical-align: middle;
-    background: $qdinkaBlue;
+//    background: $qdinkaBlue;
     border-top: 1px solid $lineColorDark;
     border-right: 1px solid $lineColorDark;
     border-bottom: 1px solid $lineColorDark;
@@ -82,10 +82,10 @@ h3 {
 
   ul {
     list-style-type: none;
-    background: $qdinkaBlue;
+//    background: $qdinkaBlue;
     margin-right: 10px;
     padding: 0;
-    border: 1px solid $lineColorDark;
+//    border: 1px solid $lineColorDark;
     border-radius: 3px;
 
     li {
@@ -98,12 +98,14 @@ h3 {
           padding: 5px 15px;
         }
 
-        .template-header-menu-right {
-          border-right: 1px solid $lineColorDark;
-        }
       }
+
     }
   }
+}
+
+.template-header-menu-right {
+//  border-right: 1px solid $lineColorDark;
 }
 
 //Content area
@@ -153,7 +155,7 @@ h3 {
     margin: 0;
 
     li {
-      border: 1px solid $lineColorDark;
+//      border: 1px solid $lineColorDark;
       border-radius: 3px;
       margin-bottom: 5px;
       width: 100%;
@@ -171,7 +173,7 @@ h3 {
         img {
           width: 15px;
           margin-left: -1px;
-          background: $qdinkaBlue;
+//          background: $qdinkaBlue;
           padding: 5px;
           border-radius: 3px 0 0 3px;
           vertical-align: middle;
