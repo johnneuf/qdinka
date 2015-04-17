@@ -141,7 +141,7 @@ a {
 
 .template-side-menu {
   @include box;
-  @include bubble_outer;
+  @include bubble_outer(3px 3px 0 3px);
   width: 100%;
   margin-top: 10px;
 
@@ -156,7 +156,7 @@ a {
   @include bubble_inner;
   width: 100%;
   padding: 5px 5px 0 5px;
-//  margin-top: 10px;
+  margin-bottom: 3px;
 
   ul {
     list-style-type: none;

@@ -19,7 +19,7 @@ abstract class TemplateBase {
 
     //Required methods
     abstract protected function body(); //The body of the
-    abstract protected function side_bar(); //The side bar
+    abstract protected function side_menu(); //The side bar
 
     /**
      * Template constructor
@@ -201,30 +201,12 @@ abstract class TemplateBase {
         $this->js[] = $fileName;
     }
 
-    protected function side_menu()
+    protected function side_bar()
     {
         ?>
         <div class="template-side-menu">
 <!--            <h3>Browse Products</h3>-->
-            <div class="template-side-menu-content">
-                <ul>
-                    <li><a href=""><img src="/images/icons/all-products.png" alt="all products" /> All Products</a></li>
-                    <li><a href=""><img src="/images/icons/Accessories.png" alt="Accessories" /> Accessories</a></li>
-                    <li><a href=""><img src="/images/icons/Apparel.png" alt="Apparel" /> Apparel</a></li>
-                    <li><a href=""><img src="/images/icons/video-film.png" alt="Film and Video" /> Film/Video</a></li>
-                    <li><a href=""><img src="/images/icons/games.png" alt="Games" /> Games</a></li>
-                    <li><a href=""><img src="/images/icons/home.png" alt="Home Living" /> Home Living</a></li>
-                    <li><a href=""><img src="/images/icons/sports.png" alt="Sports" /> Sports</a></li>
-                    <li><a href=""><img src="/images/icons/technology.png" alt="Technology" /> Technology</a></li>
-                </ul>
-            </div>
-            <div class="template-side-menu-content" style="margin-top: 10px;">
-                <ul>
-                    <li><a href=""><img src="/images/icons/fastest.png" alt="Fastest Selling" /> Fastest Selling</a></li>
-                    <li><a href=""><img src="/images/icons/recent.png" alt="Recently Added" /> Recently Added</a></li>
-                    <li><a href=""><img src="/images/icons/staff-pick.png" alt="Staff Picks" /> Staff Picks</a></li>
-                </ul>
-            </div>
+            <?php $this->side_menu(); ?>
         </div>
         <div class="template-copyright">
             <p>Copyright &#64; Qdinka 2015 All rights reserved</p>

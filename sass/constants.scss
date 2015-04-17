@@ -29,11 +29,11 @@ $bodySmallSize: 8pt;
 }
 
 //Bubbles
-@mixin bubble_outer() {
+@mixin bubble_outer($padding: 3px) {
   background: $backgroundOffset;
   border: 1px solid $lineColorLight;
   border-radius: 3px;
-  padding: 10px;
+  padding: $padding;
 }
 
 @mixin bubble_inner() {

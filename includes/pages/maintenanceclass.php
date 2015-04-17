@@ -35,9 +35,9 @@ class Maintenance extends template\TemplateBase {
     <?php
     }
 
-    protected function side_bar()
+    protected function side_menu()
     {
-        return false; //No side bar
+        return;
     }
 
 }

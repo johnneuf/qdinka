@@ -1,24 +1,28 @@
-/* line 5, ../sass/layout.scss */
+/* line 4, ../sass/layout.scss */
+.front-page-header-wrapper {
+  margin-left: 305px;
+}
+/* line 7, ../sass/layout.scss */
 .front-page-header-wrapper h1, .front-page-header-wrapper h2 {
   text-align: center;
   margin: 0;
 }
-/* line 10, ../sass/layout.scss */
+/* line 12, ../sass/layout.scss */
 .front-page-header-wrapper h1 {
   color: #662d91;
 }
 
-/* line 15, ../sass/layout.scss */
+/* line 17, ../sass/layout.scss */
 .front-page-section-wrapper {
   margin: 10px 0 0 305px;
   overflow: hidden;
 }
-/* line 19, ../sass/layout.scss */
+/* line 21, ../sass/layout.scss */
 .front-page-section-wrapper h2 {
   margin: 0 0 10px 0;
   color: #416ad2;
 }
-/* line 24, ../sass/layout.scss */
+/* line 26, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -27,7 +31,7 @@
   float: left;
   padding-right: 10px;
 }
-/* line 30, ../sass/layout.scss */
+/* line 32, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -38,26 +42,26 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-/* line 35, ../sass/layout.scss */
+/* line 37, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 38, ../sass/layout.scss */
+/* line 40, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 44, ../sass/layout.scss */
+/* line 46, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 49, ../sass/layout.scss */
+/* line 51, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 54, ../sass/layout.scss */
+/* line 56, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info:after {
   content: '';
   display: table;
