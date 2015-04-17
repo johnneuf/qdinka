@@ -66,8 +66,8 @@
       <file leaf-file-name="base.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33295062" vertical-offset="1750" max-vertical-offset="3519">
-              <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.78185993" vertical-offset="747" max-vertical-offset="3621">
+              <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -833,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295062" vertical-offset="1750" max-vertical-offset="3519">
-          <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.78185993" vertical-offset="747" max-vertical-offset="3621">
+          <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
           <folding />
         </state>
       </provider>
