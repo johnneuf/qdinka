@@ -63,13 +63,3 @@
   display: table;
   clear: both;
 }
-/* line 58, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper hr {
-  border: none;
-  background: #666;
-  height: 1px;
-}
-/* line 64, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-content {
-  text-align: justify;
-}
