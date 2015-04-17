@@ -17,7 +17,8 @@
   margin: 10px 0 0 305px;
 
   h2 {
-    margin: 0;
+    margin: 0 0 10px 0;
+    color: $qdinkaBlue;
   }
 
   .front-page-section-content {
@@ -43,6 +44,30 @@
             width: 100%;
             border-radius: 3px;
           }
+        }
+
+        .card-info {
+          font-weight: bold;
+          color: $qdinkaPurple;
+          margin-top: 5px;
+
+          .card-price {
+            float: right;
+          }
+        }
+
+        .card-info:after {
+          @include next_row;
+        }
+
+        hr {
+          border: none;
+          background: $lineColorDark;
+          height: 1px;
+        }
+
+        .card-content {
+          text-align: justify;
         }
       }
     }
