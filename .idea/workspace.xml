@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939fa10b-9963-4683-ba97-9711511ba3d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/menus/mainmenuclass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/constants.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/constants.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/layout.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/layout.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base.scss" afterPath="$PROJECT_DIR$/sass/base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/constants.scss" afterPath="$PROJECT_DIR$/sass/constants.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/frontpage/frontpageclass.php" afterPath="$PROJECT_DIR$/includes/frontpage/frontpageclass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/layout.css" afterPath="$PROJECT_DIR$/stylesheets/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout.scss" afterPath="$PROJECT_DIR$/sass/layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/maintenance.css" afterPath="$PROJECT_DIR$/stylesheets/maintenance.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/pages/maintenanceclass.php" afterPath="$PROJECT_DIR$/includes/pages/maintenanceclass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/menus/menubaseclass.php" afterPath="$PROJECT_DIR$/includes/menus/menubaseclass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/template/templatebaseclass.php" afterPath="$PROJECT_DIR$/includes/template/templatebaseclass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qdinka3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/constants.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.807692" vertical-offset="64" max-vertical-offset="935">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.5901263" vertical-offset="64" max-vertical-offset="935">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39150402" vertical-offset="2090" max-vertical-offset="3791">
+            <state vertical-scroll-proportion="-13.115385" vertical-offset="2090" max-vertical-offset="3791">
               <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
               <folding />
             </state>
@@ -108,9 +94,9 @@
         <option value="$PROJECT_DIR$/includes/template/templatebaseclass.php" />
         <option value="$PROJECT_DIR$/includes/pages/maintenanceclass.php" />
         <option value="$PROJECT_DIR$/includes/frontpage/frontpageclass.php" />
-        <option value="$PROJECT_DIR$/sass/constants.scss" />
         <option value="$PROJECT_DIR$/sass/layout.scss" />
         <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/sass/constants.scss" />
       </list>
     </option>
   </component>
@@ -366,7 +352,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -854,14 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/constants.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.807692" vertical-offset="64" max-vertical-offset="935">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="1156">
@@ -872,8 +850,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39150402" vertical-offset="2090" max-vertical-offset="3791">
+        <state vertical-scroll-proportion="-13.115385" vertical-offset="2090" max-vertical-offset="3791">
           <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/constants.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5901263" vertical-offset="64" max-vertical-offset="935">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding />
         </state>
       </provider>
