@@ -83,6 +83,11 @@ a {
 .template-search-bar-wrapper:hover {
   background: $qdinkaBlue;
   border-radius: 3px;
+
+  input[type='image'] {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
 }
 
 .template-header-menu {
@@ -187,6 +192,11 @@ a {
       background: $qdinkaBlue;
       border-radius: 3px;
       color: $backgroundColor;
+
+      img {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+      }
     }
   }
 }

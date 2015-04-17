@@ -90,30 +90,35 @@ a {
   background: #416ad2;
   border-radius: 3px;
 }
+/* line 87, ../sass/base.scss */
+.template-search-bar-wrapper:hover input[type='image'] {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
 
-/* line 88, ../sass/base.scss */
+/* line 93, ../sass/base.scss */
 .template-header-menu {
   float: right;
   width: auto;
 }
-/* line 92, ../sass/base.scss */
+/* line 97, ../sass/base.scss */
 .template-header-menu ul {
   list-style-type: none;
   margin-right: 10px;
   padding: 0;
   border-radius: 3px;
 }
-/* line 98, ../sass/base.scss */
+/* line 103, ../sass/base.scss */
 .template-header-menu ul li {
   display: inline;
 }
-/* line 103, ../sass/base.scss */
+/* line 108, ../sass/base.scss */
 .template-header-menu ul li a img {
   width: 20px;
   padding: 5px 15px;
 }
 
-/* line 115, ../sass/base.scss */
+/* line 120, ../sass/base.scss */
 .template-wrapper {
   content: '';
   display: table;
@@ -123,7 +128,7 @@ a {
   margin-top: 75px;
 }
 
-/* line 122, ../sass/base.scss */
+/* line 127, ../sass/base.scss */
 .template-side-menu-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -133,7 +138,7 @@ a {
   position: fixed;
 }
 
-/* line 130, ../sass/base.scss */
+/* line 135, ../sass/base.scss */
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -141,7 +146,7 @@ a {
   padding: 0 5px;
 }
 
-/* line 137, ../sass/base.scss */
+/* line 142, ../sass/base.scss */
 .template-side-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -153,13 +158,13 @@ a {
   width: 100%;
   margin-top: 10px;
 }
-/* line 143, ../sass/base.scss */
+/* line 148, ../sass/base.scss */
 .template-side-menu h3 {
   margin: 0;
   color: #662d91;
 }
 
-/* line 149, ../sass/base.scss */
+/* line 154, ../sass/base.scss */
 .template-side-menu-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -170,19 +175,19 @@ a {
   width: 100%;
   padding: 5px 5px 0 5px;
 }
-/* line 156, ../sass/base.scss */
+/* line 161, ../sass/base.scss */
 .template-side-menu-content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 161, ../sass/base.scss */
+/* line 166, ../sass/base.scss */
 .template-side-menu-content ul li {
   border-radius: 3px;
   margin-bottom: 5px;
   width: 100%;
 }
-/* line 166, ../sass/base.scss */
+/* line 171, ../sass/base.scss */
 .template-side-menu-content ul li a {
   color: #6a6a6a;
   font-weight: bold;
@@ -192,7 +197,7 @@ a {
   width: 100%;
   display: block;
 }
-/* line 175, ../sass/base.scss */
+/* line 180, ../sass/base.scss */
 .template-side-menu-content ul li a img {
   width: 15px;
   margin-left: -1px;
@@ -200,21 +205,26 @@ a {
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
 }
-/* line 186, ../sass/base.scss */
+/* line 191, ../sass/base.scss */
 .template-side-menu-content ul a:hover, .template-side-menu-content ul a:active {
   background: #416ad2;
   border-radius: 3px;
   color: #ffffff;
 }
+/* line 196, ../sass/base.scss */
+.template-side-menu-content ul a:hover img, .template-side-menu-content ul a:active img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
 
-/* line 195, ../sass/base.scss */
+/* line 205, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 203, ../sass/base.scss */
+/* line 213, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;
