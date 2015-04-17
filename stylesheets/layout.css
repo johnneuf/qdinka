@@ -29,46 +29,47 @@
 }
 /* line 30, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper {
-  background: #f1f1f1;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   padding: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
-/* line 34, ../sass/layout.scss */
+/* line 35, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 37, ../sass/layout.scss */
+/* line 38, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 43, ../sass/layout.scss */
+/* line 44, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 48, ../sass/layout.scss */
+/* line 49, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 53, ../sass/layout.scss */
+/* line 54, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 57, ../sass/layout.scss */
+/* line 58, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper hr {
   border: none;
   background: #666;
   height: 1px;
 }
-/* line 63, ../sass/layout.scss */
+/* line 64, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-content {
   text-align: justify;
 }

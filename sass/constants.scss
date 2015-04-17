@@ -41,3 +41,10 @@ $bodySmallSize: 8pt;
   border: 1px solid $lineColorLight;
   border-radius: 3px;
 }
+
+@mixin shadow_bubble() {
+  border: 1px solid $lineColorLight;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}

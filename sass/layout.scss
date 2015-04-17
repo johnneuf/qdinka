@@ -28,8 +28,9 @@
     padding-right: 10px;
 
     .card-content-wrapper {
-      @include bubble_outer;
+      @include shadow_bubble;
       @include box;
+      margin-bottom: 10px;
 
       .card-image {
         width: 100%;
