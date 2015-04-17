@@ -13,62 +13,55 @@
 }
 
 .front-page-section-wrapper {
-  @include bubble_outer;
   margin: 10px 0 0 305px;
+  overflow: hidden;
 
   h2 {
     margin: 0 0 10px 0;
     color: $qdinkaBlue;
   }
 
-  .front-page-section-content {
-    @include bubble_inner;
+  .card-wrapper {
     @include box;
-    padding: 10px 0 10px 10px;
-    overflow: hidden;
+    width: 25%;
+    float: left;
+    padding-right: 10px;
 
-    .card-wrapper {
+    .card-content-wrapper {
+      @include bubble_outer;
       @include box;
-      width: 25%;
-      float: left;
-      padding-right: 10px;
 
-      .card-content-wrapper {
-        @include bubble_outer;
-        @include box;
+      .card-image {
+        width: 100%;
 
-        .card-image {
+        img {
           width: 100%;
-
-          img {
-            width: 100%;
-            border-radius: 3px;
-          }
+          border-radius: 3px;
         }
+      }
 
-        .card-info {
-          font-weight: bold;
-          color: $qdinkaPurple;
-          margin-top: 5px;
+      .card-info {
+        font-weight: bold;
+        color: $qdinkaPurple;
+        margin-top: 5px;
 
-          .card-price {
-            float: right;
-          }
+        .card-price {
+          float: right;
         }
+      }
 
-        .card-info:after {
-          @include next_row;
-        }
+      .card-info:after {
+        @include next_row;
+      }
 
-        hr {
-          border: none;
-          background: $lineColorDark;
-          height: 1px;
-        }
+      hr {
+        border: none;
+        background: $lineColorDark;
+        height: 1px;
+      }
 
-        .card-content {
-          text-align: justify;
-        }
+      .card-content {
+        text-align: justify;
       }
     }
   }

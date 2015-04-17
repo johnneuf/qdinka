@@ -10,11 +10,8 @@
 
 /* line 15, ../sass/layout.scss */
 .front-page-section-wrapper {
-  background: #f1f1f1;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  padding: 10px;
   margin: 10px 0 0 305px;
+  overflow: hidden;
 }
 /* line 19, ../sass/layout.scss */
 .front-page-section-wrapper h2 {
@@ -22,18 +19,7 @@
   color: #416ad2;
 }
 /* line 24, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px 0 10px 10px;
-  overflow: hidden;
-}
-/* line 30, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper {
+.front-page-section-wrapper .card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -41,8 +27,8 @@
   float: left;
   padding-right: 10px;
 }
-/* line 36, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper {
+/* line 30, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -51,38 +37,38 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 40, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-image {
+/* line 34, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 43, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-image img {
+/* line 37, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 49, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-info {
+/* line 43, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 54, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-info .card-price {
+/* line 48, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 59, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-info:after {
+/* line 53, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 63, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper hr {
+/* line 57, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper hr {
   border: none;
   background: #666;
   height: 1px;
 }
-/* line 69, ../sass/layout.scss */
-.front-page-section-wrapper .front-page-section-content .card-wrapper .card-content-wrapper .card-content {
+/* line 63, ../sass/layout.scss */
+.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-content {
   text-align: justify;
 }
