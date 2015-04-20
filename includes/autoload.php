@@ -14,7 +14,7 @@ require_once('global.php'); //Global methods and variables
 //spl_autoload_register();
 
 //Template
-//include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/template/templatebaseclass.php');
+//include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/template/TemplateBaseClass.php');
 
 //Frontpage
 spl_autoload_register(function ($class) {
