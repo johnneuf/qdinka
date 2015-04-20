@@ -16,6 +16,8 @@
   @include box;
   width: 33.33%;
   float: left;
+  padding-left: 5px;
+  margin-top: 10px;
 }
 
 .social-media-wrapper {
@@ -43,4 +45,44 @@
     width: 100%;
     height: 100%;
   }
+}
+
+//Main Content
+.content-wrapper {
+  h1 {
+    margin: 10px 0 0 0;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: $lineColorDark;
+  }
+}
+
+//Side Information
+.info-wrapper {
+  @include box;
+  @include bubble_outer();
+
+  h1 {
+    margin: 0;
+  }
+
+  hr {
+    background: $lineColorDark;
+    height: 1px;
+    border: none;
+  }
+}
+
+.options-wrapper {
+  @include box;
+  @include bubble_inner;
+  padding: 5px;
+}
+
+.price {
+  color: $qdinkaSafetyOrange;
+  margin: 0;
 }

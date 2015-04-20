@@ -34,11 +34,116 @@ class ProductPage extends TemplateBase
                     <a target="_blank" href=""><img src="/images/social_media/twitter-icon.png" alt="Twitter" /></a>
                     <a target="_blank" href=""><img src="/images/social_media/linkedin-icon.png" alt="LinkedIn" /></a>
                 </div>
+
+                <div class="content-wrapper">
+                    <h1>Product Name</h1>
+                    <hr/>
+                    <div class="product-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu tellus dolor. Donec
+                            dignissim, neque at mattis pharetra, justo quam mollis libero, ut fringilla erat nisl vitae
+                            sapien. Aliquam id tincidunt diam, a rutrum lacus. Etiam maximus ex ante, quis venenatis
+                            tortor imperdiet ut. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Sed vel lorem eu ex pharetra gravida ac interdum diam. Phasellus fermentum
+                            dui sed accumsan lobortis. Nunc sit amet iaculis mauris. Maecenas iaculis nisl nibh, vel
+                            mollis tortor finibus nec.
+                        </p>
+                        <p>
+                            Ut at mauris lorem. Phasellus ac massa finibus, auctor mi in, malesuada justo. Phasellus
+                            non commodo elit. Morbi non molestie erat. Aenean quam ipsum, tempor at felis in,
+                            pellentesque condimentum diam. Sed id ullamcorper eros. Donec ultrices orci sed arcu cursus
+                            cursus. Vivamus vulputate ligula sit amet dolor lobortis tincidunt. Vestibulum leo ante,
+                            ornare vel justo id, porta semper ipsum. Suspendisse hendrerit mauris sed tristique
+                            sagittis. Vivamus a erat sit amet libero blandit faucibus. Interdum et malesuada fames ac
+                            ante ipsum primis in faucibus. Donec nunc urna, mattis sed nisl vitae, ullamcorper posuere
+                            magna. Suspendisse ut suscipit tellus, sit amet dapibus ipsum.
+                        </p>
+                        <p>
+                            Proin eget posuere orci. Curabitur non nisi urna. Vivamus ornare est velit, at venenatis
+                            augue commodo vel. Vivamus tortor purus, varius ut blandit ac, semper vel nisl. In sit amet
+                            aliquet mi, in scelerisque velit. Sed a augue non justo vestibulum efficitur a ut odio.
+                            Suspendisse turpis orci, cursus ac risus volutpat, condimentum feugiat mi. Phasellus
+                            eleifend eros quis nulla mattis blandit. In ex augue, pulvinar eget eleifend nec, tincidunt
+                            non odio. Nullam justo leo, porttitor vitae orci a, iaculis ullamcorper est. Donec feugiat
+                            blandit odio, vitae condimentum nunc finibus ac. Integer faucibus nibh pharetra lacus
+                            pulvinar, at congue nulla volutpat. Mauris facilisis quam sed tortor posuere, id pretium
+                            elit vehicula. Mauris diam leo, lacinia et dignissim nec, commodo nec nisl. Cum sociis
+                            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                        <p>
+                            Curabitur consectetur sem id lorem rutrum, posuere luctus lectus cursus. Sed accumsan non
+                            turpis sed suscipit. Nullam diam velit, cursus et nisi et, malesuada viverra odio. Quisque
+                            porta est sit amet dolor volutpat aliquet. Proin placerat elementum diam ac vulputate. Duis
+                            ac pulvinar sapien. Aliquam et justo sit amet urna mattis ultricies eget a metus. Fusce
+                            iaculis ligula hendrerit mollis pretium. Sed ut mollis leo. Curabitur nisi elit, elementum
+                            eu varius at, scelerisque ac ipsum. Donec placerat ullamcorper egestas. In bibendum, felis
+                            quis aliquet placerat, ligula eros mattis tellus, at commodo enim quam id massa. In hac
+                            habitasse platea dictumst. Donec fringilla, ex pretium dictum rhoncus, tellus velit finibus
+                            est, id ornare ex nunc a risus.
+                        </p>
+                        <p>
+                            Suspendisse lobortis non tellus ac sagittis. Aenean lacinia nunc vitae tortor consequat,
+                            rutrum fermentum metus auctor. Sed et sollicitudin ex, sed tincidunt sapien. Morbi ante
+                            nibh, hendrerit id quam vel, blandit rhoncus tellus. Pellentesque consequat ex ac ipsum
+                            bibendum, non interdum metus tristique. In tristique magna sem, ut maximus risus auctor a.
+                            Integer sollicitudin efficitur risus sit amet venenatis. Quisque aliquam nunc eget risus
+                            fringilla, maximus lacinia dui cursus. Pellentesque nec convallis massa, at tempus leo.
+                            Vestibulum scelerisque id neque sit amet tincidunt. Donec varius, ipsum at blandit tempor,
+                            nisi tortor luctus nisl, non tempor lacus dui sit amet erat. Cras semper congue metus sit
+                            amet vestibulum.
+                        </p>
+                    </div>
+                </div>
             </div>
 
 <!--            Right Column-->
             <div class="right-column-wrapper">
-                Right
+
+<!--                Info Bubble-->
+                <div class="info-wrapper">
+                    <h1>Product Name</h1>
+
+<!--                    Options Bar-->
+                    <div class="options-wrapper">
+                        <h2 class="price">$0.00 USD</h2>
+                        <hr/>
+                        <div class="options">
+                            <form action="" method="post">
+                                <div class="option-item">
+                                    <label for="option1">Option 1:</label>
+                                    <select name="option1" id="option1">
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="4">Option 4</option>
+                                    </select>
+                                </div><div class="option-item">
+                                    <label for="option2">Option 2:</label>
+                                    <select name="option1" id="option2">
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="4">Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="option-item">
+                                    <label for="option3">Option 3:</label>
+                                    <select name="option3" id="option3">
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="4">Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="option-item">
+                                    <label for="quantity">Quantity:</label>
+                                    <input id="quantity" type="number" name="quantity" value="0"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div
+                </div>
             </div>
         </div>
     <?php
