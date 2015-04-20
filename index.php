@@ -9,6 +9,7 @@
 //ini_set('display_startup_errors', TRUE);
 
 require_once('./includes/autoload.php');
+debug_errors();
 
 $page = new \includes\frontpage\FrontPage('Qdinka Home');
 $page->render();

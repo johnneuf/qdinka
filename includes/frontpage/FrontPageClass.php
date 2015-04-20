@@ -1,9 +1,9 @@
 <?php
 /**
-* Kendall Holm
-* Created on 4/10/2015 at 8:07 AM
-* @email kendalldarkmere@gmail.com
-*/
+ * Kendall Holm
+ * Created on 4/10/2015 at 8:07 AM
+ * @email kendalldarkmere@gmail.com
+ */
 
 
 namespace includes\frontpage;
@@ -24,14 +24,14 @@ class FrontPage extends TemplateBase {
     protected function body()
     {
         ?>
-<!--        Header-->
+        <!--        Header-->
         <div class="front-page-header-wrapper">
             <h1>Welcome to Qdinka!</h1>
             <h2>Bringing Crowd-funding full circle.</h2>
             <h2>Discover Innovation!</h2>
         </div>
 
-<!--        Recently added-->
+        <!--        Recently added-->
         <div class="front-page-section-wrapper">
             <h2>Recently Added Products</h2>
 

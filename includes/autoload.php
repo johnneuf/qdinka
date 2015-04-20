@@ -6,9 +6,17 @@
 * @email kendalldarkmere@gmail.com
 */
 
-require_once('./system/system.php'); //System Settings
+require_once($_SERVER['DOCUMENT_ROOT'] . '/system/system.php'); //System Settings
 require_once('global.php'); //Global methods and variables
 
 //Auto loading of classes
-spl_autoload_extensions('class.php');
-spl_autoload_register();
+//spl_autoload_extensions('class.php');
+//spl_autoload_register();
+
+//Template
+//include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/template/templatebaseclass.php');
+
+//Frontpage
+spl_autoload_register(function ($class) {
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/' . str_replace('\\', '/', $class) . 'Class.php');
+});
