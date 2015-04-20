@@ -1,0 +1,46 @@
+@import "constants";
+
+//Wrappers
+.product-main-wrapper {
+  @include box;
+  margin-left: 300px;
+}
+
+.left-column-wrapper {
+  @include box;
+  width: 66.66%;
+  float: left;
+}
+
+.right-column-wrapper {
+  @include box;
+  width: 33.33%;
+  float: left;
+}
+
+.social-media-wrapper {
+  @include box;
+  @include bubble_outer();
+  margin-top: 5px;
+
+  a img {
+    width: 30px;
+  }
+}
+
+//Video
+.video-wrapper {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 55%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
