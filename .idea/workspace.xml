@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939fa10b-9963-4683-ba97-9711511ba3d4" name="Default" comment="Maintenance stuff">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/products.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/products.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/pages/ProductPageClass.php" afterPath="$PROJECT_DIR$/includes/pages/ProductPageClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/products.css" afterPath="$PROJECT_DIR$/stylesheets/products.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/products.scss" afterPath="$PROJECT_DIR$/sass/products.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qdinka3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,8 +68,8 @@
       <file leaf-file-name="products.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/products.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66819745" vertical-offset="1101" max-vertical-offset="4131">
-              <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.6877153" vertical-offset="1101" max-vertical-offset="4148">
+              <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -859,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/products.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66819745" vertical-offset="1101" max-vertical-offset="4131">
-          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.6877153" vertical-offset="1101" max-vertical-offset="4148">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
           <folding />
         </state>
       </provider>
