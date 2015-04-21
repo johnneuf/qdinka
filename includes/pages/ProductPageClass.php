@@ -11,6 +11,9 @@ class ProductPage extends TemplateBase
     {
         parent::__construct('Standard Base');
         $this->add_css('/stylesheets/products.css');
+        $this->add_js('/javascript/masonry.pkgd.min.js');
+        $this->add_js('/javascript/imagesloaded.pkgd.min.js');
+        $this->add_js('/javascript/products.js');
     }
 
     protected function body()
@@ -102,13 +105,13 @@ class ProductPage extends TemplateBase
 <!--                Info Bubble-->
                 <div class="info-wrapper">
                     <h1>Product Name</h1>
+                    <form action="" method="post">
 
-<!--                    Options Bar-->
-                    <div class="options-wrapper">
-                        <h2 class="price">$0.00 USD</h2>
-                        <hr/>
-                        <div class="options">
-                            <form action="" method="post">
+                        <!--                    Options Bar-->
+                        <div class="options-wrapper">
+                            <h2 class="price">$0.00 USD</h2>
+                            <hr/>
+                            <div class="options">
                                 <div class="option-item">
                                     <label for="option1">Option 1:</label>
                                     <select name="option1" id="option1">
@@ -117,7 +120,8 @@ class ProductPage extends TemplateBase
                                         <option value="3">Option 3</option>
                                         <option value="4">Option 4</option>
                                     </select>
-                                </div><div class="option-item">
+                                </div>
+                                <div class="option-item">
                                     <label for="option2">Option 2:</label>
                                     <select name="option1" id="option2">
                                         <option value="1">Option 1</option>
@@ -139,10 +143,100 @@ class ProductPage extends TemplateBase
                                     <label for="quantity">Quantity:</label>
                                     <input id="quantity" type="number" name="quantity" value="0"/>
                                 </div>
-                            </form>
+                            </div>
+                        </div>
+
+                        <!--                    Overview Area-->
+                        <div class="overview">
+                            <h2>Overview</h2>
+                            <hr/>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            </ul>
+                        </div>
+
+                        <!--                    Specifications-->
+                        <div class="specifications-wrapper">
+                            <div class="specifications">
+                                <ul class="specifications-links">
+                                    <li class="active-tab"><a href="#tab1">Specifications</a></li>
+                                    <li><a href="#tab2">Product Contents</a></li>
+                                    <li><a href="#tab3">Shipping Information</a></li>
+                                </ul>
+
+                                <div class="specifications-content">
+                                    <div id="tab1" class="tab active-tab">
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab2" class="tab">
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab3" class="tab">
+                                        <h2>Shipping Information</h2>
+                                        <hr/>
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-button">
+                            <input type="submit" name="btnAddToCart" value="Add to Cart" />
+                        </div>
+                    </form>
+                </div>
+
+<!--                Images-->
+                <div class="images-wrapper">
+                    <div class="images-main">
+                        <img src="https://www.qdinka.com/sites/default/files/covers/Nomiku-2.0_.jpg" />
+                    </div>
+                    <div class="images-small-container" id="images-container">
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/png%3Bbase647836870cb8e501b4.png" />
+                        </div>
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/flnomiku.jpg" />
+                        </div>
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/02ae649a0565c09924f3f4cd5c9096a8_large.png" />
+                        </div>
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/nomikurendering1.png" />
+                        </div>
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/nomikuhobig01-1.jpg" />
+                        </div>
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/nomiku01.jpg" />
+                        </div>
+                        <div class="images-item">
+                            <img src="https://www.qdinka.com/sites/default/files/previews/Captura-de-pantalla-2014-09-02-a-las-15.45.54.jpg" />
                         </div>
                     </div>
-                    <div
                 </div>
             </div>
         </div>
