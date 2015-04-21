@@ -89,6 +89,16 @@
 .price {
   color: $qdinkaSafetyOrange;
   margin: 0;
+  float: right;
+}
+
+.price-wrapper {
+  input[type="submit"] {
+    border: 1px solid $lineColorDark;
+    border-radius: 3px;
+    color: $backgroundColor;
+    background: $qdinkaBlue;
+  }
 }
 
 .option-item {
@@ -131,14 +141,13 @@
   }
 
   a {
-    padding: 5px;
+    padding: 3px;
     display: inline-block;
     border-radius: 3px 3px 0px 0px;
     border-left: 1px solid $lineColorLight;
     border-top: 1px solid $lineColorLight;
     border-right: 1px solid $lineColorLight;
     background: $qdinkaBlue;
-    font-size: 16px;
     font-weight: 600;
     color: $backgroundColor;
     transition: all linear 0.15s;

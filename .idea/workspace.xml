@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939fa10b-9963-4683-ba97-9711511ba3d4" name="Default" comment="Maintenance stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/imagesloaded.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/masonry.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/products.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/constants.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/constants.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/products.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/products.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/pages/ProductPageClass.php" afterPath="$PROJECT_DIR$/includes/pages/ProductPageClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/constants.scss" afterPath="$PROJECT_DIR$/sass/constants.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/products.css" afterPath="$PROJECT_DIR$/stylesheets/products.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/products.scss" afterPath="$PROJECT_DIR$/sass/products.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -52,8 +47,8 @@
       <file leaf-file-name="ProductPageClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/pages/ProductPageClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="114.26923" vertical-offset="3209" max-vertical-offset="4386">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state vertical-scroll-proportion="-11.269231" vertical-offset="1611" max-vertical-offset="4437">
+              <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
               <folding>
                 <element signature="e#34#62#0#PHP" expanded="true" />
               </folding>
@@ -68,6 +63,7 @@
               <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
+                <marker date="1429639941444" expanded="true" signature="239:291" placeholder="{&quot;itemSelector&quot;: '.images-item'...}" />
               </folding>
             </state>
           </provider>
@@ -76,8 +72,8 @@
       <file leaf-file-name="products.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/products.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7072331" vertical-offset="3090" max-vertical-offset="3978">
-              <caret line="218" column="16" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.66819745" vertical-offset="1101" max-vertical-offset="4131">
+              <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -143,8 +139,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/autoload.php" />
         <option value="$PROJECT_DIR$/sass/constants.scss" />
-        <option value="$PROJECT_DIR$/includes/pages/ProductPageClass.php" />
         <option value="$PROJECT_DIR$/javascript/products.js" />
+        <option value="$PROJECT_DIR$/includes/pages/ProductPageClass.php" />
         <option value="$PROJECT_DIR$/sass/products.scss" />
       </list>
     </option>
@@ -846,14 +842,15 @@
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
+            <marker date="1429639941444" expanded="true" signature="239:291" placeholder="{&quot;itemSelector&quot;: '.images-item'...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/pages/ProductPageClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="114.26923" vertical-offset="3209" max-vertical-offset="4386">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state vertical-scroll-proportion="-11.269231" vertical-offset="1611" max-vertical-offset="4437">
+          <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
           <folding>
             <element signature="e#34#62#0#PHP" expanded="true" />
           </folding>
@@ -862,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/products.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7072331" vertical-offset="3090" max-vertical-offset="3978">
-          <caret line="218" column="16" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.66819745" vertical-offset="1101" max-vertical-offset="4131">
+          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
           <folding />
         </state>
       </provider>
