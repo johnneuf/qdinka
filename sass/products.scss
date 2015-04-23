@@ -254,3 +254,48 @@
   @include box;
   @include bubble_inner;
 }
+
+//Suggestions
+
+.suggestion-wrapper {
+  h2 {
+    margin: 0;
+  }
+}
+
+.card-wrapper {
+  @include box;
+  width: 16.66%;
+  float: left;
+  padding-right: 10px;
+
+  .card-content-wrapper {
+    @include shadow_bubble;
+    @include box;
+    margin-bottom: 10px;
+
+    .card-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 3px;
+      }
+    }
+
+    .card-info {
+      font-weight: bold;
+      color: $qdinkaPurple;
+      margin-top: 5px;
+
+      .card-price {
+        float: right;
+      }
+    }
+
+    .card-info:after {
+      @include next_row;
+    }
+
+  }
+}

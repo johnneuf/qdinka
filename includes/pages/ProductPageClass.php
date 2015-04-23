@@ -97,6 +97,81 @@ class ProductPage extends TemplateBase
                         </p>
                     </div>
                 </div>
+
+<!--                Suggestions-->
+                <div class="suggestion-wrapper">
+                    <hr />
+                    <h2>More of this Category</h2>
+                    <hr />
+
+                    <!--                cards start-->
+                    <div class="card-wrapper">
+                        <div class="card-content-wrapper">
+                            <div class="card-image">
+                                <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-title"><a href="">Product Name</a></span>
+                                <span class="card-price">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-content-wrapper">
+                            <div class="card-image">
+                                <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-title"><a href="">Product Name</a></span>
+                                <span class="card-price">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-content-wrapper">
+                            <div class="card-image">
+                                <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-title"><a href="">Product Name</a></span>
+                                <span class="card-price">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-content-wrapper">
+                            <div class="card-image">
+                                <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-title"><a href="">Product Name</a></span>
+                                <span class="card-price">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-content-wrapper">
+                            <div class="card-image">
+                                <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-title"><a href="">Product Name</a></span>
+                                <span class="card-price">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-content-wrapper">
+                            <div class="card-image">
+                                <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                            </div>
+                            <div class="card-info">
+                                <span class="card-title"><a href="">Product Name</a></span>
+                                <span class="card-price">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 <!--            Right Column-->
@@ -254,7 +329,7 @@ class ProductPage extends TemplateBase
                         }(document, 'script', 'facebook-jssdk'));
                     </script>
 
-                    <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+                    <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%" data-numposts="1" data-colorscheme="light"></div>
                 </div>
             </div>
         </div>

@@ -27,6 +27,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background: $lineColorDark;
+}
+
 //Header Bar
 .template-header-wrapper {
   position: fixed;
