@@ -212,7 +212,6 @@
   @include box;
   @include bubble_outer(3px 0 3px 3px);
   margin-top: 10px;
-//  overflow: hidden;
 }
 
 .images-main {
@@ -241,4 +240,17 @@
       border-radius: 3px;
     }
   }
+}
+
+//Social Media
+.facebook-wrapper {
+  @include box;
+  @include bubble_outer();
+  margin-top: 5px;
+  z-index: -1;
+}
+
+.fb_ltr {
+  @include box;
+  @include bubble_inner;
 }

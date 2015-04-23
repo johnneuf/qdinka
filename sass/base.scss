@@ -35,8 +35,12 @@ a {
   left: 0;
   background: $backgroundOffset;
   border-bottom: 1px solid $lineColorLight;
-  @include next_row;
   padding: 5px;
+  z-index: 1000;
+}
+
+.template-header-wrapper:after {
+  @include next_row;
 }
 
 .template-logo-wrapper {

@@ -253,7 +253,7 @@
   margin-top: 10px;
 }
 
-/* line 218, ../sass/products.scss */
+/* line 217, ../sass/products.scss */
 .images-main {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -262,17 +262,17 @@
   margin-bottom: 3px;
   padding-right: 3px;
 }
-/* line 224, ../sass/products.scss */
+/* line 223, ../sass/products.scss */
 .images-main img {
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 230, ../sass/products.scss */
+/* line 229, ../sass/products.scss */
 .images-small-container {
   width: 100%;
 }
-/* line 233, ../sass/products.scss */
+/* line 232, ../sass/products.scss */
 .images-small-container .images-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -280,9 +280,32 @@
   width: 33.33%;
   padding: 3px 3px 0 0;
 }
-/* line 238, ../sass/products.scss */
+/* line 237, ../sass/products.scss */
 .images-small-container .images-item img {
   width: 100%;
   height: 100%;
+  border-radius: 3px;
+}
+
+/* line 246, ../sass/products.scss */
+.facebook-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 3px;
+  margin-top: 5px;
+  z-index: -1;
+}
+
+/* line 253, ../sass/products.scss */
+.fb_ltr {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
