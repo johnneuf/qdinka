@@ -110,8 +110,8 @@ class ProductPage extends TemplateBase
                         <!--                    Options Bar-->
                         <div class="options-wrapper">
                             <div class="price-wrapper">
-                                <input type="submit" name="btnAskQuestion" value="Ask a Question" />
                                 <h2 class="price">$0.00 USD</h2>
+                                <input type="submit" name="btnAskQuestion" value="Ask a Question" />
                             </div>
                             <hr/>
                             <div class="options">

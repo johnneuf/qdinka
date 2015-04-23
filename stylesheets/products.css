@@ -110,66 +110,75 @@
 .price {
   color: #FF6700;
   margin: 0;
-  float: right;
+  float: left;
 }
 
 /* line 96, ../sass/products.scss */
 .price-wrapper input[type="submit"] {
-  border: 1px solid #666;
+  border: none;
   border-radius: 3px;
   color: #ffffff;
   background: #416ad2;
   cursor: pointer;
+  float: right;
+  padding: 3px;
 }
 
-/* line 105, ../sass/products.scss */
+/* line 107, ../sass/products.scss */
+.price-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 111, ../sass/products.scss */
 .option-item {
   float: left;
   color: #6a6a6a;
   padding: 5px;
 }
-/* line 110, ../sass/products.scss */
+/* line 116, ../sass/products.scss */
 .option-item label {
   font-weight: bold;
 }
-/* line 114, ../sass/products.scss */
+/* line 120, ../sass/products.scss */
 .option-item select, .option-item input {
   border-radius: 3px;
   border: 1px solid #666;
   background: #faffbd;
   color: #6a6a6a;
 }
-/* line 118, ../sass/products.scss */
+/* line 124, ../sass/products.scss */
 .option-item input[type="number"] {
   width: 3em;
   padding-left: 3px;
 }
 
-/* line 124, ../sass/products.scss */
+/* line 130, ../sass/products.scss */
 .options:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 129, ../sass/products.scss */
+/* line 135, ../sass/products.scss */
 .specifications {
   width: 100%;
   display: inline-block;
 }
 
-/* line 134, ../sass/products.scss */
+/* line 140, ../sass/products.scss */
 .specifications-links {
   margin: 3px 0 -1px 0 !important;
   padding: 0 0 0 5px !important;
 }
-/* line 138, ../sass/products.scss */
+/* line 144, ../sass/products.scss */
 .specifications-links li {
   margin: 0 5px 0 0;
   float: left;
   list-style: none;
 }
-/* line 144, ../sass/products.scss */
+/* line 150, ../sass/products.scss */
 .specifications-links a {
   padding: 3px;
   display: inline-block;
@@ -182,25 +191,25 @@
   color: #ffffff;
   transition: all linear 0.15s;
 }
-/* line 157, ../sass/products.scss */
+/* line 163, ../sass/products.scss */
 .specifications-links a:hover {
   background: #662d91;
   text-decoration: none;
 }
-/* line 163, ../sass/products.scss */
+/* line 169, ../sass/products.scss */
 .specifications-links li.active-tab a, .specifications-links li.active-tab a:hover {
   background: #ffffff;
   color: #6a6a6a;
 }
 
-/* line 170, ../sass/products.scss */
+/* line 176, ../sass/products.scss */
 .specifications-links:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 174, ../sass/products.scss */
+/* line 180, ../sass/products.scss */
 .specifications-content {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -209,22 +218,22 @@
   margin-bottom: 3px;
 }
 
-/* line 180, ../sass/products.scss */
+/* line 186, ../sass/products.scss */
 .tab {
   display: none;
 }
 
-/* line 184, ../sass/products.scss */
+/* line 190, ../sass/products.scss */
 .tab.active-tab {
   display: block !important;
 }
 
-/* line 190, ../sass/products.scss */
+/* line 196, ../sass/products.scss */
 .cart-button input[type="submit"] {
   background: #416ad2;
   color: #ffffff;
   font-weight: bold;
-  border: 1px solid #666;
+  border: none;
   border-radius: 3px;
   width: 100%;
   cursor: pointer;
@@ -232,7 +241,7 @@
   padding: 5px;
 }
 
-/* line 205, ../sass/products.scss */
+/* line 211, ../sass/products.scss */
 .images-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -244,7 +253,7 @@
   margin-top: 10px;
 }
 
-/* line 212, ../sass/products.scss */
+/* line 218, ../sass/products.scss */
 .images-main {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -253,17 +262,17 @@
   margin-bottom: 3px;
   padding-right: 3px;
 }
-/* line 218, ../sass/products.scss */
+/* line 224, ../sass/products.scss */
 .images-main img {
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 224, ../sass/products.scss */
+/* line 230, ../sass/products.scss */
 .images-small-container {
   width: 100%;
 }
-/* line 227, ../sass/products.scss */
+/* line 233, ../sass/products.scss */
 .images-small-container .images-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -271,7 +280,7 @@
   width: 33.33%;
   padding: 3px 3px 0 0;
 }
-/* line 232, ../sass/products.scss */
+/* line 238, ../sass/products.scss */
 .images-small-container .images-item img {
   width: 100%;
   height: 100%;
