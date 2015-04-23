@@ -33,6 +33,11 @@ abstract class TemplateBase {
         $this->noTemplate = $noTemplate;
         $this->maintenance = $maintenance;
         $this->title = $title;
+
+        //Start a Session if there is none
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
     }
 
     public function render()
@@ -56,6 +61,7 @@ abstract class TemplateBase {
      */
     private function render_html_noTemplate()
     {
+
         ?>
         <!DOCTYPE HTML>
 
