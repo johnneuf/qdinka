@@ -191,25 +191,20 @@
   color: #ffffff;
   transition: all linear 0.15s;
 }
-/* line 163, ../sass/products.scss */
-.specifications-links a:hover {
-  background: #662d91;
-  text-decoration: none;
-}
-/* line 169, ../sass/products.scss */
+/* line 164, ../sass/products.scss */
 .specifications-links li.active-tab a, .specifications-links li.active-tab a:hover {
   background: #ffffff;
   color: #6a6a6a;
 }
 
-/* line 176, ../sass/products.scss */
+/* line 171, ../sass/products.scss */
 .specifications-links:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 180, ../sass/products.scss */
+/* line 175, ../sass/products.scss */
 .specifications-content {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -218,17 +213,17 @@
   margin-bottom: 3px;
 }
 
-/* line 186, ../sass/products.scss */
+/* line 181, ../sass/products.scss */
 .tab {
   display: none;
 }
 
-/* line 190, ../sass/products.scss */
+/* line 185, ../sass/products.scss */
 .tab.active-tab {
   display: block !important;
 }
 
-/* line 196, ../sass/products.scss */
+/* line 191, ../sass/products.scss */
 .cart-button input[type="submit"] {
   background: #416ad2;
   color: #ffffff;
@@ -241,7 +236,7 @@
   padding: 5px;
 }
 
-/* line 211, ../sass/products.scss */
+/* line 206, ../sass/products.scss */
 .images-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -253,7 +248,7 @@
   margin-top: 10px;
 }
 
-/* line 217, ../sass/products.scss */
+/* line 212, ../sass/products.scss */
 .images-main {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -262,17 +257,17 @@
   margin-bottom: 3px;
   padding-right: 3px;
 }
-/* line 223, ../sass/products.scss */
+/* line 218, ../sass/products.scss */
 .images-main img {
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 229, ../sass/products.scss */
+/* line 224, ../sass/products.scss */
 .images-small-container {
   width: 100%;
 }
-/* line 232, ../sass/products.scss */
+/* line 227, ../sass/products.scss */
 .images-small-container .images-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -280,14 +275,14 @@
   width: 33.33%;
   padding: 3px 3px 0 0;
 }
-/* line 237, ../sass/products.scss */
+/* line 232, ../sass/products.scss */
 .images-small-container .images-item img {
   width: 100%;
   height: 100%;
   border-radius: 3px;
 }
 
-/* line 246, ../sass/products.scss */
+/* line 241, ../sass/products.scss */
 .facebook-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -300,7 +295,7 @@
   z-index: -1;
 }
 
-/* line 253, ../sass/products.scss */
+/* line 248, ../sass/products.scss */
 .fb_ltr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -310,12 +305,12 @@
   border-radius: 3px;
 }
 
-/* line 261, ../sass/products.scss */
+/* line 256, ../sass/products.scss */
 .suggestion-wrapper h2 {
   margin: 0;
 }
 
-/* line 266, ../sass/products.scss */
+/* line 261, ../sass/products.scss */
 .card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -324,7 +319,7 @@
   float: left;
   padding-right: 10px;
 }
-/* line 272, ../sass/products.scss */
+/* line 267, ../sass/products.scss */
 .card-wrapper .card-content-wrapper {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -335,26 +330,26 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-/* line 277, ../sass/products.scss */
+/* line 272, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 280, ../sass/products.scss */
+/* line 275, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 286, ../sass/products.scss */
+/* line 281, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 291, ../sass/products.scss */
+/* line 286, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 296, ../sass/products.scss */
+/* line 291, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-info:after {
   content: '';
   display: table;

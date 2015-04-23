@@ -160,11 +160,6 @@
     transition: all linear 0.15s;
   }
 
-  a:hover {
-    background: $qdinkaPurple;
-    text-decoration: none;
-  }
-
   li.active-tab {
     a, a:hover {
       background: $backgroundColor;
