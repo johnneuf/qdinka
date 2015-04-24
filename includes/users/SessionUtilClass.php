@@ -19,4 +19,9 @@ class SessionUtil {
     {
         return ($_SESSION[$param]) ? $_SESSION[$param] : false;
     }
+
+    public static function start_session()
+    {
+
+    }
 }

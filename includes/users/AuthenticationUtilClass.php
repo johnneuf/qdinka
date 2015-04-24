@@ -10,5 +10,8 @@ namespace includes\users;
 
 
 class AuthenticationUtil {
-    const DB_HOST = 'localhost';
+    public static function login($userName, $password)
+    {
+        
+    }
 }
