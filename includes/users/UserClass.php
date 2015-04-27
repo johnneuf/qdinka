@@ -16,5 +16,6 @@ class User {
     public $password;
     public $salt;
     public $token;
+    private $recordID;
 
 }

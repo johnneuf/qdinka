@@ -9,6 +9,8 @@
 namespace includes\template;
 
 
+use includes\users\SessionUtil;
+
 abstract class TemplateBase {
     //Properties
     private $noTemplate = false; //Flags the page to be a single page with no menus or side bars
@@ -34,10 +36,7 @@ abstract class TemplateBase {
         $this->maintenance = $maintenance;
         $this->title = $title;
 
-        //Start a Session if there is none
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
+        SessionUtil::start_session();
     }
 
     public function render()

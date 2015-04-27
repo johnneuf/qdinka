@@ -242,3 +242,12 @@ hr {
   text-align: justify;
   font-size: 4pt;
 }
+
+/* line 230, ../sass/base.scss */
+.error-wrapper {
+  margin-left: 305px;
+}
+/* line 233, ../sass/base.scss */
+.error-wrapper h1, .error-wrapper h2 {
+  margin: 0;
+}

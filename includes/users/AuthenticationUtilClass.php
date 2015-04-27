@@ -9,9 +9,15 @@
 namespace includes\users;
 
 
+use includes\database\DatabaseUtil;
+
 class AuthenticationUtil {
-    public static function login($userName, $password)
+    public static function login($userEmail, $password)
     {
+        //init
+        $dbc = DatabaseUtil::db_connect(DatabaseUtil::DATABASE_USER);
+
+        //Get the record
         
     }
 }

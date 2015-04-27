@@ -20,8 +20,24 @@ class SessionUtil {
         return ($_SESSION[$param]) ? $_SESSION[$param] : false;
     }
 
+    /**
+     * Starts a secure session. There is no need to use this so long as you use the templates as it auto loads this method
+     */
     public static function start_session()
     {
+        //Check to see if cookies only can be used
+        if (ini_set('session.use_only_cookies', 1) === false) {
+            header('Location: /error/error.php?error=Could not initiate a safe session (ini_set)');
+            return;
+        }
 
+        //Get the current cookies params
+        $cookieParams = session_get_cookie_params();
+        session_set_cookie_params($cookieParams['lifetime'], $cookieParams['path'], $cookieParams['domain'], true, true);
+
+        //Start the session
+        session_name('qdinka_user');
+        session_start();
+        session_regenerate_id(true);
     }
 }
