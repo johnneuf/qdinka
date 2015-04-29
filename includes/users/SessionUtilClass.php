@@ -17,7 +17,7 @@ class SessionUtil {
      */
     static public function session($param)
     {
-        return ($_SESSION[$param]) ? $_SESSION[$param] : false;
+        return (isset($_SESSION[$param])) ? $_SESSION[$param] : false;
     }
 
     /**
@@ -39,5 +39,15 @@ class SessionUtil {
         session_name('qdinka_user');
         session_start();
         session_regenerate_id(true);
+    }
+
+    /**
+     * Sets the parameter to a value in the session
+     * @param string $param The name of the session parameter.
+     * @param mixed $value The value you want to set
+     */
+    public static function session_set($param, $value)
+    {
+        $_SESSION[$param] = $value;
     }
 }

@@ -58,3 +58,10 @@ $bodySmallSize: 8pt;
   background: $inputColor;
   color: $fontColor;
 }
+
+@mixin standard_button() {
+  border-radius: 3px;
+  background: $qdinkaBlue;
+  color: $backgroundColor;
+  border: none;
+}

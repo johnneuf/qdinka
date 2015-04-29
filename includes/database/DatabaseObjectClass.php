@@ -13,18 +13,24 @@ class DatabaseObject {
     //Properties
     private $database;
     public $value;
-    private $type;
     private $ID;
     private $table;
     private $column;
 
-    public function __construct($databaseType, $type, $value, $table, $column, $ID)
+    /**
+     * Database Object Constructor
+     * @param int $databaseType The database type
+     * @param mixed $value The value that is in that field
+     * @param string $table table name from where the value comes from
+     * @param string $column Column name from where the value comes from
+     * @param int $ID The record ID number
+     */
+    public function __construct($databaseType, $value, $table, $column, $ID)
     {
         $this->database;
         $this->value = $value;
         $this->table = $table;
         $this->ID = $ID;
-        $this->type = $type;
         $this->column = $column;
     }
 
@@ -34,11 +40,8 @@ class DatabaseObject {
     public function save()
     {
         $db = DatabaseUtil::db_connect($this->database);
-
-        $sql = $db->prepare('update ' . $this->table . 'set ' . $this->column . ' = ? where ID=' . $this->ID);
-        $sql->bind_param($this->type, $this->value);
-        $sql->execute();
-        $sql->close();
+        $db->query('update ' . $this->table . 'set ' . $this->column . ' = ' . $this->value . ' where ID=' . $this->ID);
+        $db->close();
     }
 
 }

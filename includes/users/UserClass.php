@@ -13,9 +13,16 @@ class User {
     //Properties
     public $userName;
     public $email;
-    public $password;
-    public $salt;
     public $token;
-    private $recordID;
+    public $recordID;
+
+    /**
+     * Serialize the class
+     * @return string The serialized class
+     */
+    function __toString()
+    {
+        return serialize($this);
+    }
 
 }

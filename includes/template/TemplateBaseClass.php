@@ -9,6 +9,7 @@
 namespace includes\template;
 
 
+use includes\users\AuthenticationUtil;
 use includes\users\SessionUtil;
 
 abstract class TemplateBase {
@@ -35,16 +36,20 @@ abstract class TemplateBase {
         $this->noTemplate = $noTemplate;
         $this->maintenance = $maintenance;
         $this->title = $title;
-
-        SessionUtil::start_session();
     }
 
     public function render()
     {
+        ob_start();
+        if (session_status() == PHP_SESSION_NONE)
+        {
+            SessionUtil::start_session();
+        }
+
         //check to see if we are in maintenance and if we should redirect
         if (SYSTEM_SETTING_MAINTENANCE && !$this->maintenance) {
             header('Location: ' . url('/maintenance.php'));
-            return;
+            exit;
         }
 
         //Render the correct template
@@ -53,6 +58,7 @@ abstract class TemplateBase {
         } else {
             $this->render_html_template();
         }
+        ob_end_flush();
     }
 
     /**
@@ -134,7 +140,14 @@ abstract class TemplateBase {
             <ul>
                 <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>
                 <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
-                <li><a href="/index.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>
+                <?php
+        //Check to see if the person is logged in an display the correct link
+        if (AuthenticationUtil::is_logged_in()) {
+            echo '<li><a href="/index.php"><img src="/images/icons/logout.png" alt="login" title="Login"/></a></li>';
+        } else {
+            echo '<li><a href="/pages/users/login.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>';
+        }
+        ?>
             </ul>
         </div>
     </div>

@@ -1,0 +1,53 @@
+@import "constants";
+
+.main-wrapper {
+  margin-left: 305px;
+  margin-top: 10px;
+}
+
+.login-wrapper {
+  @include bubble_outer();
+  @include box;
+  width: 300px;
+  position: relative;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.login-content-wrapper {
+  @include bubble_inner;
+  @include box;
+  padding: 5px;
+  overflow: hidden;
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="email"], input[type="password"] {
+    width: 100%;
+    @include standard_input;
+    margin-bottom: 5px;
+  }
+}
+
+.bottom-button-wrapper {
+  float: right;
+
+  input[type="submit"] {
+    @include standard_button;
+  }
+}
+
+.bottom-button-wrapper:after {
+  @include next_row;
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  color: $qdinkaSafetyOrange;
+}

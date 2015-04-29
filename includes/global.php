@@ -12,9 +12,9 @@
  */
 function param($parameter)
 {
-    if ($_POST[$parameter]) {
+    if (isset($_POST[$parameter])) {
         return $_POST[$parameter];
-    } elseif ($_GET[$parameter]) {
+    } elseif (isset($_GET[$parameter])) {
         return $_GET[$parameter];
     }
 
