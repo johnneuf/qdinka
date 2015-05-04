@@ -16,9 +16,10 @@ abstract class TemplateBase {
     //Properties
     private $noTemplate = false; //Flags the page to be a single page with no menus or side bars
     private $maintenance = false; //Determines if the page can be viewed in maintenance mode
-    private $title = 'none';
+    protected $title = 'none';
     private $css = array();
     private $js = array();
+    protected $user = null;
 
     //Required methods
     abstract protected function body(); //The body of the
@@ -36,15 +37,18 @@ abstract class TemplateBase {
         $this->noTemplate = $noTemplate;
         $this->maintenance = $maintenance;
         $this->title = $title;
+
+        SessionUtil::start_session();
+
+        //Check for a user and save the data
+        if (SessionUtil::session('user')) {
+            $this->user = unserialize(SessionUtil::session('user'));
+        }
     }
 
     public function render()
     {
         ob_start();
-        if (session_status() == PHP_SESSION_NONE)
-        {
-            SessionUtil::start_session();
-        }
 
         //check to see if we are in maintenance and if we should redirect
         if (SYSTEM_SETTING_MAINTENANCE && !$this->maintenance) {
@@ -138,12 +142,23 @@ abstract class TemplateBase {
         </div>
         <div class="template-header-menu">
             <ul>
-                <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>
+                <?php
+        //Print the admin page if they have access to it
+        if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE)) {
+            echo '<li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/admin.png" alt="admin" title="Admin UI"/></a></li>';
+        }
+
+        //Print the merchant page if they have access to it.
+        if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_MERCHANT_PAGE)) {
+            echo '<li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>';
+        }
+
+        ?>
                 <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
                 <?php
         //Check to see if the person is logged in an display the correct link
         if (AuthenticationUtil::is_logged_in()) {
-            echo '<li><a href="/index.php"><img src="/images/icons/logout.png" alt="login" title="Login"/></a></li>';
+            echo '<li><a href="/pages/users/logout.php"><img src="/images/icons/logout.png" alt="logout" title="Login"/></a></li>';
         } else {
             echo '<li><a href="/pages/users/login.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>';
         }

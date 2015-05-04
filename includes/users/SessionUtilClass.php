@@ -31,14 +31,11 @@ class SessionUtil {
             return;
         }
 
-        //Get the current cookies params
-        $cookieParams = session_get_cookie_params();
-        session_set_cookie_params($cookieParams['lifetime'], $cookieParams['path'], $cookieParams['domain'], true, true);
+        //IF there is no session then start one
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
 
-        //Start the session
-        session_name('qdinka_user');
-        session_start();
-        session_regenerate_id(true);
     }
 
     /**

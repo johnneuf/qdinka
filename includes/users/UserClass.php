@@ -15,6 +15,7 @@ class User {
     public $email;
     public $token;
     public $recordID;
+    public $privileges;
 
     /**
      * Serialize the class

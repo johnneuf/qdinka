@@ -10,7 +10,7 @@ namespace includes\menus;
 
 
 class MainMenu extends MenuBase {
-    function __construct()
+    function __construct($highlightItem = 'none')
     {
         // Define all of the menus
         $this->menuItems[0][] = ['/images/icons/all-products.png', '', 'All Products'];
@@ -27,5 +27,7 @@ class MainMenu extends MenuBase {
         $this->menuItems[1][] = ['/images/icons/recent.png', '', 'Recently Added'];
         $this->menuItems[1][] = ['/images/icons/staff-pick.png', '', 'Staff Picks'];
 
+        //Add the highlight
+        $this->highlightItem = $highlightItem;
     }
 }

@@ -13,6 +13,13 @@ use includes\database\DatabaseObject;
 use includes\database\DatabaseUtil;
 
 class AuthenticationUtil {
+    //Privilege Constants
+    const PRIVILEGE_VIEW_MERCHANT_PAGE = 1;
+    const PRIVILEGE_VIEW_ADMIN_PAGE = 2;
+    const PRIVILEGE_PAGE_ADMIN = 4;
+    const PRIVILEGE_USER_ADMIN = 8;
+    const PRIVILEGE_ASSIGN_PRIVILEGES = 16;
+
     /**
      * Logs a user in
      * @param string $userEmail Email address the user is trying to login as
@@ -30,11 +37,10 @@ class AuthenticationUtil {
             $result->execute();
             $result->store_result();
 
-            $result->bind_result($ID, $userName, $email, $userPassword, $salt);
+            $result->bind_result($ID, $userName, $email, $userPassword, $salt, $privileges);
             $result->fetch();
 
-//            $password = self::hash($password, $salt);
-            $password = hash('sha512', $password . $salt);
+            $password = self::hash($password, $salt);
 
             if ($result->num_rows == 1) {
                 //Check for failed attempts
@@ -57,6 +63,7 @@ class AuthenticationUtil {
                         $user->recordID = $ID;
                         $user->userName = new DatabaseObject(DatabaseUtil::DATABASE_USER, $userName, 'users', 'userName', $ID);
                         $user->email = new DatabaseObject(DatabaseUtil::DATABASE_USER, $userEmail, 'users', 'emailAddress', $ID);
+                        $user->privileges = new DatabaseObject(DatabaseUtil::DATABASE_USER, $privileges, 'users', 'privs', $ID);
                         SessionUtil::session_set('user', (string)$user);
 
                         $dbc->close();
@@ -81,6 +88,21 @@ class AuthenticationUtil {
     }
 
     /**
+     * Logs a user out
+     */
+    public static function logout()
+    {
+        $_SESSION = array();
+
+        if (ini_get('session.use_cookies')) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 4200, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+        }
+
+        session_destroy();
+    }
+
+    /**
      * Checks to see if a user is logged in
      * @return bool True if the user is logged in
      */
@@ -101,7 +123,7 @@ class AuthenticationUtil {
 
             //Query the database return false if something went wrong
             if ($result = $dbc->prepare('select password from users where ID = ? limit 1')) {
-                $result->bind_param('i', $user->recordID->value);
+                $result->bind_param('i', $user->recordID);
                 $result->execute();
                 $result->store_result();
 
@@ -162,5 +184,15 @@ class AuthenticationUtil {
     public static function hash($string, $salt)
     {
         return hash('sha512', $string . $salt);
+    }
+
+    /**
+     * @param User $user
+     * @param $privilege
+     * @return bool True if that person has privileges
+     */
+    public static function check_privilege(User $user, $privilege)
+    {
+        return ($user->privileges->value & $privilege) ? true : false;
     }
 }
