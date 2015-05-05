@@ -211,6 +211,17 @@ hr {
   }
 }
 
+.menu-highlight {
+  background: $qdinkaBlue;
+  border-radius: 3px;
+  color: $backgroundColor !important;
+
+  img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+}
+
 .template-copyright {
   p {
     margin: 0;

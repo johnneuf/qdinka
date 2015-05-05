@@ -145,7 +145,7 @@ abstract class TemplateBase {
                 <?php
         //Print the admin page if they have access to it
         if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE)) {
-            echo '<li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/admin.png" alt="admin" title="Admin UI"/></a></li>';
+            echo '<li class="template-header-menu-right"><a href="/pages/users/admin.php"><img class="template-header-menu-right" src="/images/icons/admin.png" alt="admin" title="Admin UI"/></a></li>';
         }
 
         //Print the merchant page if they have access to it.

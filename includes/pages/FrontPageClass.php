@@ -15,7 +15,150 @@ use includes\template\TemplateBase;
 class FrontPage extends TemplateBase {
     protected function body()
     {
-        // TODO: Implement body() method.
+        ?>
+            <div class="front-page-section-wrapper">
+                <h2><?php echo $this->title; ?></h2>
+
+                <!--                cards start-->
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!--                Cards end-->
+                <!--                cards start-->
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!--                Cards end-->
+                <!--                cards start-->
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!--                Cards end-->
+            </div>
+    <?php
     }
 
     protected function side_menu()
