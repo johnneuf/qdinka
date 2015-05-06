@@ -14,3 +14,4 @@ if (param('page')) {
     $page = new \includes\pages\AdminPage('Admin');
 }
 
+$page->render();

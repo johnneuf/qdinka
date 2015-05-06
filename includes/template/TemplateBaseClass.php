@@ -158,7 +158,7 @@ abstract class TemplateBase {
                 <?php
         //Check to see if the person is logged in an display the correct link
         if (AuthenticationUtil::is_logged_in()) {
-            echo '<li><a href="/pages/users/logout.php"><img src="/images/icons/logout.png" alt="logout" title="Login"/></a></li>';
+            echo '<li><a href="/pages/users/logout.php"><img src="/images/icons/logout.png" alt="logout" title="Logout"/></a></li>';
         } else {
             echo '<li><a href="/pages/users/login.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>';
         }

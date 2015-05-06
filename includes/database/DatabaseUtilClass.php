@@ -23,8 +23,8 @@ class DatabaseUtil {
     {
         if ($database == self::DATABASE_USER) {
             return new \mysqli(USR_HOST, USR_USER, USR_PASSWORD, USR_DATABASE);
-        } else {
-            //TODO: Put in the connection for the normal database
+        } elseif ($database == self::DATABASE_NORMAL) {
+            return new \mysqli(MAIN_HOST, MAIN_USER, MAIN_PASSWORD, MAIN_DATABASE);
         }
 
         return false;
