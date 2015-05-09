@@ -11,22 +11,40 @@ namespace includes\pages;
 
 use includes\menus\AdminMenu;
 use includes\template\TemplateBase;
+use includes\users\AuthenticationUtil;
 
 class AdminPage extends TemplateBase {
 
     protected function body()
     {
-        // TODO: Implement body() method.
+        ?>
+        <div>
+            <?php
+            //Check to see if the person can be here
+            if (!(AuthenticationUtil::is_logged_in() && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE))) {
+                echo '<h3>You cannot be here.</h3>';
+                echo '</div>';
+                return;
+            }
+            ?>
+        </div>
+    <?php
     }
 
     protected function side_menu()
     {
-        $menu = new AdminMenu($this->title);
+        //Check if the user can see this
+        if (!(AuthenticationUtil::is_logged_in() && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE))) {
+            return;
+        }
+        $menu = new AdminMenu();
         echo $menu;
     }
 
     function __construct($title, $noTemplate = false, $maintenance = false)
     {
         parent::__construct($title, $noTemplate, $maintenance);
+
+        $this->add_css('/stylesheets/admin.css');
     }
 }

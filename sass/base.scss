@@ -144,9 +144,8 @@ hr {
 
 .template-content-wrapper {
   @include box;
-//  width: auto;
   padding: 0 5px;
-//  float: left;
+  margin-left: 305px;
 }
 
 .template-side-menu {

@@ -5,6 +5,8 @@
 * @email kendalldarkmere@gmail.com
 */
 
+define('SERVER_IP', $_SERVER['REMOTE_ADDR']); //Servers IP address
+
 /**
  * Will check for a get or post with a defined parameter and return it if exists
  * @param string $parameter The key of the post or get variable that you wish to retrieve
@@ -38,4 +40,21 @@ function debug_errors()
 {
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
+}
+
+/**
+ * Verifies the response $_POST['g-recaptcha-response'] from google
+ * @param string $response This is the responce from $_POST['g-recaptcha-response']
+ * @return bool returns true if the person checks out to not be a robot
+ */
+function verify_captcha($response)
+{
+    //Init
+    $key = '6Lf5cQYTAAAAAE4vniYade9JL59nOfiZlWEf8NAc';
+    $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $key . '&responce=' . $response . '&remoteip=' . SERVER_IP;
+
+    //Get the response from Google
+    $data = json_decode(file_get_contents($url));
+
+    return (isset($data->sucess) && $data->sucess == true);
 }

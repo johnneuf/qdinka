@@ -156,9 +156,10 @@ hr {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 5px;
+  margin-left: 305px;
 }
 
-/* line 152, ../sass/base.scss */
+/* line 151, ../sass/base.scss */
 .template-side-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -170,13 +171,13 @@ hr {
   width: 100%;
   margin-top: 10px;
 }
-/* line 158, ../sass/base.scss */
+/* line 157, ../sass/base.scss */
 .template-side-menu h3 {
   margin: 0;
   color: #662d91;
 }
 
-/* line 164, ../sass/base.scss */
+/* line 163, ../sass/base.scss */
 .template-side-menu-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -188,19 +189,19 @@ hr {
   padding: 5px 5px 0 5px;
   margin-bottom: 3px;
 }
-/* line 171, ../sass/base.scss */
+/* line 170, ../sass/base.scss */
 .template-side-menu-content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 176, ../sass/base.scss */
+/* line 175, ../sass/base.scss */
 .template-side-menu-content ul li {
   border-radius: 3px;
   margin-bottom: 5px;
   width: 100%;
 }
-/* line 181, ../sass/base.scss */
+/* line 180, ../sass/base.scss */
 .template-side-menu-content ul li a {
   color: #6a6a6a;
   font-weight: bold;
@@ -210,7 +211,7 @@ hr {
   width: 100%;
   display: block;
 }
-/* line 190, ../sass/base.scss */
+/* line 189, ../sass/base.scss */
 .template-side-menu-content ul li a img {
   width: 15px;
   margin-left: -1px;
@@ -218,48 +219,48 @@ hr {
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
 }
-/* line 201, ../sass/base.scss */
+/* line 200, ../sass/base.scss */
 .template-side-menu-content ul a:hover, .template-side-menu-content ul a:active {
   background: #416ad2;
   border-radius: 3px;
   color: #ffffff;
 }
-/* line 206, ../sass/base.scss */
+/* line 205, ../sass/base.scss */
 .template-side-menu-content ul a:hover img, .template-side-menu-content ul a:active img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* line 214, ../sass/base.scss */
+/* line 213, ../sass/base.scss */
 .menu-highlight {
   background: #416ad2;
   border-radius: 3px;
   color: #ffffff !important;
 }
-/* line 219, ../sass/base.scss */
+/* line 218, ../sass/base.scss */
 .menu-highlight img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* line 226, ../sass/base.scss */
+/* line 225, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 234, ../sass/base.scss */
+/* line 233, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;
 }
 
-/* line 241, ../sass/base.scss */
+/* line 240, ../sass/base.scss */
 .error-wrapper {
   margin-left: 305px;
 }
-/* line 244, ../sass/base.scss */
+/* line 243, ../sass/base.scss */
 .error-wrapper h1, .error-wrapper h2 {
   margin: 0;
 }

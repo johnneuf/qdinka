@@ -17,12 +17,12 @@ class AdminMenu extends MenuBase {
         $this->highlightItem = $highlightItem;
 
         //Group One
-        $this->menuItems[0][] = ['images/icons/envelope.png', '#', 'Admin Messages'];
-        $this->menuItems[0][] = ['images/icons/envelope.png', '#', 'Account Requests'];
-        $this->menuItems[0][] = ['images/icons/envelope.png', '#', 'Send Message'];
+        $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Admin Messages'];
+        $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Account Requests'];
+        $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Send Message'];
 
         //Group Two
-        $this->menuItems[1][] = ['images/icons/user.png', '#', 'User Admin'];
-        $this->menuItems[1][] = ['images/icons/staff-pick.png', '#', 'Product Admin'];
+        $this->menuItems[1][] = ['/images/icons/user.png', '#', 'User Admin'];
+        $this->menuItems[1][] = ['/images/icons/staff-pick.png', '#', 'Product Admin'];
     }
 }

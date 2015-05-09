@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939fa10b-9963-4683-ba97-9711511ba3d4" name="Default" comment="Maintenance stuff">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/admin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sass/admin.scss" />
+      <change type="MOVED" beforePath="C:\Ravenmere\Projects\qdinka3\pages\users\admin.php" afterPath="$PROJECT_DIR$/pages/admin/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/base.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/layout.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/layout.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/loginout.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/loginout.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/pages/RegistrationPageClass.php" afterPath="$PROJECT_DIR$/includes/pages/RegistrationPageClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/products.scssc" afterPath="$PROJECT_DIR$/.sass-cache/85daf81037efa7b444c4d7a55bedd44239f643c3/products.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/menus/AdminMenuClass.php" afterPath="$PROJECT_DIR$/includes/menus/AdminMenuClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/pages/AdminPageClass.php" afterPath="$PROJECT_DIR$/includes/pages/AdminPageClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/template/TemplateBaseClass.php" afterPath="$PROJECT_DIR$/includes/template/TemplateBaseClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base.scss" afterPath="$PROJECT_DIR$/sass/base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/global.php" afterPath="$PROJECT_DIR$/includes/global.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/layout.css" afterPath="$PROJECT_DIR$/stylesheets/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout.scss" afterPath="$PROJECT_DIR$/sass/layout.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/loginout.css" afterPath="$PROJECT_DIR$/stylesheets/loginout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/loginout.scss" afterPath="$PROJECT_DIR$/sass/loginout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/users/registration.php" afterPath="$PROJECT_DIR$/pages/users/registration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/products.css" afterPath="$PROJECT_DIR$/stylesheets/products.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/products.scss" afterPath="$PROJECT_DIR$/sass/products.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qdinka3.iws" />
@@ -32,14 +46,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegistrationPageClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/pages/RegistrationPageClass.php">
+      <file leaf-file-name="AdminPageClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/pages/AdminPageClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="935">
-              <caret line="39" column="111" selection-start-line="39" selection-start-column="111" selection-end-line="39" selection-end-column="111" />
-              <folding>
-                <element signature="e#126#154#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="833">
+              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,8 +59,28 @@
       <file leaf-file-name="loginout.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/loginout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84385765" vertical-offset="812" max-vertical-offset="1717">
-              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.058553386" vertical-offset="0" max-vertical-offset="1683">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminMenuClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/menus/AdminMenuClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="493">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/admin.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,7 +89,7 @@
       <file leaf-file-name="constants.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/constants.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="1224">
+            <state vertical-scroll-proportion="-28.923077" vertical-offset="353" max-vertical-offset="1224">
               <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
               <folding />
             </state>
@@ -72,8 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system/.htaccess" />
-        <option value="$PROJECT_DIR$/system/maintenance.php" />
         <option value="$PROJECT_DIR$/includes/template/TemplateBase.php" />
         <option value="$PROJECT_DIR$/maintenance.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -83,7 +113,6 @@
         <option value="$PROJECT_DIR$/includes/template/templatebaseclass.php" />
         <option value="$PROJECT_DIR$/includes/pages/maintenanceclass.php" />
         <option value="$PROJECT_DIR$/includes/frontpage/frontpageclass.php" />
-        <option value="$PROJECT_DIR$/sass/layout.scss" />
         <option value="$PROJECT_DIR$/includes/pages/productpageclass.php" />
         <option value="$PROJECT_DIR$/includes/frontpage/FrontPageClass.php" />
         <option value="$PROJECT_DIR$/pages/products/index.php" />
@@ -91,7 +120,6 @@
         <option value="$PROJECT_DIR$/includes/autoload.php" />
         <option value="$PROJECT_DIR$/javascript/products.js" />
         <option value="$PROJECT_DIR$/includes/pages/ProductPageClass.php" />
-        <option value="$PROJECT_DIR$/sass/products.scss" />
         <option value="$PROJECT_DIR$/includes/users/SessionClass.php" />
         <option value="$PROJECT_DIR$/schema/.htaccess" />
         <option value="$PROJECT_DIR$/includes/database/DatabaseClass.php" />
@@ -101,7 +129,6 @@
         <option value="$PROJECT_DIR$/includes/database/DatabaseObjectClass.php" />
         <option value="$PROJECT_DIR$/pages/users/login.php" />
         <option value="$PROJECT_DIR$/sass/constants.scss" />
-        <option value="$PROJECT_DIR$/includes/global.php" />
         <option value="$PROJECT_DIR$/includes/pages/LoginPageClass.php" />
         <option value="$PROJECT_DIR$/includes/users/SessionUtilClass.php" />
         <option value="$PROJECT_DIR$/pages/users/logout.php" />
@@ -111,17 +138,22 @@
         <option value="$PROJECT_DIR$/schema/002_login_attemps.sql" />
         <option value="$PROJECT_DIR$/includes/menus/MenuBaseClass.php" />
         <option value="$PROJECT_DIR$/pages/frontpage/home.php" />
-        <option value="$PROJECT_DIR$/sass/base.scss" />
         <option value="$PROJECT_DIR$/includes/menus/MainMenuClass.php" />
         <option value="$PROJECT_DIR$/includes/pages/FrontPageClass.php" />
-        <option value="$PROJECT_DIR$/includes/menus/AdminMenuClass.php" />
-        <option value="$PROJECT_DIR$/includes/pages/AdminPageClass.php" />
-        <option value="$PROJECT_DIR$/includes/template/TemplateBaseClass.php" />
         <option value="$PROJECT_DIR$/pages/users/admin.php" />
         <option value="$PROJECT_DIR$/system/system.php" />
         <option value="$PROJECT_DIR$/includes/database/DatabaseUtilClass.php" />
         <option value="$PROJECT_DIR$/pages/users/registration.php" />
         <option value="$PROJECT_DIR$/includes/pages/RegistrationPageClass.php" />
+        <option value="$PROJECT_DIR$/includes/global.php" />
+        <option value="$PROJECT_DIR$/pages/admin/admin.php" />
+        <option value="$PROJECT_DIR$/includes/template/TemplateBaseClass.php" />
+        <option value="$PROJECT_DIR$/sass/admin.scss" />
+        <option value="$PROJECT_DIR$/includes/pages/AdminPageClass.php" />
+        <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/sass/products.scss" />
+        <option value="$PROJECT_DIR$/sass/layout.scss" />
+        <option value="$PROJECT_DIR$/includes/menus/AdminMenuClass.php" />
         <option value="$PROJECT_DIR$/sass/loginout.scss" />
       </list>
     </option>
@@ -317,6 +349,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qdinka3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qdinka3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="javascript" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -475,6 +525,11 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Ravenmere\Projects\qdinka3\pages\admin" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -631,13 +686,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/system/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="255">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
@@ -649,6 +697,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3179">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <element signature="e#130#168#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -729,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/products.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2580" max-vertical-offset="5117">
-          <caret line="160" column="3" selection-start-line="160" selection-start-column="3" selection-end-line="160" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
@@ -747,13 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3903559" vertical-offset="0" max-vertical-offset="871">
           <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1156">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -789,13 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15614237" vertical-offset="0" max-vertical-offset="871">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="714">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -869,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6877153" vertical-offset="3073" max-vertical-offset="4301">
-          <caret line="216" column="37" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/pages/LoginPageClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3272101" vertical-offset="574" max-vertical-offset="1445">
@@ -897,31 +921,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/menus/AdminMenuClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="493">
-          <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/menus/MainMenuClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4489093" vertical-offset="0" max-vertical-offset="871">
           <caret line="27" column="109" selection-start-line="27" selection-start-column="109" selection-end-line="27" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/users/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/pages/AdminPageClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="561">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,24 +964,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/constants.scss">
+    <entry file="file://$PROJECT_DIR$/includes/global.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="1224">
-          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.5510907" vertical-offset="149" max-vertical-offset="1037">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/template/TemplateBaseClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2995" max-vertical-offset="4624">
-          <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/pages/RegistrationPageClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="935">
+        <state vertical-scroll-proportion="0.6096441" vertical-offset="64" max-vertical-offset="935">
           <caret line="39" column="111" selection-start-line="39" selection-start-column="111" selection-end-line="39" selection-end-column="111" />
           <folding>
             <element signature="e#126#154#0#PHP" expanded="true" />
@@ -985,10 +982,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/template/TemplateBaseClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44289044" vertical-offset="2068" max-vertical-offset="4624">
+          <caret line="144" column="21" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <element signature="e#130#168#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33180252" vertical-offset="0" max-vertical-offset="1156">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/products.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09758898" vertical-offset="0" max-vertical-offset="5100">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11710677" vertical-offset="0" max-vertical-offset="871">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/constants.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.923077" vertical-offset="353" max-vertical-offset="1224">
+          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/admin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33639494" vertical-offset="2206" max-vertical-offset="4284">
+          <caret line="147" column="21" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/pages/AdminPageClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="833">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/menus/AdminMenuClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="493">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/loginout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84385765" vertical-offset="812" max-vertical-offset="1717">
-          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.058553386" vertical-offset="0" max-vertical-offset="1683">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>

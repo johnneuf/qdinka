@@ -3,10 +3,9 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-left: 300px;
 }
 
-/* line 9, ../sass/products.scss */
+/* line 8, ../sass/products.scss */
 .left-column-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +14,7 @@
   float: left;
 }
 
-/* line 15, ../sass/products.scss */
+/* line 14, ../sass/products.scss */
 .right-column-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -26,7 +25,7 @@
   margin-top: 10px;
 }
 
-/* line 23, ../sass/products.scss */
+/* line 22, ../sass/products.scss */
 .social-media-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -37,12 +36,12 @@
   padding: 3px;
   margin-top: 5px;
 }
-/* line 28, ../sass/products.scss */
+/* line 27, ../sass/products.scss */
 .social-media-wrapper a img {
   width: 30px;
 }
 
-/* line 34, ../sass/products.scss */
+/* line 33, ../sass/products.scss */
 .video-wrapper {
   margin-top: 10px;
   position: relative;
@@ -50,7 +49,7 @@
   padding-bottom: 55%;
   z-index: -1;
 }
-/* line 41, ../sass/products.scss */
+/* line 40, ../sass/products.scss */
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -61,18 +60,18 @@
   height: 100%;
 }
 
-/* line 54, ../sass/products.scss */
+/* line 53, ../sass/products.scss */
 .content-wrapper h1 {
   margin: 10px 0 0 0;
 }
-/* line 58, ../sass/products.scss */
+/* line 57, ../sass/products.scss */
 .content-wrapper hr {
   border: none;
   height: 1px;
   background: #666;
 }
 
-/* line 66, ../sass/products.scss */
+/* line 65, ../sass/products.scss */
 .info-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -82,18 +81,18 @@
   border-radius: 6px;
   padding: 3px 3px 0 3px;
 }
-/* line 70, ../sass/products.scss */
+/* line 69, ../sass/products.scss */
 .info-wrapper h1, .info-wrapper h2, .info-wrapper ul {
   margin: 0;
 }
-/* line 74, ../sass/products.scss */
+/* line 73, ../sass/products.scss */
 .info-wrapper hr {
   background: #666;
   height: 1px;
   border: none;
 }
 
-/* line 81, ../sass/products.scss */
+/* line 80, ../sass/products.scss */
 .options-wrapper, .overview {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -106,14 +105,14 @@
   margin-bottom: 3px;
 }
 
-/* line 89, ../sass/products.scss */
+/* line 88, ../sass/products.scss */
 .price {
   color: #FF6700;
   margin: 0;
   float: left;
 }
 
-/* line 96, ../sass/products.scss */
+/* line 95, ../sass/products.scss */
 .price-wrapper input[type="submit"] {
   border: none;
   border-radius: 3px;
@@ -124,61 +123,61 @@
   padding: 3px;
 }
 
-/* line 107, ../sass/products.scss */
+/* line 106, ../sass/products.scss */
 .price-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 111, ../sass/products.scss */
+/* line 110, ../sass/products.scss */
 .option-item {
   float: left;
   color: #6a6a6a;
   padding: 5px;
 }
-/* line 116, ../sass/products.scss */
+/* line 115, ../sass/products.scss */
 .option-item label {
   font-weight: bold;
 }
-/* line 120, ../sass/products.scss */
+/* line 119, ../sass/products.scss */
 .option-item select, .option-item input {
   border-radius: 3px;
   border: 1px solid #666;
   background: #faffbd;
   color: #6a6a6a;
 }
-/* line 124, ../sass/products.scss */
+/* line 123, ../sass/products.scss */
 .option-item input[type="number"] {
   width: 3em;
   padding-left: 3px;
 }
 
-/* line 130, ../sass/products.scss */
+/* line 129, ../sass/products.scss */
 .options:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 135, ../sass/products.scss */
+/* line 134, ../sass/products.scss */
 .specifications {
   width: 100%;
   display: inline-block;
 }
 
-/* line 140, ../sass/products.scss */
+/* line 139, ../sass/products.scss */
 .specifications-links {
   margin: 3px 0 -1px 0 !important;
   padding: 0 0 0 5px !important;
 }
-/* line 144, ../sass/products.scss */
+/* line 143, ../sass/products.scss */
 .specifications-links li {
   margin: 0 5px 0 0;
   float: left;
   list-style: none;
 }
-/* line 150, ../sass/products.scss */
+/* line 149, ../sass/products.scss */
 .specifications-links a {
   padding: 3px;
   display: inline-block;
@@ -191,20 +190,20 @@
   color: #ffffff;
   transition: all linear 0.15s;
 }
-/* line 164, ../sass/products.scss */
+/* line 163, ../sass/products.scss */
 .specifications-links li.active-tab a, .specifications-links li.active-tab a:hover {
   background: #ffffff;
   color: #6a6a6a;
 }
 
-/* line 171, ../sass/products.scss */
+/* line 170, ../sass/products.scss */
 .specifications-links:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 175, ../sass/products.scss */
+/* line 174, ../sass/products.scss */
 .specifications-content {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -213,17 +212,17 @@
   margin-bottom: 3px;
 }
 
-/* line 181, ../sass/products.scss */
+/* line 180, ../sass/products.scss */
 .tab {
   display: none;
 }
 
-/* line 185, ../sass/products.scss */
+/* line 184, ../sass/products.scss */
 .tab.active-tab {
   display: block !important;
 }
 
-/* line 191, ../sass/products.scss */
+/* line 190, ../sass/products.scss */
 .cart-button input[type="submit"] {
   background: #416ad2;
   color: #ffffff;
@@ -236,7 +235,7 @@
   padding: 5px;
 }
 
-/* line 206, ../sass/products.scss */
+/* line 205, ../sass/products.scss */
 .images-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -248,7 +247,7 @@
   margin-top: 10px;
 }
 
-/* line 212, ../sass/products.scss */
+/* line 211, ../sass/products.scss */
 .images-main {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -257,17 +256,17 @@
   margin-bottom: 3px;
   padding-right: 3px;
 }
-/* line 218, ../sass/products.scss */
+/* line 217, ../sass/products.scss */
 .images-main img {
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 224, ../sass/products.scss */
+/* line 223, ../sass/products.scss */
 .images-small-container {
   width: 100%;
 }
-/* line 227, ../sass/products.scss */
+/* line 226, ../sass/products.scss */
 .images-small-container .images-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -275,14 +274,14 @@
   width: 33.33%;
   padding: 3px 3px 0 0;
 }
-/* line 232, ../sass/products.scss */
+/* line 231, ../sass/products.scss */
 .images-small-container .images-item img {
   width: 100%;
   height: 100%;
   border-radius: 3px;
 }
 
-/* line 241, ../sass/products.scss */
+/* line 240, ../sass/products.scss */
 .facebook-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -295,7 +294,7 @@
   z-index: -1;
 }
 
-/* line 248, ../sass/products.scss */
+/* line 247, ../sass/products.scss */
 .fb_ltr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -305,12 +304,12 @@
   border-radius: 3px;
 }
 
-/* line 256, ../sass/products.scss */
+/* line 255, ../sass/products.scss */
 .suggestion-wrapper h2 {
   margin: 0;
 }
 
-/* line 261, ../sass/products.scss */
+/* line 260, ../sass/products.scss */
 .card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -319,7 +318,7 @@
   float: left;
   padding-right: 10px;
 }
-/* line 267, ../sass/products.scss */
+/* line 266, ../sass/products.scss */
 .card-wrapper .card-content-wrapper {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -330,26 +329,26 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-/* line 272, ../sass/products.scss */
+/* line 271, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 275, ../sass/products.scss */
+/* line 274, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 281, ../sass/products.scss */
+/* line 280, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 286, ../sass/products.scss */
+/* line 285, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 291, ../sass/products.scss */
+/* line 290, ../sass/products.scss */
 .card-wrapper .card-content-wrapper .card-info:after {
   content: '';
   display: table;

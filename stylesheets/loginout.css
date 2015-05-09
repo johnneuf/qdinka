@@ -1,10 +1,9 @@
 /* line 3, ../sass/loginout.scss */
 .main-wrapper {
-  margin-left: 305px;
   margin-top: 10px;
 }
 
-/* line 8, ../sass/loginout.scss */
+/* line 7, ../sass/loginout.scss */
 .login-wrapper {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
@@ -19,7 +18,7 @@
   margin-left: -150px;
 }
 
-/* line 17, ../sass/loginout.scss */
+/* line 16, ../sass/loginout.scss */
 .login-content-wrapper {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -30,11 +29,11 @@
   padding: 5px;
   overflow: hidden;
 }
-/* line 23, ../sass/loginout.scss */
+/* line 22, ../sass/loginout.scss */
 .login-content-wrapper label {
   font-weight: bold;
 }
-/* line 27, ../sass/loginout.scss */
+/* line 26, ../sass/loginout.scss */
 .login-content-wrapper input[type="email"], .login-content-wrapper input[type="password"] {
   width: 100%;
   border-radius: 3px;
@@ -44,11 +43,11 @@
   margin-bottom: 5px;
 }
 
-/* line 34, ../sass/loginout.scss */
+/* line 33, ../sass/loginout.scss */
 .bottom-button-wrapper {
   float: right;
 }
-/* line 37, ../sass/loginout.scss */
+/* line 36, ../sass/loginout.scss */
 .bottom-button-wrapper input[type="submit"] {
   border-radius: 3px;
   background: #416ad2;
@@ -56,32 +55,31 @@
   border: none;
 }
 
-/* line 42, ../sass/loginout.scss */
+/* line 41, ../sass/loginout.scss */
 .bottom-button-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 46, ../sass/loginout.scss */
+/* line 45, ../sass/loginout.scss */
 h1 {
   margin: 0;
 }
 
-/* line 50, ../sass/loginout.scss */
+/* line 49, ../sass/loginout.scss */
 h3 {
   margin: 0;
   color: #FF6700;
 }
 
-/* line 56, ../sass/loginout.scss */
+/* line 55, ../sass/loginout.scss */
 .registration-wrapper {
-  margin-left: 310px;
   margin-top: 10px;
   width: 100%;
 }
 
-/* line 62, ../sass/loginout.scss */
+/* line 60, ../sass/loginout.scss */
 .registration-bubble {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
@@ -95,12 +93,12 @@ h3 {
   left: 50%;
   margin-left: -320px;
 }
-/* line 70, ../sass/loginout.scss */
+/* line 68, ../sass/loginout.scss */
 .registration-bubble h2 {
   margin: 0;
 }
 
-/* line 75, ../sass/loginout.scss */
+/* line 73, ../sass/loginout.scss */
 .registration-content {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -110,7 +108,7 @@ h3 {
   box-sizing: border-box;
   padding: 5px;
 }
-/* line 80, ../sass/loginout.scss */
+/* line 78, ../sass/loginout.scss */
 .registration-content input[type='text'], .registration-content input[type='email'] {
   width: 100%;
   border-radius: 3px;
@@ -119,14 +117,14 @@ h3 {
   color: #6a6a6a;
   margin-bottom: 5px;
 }
-/* line 86, ../sass/loginout.scss */
+/* line 84, ../sass/loginout.scss */
 .registration-content input[type='submit'] {
   border-radius: 3px;
   background: #416ad2;
   color: #ffffff;
   border: none;
 }
-/* line 90, ../sass/loginout.scss */
+/* line 88, ../sass/loginout.scss */
 .registration-content textarea {
   border-radius: 3px;
   border: 1px solid #666;
