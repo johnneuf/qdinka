@@ -73,3 +73,66 @@ h3 {
   margin: 0;
   color: #FF6700;
 }
+
+/* line 56, ../sass/loginout.scss */
+.registration-wrapper {
+  margin-left: 310px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 62, ../sass/loginout.scss */
+.registration-bubble {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  width: 320px;
+  left: 50%;
+  margin-left: -320px;
+}
+/* line 70, ../sass/loginout.scss */
+.registration-bubble h2 {
+  margin: 0;
+}
+
+/* line 75, ../sass/loginout.scss */
+.registration-content {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+}
+/* line 80, ../sass/loginout.scss */
+.registration-content input[type='text'], .registration-content input[type='email'] {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #666;
+  background: #faffbd;
+  color: #6a6a6a;
+  margin-bottom: 5px;
+}
+/* line 86, ../sass/loginout.scss */
+.registration-content input[type='submit'] {
+  border-radius: 3px;
+  background: #416ad2;
+  color: #ffffff;
+  border: none;
+}
+/* line 90, ../sass/loginout.scss */
+.registration-content textarea {
+  border-radius: 3px;
+  border: 1px solid #666;
+  background: #faffbd;
+  color: #6a6a6a;
+  width: 295px;
+  height: 50px;
+  margin-bottom: 5px;
+}

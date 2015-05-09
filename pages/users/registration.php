@@ -6,3 +6,6 @@
 */
 
 require_once('../../includes/autoload.php');
+
+$page = new \includes\pages\RegistrationPage();
+$page->render();

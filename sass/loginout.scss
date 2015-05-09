@@ -51,3 +51,46 @@ h3 {
   margin: 0;
   color: $qdinkaSafetyOrange;
 }
+
+//Registration Form
+.registration-wrapper {
+  margin-left: 310px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.registration-bubble {
+  @include bubble_outer();
+  @include box;
+  position: relative;
+  width: 320px;
+  left: 50%;
+  margin-left: -320px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.registration-content {
+  @include bubble_inner;
+  @include box;
+  padding: 5px;
+
+  input[type='text'], input[type='email'] {
+    width: 100%;
+    @include standard_input;
+    margin-bottom: 5px;
+  }
+
+  input[type='submit'] {
+    @include standard_button;
+  }
+
+  textarea {
+    @include standard_input;
+    width: 295px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+}
