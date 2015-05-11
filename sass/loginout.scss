@@ -83,6 +83,7 @@ h3 {
 
   input[type='submit'] {
     @include standard_button;
+    margin-top: 5px;
   }
 
   textarea {

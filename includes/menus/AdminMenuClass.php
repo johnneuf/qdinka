@@ -22,7 +22,7 @@ class AdminMenu extends MenuBase {
         $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Send Message'];
 
         //Group Two
-        $this->menuItems[1][] = ['/images/icons/user.png', '#', 'User Admin'];
+        $this->menuItems[1][] = ['/images/icons/user.png', '/pages/admin/useradmin.php', 'User Admin'];
         $this->menuItems[1][] = ['/images/icons/staff-pick.png', '#', 'Product Admin'];
     }
 }

@@ -29,4 +29,34 @@ class DatabaseUtil {
 
         return false;
     }
+
+    /**
+     * Gets data from the database and saves the values in a record form
+     * @param \mysqli $mysqli Connection to the database
+     * @param string $sqlStatement Query statement that you
+     * @return array key=>record
+     */
+    public static function get(\mysqli $mysqli, $sqlStatement)
+    {
+        //Query the database
+        $result = $mysqli->query($sqlStatement);
+
+        $objects = array(); //This is to be returned
+
+        //Put everything into a record
+        while ($row = $result->fetch_assoc()) {
+            $record = new \stdClass();
+
+            //Loop through all of the columns and save them as fields
+            foreach ($row as $key=>$value) {
+                $record->$key = $value;
+            }
+
+            //Save the record
+            $objects[] = $record;
+
+        }
+
+        return $objects;
+    }
 }
