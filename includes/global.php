@@ -50,8 +50,7 @@ function debug_errors()
 function verify_captcha($response)
 {
     //Init
-    $key = '6Lf5cQYTAAAAAE4vniYade9JL59nOfiZlWEf8NAc';
-    $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $key . '&responce=' . $response . '&remoteip=' . SERVER_IP;
+    $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . CAPTCHA_SECRET_KEY . '&responce=' . $response . '&remoteip=' . SERVER_IP;
 
     //Get the response from Google
     $data = json_decode(file_get_contents($url));

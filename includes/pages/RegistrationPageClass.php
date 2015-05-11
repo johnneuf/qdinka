@@ -37,7 +37,7 @@ class RegistrationPage extends TemplateBase {
                         <input type="text" name="txtCompanyName" id="txtCompanyName" /><br />
                         <label for="txtComments">Comments:</label><br />
                         <textarea name="txtComments" id="txtComments"></textarea><br/>
-                        <div class="g-recaptcha" data-sitekey="6Lf5cQYTAAAAADy-Ms-tgD3Es_ipDhn2mptlUet0"></div>
+                        <div class="g-recaptcha" data-sitekey="<?php echo CAPTCHA_SITE_KEY; ?>"></div>
                         <input type="submit" name="btnRegister" value="Register">
                     </form>
                 </div>
