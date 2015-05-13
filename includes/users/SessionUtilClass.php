@@ -47,4 +47,13 @@ class SessionUtil {
     {
         $_SESSION[$param] = $value;
     }
+
+    /**
+     * Creates a Token
+     * @return string Token created from the users IP and time
+     */
+    public static function token()
+    {
+        return hash('sha512', time() . $_SERVER['REMOTE_ADDR']);
+    }
 }

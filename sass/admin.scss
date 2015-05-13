@@ -1,3 +1,70 @@
 @import "constants";
 
 //Main Admin page
+.pagination-links {
+  @include standard_button;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline;
+    font-size: $bodySubHeaderSize;
+
+    a {
+      color: $backgroundColor;
+      margin: 0 10px;
+    }
+  }
+}
+
+.active {
+  a{
+    color: $qdinkaSafetyOrange !important;
+  }
+}
+
+.disabled {
+  a {
+    color: $fontColor !important;
+  }
+}
+
+.admin-page-wrapper {
+  margin-top: 10px;
+}
+
+//User Admin Page
+table {
+  @include bubble_outer();
+  width: 100%;
+  margin-top: 5px;
+  border-spacing: 0;
+
+  thead {
+    tr {
+      td {
+        font-weight: bold;
+      }
+    }
+  }
+
+  tbody {
+    @include bubble_inner;
+
+    tr {
+      a {
+        font-weight: bold;
+        color: $fontColor;
+      }
+
+      a:hover {
+        color: $qdinkaBlue;
+      }
+    }
+
+    tr:nth-of-type(even) {
+      background: $colorTableHighlight;
+    }
+  }
+}

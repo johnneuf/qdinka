@@ -195,4 +195,13 @@ class AuthenticationUtil {
     {
         return ($user->privileges->value & $privilege) ? true : false;
     }
+
+    /**
+     * Makes a Salt from the time and IP of the user
+     * @return string Salt
+     */
+    public static function salt()
+    {
+        return hash('sha512', time() . $_SERVER['REMOTE_ADDR']);
+    }
 }

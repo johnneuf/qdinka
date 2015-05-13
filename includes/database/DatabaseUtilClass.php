@@ -34,7 +34,7 @@ class DatabaseUtil {
      * Gets data from the database and saves the values in a record form
      * @param \mysqli $mysqli Connection to the database
      * @param string $sqlStatement Query statement that you
-     * @return array key=>record
+     * @return array key=>record will return false if there is nothing found by the query
      */
     public static function get(\mysqli $mysqli, $sqlStatement)
     {
@@ -42,6 +42,11 @@ class DatabaseUtil {
         $result = $mysqli->query($sqlStatement);
 
         $objects = array(); //This is to be returned
+
+        //Check to see if there is any objects returned and if not the send a false
+        if (!$result) {
+            return false;
+        }
 
         //Put everything into a record
         while ($row = $result->fetch_assoc()) {
@@ -58,5 +63,66 @@ class DatabaseUtil {
         }
 
         return $objects;
+    }
+
+    /**
+     * Gets a record or records based on a prepared query
+     * @param \mysqli $mysqli Connection to the database
+     * @param string $sql SQL statement
+     * @param array $values Values that you want to pass to the query
+     * @return array|bool Returns false if there was a problem or if there was nothing to return
+     */
+    public static function prepared_get(\mysqli $mysqli, $sql, array $values)
+    {
+        //Check to see if there is a connection if not fail
+        if (!$mysqli){
+            return false;
+        }
+
+        //Init
+        $statement = $mysqli->prepare($sql);
+        call_user_func([$statement, 'bind_param'], self::bind_arguments($values));
+        $statement->execute();
+
+        $meta = $statement->result_metadata();
+        $objects = array();
+        $params = array();
+
+        while ($field = $meta->fetch_field()) {
+            $params[] = &$row[$field->name];
+        }
+
+        call_user_func([$statement, 'bind_result'], $params);
+
+        while ($statement->fetch()) {
+            $object = new \stdClass();
+
+            foreach ($row as $key => $value) {
+                $object->$key = $value;
+            }
+
+            $objects[] = $object;
+
+        }
+
+        return $objects;
+    }
+
+    /**
+     * Generates an array of arguments for bind
+     * @param array $values The values that you will be passing to mysqli prepare
+     * @return array An array of arguments to be passed to the bind method of mysqli
+     */
+    private static function bind_arguments(array $values)
+    {
+        //Loop through and generate a string that represents the types of all of the values in the array
+        $typeString = '';
+        foreach ($values as $value) {
+            $typeString .= substr(gettype($value), 1);
+        }
+
+        $returnString = array_unshift($values, $typeString);
+
+        return $returnString;
     }
 }

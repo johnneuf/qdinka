@@ -16,7 +16,7 @@ class UserAdminMenu extends MenuBase {
         $this->highlightItem = $highlightItem;
 
         $this->menuItems[0][] = ['/images/icons/admin.png', '/pages/admin/admin.php', 'Main Admin Page'];
-        $this->menuItems[0][] = ['/images/icons/user.png', '#', 'Show All Users'];
-        $this->menuItems[0][] = ['/images/icons/user.png', '#', 'Add User'];
+        $this->menuItems[0][] = ['/images/icons/user.png', '/pages/admin/useradmin.php?subPage=Show All Users', 'Show All Users'];
+        $this->menuItems[0][] = ['/images/icons/user.png', '/pages/admin/useradmin.php?subPage=Add User', 'Add User'];
     }
 }

@@ -123,8 +123,9 @@ h3 {
   background: #416ad2;
   color: #ffffff;
   border: none;
+  margin-top: 5px;
 }
-/* line 88, ../sass/loginout.scss */
+/* line 89, ../sass/loginout.scss */
 .registration-content textarea {
   border-radius: 3px;
   border: 1px solid #666;
