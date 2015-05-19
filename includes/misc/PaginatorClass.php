@@ -17,14 +17,17 @@ class Paginator {
     private $pageNumber = 1;
     private $sqlString;
     private $totalRecords;
+    private $passValues;
 
-    function __construct(\mysqli $mysqli, $sqlString)
+    function __construct(\PDO $PDO, $sql, array $passValues = null)
     {
         //Save the defaults
-        $this->mysqli = $mysqli;
-        $this->sqlString = $sqlString;
+        $this->mysqli = $PDO;
+        $this->sqlString = $sql;
+        $this->passValues = $passValues;
 
-        $records = DatabaseUtil::get($mysqli, $sqlString);
+        $records = DatabaseUtil::get($PDO, $sql, $passValues);
+
         $this->totalRecords = count($records);
     }
 
@@ -43,7 +46,7 @@ class Paginator {
         //Set the limit
         $query = ($limit == 'all') ? $this->sqlString : $this->sqlString . ' limit ' . (($this->pageNumber - 1) * $this->limit) . ', ' . $this->limit;
 
-        $records = DatabaseUtil::get($this->mysqli, $query);
+        $records = DatabaseUtil::get($this->mysqli, $query, $this->passValues);
 
         //Make an object of the result so that it is more organized
         $result = new \stdClass();

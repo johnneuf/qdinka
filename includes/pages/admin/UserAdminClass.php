@@ -14,6 +14,7 @@ use includes\menus\UserAdminMenu;
 use includes\misc\Paginator;
 use includes\template\TemplateBase;
 use includes\users\AuthenticationUtil;
+use includes\users\SessionUtil;
 
 class UserAdmin extends TemplateBase {
 
@@ -30,7 +31,7 @@ class UserAdmin extends TemplateBase {
         if (!param('subPage') || param('subPage') == 'Show All Users') {
             $this->render_show_users();
         } elseif (param('subPage') == 'Add User') {
-
+            $this->render_add_user();
         }
     }
 
@@ -92,6 +93,48 @@ class UserAdmin extends TemplateBase {
                     </tbody>
                 </table>
             </div>
+        </div>
+    <?php
+    }
+
+    private function render_add_user()
+    {
+        //Set the token for the page
+        $token = SessionUtil::token();
+        SessionUtil::session_set('token', $token);
+
+        //Render the page
+        ?>
+        <div class="admin-page-wrapper">
+            <form action="/pages/admin/useradmin.php?subPage=Add User" method="post">
+                <div>
+                    <h1>Add User</h1>
+                    <div>
+                        <input type="hidden" name="hidToken" value="<?php echo $token; ?>" />
+                        <label for="txtName">User Name:</label><br />
+                        <input type="text" name="txtName" id="txtName" /><br />
+                        <label for="txtEmail">Email:</label><br />
+                        <input type="email" name="txtEmail" id="txtEmail" /><br />
+                        <label for="txtCompany">Company:</label><br />
+                        <input type="text" name="txtCompany" id="txtCompany" /><br />
+                        <label for="txtPassword">Password:</label><br />
+                        <input type="text" name="txtPassword" id="txtPassword" value="<?php echo AuthenticationUtil::generate_password(); ?>" />
+                    </div>
+                    <h3>Privileges</h3>
+                    <div>
+                        <input type="checkbox" name="cbxPrivs[]" value="<?php echo AuthenticationUtil::PRIVILEGE_VIEW_MERCHANT_PAGE; ?>" id="cbx1" />
+                        <label for="cbx1">Merchant View</label><br />
+                        <input type="checkbox" name="cbxPrivs[]" value="<?php echo AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE; ?>" id="cbx2" />
+                        <label for="cbx2">Admin View</label><br />
+                        <input type="checkbox" name="cbxPrivs[]" value="<?php echo AuthenticationUtil::PRIVILEGE_ASSIGN_PRIVILEGES; ?>" id="cbx3" />
+                        <label for="cbx3">Assign Privileges</label><br />
+                        <input type="checkbox" name="cbxPrivs[]" value="<?php echo AuthenticationUtil::PRIVILEGE_PAGE_ADMIN; ?>" id="cbx4" />
+                        <label for="cbx4">Admin Pages</label><br />
+                        <input type="checkbox" name="cbxPrivs[]" value="<?php echo AuthenticationUtil::PRIVILEGE_USER_ADMIN; ?>" id="cbx5" />
+                        <label for="cbx5">Admin Users</label><br />
+                    </div>
+                </div>
+            </form>
         </div>
     <?php
     }

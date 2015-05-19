@@ -10,16 +10,14 @@ define('SYSTEM_SETTING_MAINTENANCE', false);
 define('SERVER_IN_USE', 'http://192.168.1.18');
 
 //Login Constants Users
-define('USR_HOST', 'localhost');
-define('USR_USER', 'usr_secure');
-define('USR_PASSWORD', 'usr_secure');
-define('USR_DATABASE', 'qdinka_secure');
+define('DB_USER_USER', 'usr_secure');
+define('DB_USER_PASSWORD', 'usr_secure');
+define('DB_USER_DNS', 'mysql:host=localhost;dbname=qdinka_secure;charset=utf8');
 
 //Login Constants Main
-define('MAIN_HOST', 'localhost');
-define('MAIN_USER', 'root');
-define('MAIN_PASSWORD', 'root');
-define('MAIN_DATABASE', 'qdinka3');
+define('DB_MAIN_DNS', 'mysql:host=localhost;dbname=qdinka3;charset=utf8');
+define('DB_MAIN_USER', 'root');
+define('DB_MAIN_PASSWORD', 'root');
 
 //Google Captcha
 define('CAPTCHA_ENABLED', false);

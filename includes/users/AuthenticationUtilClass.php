@@ -28,63 +28,25 @@ class AuthenticationUtil {
      */
     public static function login($userEmail, $password)
     {
-        //init
-        $dbc = DatabaseUtil::db_connect(DatabaseUtil::DATABASE_USER);
-
-        //Get the record
-        if ($result = $dbc->prepare('select * from users where emailAddress = ? limit 1')) {
-            $result->bind_param('s', $userEmail);
-            $result->execute();
-            $result->store_result();
-
-            $result->bind_result($ID, $userName, $email, $userPassword, $salt, $privileges);
-            $result->fetch();
-
-            $password = self::hash($password, $salt);
-
-            if ($result->num_rows == 1) {
-                //Check for failed attempts
-                if (self::brute_force($ID, $dbc)) {
-                    //TODO: Add a way to send out an email that states there was too many attempts and the account is locked for two hours
-                    $dbc->close();
-                    return 'Account is locked for two hours due to too many failed login attempts.';
-                } else {
-                    //Check to see if the password matches and send a user object if true
-                    if ($password == $userPassword) {
-                        //Set the session stuff
-                        $browser = $_SERVER['HTTP_USER_AGENT'];
-                        $ID = preg_replace('/[^0-9]+/', '', $ID);
-                        $userName = preg_replace('/[^a-zA-Z0-9_\-]+/', '', $userName);
-
-                        SessionUtil::session_set('loggedIn', self::hash($password, $browser));
-
-                        //User Object
-                        $user = new User();
-                        $user->recordID = $ID;
-                        $user->userName = new DatabaseObject(DatabaseUtil::DATABASE_USER, $userName, 'users', 'userName', $ID);
-                        $user->email = new DatabaseObject(DatabaseUtil::DATABASE_USER, $userEmail, 'users', 'emailAddress', $ID);
-                        $user->privileges = new DatabaseObject(DatabaseUtil::DATABASE_USER, $privileges, 'users', 'privs', $ID);
-                        SessionUtil::session_set('user', (string)$user);
-
-                        $dbc->close();
-                        return false;
-                    } else {
-                        //Record the attempt
-                        $now = time();
-                        $dbc->query('insert into login_attemps(ID, time) values (' . $ID . ', ' . $now . ')');
-
-                        $dbc->close();
-                        return 'User name or password incorrect';
-                    }
-                }
-            } else {
-                $dbc->close();
-                return 'User Name or Password incorrect';
-            }
+        //Retrieve information from the users table
+        if (!$conn = DatabaseUtil::db_connect(DatabaseUtil::DATABASE_USER)) {
+            return 'Database Error contact administration.';
         }
 
-        $dbc->close();
-        return 'Database error. Contact the system administrator';
+        if ($result = DatabaseUtil::get($conn, 'SELECT * FROM users WHERE emailAddress=? LIMIT 1', [$userEmail])) {
+
+            //check the password
+            $result = array_shift($result);
+            if (self::hash($password, $result->salt) == $result->password) {
+                SessionUtil::session_set('loggedIn', self::user_token($result->salt));
+                SessionUtil::session_set('user', serialize($result));
+            } else {
+                return 'Email or Password are incorrect.';
+            }
+
+        } else {
+            return 'Email or Password are incorrect.';
+        }
     }
 
     /**
@@ -108,41 +70,16 @@ class AuthenticationUtil {
      */
     public static function is_logged_in()
     {
-        $dbc = DatabaseUtil::db_connect(DatabaseUtil::DATABASE_USER);
+        if (SessionUtil::session('user') && SessionUtil::session('loggedIn')) {
 
-        $close = function ($bool) use ($dbc) {
-            $dbc->close();
-            return $bool;
-        };
-
-        //Check for session and the values that are needed for a user
-        if (SessionUtil::session('loggedIn') && SessionUtil::session('user')) {
-            $loginString = SessionUtil::session('loggedIn');
             $user = unserialize(SessionUtil::session('user'));
-            $browser = $_SERVER['HTTP_USER_AGENT'];
 
-            //Query the database return false if something went wrong
-            if ($result = $dbc->prepare('select password from users where ID = ? limit 1')) {
-                $result->bind_param('i', $user->recordID);
-                $result->execute();
-                $result->store_result();
-
-                //Check to see if there is a record if not then send a false
-                if ($result->num_rows == 1) {
-                    $result->bind_result($password);
-                    $result->fetch();
-
-                    $loginCheck = self::hash($password, $browser);
-
-                    //Check the login string
-                    if ($loginString == $loginCheck) {
-                        return $close(true);
-                    }
-                }
+            if (self::user_token($user->salt) == SessionUtil::session('loggedIn')) {
+                return true;
             }
         }
 
-        return $close(false);
+        return false;
     }
 
     /**
@@ -187,13 +124,13 @@ class AuthenticationUtil {
     }
 
     /**
-     * @param User $user
-     * @param $privilege
+     * @param \stdClass $user The user to check
+     * @param int $privilege The privilege to check for
      * @return bool True if that person has privileges
      */
-    public static function check_privilege(User $user, $privilege)
+    public static function check_privilege(\stdClass $user, $privilege)
     {
-        return ($user->privileges->value & $privilege) ? true : false;
+        return ($user->privs & $privilege) ? true : false;
     }
 
     /**
@@ -203,5 +140,29 @@ class AuthenticationUtil {
     public static function salt()
     {
         return hash('sha512', time() . $_SERVER['REMOTE_ADDR']);
+    }
+
+    /**
+     * Returns a user token for login
+     * @param string $salt The users salt
+     * @return string The token
+     */
+    public static function user_token($salt)
+    {
+        return self::hash($_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'], $salt);
+    }
+
+    public static function generate_password()
+    {
+        $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+        $pass = array();
+        $alphaLength = strlen($alphabet) - 1;
+
+        for ($i = 0; $i < 8; $i++) {
+            $n = rand(0, $alphaLength);
+            $pass[] = $alphabet[$n];
+        }
+
+        return implode($pass); //turn the array into a string
     }
 }
