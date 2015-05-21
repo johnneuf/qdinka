@@ -1,29 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
-/* line 4, ../sass/layout.scss */
-.front-page-header-wrapper {
-  margin-left: 305px;
-}
-/* line 7, ../sass/layout.scss */
+/* line 6, ../sass/layout.scss */
 .front-page-header-wrapper h1, .front-page-header-wrapper h2 {
   text-align: center;
   margin: 0;
 }
-/* line 12, ../sass/layout.scss */
+/* line 11, ../sass/layout.scss */
 .front-page-header-wrapper h1 {
   color: #662d91;
 }
 
-/* line 17, ../sass/layout.scss */
+/* line 16, ../sass/layout.scss */
 .front-page-section-wrapper {
   margin: 10px 0 0 0;
   overflow: hidden;
 }
-/* line 21, ../sass/layout.scss */
+/* line 20, ../sass/layout.scss */
 .front-page-section-wrapper h2 {
   margin: 0 0 10px 0;
   color: #416ad2;
 }
-/* line 26, ../sass/layout.scss */
+/* line 25, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -32,7 +28,7 @@
   float: left;
   padding-right: 10px;
 }
-/* line 32, ../sass/layout.scss */
+/* line 31, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -43,26 +39,26 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-/* line 37, ../sass/layout.scss */
+/* line 36, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 40, ../sass/layout.scss */
+/* line 39, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 46, ../sass/layout.scss */
+/* line 45, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 51, ../sass/layout.scss */
+/* line 50, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 56, ../sass/layout.scss */
+/* line 55, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info:after {
   content: '';
   display: table;
