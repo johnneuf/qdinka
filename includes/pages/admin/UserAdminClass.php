@@ -107,9 +107,9 @@ class UserAdmin extends TemplateBase {
         ?>
         <div class="admin-page-wrapper">
             <form action="/pages/admin/useradmin.php?subPage=Add User" method="post">
-                <div>
+                <div class="admin-user-wrapper">
                     <h1>Add User</h1>
-                    <div>
+                    <div class="user-admin-content">
                         <input type="hidden" name="hidToken" value="<?php echo $token; ?>" />
                         <label for="txtName">User Name:</label><br />
                         <input type="text" name="txtName" id="txtName" /><br />

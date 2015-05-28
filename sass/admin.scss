@@ -45,6 +45,7 @@ table {
     tr {
       td {
         font-weight: bold;
+        padding: 5px 0 5px 5px;
       }
     }
   }
@@ -53,6 +54,10 @@ table {
     @include bubble_inner;
 
     tr {
+
+      td {
+        padding: 5px 0 5px 5px;
+      }
       a {
         font-weight: bold;
         color: $fontColor;
@@ -66,5 +71,29 @@ table {
     tr:nth-of-type(even) {
       background: $colorTableHighlight;
     }
+  }
+}
+
+//Add User Page
+.admin-user-wrapper {
+  @include bubble_outer();
+  @include box;
+  width: 300px;
+  margin: auto;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.user-admin-content {
+  @include bubble_inner;
+  @include box;
+  padding: 5px 5px 0 5px;
+
+  input {
+    @include standard_input;
+    width: 100%;
+    margin-bottom: 5px;
   }
 }

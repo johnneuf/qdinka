@@ -29,9 +29,9 @@ abstract class MenuBase {
 
                 //Check to see if the highlight is being used for the menu item
                 if ($this->highlightItem == $name) {
-                    $outputString .= '<li><a class="menu-highlight" href="' . $link . '"><img src="' . $icon . '" alt="' . $name .'" /> ' . $name . '</a></li>';
+                    $outputString .= '<li><a class="menu-highlight" href="' . $link . '"><img src="' . $icon . '" alt="' . $name .'" /><span class="menu-span"> ' . $name . '</span></a></li>';
                 } else {
-                    $outputString .= '<li><a href="' . $link . '"><img src="' . $icon . '" alt="' . $name .'" /> ' . $name . '</a></li>';
+                    $outputString .= '<li><a href="' . $link . '"><img src="' . $icon . '" alt="' . $name .'" /><span class="menu-span"> ' . $name . '</span></a></li>';
                 }
             }
 
