@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
 /* line 4, ../sass/admin.scss */
 .pagination-links {
   border-radius: 3px;
@@ -47,23 +48,65 @@ table {
 /* line 46, ../sass/admin.scss */
 table thead tr td {
   font-weight: bold;
+  padding: 5px 0 5px 5px;
 }
-/* line 52, ../sass/admin.scss */
+/* line 53, ../sass/admin.scss */
 table tbody {
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
-/* line 56, ../sass/admin.scss */
+/* line 58, ../sass/admin.scss */
+table tbody tr td {
+  padding: 5px 0 5px 5px;
+}
+/* line 61, ../sass/admin.scss */
 table tbody tr a {
   font-weight: bold;
   color: #6a6a6a;
 }
-/* line 61, ../sass/admin.scss */
+/* line 66, ../sass/admin.scss */
 table tbody tr a:hover {
   color: #416ad2;
 }
-/* line 66, ../sass/admin.scss */
+/* line 71, ../sass/admin.scss */
 table tbody tr:nth-of-type(even) {
   background: #2596D1;
+}
+
+/* line 78, ../sass/admin.scss */
+.admin-user-wrapper {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 300px;
+  margin: auto;
+}
+/* line 84, ../sass/admin.scss */
+.admin-user-wrapper h1 {
+  margin: 0;
+}
+
+/* line 89, ../sass/admin.scss */
+.user-admin-content {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 5px 0 5px;
+}
+/* line 94, ../sass/admin.scss */
+.user-admin-content input {
+  border-radius: 3px;
+  border: 1px solid #666;
+  background: #faffbd;
+  color: #6a6a6a;
+  width: 100%;
+  margin-bottom: 5px;
 }

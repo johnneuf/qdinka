@@ -2,7 +2,7 @@
 
 //Standard HTML tags
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $bodyFont;
   background: $backgroundColor;
   color: $fontColor;
   font-size: $bodyFontSize;
@@ -11,16 +11,19 @@ body {
 h1 {
   font-size: $bodyHeaderSize;
   font-weight: bold;
+  font-family: $headerFont;
 }
 
 h2 {
   font-size: $bodySubHeaderSize;
   font-weight: bold;
+  font-family: $headerFont;
 }
 
 h3 {
   font-size: $bodyFontSize;
   font-weight: bold;
+  font-family: $headerFont;
 }
 
 a {
@@ -185,14 +188,16 @@ hr {
         vertical-align: middle;
         width: 100%;
         display: block;
+        padding-top: 3px;
 
         img {
           width: 15px;
           margin-left: -1px;
-          padding: 5px;
+          padding: 0 5px 5px 5px;
           border-radius: 3px 0 0 3px;
           vertical-align: middle;
         }
+
       }
 
     }
