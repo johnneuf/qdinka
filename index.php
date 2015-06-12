@@ -9,3 +9,5 @@ require_once('./includes/autoload.php');
 
 $page = new \includes\frontpage\FrontPage('Qdinka Home');
 $page->render();
+
+//This is a test
