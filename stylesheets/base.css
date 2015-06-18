@@ -269,3 +269,8 @@ hr {
 .error-wrapper h1, .error-wrapper h2 {
   margin: 0;
 }
+
+/* line 254, ../sass/base.scss */
+.warning {
+  color: #FF6700 !important;
+}

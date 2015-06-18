@@ -72,4 +72,35 @@ class DatabaseUtil {
         return $objects;
 
     }
+
+    public static function insert(\PDO $PDO, $table, \stdClass $stdClass)
+    {
+        //Init
+        $preparedArray = array();
+        $names = array();
+        $namedValues = array();
+
+        //Convert the class into the strings and arrays we need.
+        $fields = get_object_vars($stdClass);
+
+        foreach ($fields as $key=>$value) {
+            $names[] = $key;
+            $namedValues[] = ':' . $key;
+            $preparedArray[':' . $key] = $value;
+        }
+
+        $columns = implode(', ', $names);
+        $values = implode(', ', $namedValues);
+
+        //prepare and execute
+
+        $sql = 'INSERT INTO ' . $table . '(' . $columns . ') VALUES (' . $values . ')';
+        $statementHandler = $PDO->prepare($sql);
+        if ($statementHandler->execute($fields)){
+            return false;
+        } else {
+            return $statementHandler->errorInfo();
+        }
+
+    }
 }

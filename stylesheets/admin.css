@@ -90,8 +90,15 @@ table tbody tr:nth-of-type(even) {
 .admin-user-wrapper h1 {
   margin: 0;
 }
+/* line 88, ../sass/admin.scss */
+.admin-user-wrapper input[type=submit] {
+  border-radius: 3px;
+  background: #416ad2;
+  color: #ffffff;
+  border: none;
+}
 
-/* line 89, ../sass/admin.scss */
+/* line 93, ../sass/admin.scss */
 .user-admin-content {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -101,7 +108,7 @@ table tbody tr:nth-of-type(even) {
   box-sizing: border-box;
   padding: 5px 5px 0 5px;
 }
-/* line 94, ../sass/admin.scss */
+/* line 98, ../sass/admin.scss */
 .user-admin-content input {
   border-radius: 3px;
   border: 1px solid #666;

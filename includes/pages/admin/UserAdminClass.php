@@ -12,6 +12,7 @@ namespace includes\pages\admin;
 use includes\database\DatabaseUtil;
 use includes\menus\UserAdminMenu;
 use includes\misc\Paginator;
+use includes\misc\ValidationUtil;
 use includes\template\TemplateBase;
 use includes\users\AuthenticationUtil;
 use includes\users\SessionUtil;
@@ -99,6 +100,39 @@ class UserAdmin extends TemplateBase {
 
     private function render_add_user()
     {
+
+        $errorMessage = '';
+
+        //Check to see if the add button was pressed
+        if (param('btnAdd')) {
+
+            //Check the token
+            if (SessionUtil::session('token') != param('hidToken')) {
+                $errorMessage .= 'Invalid Token try again. ';
+            }
+
+            //Validation Block
+            if (!ValidationUtil::text(param('txtName'), 30, 1)) {
+                $errorMessage .= 'You must provide a name between 1 and 30 characters long. ';
+            }
+
+            if (!ValidationUtil::email(param('txtEmail'))) {
+                $errorMessage .= 'Email is invalid. ';
+            }
+
+            if (!ValidationUtil::text(param('txtCompany'), 30, 1)) {
+                $errorMessage .= 'You must provide a company name with a max of 30 characters. ';
+            }
+
+            if (!ValidationUtil::text(param('txtPassword'), 12, 8)) {
+                $errorMessage .= 'You must enter in a password that is a min of 8 and a max of 12. ';
+            }
+
+            if (!$errorMessage) {
+                $errorMessage = $this->add_user();
+            }
+        }
+
         //Set the token for the page
         $token = SessionUtil::token();
         SessionUtil::session_set('token', $token);
@@ -109,6 +143,12 @@ class UserAdmin extends TemplateBase {
             <form action="/pages/admin/useradmin.php?subPage=Add User" method="post">
                 <div class="admin-user-wrapper">
                     <h1>Add User</h1>
+                    <?php
+                    //Check to see if there is any messages and display them if there is any
+                    if ($errorMessage) {
+                        echo '<span class="warning">' . $errorMessage . '</span>';
+                    }
+                    ?>
                     <div class="user-admin-content">
                         <input type="hidden" name="hidToken" value="<?php echo $token; ?>" />
                         <label for="txtName">User Name:</label><br />
@@ -133,9 +173,33 @@ class UserAdmin extends TemplateBase {
                         <input type="checkbox" name="cbxPrivs[]" value="<?php echo AuthenticationUtil::PRIVILEGE_USER_ADMIN; ?>" id="cbx5" />
                         <label for="cbx5">Admin Users</label><br />
                     </div>
+                    <input type="submit" name="btnAdd" />
                 </div>
             </form>
         </div>
     <?php
+    }
+
+    private function add_user()
+    {
+        $user = new \stdClass();
+        $user->userName = param('txtName');
+        $user->emailAddress = param('txtEmail');
+        $user->company = param('txtCompany');
+        $user->salt = AuthenticationUtil::salt();
+        $user->password = AuthenticationUtil::hash(param('txtPassword'), $user->salt);
+        $user->privs = array_sum(param('cbxPrivs'));
+
+        //Make connection
+        if (!$dbConnection = DatabaseUtil::db_connect(DatabaseUtil::DATABASE_USER)) {
+            return 'Error with database connection. Contact DB admin. ';
+        }
+
+        if (!$error = DatabaseUtil::insert($dbConnection, 'users', $user)) {
+            return 'User Added';
+        } else {
+            return $error;
+        }
+
     }
 }
