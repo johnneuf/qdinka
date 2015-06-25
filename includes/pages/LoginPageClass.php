@@ -20,35 +20,75 @@ class LoginPage extends TemplateBase {
         parent::__construct($title, $noTemplate, $maintenance);
 
         $this->add_css('/stylesheets/loginout.css');
+        $this->add_js('https://www.google.com/recaptcha/api.js');
     }
 
     protected function body()
     {
         $message = $this->post();
-        ?>
-        <div class="main-wrapper">
-            <div class="login-wrapper">
-                <h1>Login</h1>
-                <?php if ($message) {
-                    echo $message;
-                } ?>
-                <div class="login-content-wrapper">
-                    <form action="" method="post">
-                        <label for="txtEmail">Email:</label><br/>
-                        <input type="email" name="txtEmail" id="txtEmail"/>
-                        <br/>
-                        <label for="txtPassword">Password:</label><br/>
-                        <input type="password" name="txtPassword" id="txtPassword"/>
 
-                        <div class="bottom-button-wrapper">
-                            <input type="submit" name="txtRegister" value="Register" />
-                            <input type="submit" name="txtLogin" value="Login" />
-                        </div>
-                    </form>
+        if (param('page') == 'register') {
+            ?>
+            <div class="main-wrapper">
+                <div class="register-wrapper">
+                    <h1>Request Registration</h1>
+                    To register we require you to make a request. If you are approved you will get an email with a
+                    temporary password to login with to customize your account farther.
+                    <div class="register-content-wrapper">
+                        <form action="" method="post">
+                            <label for="txtName">Enter in an user name:</label>
+                            <br />
+                            <input type="text" name="txtName" id="txtName" />
+                            <br />
+                            <label for="txtCompany">Company:</label>
+                            <br />
+                            <input type="text" name="txtCompany" id="txtCompany" />
+                            <br />
+                            <label for="txtEmail">Email:</label>
+                            <br />
+                            <input type="email" name="txtEmail" id="txtEmail" />
+                            <br />
+                            <label for="txtRetypeEmail">Retype your email:</label>
+                            <br />
+                            <input type="email" name="txtRetypeEmail" id="txtRetypeEmail" />
+                            <br />
+                            <?php
+                            if (CAPTCHA_ENABLED) {
+                                echo '<div class="g-recaptcha" data-sitekey="' . CAPTCHA_SITE_KEY . '"></div>';
+                            }
+                            ?>
+                            <input type="submit" name="btnSubmit" />
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php
+        <?php
+        } else {
+            ?>
+            <div class="main-wrapper">
+                <div class="login-wrapper">
+                    <h1>Login</h1>
+                    <?php if ($message) {
+                        echo $message;
+                    } ?>
+                    <div class="login-content-wrapper">
+                        <form action="" method="post">
+                            <label for="txtEmail">Email:</label><br/>
+                            <input type="email" name="txtEmail" id="txtEmail"/>
+                            <br/>
+                            <label for="txtPassword">Password:</label><br/>
+                            <input type="password" name="txtPassword" id="txtPassword"/>
+
+                            <div class="bottom-button-wrapper">
+                                <input type="submit" name="btnLogin" value="Login" />
+                                <input type="submit" name="btnRegister" value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <?php
+        }
     }
 
     protected function side_menu()
@@ -60,7 +100,7 @@ class LoginPage extends TemplateBase {
     private function post()
     {
         //Check to see what button was pressed
-        if (param('txtLogin')) {
+        if (param('btnLogin')) {
 
             //Check to make sure that everything is filled out
             if (param('txtEmail') && param('txtPassword')) {
@@ -77,6 +117,8 @@ class LoginPage extends TemplateBase {
             } else {
                 return '<h3>Login Failed: Missing fields.</h3>';
             }
+        } elseif (param('btnRegister')) {
+            header('Location: /pages/users/login.php?page=register');
         }
 
         return false;
