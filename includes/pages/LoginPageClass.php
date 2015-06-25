@@ -37,13 +37,21 @@ class LoginPage extends TemplateBase {
                     <div class="register-content-wrapper">
                         <form action="" method="post">
                             <label for="txtName">Enter in an user name:</label>
+                            <br />
                             <input type="text" name="txtName" id="txtName" />
+                            <br />
                             <label for="txtCompany">Company:</label>
+                            <br />
                             <input type="text" name="txtCompany" id="txtCompany" />
+                            <br />
                             <label for="txtEmail">Email:</label>
+                            <br />
                             <input type="email" name="txtEmail" id="txtEmail" />
+                            <br />
                             <label for="txtRetypeEmail">Retype your email:</label>
+                            <br />
                             <input type="email" name="txtRetypeEmail" id="txtRetypeEmail" />
+                            <br />
                             <?php
                             if (CAPTCHA_ENABLED) {
                                 echo '<div class="g-recaptcha" data-sitekey="' . CAPTCHA_SITE_KEY . '"></div>';

@@ -62,7 +62,7 @@ $bodySmallSize: 8pt;
 @mixin standard_input() {
   border-radius: 3px;
   border: 1px solid $lineColorDark;
-  background: $inputColor;
+//  background: $inputColor;
   color: $fontColor;
 }
 

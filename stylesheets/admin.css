@@ -112,7 +112,6 @@ table tbody tr:nth-of-type(even) {
 .user-admin-content input {
   border-radius: 3px;
   border: 1px solid #666;
-  background: #faffbd;
   color: #6a6a6a;
   width: 100%;
   margin-bottom: 5px;
