@@ -25,24 +25,45 @@ class CartPage extends TemplateBase {
     protected function body()
     {
         ?>
-			<div class="front-page-section-wrapper">
-                <h2><?php echo $this->title; ?></h2>
+			
+			<div class="cart-page-section-wrapper">
+                <h2><?php echo "Shopping Cart"; ?></h2>
            
-			</div>
-         <div class="card-wrapper">
-                    <div class="card-content-wrapper">
+         <div class="cart-card-wrapper">
+                    <div class="cart-card-content-wrapper">
                         <div class="card-image">
                             <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
                         </div>
-                        <div class="card-info">
+                        	<div class="card-info">
                             <span class="card-title"><a href="">Product Name</a></span>
                             <span class="card-price">$0.00</span>
-                        </div>
+                       	 	</div>
                     </div>
                 </div>
-                  
-
-
+         <div class="cart-card-wrapper">
+                    <div class="cart-card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        	<div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        	</div>
+                    </div>
+                </div>
+			<div class="cart-card-wrapper">
+                    <div class="cart-card-content-wrapper">
+                        <div class="card-image">
+                            <a href=""><img src="/images/no-image.png" alt="No Image" /></a>
+                        </div>
+                        	<div class="card-info">
+                            <span class="card-title"><a href="">Product Name</a></span>
+                            <span class="card-price">$0.00</span>
+                        	</div>
+                    </div>
+                </div>
+				
+</div>
 <?php
 }
 
