@@ -52,6 +52,7 @@
 }
 /* line 36, ../sass/loginout.scss */
 .register-content-wrapper input[type="email"], .register-content-wrapper input[type="text"] {
+  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #6a6a6a;
@@ -85,6 +86,7 @@
 /* line 58, ../sass/loginout.scss */
 .login-content-wrapper input[type="email"], .login-content-wrapper input[type="password"] {
   width: 100%;
+  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #6a6a6a;
@@ -159,6 +161,7 @@ h3 {
 /* line 110, ../sass/loginout.scss */
 .registration-content input[type='text'], .registration-content input[type='email'] {
   width: 100%;
+  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #6a6a6a;
@@ -174,6 +177,7 @@ h3 {
 }
 /* line 121, ../sass/loginout.scss */
 .registration-content textarea {
+  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #6a6a6a;

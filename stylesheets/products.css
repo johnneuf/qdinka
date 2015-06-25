@@ -143,6 +143,7 @@
 }
 /* line 119, ../sass/products.scss */
 .option-item select, .option-item input {
+  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #6a6a6a;

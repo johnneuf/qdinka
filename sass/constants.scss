@@ -1,5 +1,6 @@
 //Fonts
 @import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+@import "compass/css3";
 
 $headerFont: 'Domine', serif;
 $bodyFont: 'Josefin Sans', sans-serif;
@@ -43,6 +44,7 @@ $bodySmallSize: 8pt;
   border: 1px solid $lineColorLight;
   border-radius: 6px;
   padding: $padding;
+//  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
 }
 
 @mixin bubble_inner() {
@@ -60,6 +62,7 @@ $bodySmallSize: 8pt;
 
 //Form Items
 @mixin standard_input() {
+  height: 2em;
   border-radius: 3px;
   border: 1px solid $lineColorDark;
 //  background: $inputColor;
