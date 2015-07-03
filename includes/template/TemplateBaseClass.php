@@ -136,7 +136,7 @@ abstract class TemplateBase {
         </div>
         <div class="template-search-bar-wrapper">
             <form action="" method="post">
-                <input type="text" name="txtSearch"/>
+                <input type="text" name="txtSearch" value="Search <?php echo $this->title; ?> ..." onfocus="this.select();" onmouseup="return false;"/>
                 <input type="image" name="btnSubmit" src="/images/icons/search.png" />
             </form>
         </div>

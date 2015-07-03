@@ -2,80 +2,79 @@
 /* line 4, ../sass/base.scss */
 body {
   font-family: "Josefin Sans", sans-serif;
-  background: #ffffff;
+  background-image: url("/images/background.00_png_srz");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
   color: #6a6a6a;
   font-size: 10pt;
 }
 
-/* line 11, ../sass/base.scss */
+/* line 15, ../sass/base.scss */
 h1 {
   font-size: 28pt;
   font-weight: bold;
   font-family: "Domine", serif;
 }
 
-/* line 17, ../sass/base.scss */
+/* line 21, ../sass/base.scss */
 h2 {
   font-size: 14pt;
   font-weight: bold;
   font-family: "Domine", serif;
 }
 
-/* line 23, ../sass/base.scss */
+/* line 27, ../sass/base.scss */
 h3 {
   font-size: 10pt;
   font-weight: bold;
   font-family: "Domine", serif;
 }
 
-/* line 29, ../sass/base.scss */
+/* line 33, ../sass/base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 33, ../sass/base.scss */
+/* line 37, ../sass/base.scss */
 hr {
   border: none;
   height: 1px;
   background: #666;
 }
 
-/* line 40, ../sass/base.scss */
+/* line 44, ../sass/base.scss */
 .template-header-wrapper {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: #f1f1f1;
-  border-bottom: 1px solid #e5e5e5;
+  width: 1300px;
   padding: 5px;
-  z-index: 1000;
+  margin: auto;
 }
 
-/* line 51, ../sass/base.scss */
+/* line 50, ../sass/base.scss */
 .template-header-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 55, ../sass/base.scss */
+/* line 54, ../sass/base.scss */
 .template-logo-wrapper {
   width: 300px;
   float: left;
   margin-top: 6px;
 }
 
-/* line 61, ../sass/base.scss */
+/* line 60, ../sass/base.scss */
 .template-search-bar-wrapper {
   width: 600px;
   float: left;
   margin-top: 14px;
 }
-/* line 66, ../sass/base.scss */
+/* line 65, ../sass/base.scss */
 .template-search-bar-wrapper form {
   border: 1px solid #666;
   border-radius: 3px;
+  background: #416ad2;
 }
 /* line 71, ../sass/base.scss */
 .template-search-bar-wrapper input[type='text'] {
@@ -99,42 +98,33 @@ hr {
   border-radius: 0 3px 3px 0;
   padding: 6px 10px 7px 10px;
   margin-left: -5px;
-}
-
-/* line 96, ../sass/base.scss */
-.template-search-bar-wrapper:hover {
-  background: #416ad2;
-  border-radius: 3px;
-}
-/* line 100, ../sass/base.scss */
-.template-search-bar-wrapper:hover input[type='image'] {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* line 106, ../sass/base.scss */
+/* line 98, ../sass/base.scss */
 .template-header-menu {
   float: right;
   width: auto;
 }
-/* line 110, ../sass/base.scss */
+/* line 102, ../sass/base.scss */
 .template-header-menu ul {
   list-style-type: none;
   margin-right: 10px;
   padding: 0;
   border-radius: 3px;
 }
-/* line 116, ../sass/base.scss */
+/* line 108, ../sass/base.scss */
 .template-header-menu ul li {
   display: inline;
 }
-/* line 121, ../sass/base.scss */
+/* line 113, ../sass/base.scss */
 .template-header-menu ul li a img {
   width: 20px;
   padding: 5px 15px;
 }
 
-/* line 133, ../sass/base.scss */
+/* line 125, ../sass/base.scss */
 .template-wrapper {
   content: '';
   display: table;
@@ -144,7 +134,7 @@ hr {
   margin-top: 75px;
 }
 
-/* line 140, ../sass/base.scss */
+/* line 132, ../sass/base.scss */
 .template-side-menu-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -154,7 +144,7 @@ hr {
   position: fixed;
 }
 
-/* line 148, ../sass/base.scss */
+/* line 140, ../sass/base.scss */
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -163,7 +153,7 @@ hr {
   margin-left: 305px;
 }
 
-/* line 154, ../sass/base.scss */
+/* line 146, ../sass/base.scss */
 .template-side-menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -175,13 +165,13 @@ hr {
   width: 100%;
   margin-top: 10px;
 }
-/* line 160, ../sass/base.scss */
+/* line 152, ../sass/base.scss */
 .template-side-menu h3 {
   margin: 0;
   color: #662d91;
 }
 
-/* line 166, ../sass/base.scss */
+/* line 158, ../sass/base.scss */
 .template-side-menu-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -193,19 +183,19 @@ hr {
   padding: 5px 5px 0 5px;
   margin-bottom: 3px;
 }
-/* line 173, ../sass/base.scss */
+/* line 165, ../sass/base.scss */
 .template-side-menu-content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 178, ../sass/base.scss */
+/* line 170, ../sass/base.scss */
 .template-side-menu-content ul li {
   border-radius: 3px;
   margin-bottom: 5px;
   width: 100%;
 }
-/* line 183, ../sass/base.scss */
+/* line 175, ../sass/base.scss */
 .template-side-menu-content ul li a {
   color: #6a6a6a;
   font-weight: bold;
@@ -216,7 +206,7 @@ hr {
   display: block;
   padding-top: 3px;
 }
-/* line 193, ../sass/base.scss */
+/* line 185, ../sass/base.scss */
 .template-side-menu-content ul li a img {
   width: 15px;
   margin-left: -1px;
@@ -224,53 +214,53 @@ hr {
   border-radius: 3px 0 0 3px;
   vertical-align: middle;
 }
-/* line 205, ../sass/base.scss */
+/* line 197, ../sass/base.scss */
 .template-side-menu-content ul a:hover, .template-side-menu-content ul a:active {
   background: #416ad2;
   border-radius: 3px;
   color: #ffffff;
 }
-/* line 210, ../sass/base.scss */
+/* line 202, ../sass/base.scss */
 .template-side-menu-content ul a:hover img, .template-side-menu-content ul a:active img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* line 218, ../sass/base.scss */
+/* line 210, ../sass/base.scss */
 .menu-highlight {
   background: #416ad2;
   border-radius: 3px;
   color: #ffffff !important;
 }
-/* line 223, ../sass/base.scss */
+/* line 215, ../sass/base.scss */
 .menu-highlight img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* line 230, ../sass/base.scss */
+/* line 222, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 238, ../sass/base.scss */
+/* line 230, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;
 }
 
-/* line 245, ../sass/base.scss */
+/* line 237, ../sass/base.scss */
 .error-wrapper {
   margin-left: 305px;
 }
-/* line 248, ../sass/base.scss */
+/* line 240, ../sass/base.scss */
 .error-wrapper h1, .error-wrapper h2 {
   margin: 0;
 }
 
-/* line 254, ../sass/base.scss */
+/* line 246, ../sass/base.scss */
 .warning {
   color: #FF6700 !important;
 }
