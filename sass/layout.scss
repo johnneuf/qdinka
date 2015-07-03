@@ -59,3 +59,67 @@
     }
   }
 }
+
+
+
+/*Work for cart
+
+.cart-page-header-wrapper {
+
+  h1, h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    color: $qdinkaPurple;
+  }
+}
+
+.cart-page-section-wrapper {
+  margin: 10px 0 0 0;
+  overflow: hidden;
+
+  h2 {
+    margin: 0 0 10px 0;
+    color: $qdinkaBlue;
+  }
+
+  .cart-card-wrapper {
+    @include box;
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+
+    .cart-card-content-wrapper {
+      @include shadow_bubble;
+      @include box;
+      margin-bottom: 10px;
+
+      .card-image {
+        width: 100%;
+
+        img {
+          width: 100%;
+          border-radius: 3px;
+        }
+      }
+
+      .card-info {
+        font-weight: bold;
+        color: $qdinkaPurple;
+        margin-top: 5px;
+
+        .card-price {
+          float: right;
+        }
+      }
+
+      .card-info:after {
+        @include next_row;
+      }
+
+    }
+  }
+}
+//
