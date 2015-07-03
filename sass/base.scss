@@ -3,7 +3,11 @@
 //Standard HTML tags
 body {
   font-family: $bodyFont;
-  background: $backgroundColor;
+//  background: $backgroundColor;
+  background-image: url("/images/background.00_png_srz");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
   color: $fontColor;
   font-size: $bodyFontSize;
 }
@@ -38,14 +42,9 @@ hr {
 
 //Header Bar
 .template-header-wrapper {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: $backgroundOffset;
-  border-bottom: 1px solid $lineColorLight;
+  width: 1300px;
   padding: 5px;
-  z-index: 1000;
+  margin: auto;
 }
 
 .template-header-wrapper:after {
@@ -66,6 +65,7 @@ hr {
   form {
     border: 1px solid $lineColorDark;
     border-radius: 3px;
+    background: $qdinkaBlue;
   }
 
   input[type='text'] {
@@ -89,18 +89,10 @@ hr {
     border-radius: 0 3px 3px 0;
     padding: 6px 10px 7px 10px;
     margin-left: -5px;
-  }
-
-}
-
-.template-search-bar-wrapper:hover {
-  background: $qdinkaBlue;
-  border-radius: 3px;
-
-  input[type='image'] {
     -webkit-filter: invert(100%);
     filter: invert(100%);
   }
+
 }
 
 .template-header-menu {
