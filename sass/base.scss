@@ -1,13 +1,16 @@
 @import "constants";
 
 //Standard HTML tags
-body {
-  font-family: $bodyFont;
-//  background: $backgroundColor;
+html {
+  background-color: rgb(243, 243, 243);
   background-image: url("/images/background.00_png_srz");
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
+}
+
+body {
+  font-family: $bodyFont;
   color: $fontColor;
   font-size: $bodyFontSize;
 }
@@ -42,8 +45,7 @@ hr {
 
 //Header Bar
 .template-header-wrapper {
-  width: 1300px;
-  padding: 5px;
+  width: 1310px;
   margin: auto;
 }
 
@@ -109,10 +111,13 @@ hr {
       display: inline;
 
       a {
+        font-size: 15px;
+        color: $qdinkaBlue;
+        font-weight: bold;
 
         img {
-          width: 20px;
-          padding: 5px 15px;
+          width: 35px;
+          vertical-align: middle;
         }
 
       }
@@ -126,7 +131,6 @@ hr {
   @include next_row;
   overflow: hidden;
   width: 100%;
-  margin-top: 75px;
 }
 
 .template-side-menu-wrapper {

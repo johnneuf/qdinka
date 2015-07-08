@@ -118,7 +118,7 @@
   border: none;
   border-radius: 3px;
   color: #ffffff;
-  background: #416ad2;
+  background: #1C75BD;
   cursor: pointer;
   float: right;
   padding: 3px;
@@ -134,7 +134,7 @@
 /* line 110, ../sass/products.scss */
 .option-item {
   float: left;
-  color: #6a6a6a;
+  color: #717070;
   padding: 5px;
 }
 /* line 115, ../sass/products.scss */
@@ -146,7 +146,7 @@
   height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
-  color: #6a6a6a;
+  color: #717070;
 }
 /* line 123, ../sass/products.scss */
 .option-item input[type="number"] {
@@ -186,7 +186,7 @@
   border-left: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
-  background: #416ad2;
+  background: #1C75BD;
   font-weight: 600;
   color: #ffffff;
   transition: all linear 0.15s;
@@ -194,7 +194,7 @@
 /* line 163, ../sass/products.scss */
 .specifications-links li.active-tab a, .specifications-links li.active-tab a:hover {
   background: #ffffff;
-  color: #6a6a6a;
+  color: #717070;
 }
 
 /* line 170, ../sass/products.scss */
@@ -225,7 +225,7 @@
 
 /* line 190, ../sass/products.scss */
 .cart-button input[type="submit"] {
-  background: #416ad2;
+  background: #1C75BD;
   color: #ffffff;
   font-weight: bold;
   border: none;

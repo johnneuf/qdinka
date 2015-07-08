@@ -17,7 +17,7 @@
 /* line 20, ../sass/layout.scss */
 .front-page-section-wrapper h2 {
   margin: 0 0 10px 0;
-  color: #416ad2;
+  color: #1C75BD;
 }
 /* line 25, ../sass/layout.scss */
 .front-page-section-wrapper .card-wrapper {
@@ -65,4 +65,68 @@
   clear: both;
 }
 
+/* line 65, ../sass/layout.scss */
+.cart-page-header-wrapper h1, .cart-page-header-wrapper h2 {
+  text-align: center;
+  margin: 0;
+}
+/* line 70, ../sass/layout.scss */
+.cart-page-header-wrapper h1 {
+  color: #662d91;
+}
 
+/* line 75, ../sass/layout.scss */
+.cart-page-section-wrapper {
+  margin: 10px 0 0 0;
+  overflow: hidden;
+}
+/* line 79, ../sass/layout.scss */
+.cart-page-section-wrapper h2 {
+  margin: 0 0 10px 0;
+  color: #1C75BD;
+}
+/* line 84, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+/* line 90, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper {
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+/* line 95, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-image {
+  width: 100%;
+}
+/* line 98, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-image img {
+  width: 100%;
+  border-radius: 3px;
+}
+/* line 104, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-info {
+  font-weight: bold;
+  color: #662d91;
+  margin-top: 5px;
+}
+/* line 109, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-info .card-price {
+  float: right;
+}
+/* line 114, ../sass/layout.scss */
+.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-info:after {
+  content: '';
+  display: table;
+  clear: both;
+}

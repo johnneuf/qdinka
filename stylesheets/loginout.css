@@ -55,7 +55,7 @@
   height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
-  color: #6a6a6a;
+  color: #717070;
   width: 302px;
   margin-bottom: 5px;
 }
@@ -63,7 +63,7 @@
 .register-content-wrapper input[type="submit"] {
   margin-top: 5px;
   border-radius: 3px;
-  background: #416ad2;
+  background: #1C75BD;
   color: #ffffff;
   border: none;
 }
@@ -89,7 +89,7 @@
   height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
-  color: #6a6a6a;
+  color: #717070;
   margin-bottom: 5px;
 }
 
@@ -100,7 +100,7 @@
 /* line 68, ../sass/loginout.scss */
 .bottom-button-wrapper input[type="submit"] {
   border-radius: 3px;
-  background: #416ad2;
+  background: #1C75BD;
   color: #ffffff;
   border: none;
 }
@@ -164,13 +164,13 @@ h3 {
   height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
-  color: #6a6a6a;
+  color: #717070;
   margin-bottom: 5px;
 }
 /* line 116, ../sass/loginout.scss */
 .registration-content input[type='submit'] {
   border-radius: 3px;
-  background: #416ad2;
+  background: #1C75BD;
   color: #ffffff;
   border: none;
   margin-top: 5px;
@@ -180,7 +180,7 @@ h3 {
   height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
-  color: #6a6a6a;
+  color: #717070;
   width: 295px;
   height: 50px;
   margin-bottom: 5px;

@@ -142,25 +142,23 @@ abstract class TemplateBase {
         </div>
         <div class="template-header-menu">
             <ul>
+                <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
                 <?php
         //Print the admin page if they have access to it
         if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE)) {
-            echo '<li class="template-header-menu-right"><a href="/pages/admin/admin.php"><img class="template-header-menu-right" src="/images/icons/admin.png" alt="admin" title="Admin UI"/></a></li>';
+            echo '<li class="template-header-menu-right"><a href="/pages/admin/admin.php"> | Admin</a></li>';
         }
 
         //Print the merchant page if they have access to it.
         if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_MERCHANT_PAGE)) {
-            echo '<li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/user.png" alt="user" title="Merchants UI"/></a></li>';
+            echo '<li class="template-header-menu-right"><a href="/index.php"> | Sell</a></li>';
         }
 
-        ?>
-                <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
-                <?php
         //Check to see if the person is logged in an display the correct link
         if (AuthenticationUtil::is_logged_in()) {
-            echo '<li><a href="/pages/users/logout.php"><img src="/images/icons/logout.png" alt="logout" title="Logout"/></a></li>';
+            echo '<li><a href="/pages/users/logout.php"> | Logout</a></li>';
         } else {
-            echo '<li><a href="/pages/users/login.php"><img src="/images/icons/login.png" alt="login" title="Login"/></a></li>';
+            echo '<li><a href="/pages/users/login.php"> | Login</a></li>';
         }
         ?>
             </ul>
