@@ -26,7 +26,7 @@ trait MenuTrait
 
             //Check to see if the highlight equals the key and if it is make it to where it is highlighted in the html
             if ($this->highlight == $key) {
-                echo '<li><a href="' . $value . '" class="menu-highlight" >' . $key . '</a></li>';
+                echo '<li class="menu-highlight"><a href="' . $value . '" >' . $key . '</a></li>';
             } else {
                 echo '<li><a href="' . $value . '" >' . $key . '</a></li>';
             }

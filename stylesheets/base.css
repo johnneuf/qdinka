@@ -253,38 +253,35 @@ hr {
 /* line 218, ../sass/base.scss */
 .menu-highlight {
   background: #1C75BD;
-  border-radius: 3px;
+}
+/* line 220, ../sass/base.scss */
+.menu-highlight a {
   color: #ffffff !important;
 }
-/* line 223, ../sass/base.scss */
-.menu-highlight img {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
 
-/* line 230, ../sass/base.scss */
+/* line 226, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 238, ../sass/base.scss */
+/* line 234, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;
 }
 
-/* line 245, ../sass/base.scss */
+/* line 241, ../sass/base.scss */
 .error-wrapper {
   margin-left: 305px;
 }
-/* line 248, ../sass/base.scss */
+/* line 244, ../sass/base.scss */
 .error-wrapper h1, .error-wrapper h2 {
   margin: 0;
 }
 
-/* line 254, ../sass/base.scss */
+/* line 250, ../sass/base.scss */
 .warning {
   color: #FF6700 !important;
 }
