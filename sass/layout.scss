@@ -118,3 +118,55 @@
     }
   }
 }
+
+.front-page-contributors-wrapper {
+  @include box;
+  @include bubble;
+  margin-top: 10px;
+
+  hr {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.contributor-header-top {
+  @include box;
+  background: $qdinkaBlue;
+  width: 100%;
+  padding: 10px;
+
+  h2 {
+    color: $backgroundColor;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.contributor-header-sub {
+  margin-top: 10px;
+
+  h3 {
+    color: $fontColor;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.contributor-card-wrapper {
+  @include box;
+  width: 100%;
+  padding: 5px;
+}
+
+.contributor-card {
+  @include box;
+  @include bubble;
+  padding: 5px;
+  margin-top: 5px;
+
+  a {
+    text-decoration: none;
+    color: $qdinkaBlue;
+  }
+}

@@ -9,7 +9,7 @@
 namespace includes\pages;
 
 
-use includes\menus\MainMenu;
+use includes\menus\NewMainMenu;
 use includes\template\TemplateBase;
 
 class FrontPage extends TemplateBase {
@@ -164,8 +164,8 @@ class FrontPage extends TemplateBase {
     protected function side_menu()
     {
         // Add the menu
-        $menu = new MainMenu($this->title);
-        echo $menu;
+        $menu = new NewMainMenu($this->title);
+        $menu->render();
     }
 
     function __construct($title, $noTemplate = false, $maintenance = false)

@@ -53,6 +53,15 @@ $bodySmallSize: 8pt;
   border-radius: 3px;
 }
 
+@mixin bubble() {
+  background: $backgroundColor;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
+}
+
 @mixin shadow_bubble() {
   border: 1px solid $lineColorLight;
   border-radius: 3px;

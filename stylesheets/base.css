@@ -140,17 +140,18 @@ hr {
   display: table;
   clear: both;
   overflow: hidden;
-  width: 100%;
+  width: 1300px;
+  margin: 0 auto;
 }
 
-/* line 136, ../sass/base.scss */
+/* line 137, ../sass/base.scss */
 .template-side-menu-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 300px;
   padding-left: 5px;
-  position: fixed;
+  float: left;
 }
 
 /* line 144, ../sass/base.scss */
@@ -167,109 +168,123 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #f1f1f1;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
-  padding: 3px 3px 0 3px;
   width: 100%;
-  margin-top: 10px;
+  padding-right: 5px;
 }
-/* line 156, ../sass/base.scss */
+/* line 155, ../sass/base.scss */
 .template-side-menu h3 {
   margin: 0;
   color: #662d91;
 }
 
-/* line 162, ../sass/base.scss */
+/* line 161, ../sass/base.scss */
+.menu-top {
+  background: #1C75BD;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 168, ../sass/base.scss */
+.menu-top a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 174, ../sass/base.scss */
+.menu-break {
+  background: #1C75BD;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 180, ../sass/base.scss */
 .template-side-menu-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   width: 100%;
-  padding: 5px 5px 0 5px;
-  margin-bottom: 3px;
+  margin-top: 5px;
 }
-/* line 169, ../sass/base.scss */
+/* line 186, ../sass/base.scss */
 .template-side-menu-content ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 174, ../sass/base.scss */
+/* line 191, ../sass/base.scss */
 .template-side-menu-content ul li {
-  border-radius: 3px;
-  margin-bottom: 5px;
+  text-align: center;
   width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 179, ../sass/base.scss */
+/* line 197, ../sass/base.scss */
 .template-side-menu-content ul li a {
-  color: #717070;
+  color: #1C75BD;
   font-weight: bold;
   font-size: 10pt;
   text-decoration: none;
   vertical-align: middle;
   width: 100%;
   display: block;
-  padding-top: 3px;
 }
-/* line 189, ../sass/base.scss */
-.template-side-menu-content ul li a img {
-  width: 15px;
-  margin-left: -1px;
-  padding: 0 5px 5px 5px;
-  border-radius: 3px 0 0 3px;
-  vertical-align: middle;
-}
-/* line 201, ../sass/base.scss */
-.template-side-menu-content ul a:hover, .template-side-menu-content ul a:active {
+/* line 209, ../sass/base.scss */
+.template-side-menu-content ul li:hover {
   background: #1C75BD;
-  border-radius: 3px;
+}
+/* line 211, ../sass/base.scss */
+.template-side-menu-content ul li:hover a {
   color: #ffffff;
 }
-/* line 206, ../sass/base.scss */
-.template-side-menu-content ul a:hover img, .template-side-menu-content ul a:active img {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
 
-/* line 214, ../sass/base.scss */
+/* line 218, ../sass/base.scss */
 .menu-highlight {
   background: #1C75BD;
   border-radius: 3px;
   color: #ffffff !important;
 }
-/* line 219, ../sass/base.scss */
+/* line 223, ../sass/base.scss */
 .menu-highlight img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
-/* line 226, ../sass/base.scss */
+/* line 230, ../sass/base.scss */
 .template-copyright p {
   margin: 0;
   font-weight: bold;
   font-size: 8pt;
 }
 
-/* line 234, ../sass/base.scss */
+/* line 238, ../sass/base.scss */
 .template-disclaimer p {
   text-align: justify;
   font-size: 4pt;
 }
 
-/* line 241, ../sass/base.scss */
+/* line 245, ../sass/base.scss */
 .error-wrapper {
   margin-left: 305px;
 }
-/* line 244, ../sass/base.scss */
+/* line 248, ../sass/base.scss */
 .error-wrapper h1, .error-wrapper h2 {
   margin: 0;
 }
 
-/* line 250, ../sass/base.scss */
+/* line 254, ../sass/base.scss */
 .warning {
   color: #FF6700 !important;
 }
