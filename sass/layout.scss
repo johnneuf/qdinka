@@ -170,3 +170,18 @@
     color: $qdinkaBlue;
   }
 }
+
+//Main header
+.top-header {
+  @include box;
+  background: $backgroundColor;
+  padding: 5px;
+
+  h3 {
+    margin: 0;
+
+    u {
+      color: $qdinkaBlue;
+    }
+  }
+}

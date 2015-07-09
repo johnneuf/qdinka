@@ -209,3 +209,20 @@
   text-decoration: none;
   color: #1C75BD;
 }
+
+/* line 175, ../sass/layout.scss */
+.top-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 5px;
+}
+/* line 180, ../sass/layout.scss */
+.top-header h3 {
+  margin: 0;
+}
+/* line 183, ../sass/layout.scss */
+.top-header h3 u {
+  color: #1C75BD;
+}
