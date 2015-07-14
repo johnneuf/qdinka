@@ -13,6 +13,7 @@ body {
   font-family: $bodyFont;
   color: $fontColor;
   font-size: $bodyFontSize;
+  margin: 0;
 }
 
 h1 {
@@ -249,4 +250,82 @@ hr {
 //Warnings
 .warning {
   color: $qdinkaSafetyOrange !important;
+}
+
+//Footer Area
+footer {
+  background: $backgroundColor;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin-top: 5px;
+  @include box;
+  padding-bottom: 5px;
+}
+
+.template-footer-wrapper {
+  width: $siteWidth;
+  margin: auto;
+}
+
+.template-footer-menu-wrapper {
+  @include box;
+  width: 100%;
+  margin-top: 5px;
+
+  .menu-item {
+    @include box;
+    width: 16.66%;
+    float: left;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $qdinkaBlue;
+      font-weight: bold;
+    }
+  }
+
+  .menu-item:after {
+    @include next_row;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+
+    }
+  }
+}
+
+.template-footer-content-wrapper {
+  width: 100%;
+
+  .footer-image-wrapper, .footer-social-wrapper {
+    @include box;
+    width: 19%;
+    float: left;
+
+    .footer-image {
+      width: 112px;
+    }
+
+    .social-image {
+      width: 30px;
+      float: right;
+    }
+  }
+
+  .footer-content {
+    @include box;
+    width: 62%;
+    float: left;
+  }
+}
+
+.template-footer-content-wrapper:after {
+  @include next_row;
 }

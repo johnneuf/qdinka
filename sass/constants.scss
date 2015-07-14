@@ -23,6 +23,9 @@ $bodyHeaderSize: 28pt;
 $bodySubHeaderSize: 14pt;
 $bodySmallSize: 8pt;
 
+//Site Width
+$siteWidth: 1300px;
+
 //Utilities
 @mixin box() {
   //Border boxes what ever you use it in.
