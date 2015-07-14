@@ -62,10 +62,13 @@
 /* line 42, ../sass/loginout.scss */
 .register-content-wrapper input[type="submit"] {
   margin-top: 5px;
-  border-radius: 3px;
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   background: #1C75BD;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 /* line 48, ../sass/loginout.scss */
@@ -99,10 +102,13 @@
 }
 /* line 68, ../sass/loginout.scss */
 .bottom-button-wrapper input[type="submit"] {
-  border-radius: 3px;
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   background: #1C75BD;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 /* line 73, ../sass/loginout.scss */
@@ -169,10 +175,13 @@ h3 {
 }
 /* line 116, ../sass/loginout.scss */
 .registration-content input[type='submit'] {
-  border-radius: 3px;
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   background: #1C75BD;
   color: #ffffff;
   border: none;
+  cursor: pointer;
   margin-top: 5px;
 }
 /* line 121, ../sass/loginout.scss */

@@ -8,6 +8,7 @@ $bodyFont: 'Josefin Sans', sans-serif;
 //Color Constants
 $qdinkaBlue: #1C75BD;
 $qdinkaPurple: #662d91;
+$qdinkaRed: #971111;
 $qdinkaSafetyOrange: #FF6700;
 $fontColor: #717070;
 $backgroundOffset: #f1f1f1;
@@ -82,8 +83,9 @@ $siteWidth: 1300px;
 }
 
 @mixin standard_button() {
-  border-radius: 3px;
+  @include box-shadow(1px 1px 4px 1px rgba(0, 0, 0, 0.4));
   background: $qdinkaBlue;
   color: $backgroundColor;
   border: none;
+  cursor: pointer;
 }

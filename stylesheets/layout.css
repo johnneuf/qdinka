@@ -1,91 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
-/* line 6, ../sass/layout.scss */
-.front-page-header-wrapper h1, .front-page-header-wrapper h2 {
-  text-align: center;
-  margin: 0;
-}
-/* line 11, ../sass/layout.scss */
-.front-page-header-wrapper h1 {
-  color: #662d91;
-}
-
-/* line 16, ../sass/layout.scss */
-.front-page-section-wrapper {
-  margin: 10px 0 0 0;
-  overflow: hidden;
-}
-/* line 20, ../sass/layout.scss */
-.front-page-section-wrapper h2 {
-  margin: 0 0 10px 0;
-  color: #1C75BD;
-}
-/* line 25, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  float: left;
-  padding-right: 10px;
-}
-/* line 31, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper {
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  padding: 10px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-/* line 36, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image {
-  width: 100%;
-}
-/* line 39, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-image img {
-  width: 100%;
-  border-radius: 3px;
-}
-/* line 45, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info {
-  font-weight: bold;
-  color: #662d91;
-  margin-top: 5px;
-}
-/* line 50, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info .card-price {
-  float: right;
-}
-/* line 55, ../sass/layout.scss */
-.front-page-section-wrapper .card-wrapper .card-content-wrapper .card-info:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 65, ../sass/layout.scss */
-.cart-page-header-wrapper h1, .cart-page-header-wrapper h2 {
-  text-align: center;
-  margin: 0;
-}
-/* line 70, ../sass/layout.scss */
-.cart-page-header-wrapper h1 {
-  color: #662d91;
-}
-
-/* line 75, ../sass/layout.scss */
+/* line 4, ../sass/layout.scss */
 .cart-page-section-wrapper {
   margin: 10px 0 0 0;
   overflow: hidden;
 }
-/* line 79, ../sass/layout.scss */
+/* line 8, ../sass/layout.scss */
 .cart-page-section-wrapper h2 {
   margin: 0 0 10px 0;
   color: #1C75BD;
 }
-/* line 84, ../sass/layout.scss */
+/* line 13, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -94,7 +18,7 @@
   float: left;
   padding-right: 10px;
 }
-/* line 90, ../sass/layout.scss */
+/* line 19, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -105,33 +29,33 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-/* line 95, ../sass/layout.scss */
+/* line 24, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-image {
   width: 100%;
 }
-/* line 98, ../sass/layout.scss */
+/* line 27, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-image img {
   width: 100%;
   border-radius: 3px;
 }
-/* line 104, ../sass/layout.scss */
+/* line 33, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-info {
   font-weight: bold;
   color: #662d91;
   margin-top: 5px;
 }
-/* line 109, ../sass/layout.scss */
+/* line 38, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-info .card-price {
   float: right;
 }
-/* line 114, ../sass/layout.scss */
+/* line 43, ../sass/layout.scss */
 .cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper .card-info:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 122, ../sass/layout.scss */
+/* line 51, ../sass/layout.scss */
 .front-page-contributors-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -146,13 +70,13 @@
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   margin-top: 10px;
 }
-/* line 127, ../sass/layout.scss */
+/* line 56, ../sass/layout.scss */
 .front-page-contributors-wrapper hr {
   width: 90%;
   margin: 0 auto 0 auto;
 }
 
-/* line 133, ../sass/layout.scss */
+/* line 62, ../sass/layout.scss */
 .contributor-header-top {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -161,25 +85,25 @@
   width: 100%;
   padding: 10px;
 }
-/* line 139, ../sass/layout.scss */
+/* line 68, ../sass/layout.scss */
 .contributor-header-top h2 {
   color: #ffffff;
   text-align: center;
   margin: 0;
 }
 
-/* line 146, ../sass/layout.scss */
+/* line 75, ../sass/layout.scss */
 .contributor-header-sub {
   margin-top: 10px;
 }
-/* line 149, ../sass/layout.scss */
+/* line 78, ../sass/layout.scss */
 .contributor-header-sub h3 {
   color: #717070;
   text-align: center;
   margin: 0;
 }
 
-/* line 156, ../sass/layout.scss */
+/* line 85, ../sass/layout.scss */
 .contributor-card-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -188,7 +112,7 @@
   padding: 5px;
 }
 
-/* line 162, ../sass/layout.scss */
+/* line 91, ../sass/layout.scss */
 .contributor-card {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -204,13 +128,13 @@
   padding: 5px;
   margin-top: 5px;
 }
-/* line 168, ../sass/layout.scss */
+/* line 97, ../sass/layout.scss */
 .contributor-card a {
   text-decoration: none;
   color: #1C75BD;
 }
 
-/* line 175, ../sass/layout.scss */
+/* line 104, ../sass/layout.scss */
 .top-header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -218,11 +142,235 @@
   background: #ffffff;
   padding: 5px;
 }
-/* line 180, ../sass/layout.scss */
+/* line 109, ../sass/layout.scss */
 .top-header h3 {
   margin: 0;
 }
-/* line 183, ../sass/layout.scss */
+/* line 112, ../sass/layout.scss */
 .top-header h3 u {
   color: #1C75BD;
+}
+
+/* line 119, ../sass/layout.scss */
+.marketing-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  height: 240px;
+}
+
+/* line 129, ../sass/layout.scss */
+.marketing-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 133, ../sass/layout.scss */
+.marketing-image-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+  float: left;
+}
+/* line 138, ../sass/layout.scss */
+.marketing-image-wrapper img {
+  width: 100%;
+}
+
+/* line 143, ../sass/layout.scss */
+.marketing-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 40%;
+  float: left;
+}
+
+/* line 150, ../sass/layout.scss */
+.marketing-content {
+  font-size: 16pt;
+}
+/* line 153, ../sass/layout.scss */
+.marketing-content h2 {
+  color: #1C75BD;
+  margin: 0;
+  font-size: 18pt;
+}
+
+/* line 160, ../sass/layout.scss */
+.marketing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #1C75BD;
+  text-align: center;
+}
+/* line 166, ../sass/layout.scss */
+.marketing-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 172, ../sass/layout.scss */
+.front-hr {
+  background: #ffffff;
+}
+
+/* line 177, ../sass/layout.scss */
+.module-wrapper {
+  width: 100%;
+}
+
+/* line 181, ../sass/layout.scss */
+.module-content {
+  width: 100%;
+}
+
+/* line 185, ../sass/layout.scss */
+.module-content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 189, ../sass/layout.scss */
+.col-left, .left-card {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 5px;
+  width: 50%;
+  float: left;
+}
+
+/* line 196, ../sass/layout.scss */
+.col-right, .right-card {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 5px;
+  width: 50%;
+  float: right;
+}
+
+/* line 203, ../sass/layout.scss */
+.card-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  padding: 5px;
+}
+
+/* line 209, ../sass/layout.scss */
+.card-header {
+  width: 100%;
+}
+/* line 212, ../sass/layout.scss */
+.card-header a {
+  color: #1C75BD;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 217, ../sass/layout.scss */
+.card-header a img {
+  width: 10px;
+}
+
+/* line 223, ../sass/layout.scss */
+.card-header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 227, ../sass/layout.scss */
+.go-right {
+  float: right;
+}
+
+/* line 231, ../sass/layout.scss */
+.card-product-image {
+  width: 100%;
+  margin-top: 5px;
+}
+/* line 235, ../sass/layout.scss */
+.card-product-image img {
+  width: 100%;
+}
+
+/* line 242, ../sass/layout.scss */
+.card-product-title a {
+  color: #1C75BD;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+/* line 252, ../sass/layout.scss */
+.card-producer span {
+  font-weight: bold;
+}
+/* line 256, ../sass/layout.scss */
+.card-producer .go-right img {
+  width: 10px;
+}
+
+/* line 261, ../sass/layout.scss */
+.card-producer:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 265, ../sass/layout.scss */
+.card-actions {
+  margin-top: 5px;
+}
+/* line 268, ../sass/layout.scss */
+.card-actions input {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #1C75BD;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease 0s;
+  -moz-transition: color 0.2s ease 0s;
+  -ms-transition: color 0.2s ease 0s;
+  -o-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
+}
+/* line 277, ../sass/layout.scss */
+.card-actions input:hover {
+  color: #1C75BD;
+  background: lightgrey;
+}
+/* line 282, ../sass/layout.scss */
+.card-actions span {
+  font-weight: bold;
+  color: #971111;
 }

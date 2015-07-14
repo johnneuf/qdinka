@@ -31,19 +31,442 @@ class FrontPage extends TemplateBase {
         </div>
 
 <!--        Advertisement Area-->
-        <div>
-            <div>
-                <img src="/images/temp/advert1.jpg" />
+        <div class="marketing-wrapper">
+            <div class="marketing-image-wrapper">
+                <img src="/images/temp/marketingTemp.jpg" />
             </div>
-            <div>
-                <div>
-                    <h1>Changing the Industry</h1>
+            <div class="marketing-content-wrapper">
+                <div class="marketing-content">
+                    <h2>Changing the Industry</h2>
                     Qdinka has created the most comprehensive online marketplace to-date. Here anyone can buy, sell,
                     market, trade, and track products. Allow yourself the chance to make more money than ever before.
                     All of your favorite tools in one place...
                 </div>
-                <div>
+                <div class="marketing-button">
                     <a href="#">Start Growing Your Business</a>
+                </div>
+            </div>
+        </div>
+        <hr class="front-hr">
+
+<!--        Fastest Selling-->
+        <div class="module-wrapper">
+            <h2>Fastest Selling:</h2>
+            <div class="module-content">
+                <div class="col-left">
+
+<!--                    Card-->
+                    <div class="left-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-right">
+
+                    <!--                    Card-->
+                    <div class="left-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr class="front-hr">
+
+        <!--        Recently Added-->
+        <div class="module-wrapper">
+            <h2>Fastest Selling:</h2>
+            <div class="module-content">
+                <div class="col-left">
+
+                    <!--                    Card-->
+                    <div class="left-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-right">
+
+                    <!--                    Card-->
+                    <div class="left-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr class="front-hr">
+
+        <!--        Staff Picks-->
+        <div class="module-wrapper">
+            <h2>Fastest Selling:</h2>
+            <div class="module-content">
+                <div class="col-left">
+
+                    <!--                    Card-->
+                    <div class="left-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-right">
+
+                    <!--                    Card-->
+                    <div class="left-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-card">
+                        <div class="card-wrapper">
+                            <div class="card-header">
+                                <a href="#"><img src="/images/icons/star.png" /> Save for Later</a>
+                                <a class="go-right" href="#">Contact Vendor</a>
+                            </div>
+                            <div class="card-product-image">
+                                <img src="/images/placeholder-product-image-large.png" />
+                            </div>
+                            <div class="card-product-title">
+                                <a href="#">Some Product Name</a>
+                            </div>
+                            <div class="card-producer">
+                                <span>by Some Company Inc.</span>
+                                <div class="go-right">
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                    <img src="/images/icons/star.png" />
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus tempus
+                                scelerisque. In metus sem, rutrum vel ...
+                            </div>
+                            <div class="card-actions">
+                                <input type="submit" value="Add to Cart" />
+                                <span class="go-right">$00.00</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
