@@ -9,7 +9,7 @@
 namespace includes\pages;
 
 
-use includes\menus\MainMenu;
+use includes\menus\NewMainMenu;
 use includes\template\TemplateBase;
 
 class FrontPage extends TemplateBase {
@@ -164,8 +164,28 @@ class FrontPage extends TemplateBase {
     protected function side_menu()
     {
         // Add the menu
-        $menu = new MainMenu($this->title);
-        echo $menu;
+        echo '<div class="menu-top"><a href="#" >Start Selling Today</a></div>';
+        $menu = new NewMainMenu($this->title);
+        $menu->render();
+
+        //Html
+        ?>
+        <div class="front-page-contributors-wrapper">
+            <div class="contributor-header-top"><h2>Top Contributors</h2></div>
+            <div class="contributor-header-sub"><h3>Updated Weekly</h3></div>
+            <hr />
+            <div class="contributor-card-wrapper">
+                <div class="contributor-card">
+                    Some Name - <a href="#">Some Company Inc.</a><br />
+                    <a href="#">View Products</a>
+                </div>
+                <div class="contributor-card">
+                    Some Name - <a href="#">Some Company Inc.</a><br />
+                    <a href="#">View Products</a>
+                </div>
+            </div>
+        </div>
+        <?php
     }
 
     function __construct($title, $noTemplate = false, $maintenance = false)

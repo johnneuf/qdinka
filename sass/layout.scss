@@ -1,77 +1,6 @@
 //For the main layouts
 @import "constants";
 
-.front-page-header-wrapper {
-
-  h1, h2 {
-    text-align: center;
-    margin: 0;
-  }
-
-  h1 {
-    color: $qdinkaPurple;
-  }
-}
-
-.front-page-section-wrapper {
-  margin: 10px 0 0 0;
-  overflow: hidden;
-
-  h2 {
-    margin: 0 0 10px 0;
-    color: $qdinkaBlue;
-  }
-
-  .card-wrapper {
-    @include box;
-    width: 25%;
-    float: left;
-    padding-right: 10px;
-
-    .card-content-wrapper {
-      @include shadow_bubble;
-      @include box;
-      margin-bottom: 10px;
-
-      .card-image {
-        width: 100%;
-
-        img {
-          width: 100%;
-          border-radius: 3px;
-        }
-      }
-
-      .card-info {
-        font-weight: bold;
-        color: $qdinkaPurple;
-        margin-top: 5px;
-
-        .card-price {
-          float: right;
-        }
-      }
-
-      .card-info:after {
-        @include next_row;
-      }
-
-    }
-  }
-}
-
-.cart-page-header-wrapper {
-
-  h1, h2 {
-    text-align: center;
-    margin: 0;
-  }
-
-  h1 {
-    color: $qdinkaPurple;
-  }
-}
-
 .cart-page-section-wrapper {
   margin: 10px 0 0 0;
   overflow: hidden;
@@ -116,5 +45,242 @@
       }
 
     }
+  }
+}
+
+.front-page-contributors-wrapper {
+  @include box;
+  @include bubble;
+  margin-top: 10px;
+
+  hr {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.contributor-header-top {
+  @include box;
+  background: $qdinkaBlue;
+  width: 100%;
+  padding: 10px;
+
+  h2 {
+    color: $backgroundColor;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.contributor-header-sub {
+  margin-top: 10px;
+
+  h3 {
+    color: $fontColor;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.contributor-card-wrapper {
+  @include box;
+  width: 100%;
+  padding: 5px;
+}
+
+.contributor-card {
+  @include box;
+  @include bubble;
+  padding: 5px;
+  margin-top: 5px;
+
+  a {
+    text-decoration: none;
+    color: $qdinkaBlue;
+  }
+}
+
+//Main header
+.top-header {
+  @include box;
+  background: $backgroundColor;
+  padding: 5px;
+
+  h3 {
+    margin: 0;
+
+    u {
+      color: $qdinkaBlue;
+    }
+  }
+}
+
+//Front Page
+.marketing-wrapper {
+  @include box;
+  @include bubble;
+  margin-top: 5px;
+
+  width: 100%;
+  padding: 5px;
+  height: 240px;
+}
+
+.marketing-wrapper:after {
+  @include next_row;
+}
+
+.marketing-image-wrapper {
+  @include box;
+  width: 60%;
+  float: left;
+
+  img {
+    width: 100%;
+  }
+}
+
+.marketing-content-wrapper {
+  @include box;
+  padding: 5px;
+  width: 40%;
+  float: left;
+}
+
+.marketing-content {
+  font-size: 16pt;
+
+  h2 {
+    color: $qdinkaBlue;
+    margin: 0;
+    font-size: 18pt;
+  }
+}
+
+.marketing-button {
+  @include box;
+  padding: 10px;
+  background: $qdinkaBlue;
+  text-align: center;
+
+  a {
+    color: $backgroundColor;
+    text-decoration: none;
+  }
+}
+
+.front-hr {
+  background: $backgroundColor;
+}
+
+//Cards
+.module-wrapper {
+  width: 100%;
+}
+
+.module-content {
+  width: 100%;
+}
+
+.module-content:after {
+  @include next_row;
+}
+
+.col-left, .left-card {
+  @include box;
+  padding-right: 5px;
+  width: 50%;
+  float: left;
+}
+
+.col-right, .right-card {
+  @include box;
+  padding-left: 5px;
+  width: 50%;
+  float: right;
+}
+
+.card-wrapper {
+  @include box;
+  @include bubble;
+  padding: 5px;
+}
+
+.card-header {
+  width: 100%;
+
+  a {
+    color: $qdinkaBlue;
+    text-decoration: none;
+    font-weight: bold;
+
+    img {
+      width: 10px;
+    }
+  }
+}
+
+.card-header:after {
+  @include next_row;
+}
+
+.go-right {
+  float: right;
+}
+
+.card-product-image {
+  width: 100%;
+  margin-top: 5px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.card-product-title {
+
+  a {
+    color: $qdinkaBlue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+}
+
+.card-producer {
+
+  span {
+    font-weight: bold;
+  }
+
+  .go-right img {
+    width: 10px;
+  }
+}
+
+.card-producer:after {
+  @include next_row;
+}
+
+.card-actions {
+  margin-top: 5px;
+
+  input {
+    @include standard_button;
+    -webkit-transition: color 0.2s ease 0s;
+    -moz-transition: color 0.2s ease 0s;
+    -ms-transition: color 0.2s ease 0s;
+    -o-transition: color 0.2s ease 0s;
+    transition: color 0.2s ease 0s;
+  }
+
+  input:hover {
+    color: $qdinkaBlue;
+    background: lightgrey;
+  }
+
+  span {
+    font-weight: bold;
+    color: $qdinkaRed;
   }
 }

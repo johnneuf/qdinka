@@ -8,6 +8,7 @@ $bodyFont: 'Josefin Sans', sans-serif;
 //Color Constants
 $qdinkaBlue: #1C75BD;
 $qdinkaPurple: #662d91;
+$qdinkaRed: #971111;
 $qdinkaSafetyOrange: #FF6700;
 $fontColor: #717070;
 $backgroundOffset: #f1f1f1;
@@ -22,6 +23,9 @@ $bodyFontSize: 10pt;
 $bodyHeaderSize: 28pt;
 $bodySubHeaderSize: 14pt;
 $bodySmallSize: 8pt;
+
+//Site Width
+$siteWidth: 1300px;
 
 //Utilities
 @mixin box() {
@@ -53,6 +57,15 @@ $bodySmallSize: 8pt;
   border-radius: 3px;
 }
 
+@mixin bubble() {
+  background: $backgroundColor;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
+}
+
 @mixin shadow_bubble() {
   border: 1px solid $lineColorLight;
   border-radius: 3px;
@@ -70,8 +83,9 @@ $bodySmallSize: 8pt;
 }
 
 @mixin standard_button() {
-  border-radius: 3px;
+  @include box-shadow(1px 1px 4px 1px rgba(0, 0, 0, 0.4));
   background: $qdinkaBlue;
   color: $backgroundColor;
   border: none;
+  cursor: pointer;
 }
