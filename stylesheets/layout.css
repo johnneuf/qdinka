@@ -347,30 +347,32 @@
 
 /* line 265, ../sass/layout.scss */
 .card-actions {
-  margin-top: 5px;
+  margin: 5px 0;
 }
 /* line 268, ../sass/layout.scss */
 .card-actions input {
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
-  background: #1C75BD;
+  background: #429ceb;
   color: #ffffff;
-  border: none;
+  border: 0px solid #1c75bd;
   cursor: pointer;
   -webkit-transition: color 0.2s ease 0s;
   -moz-transition: color 0.2s ease 0s;
   -ms-transition: color 0.2s ease 0s;
   -o-transition: color 0.2s ease 0s;
   transition: color 0.2s ease 0s;
+  font-size: 12pt;
 }
-/* line 277, ../sass/layout.scss */
+/* line 278, ../sass/layout.scss */
 .card-actions input:hover {
   color: #1C75BD;
   background: lightgrey;
 }
-/* line 282, ../sass/layout.scss */
+/* line 283, ../sass/layout.scss */
 .card-actions span {
   font-weight: bold;
   color: #971111;
+  font-size: 12pt;
 }

@@ -84,8 +84,8 @@ $siteWidth: 1300px;
 
 @mixin standard_button() {
   @include box-shadow(1px 1px 4px 1px rgba(0, 0, 0, 0.4));
-  background: $qdinkaBlue;
+  background: rgb(66, 156, 235);
   color: $backgroundColor;
-  border: none;
+  border: 0px solid rgb(28, 117, 189);
   cursor: pointer;
 }

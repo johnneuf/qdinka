@@ -4,9 +4,9 @@
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
-  background: #1C75BD;
+  background: #429ceb;
   color: #ffffff;
-  border: none;
+  border: 0px solid #1c75bd;
   cursor: pointer;
   list-style-type: none;
   padding: 0;
@@ -98,9 +98,9 @@ table tbody tr:nth-of-type(even) {
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
-  background: #1C75BD;
+  background: #429ceb;
   color: #ffffff;
-  border: none;
+  border: 0px solid #1c75bd;
   cursor: pointer;
 }
 

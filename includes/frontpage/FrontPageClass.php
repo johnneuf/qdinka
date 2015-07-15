@@ -47,7 +47,6 @@ class FrontPage extends TemplateBase {
                 </div>
             </div>
         </div>
-        <hr class="front-hr">
 
 <!--        Fastest Selling-->
         <div class="module-wrapper">
@@ -188,7 +187,6 @@ class FrontPage extends TemplateBase {
                 </div>
             </div>
         </div>
-        <hr class="front-hr">
 
         <!--        Recently Added-->
         <div class="module-wrapper">
@@ -329,7 +327,6 @@ class FrontPage extends TemplateBase {
                 </div>
             </div>
         </div>
-        <hr class="front-hr">
 
         <!--        Staff Picks-->
         <div class="module-wrapper">

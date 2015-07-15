@@ -263,7 +263,7 @@
 }
 
 .card-actions {
-  margin-top: 5px;
+  margin: 5px 0;
 
   input {
     @include standard_button;
@@ -272,6 +272,7 @@
     -ms-transition: color 0.2s ease 0s;
     -o-transition: color 0.2s ease 0s;
     transition: color 0.2s ease 0s;
+    font-size: 12pt;
   }
 
   input:hover {
@@ -282,5 +283,6 @@
   span {
     font-weight: bold;
     color: $qdinkaRed;
+    font-size: 12pt;
   }
 }
