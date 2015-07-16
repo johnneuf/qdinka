@@ -10,6 +10,7 @@ namespace includes\pages;
 
 
 use includes\menus\NewMainMenu;
+use includes\modules\SearchModule;
 use includes\template\TemplateBase;
 
 class FrontPage extends TemplateBase {
@@ -21,6 +22,9 @@ class FrontPage extends TemplateBase {
     protected function side_menu()
     {
         echo '<div class="menu-top"><a href="#" >Start Selling Today</a></div>';
+
+        $searchBubble = new SearchModule();
+        $searchBubble->render();
     }
 
     function __construct($title, $noTemplate = false, $maintenance = false)

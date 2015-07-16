@@ -116,7 +116,6 @@ table tbody tr:nth-of-type(even) {
 }
 /* line 98, ../sass/admin.scss */
 .user-admin-content input {
-  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #717070;

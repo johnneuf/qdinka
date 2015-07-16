@@ -75,7 +75,7 @@ $siteWidth: 1300px;
 
 //Form Items
 @mixin standard_input() {
-  height: 2em;
+  //height: 2em;
   border-radius: 3px;
   border: 1px solid $lineColorDark;
 //  background: $inputColor;
@@ -88,4 +88,11 @@ $siteWidth: 1300px;
   color: $backgroundColor;
   border: 0px solid rgb(28, 117, 189);
   cursor: pointer;
+}
+
+@mixin standard_checkbox() {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0 0 5px 0;
 }

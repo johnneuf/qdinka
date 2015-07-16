@@ -286,3 +286,54 @@
     font-size: 12pt;
   }
 }
+
+//Search Bubble
+.search-price-wrapper {
+  @include box;
+  padding: 5px;
+
+  input {
+    @include standard_input;
+    width: 125px;
+  }
+}
+
+.search-condition-wrapper {
+  @include box;
+  padding: 5px;
+
+  input[type="checkbox"] {
+    @include standard_checkbox;
+  }
+
+  label {
+    margin-right: 20px;
+  }
+}
+
+.search-shipping-wrapper, .search-other-wrapper {
+  @include box;
+  padding: 5px;
+
+  input {
+    @include standard_checkbox;
+  }
+}
+
+.search-rating-wrapper {
+  @include box;
+  padding: 5px;
+
+  img {
+    width: 20px;
+  }
+
+  input {
+    @include standard_button;
+    float: right;
+  }
+}
+
+.search-rating-wrapper:after {
+  @include next_row;
+}
