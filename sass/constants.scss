@@ -1,9 +1,12 @@
 //Fonts
-@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+//@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 @import "compass/css3";
 
-$headerFont: 'Domine', serif;
-$bodyFont: 'Josefin Sans', sans-serif;
+//$headerFont: 'Domine', serif;
+$headerFont: 'Enriqueta', serif;
+//$bodyFont: 'Josefin Sans', sans-serif;
+$bodyFont: 'Enriqueta', serif;
 
 //Color Constants
 $qdinkaBlue: #1C75BD;

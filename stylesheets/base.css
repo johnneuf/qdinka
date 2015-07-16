@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 /* line 4, ../sass/base.scss */
 html {
   background-color: #f3f3f3;
@@ -10,7 +10,7 @@ html {
 
 /* line 12, ../sass/base.scss */
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Enriqueta", serif;
   color: #717070;
   font-size: 10pt;
   margin: 0;
@@ -20,21 +20,21 @@ body {
 h1 {
   font-size: 28pt;
   font-weight: bold;
-  font-family: "Domine", serif;
+  font-family: "Enriqueta", serif;
 }
 
 /* line 25, ../sass/base.scss */
 h2 {
   font-size: 14pt;
   font-weight: bold;
-  font-family: "Domine", serif;
+  font-family: "Enriqueta", serif;
 }
 
 /* line 31, ../sass/base.scss */
 h3 {
   font-size: 10pt;
   font-weight: bold;
-  font-family: "Domine", serif;
+  font-family: "Enriqueta", serif;
 }
 
 /* line 37, ../sass/base.scss */
