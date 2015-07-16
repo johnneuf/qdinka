@@ -204,6 +204,7 @@
   @include box;
   @include bubble;
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 .card-header {
@@ -336,4 +337,118 @@
 
 .search-rating-wrapper:after {
   @include next_row;
+}
+
+.search-color-wrapper {
+  @include box;
+  padding: 5px;
+}
+
+.search-color-wrapper:after {
+  @include next_row;
+}
+
+.search-color-left {
+  width: 50%;
+  float: left;
+  @include box;
+
+  input {
+    @include standard_checkbox;
+  }
+}
+
+.search-color-right {
+  width: 50%;
+  float: right;
+  @include box;
+
+  input {
+    @include standard_checkbox;
+  }
+}
+
+//Subview
+.subview-header-wrapper {
+  font-size: 24pt;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.search-string {
+  color: $qdinkaBlue;
+}
+
+.subview-related-search-wrapper {
+  font-weight: bold;
+
+  a {
+    text-decoration: none;
+    color: $qdinkaBlue;
+  }
+}
+
+.subview-paginate-wrapper {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: -510px;
+
+  .side-col {
+    @include box;
+    @include bubble;
+    float: left;
+    width: 20%;
+  }
+
+  .active {
+    color: $backgroundColor;
+    background: $qdinkaBlue;
+  }
+
+  .item {
+    @include box;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .center-col {
+    @include box;
+    width: 60%;
+    float: left;
+    text-align: center;
+
+    .center-content {
+      margin: auto;
+      display: inline-block;
+    }
+
+  }
+}
+
+.subview-paginate-wrapper:after {
+  @include next_row;
+}
+
+.active-link {
+  color: $qdinkaBlue;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.deactivated-link {
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.subview-bottom-paginate-wrapper {
+  width: 100%;
+  text-align: center;
+
+  .subview-bottom-paginate {
+    display: inline-block;
+    font-size: 14pt;
+  }
 }

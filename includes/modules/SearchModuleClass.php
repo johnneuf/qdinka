@@ -75,6 +75,35 @@ class SearchModule extends GenericBubble
                 </div>
             </div>
 
+<!--            Color-->
+            <div class="search-color-wrapper">
+                Color:<br>
+                <div class="search-color-left">
+                    <input type="checkbox" name="cbxColorRed" id="cbxColorRed">
+                    <label for="cbxColorRed">Red</label><br>
+                    <input type="checkbox" name="cbxColorBlue" id="cbxColorBlue">
+                    <label for="cbxColorBlue">Blue</label><br>
+                    <input type="checkbox" name="cbxColorViolet" id="cbxColorViolet">
+                    <label for="cbxColorViolet">Violet</label><br>
+                    <input type="checkbox" name="cbxColorWhite" id="cbxColorWhite">
+                    <label for="cbxColorWhite">White</label><br>
+                    <input type="checkbox" name="cbxColorGrey" id="cbxColorGrey">
+                    <label for="cbxColorGrey">Grey</label><br>
+                </div>
+                <div class="search-color-right">
+                    <input type="checkbox" name="cbxColorYellow" id="cbxColorYellow">
+                    <label for="cbxColorYellow">Yellow</label><br>
+                    <input type="checkbox" name="cbxColorGreen" id="cbxColorGreen">
+                    <label for="cbxColorGreen">Green</label><br>
+                    <input type="checkbox" name="cbxColorOrange" id="cbxColorOrange">
+                    <label for="cbxColorOrange">Orange</label><br>
+                    <input type="checkbox" name="cbxColorBlack" id="cbxColorBlack">
+                    <label for="cbxColorBlack">Black</label><br>
+                    <input type="checkbox" name="cbxColorOther" id="cbxColorOther">
+                    <label for="cbxColorOther">Other</label><br>
+                </div>
+            </div>
+
 <!--            Other-->
             <div class="search-other-wrapper">
                 Other:<br>
