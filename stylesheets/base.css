@@ -381,3 +381,40 @@ footer {
   display: table;
   clear: both;
 }
+
+/* line 334, ../sass/base.scss */
+.generic-bubble-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+/* line 339, ../sass/base.scss */
+.generic-bubble-wrapper hr {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+/* line 345, ../sass/base.scss */
+.generic-bubble-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #1C75BD;
+  width: 100%;
+  padding: 10px;
+}
+/* line 351, ../sass/base.scss */
+.generic-bubble-header h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}

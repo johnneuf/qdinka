@@ -329,3 +329,28 @@ footer {
 .template-footer-content-wrapper:after {
   @include next_row;
 }
+
+//generic bubble with header
+.generic-bubble-wrapper {
+  @include box;
+  @include bubble;
+  margin-top: 10px;
+
+  hr {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.generic-bubble-header {
+  @include box;
+  background: $qdinkaBlue;
+  width: 100%;
+  padding: 10px;
+
+  h2 {
+    color: $backgroundColor;
+    text-align: center;
+    margin: 0;
+  }
+}
