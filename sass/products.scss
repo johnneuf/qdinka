@@ -1,295 +1,110 @@
 @import "constants";
 
-//Wrappers
-.product-main-wrapper {
+//Contributors
+.front-page-contributors-wrapper {
   @include box;
-}
-
-.left-column-wrapper {
-  @include box;
-  width: 66.66%;
-  float: left;
-}
-
-.right-column-wrapper {
-  @include box;
-  width: 33.33%;
-  float: left;
-  padding-left: 5px;
+  @include bubble;
   margin-top: 10px;
-}
-
-.social-media-wrapper {
-  @include box;
-  @include bubble_outer();
-  margin-top: 5px;
-
-  a img {
-    width: 30px;
-  }
-}
-
-//Video
-.video-wrapper {
-  margin-top: 10px;
-  position: relative;
-  width: 100%;
-  padding-bottom: 55%;
-  z-index: -1;
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-//Main Content
-.content-wrapper {
-  h1 {
-    margin: 10px 0 0 0;
-  }
 
   hr {
-    border: none;
-    height: 1px;
-    background: $lineColorDark;
+    width: 90%;
+    margin: 0 auto 0 auto;
   }
 }
 
-//Side Information
-.info-wrapper {
+.contributor-header-top {
   @include box;
-  @include bubble_outer(3px 3px 0 3px);
+  background: $qdinkaBlue;
+  width: 100%;
+  padding: 10px;
 
-  h1, h2, ul {
+  h2 {
+    color: $backgroundColor;
+    text-align: center;
     margin: 0;
   }
+}
 
-  hr {
-    background: $lineColorDark;
-    height: 1px;
-    border: none;
+.contributor-header-sub {
+  margin-top: 10px;
+
+  h3 {
+    color: $fontColor;
+    text-align: center;
+    margin: 0;
   }
 }
 
-.options-wrapper, .overview {
+.contributor-card-wrapper {
   @include box;
-  @include bubble_inner;
-  padding: 5px;
-  overflow: hidden;
-  margin-bottom: 3px;
-}
-
-.price {
-  color: $qdinkaSafetyOrange;
-  margin: 0;
-  float: left;
-}
-
-.price-wrapper {
-  input[type="submit"] {
-    border: none;
-    border-radius: 3px;
-    color: $backgroundColor;
-    background: $qdinkaBlue;
-    cursor: pointer;
-    float: right;
-    padding: 3px;
-  }
-}
-
-.price-wrapper:after {
-  @include next_row;
-}
-
-.option-item {
-  float: left;
-  color: $fontColor;
-  padding: 5px;
-
-  label {
-    font-weight: bold;
-  }
-
-  select, input {
-    @include standard_input;
-  }
-
-  input[type="number"] {
-    width: 3em;
-    padding-left: 3px;
-  }
-}
-
-.options:after {
-  @include next_row;
-}
-
-//Specifications Area
-.specifications {
   width: 100%;
-  display: inline-block;
+  padding: 5px;
 }
 
-.specifications-links {
-  margin: 3px 0 -1px 0 !important;
-  padding: 0 0 0 5px !important;
-
-  li {
-    margin: 0 5px 0 0;
-    float: left;
-    list-style: none;
-  }
+.contributor-card {
+  @include box;
+  @include bubble;
+  padding: 5px;
+  margin-top: 5px;
 
   a {
-    padding: 3px;
-    display: inline-block;
-    border-radius: 3px 3px 0px 0px;
-    border-left: 1px solid $lineColorLight;
-    border-top: 1px solid $lineColorLight;
-    border-right: 1px solid $lineColorLight;
-    background: $qdinkaBlue;
-    font-weight: 600;
-    color: $backgroundColor;
-    transition: all linear 0.15s;
+    text-decoration: none;
+    color: $qdinkaBlue;
   }
+}
 
-  li.active-tab {
-    a, a:hover {
-      background: $backgroundColor;
-      color: $fontColor;
+.top-header {
+  @include box;
+  background: $backgroundColor;
+  padding: 5px;
+
+  h3 {
+    margin: 0;
+
+    span {
+      color: $qdinkaBlue;
+      text-decoration: underline;
     }
   }
 }
 
-.specifications-links:after {
+//Images area
+.row-one-wrapper {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.row-one-wrapper:after {
   @include next_row;
 }
-
-.specifications-content {
-  @include bubble_inner;
-  padding: 5px;
-  margin-bottom: 3px;
-}
-
-.tab {
-  display: none;
-}
-
-.tab.active-tab {
-  display: block !important;
-}
-
-//Add to Cart
-.cart-button {
-  input[type="submit"] {
-    background: $qdinkaBlue;
-    color: $backgroundColor;
-    font-weight: bold;
-    border: none;
-    border-radius: 3px;
-    width: 100%;
-    cursor: pointer;
-    margin: 5px 0;
-    padding: 5px;
-  }
-}
-
-//Images Area
 
 .images-wrapper {
   @include box;
-  @include bubble_outer(3px 0 3px 3px);
-  margin-top: 10px;
+  width: 605px;
+  padding-right: 5px;
+  float: left;
 }
 
-.images-main {
-  @include box;
-  width: 100%;
-  margin-bottom: 3px;
-  padding-right: 3px;
+.images-content {
+  @include bubble;
 
   img {
+    border-radius: 3px 3px 0 0;
     width: 100%;
-    border-radius: 3px;
+    height: 450px;
   }
 }
 
-.images-small-container {
-  width: 100%;
-
-  .images-item {
-    @include box;
-    width: 33.33%;
-    padding: 3px 3px 0 0;
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 3px;
-    }
-  }
+.images-slide-wrapper {
+  text-align: center;
 }
 
-//Social Media
-.facebook-wrapper {
-  @include box;
-  @include bubble_outer();
-  margin-top: 5px;
-  z-index: -1;
-}
+.images-slide-content {
+  display: inline-block;
 
-.fb_ltr {
-  @include box;
-  @include bubble_inner;
-}
-
-//Suggestions
-
-.suggestion-wrapper {
-  h2 {
-    margin: 0;
-  }
-}
-
-.card-wrapper {
-  @include box;
-  width: 33.33%;
-  float: left;
-  padding-right: 10px;
-
-  .card-content-wrapper {
-    @include shadow_bubble;
-    @include box;
-    margin-bottom: 10px;
-
-    .card-image {
-      width: 100%;
-
-      img {
-        width: 100%;
-        border-radius: 3px;
-      }
-    }
-
-    .card-info {
-      font-weight: bold;
-      color: $qdinkaPurple;
-      margin-top: 5px;
-
-      .card-price {
-        float: right;
-      }
-    }
-
-    .card-info:after {
-      @include next_row;
-    }
-
+  img {
+    width: 100px;
+    height: 75px;
+    border-radius: 0;
   }
 }
