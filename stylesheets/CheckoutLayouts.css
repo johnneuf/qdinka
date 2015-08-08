@@ -1,5 +1,29 @@
 @import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
 
+input[type=text]{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+  width: 94%
+}
+
+input[type=submit]{
+  background-color: #1C75BD;
+  text-align: right;
+  color: white;
+  border-radius: 5px;
+  
+}
+
+textarea {
+	width: 240px;
+	height: 40px;
+	padding: 10px;
+   border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
 .checkout-wrapper h1, .checkout-page-header-wrapper h2 {
   text-align: center;
   margin: 0;
@@ -13,12 +37,16 @@
 .checkout-page-section-wrapper {
   margin: 10px 0 0 0;
   overflow: hidden;
+  background-color: white;
+
 }
 /* line 83, ../sass/layout.scss */
 .checkout-page-section-wrapper h2 {
   margin: 0 0 10px 0;
   color: #416ad2;
 }
+
+
 /* line 88, ../sass/layout.scss */
 .checkout-page-section-wrapper .checkout-card-wrapper {
   -webkit-box-sizing: border-box;
@@ -26,11 +54,45 @@
   box-sizing: border-box;
   width: 33.33%;
   float: right;
-  padding-right: 35px;
-  padding-bottom: 20px;
+  padding: 15px 15px 15px 15px;
 }
+
+
+.ShoppingCart {
+	background-color: #1C75BD;
+   font-family: Enriqueta;
+   font-size: 28pt;
+  	font-weight:bold;
+	color: white !important;
+   text-align: center;
+   padding: 10px;
+   
+}
+
+.ExpressCheckout {
+  	background-color: white;
+   font-family: Enriqueta;
+   font-size: 28pt;
+  	font-weight:bold;
+	color: #1C75BD;
+   text-align: center;
+	padding: 10px 0px 0px 0px;
+}
+
+.OrderDetails {
+  	background-color: #1C75BD;
+   font-family: Enriqueta;
+   font-size: 28pt;
+  	font-weight:bold;
+	color: white !important;
+   text-align: center;
+   padding: 10px;
+}
+
+
 /* line 94, ../sass/layout.scss */
 .checkout-page-section-wrapper .checkout-card-wrapper .checkout-card-content-wrapper {
+  
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   padding: 10px;
@@ -40,77 +102,26 @@
   box-sizing: border-box;
   margin-bottom: 10px;
   text-align: left;
-}
-
-.ShoppingCart {
-	background-color: #1C75BD;
-   font-size: 28pt;
-  	font-weight:bold;
-	color: white !important;
-   text-align: center;
-   padding: 12px;
+  background-color: #f3f3f3;
 }
 
 
-.remove {
-  font-size: 10pt;
+.TopOfDiv {
+  
+  float:left;
+  color: #AAA8A8;
   font-weight: bold;
-  color: #416ad2;
-  float: right; 
+  font-size: 16pt;
+  
 }
+
 
 
 /* line 99, ../sass/layout.scss */
 .checkout-page-section-wrapper .checkout-card-wrapper .checkout-card-content-wrapper .MiddleDiv {
   width: 100%;
-}
-
-
-
-.ProductName {
-  font-weight: bold;
-  font-size: 14pt;
-  color: #416ad2;
-}
+  font-family: enriqueta;
   
-.QuantityColorSize {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 15px;
-} 
-
-
-/* line 108, ../sass/layout.scss */
-.checkout-page-section-wrapper .checkout-card-wrapper .checkout-card-content-wrapper .card-info {
-  font-weight: bold;
-  font-size: 14pt;
-  color: #416ad2 !important;
-  margin-top: 5px;
-}
-/* line 113, ../sass/layout.scss */
-.checkout-page-section-wrapper .checkout-card-wrapper .checkout-card-content-wrapper .card-info .card-price {
-  float: right;
-  color: red;
-}
-/* line 118, ../sass/layout.scss */
-.checkout-page-section-wrapper .checkout-card-wrapper .checkout-card-content-wrapper .card-info:after {
-  content: '';
-  display: table;
-  clear: both;
 }
 
 
-/* button at bottom of cart page */
-/*.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper*/ .cart-card-smallbox {
-  font-size: 16pt !important;
-  font-weight: bold;
-  color: #416ad2 !important;
-}  
-
-
-  
-/*.cart-page-section-wrapper .cart-card-wrapper .cart-card-content-wrapper */ .cart-card-smallbox .boxprice {
-	float: right !important;
-   font-weight: bold;
-  	color: red;
-}
