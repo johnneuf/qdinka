@@ -41,8 +41,51 @@ class ProductPage extends TemplateBase
                 </div>
             </div>
 
+            <!--            Overview area-->
+            <div>
+                <h2>Name of Some Product</h2>
+                <div>
+                    Sold by: <a href="#">Someone</a>
+                </div>
+                <div>
+                    <div>
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                    </div>
+                    <a href="#">00 reviews</a>
+                    <span><a href="#">0 questions answered</a> </span>
+
+                    <div>
+                        <div>
+                            <span>$000.00</span><span>usd</span>
+                        </div>
+                        <div>
+                            <a href="#">Contact Seller</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>In Stock</span> - 00 still available<br>
+                        Items condition: <span>New</span>
+                    </div>
+
+                    <div>
+                        <h3>Overview</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
-<!--            Overview area-->
     <?php
     }
 
