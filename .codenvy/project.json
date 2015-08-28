@@ -1,0 +1,1 @@
+{"mixinTypes":["contribution"],"runners":{"configs":{"system:/php/web/php56_apache2":{"ram":1000,"variables":{},"options":{}}},"default":"system:/php/web/php56_apache2"},"builders":{"configs":{}},"description":"Qdinkas Main site","type":"php","attributes":{"language":["php"],"contribute_branch":["master"],"contribute_mode":["contribute"]}}
