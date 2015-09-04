@@ -82,7 +82,7 @@ table tbody tr:nth-of-type(even) {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
-  padding: 3px;
+  padding: 4px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
