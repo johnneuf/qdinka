@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 /* line 3, ../sass/loginout.scss */
 .main-wrapper {
   margin-top: 10px;
@@ -52,7 +52,6 @@
 }
 /* line 36, ../sass/loginout.scss */
 .register-content-wrapper input[type="email"], .register-content-wrapper input[type="text"] {
-  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #717070;
@@ -65,9 +64,9 @@
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
-  background: #1C75BD;
+  background: #429ceb;
   color: #ffffff;
-  border: none;
+  border: 0px solid #1c75bd;
   cursor: pointer;
 }
 
@@ -89,7 +88,6 @@
 /* line 58, ../sass/loginout.scss */
 .login-content-wrapper input[type="email"], .login-content-wrapper input[type="password"] {
   width: 100%;
-  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #717070;
@@ -105,9 +103,9 @@
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
-  background: #1C75BD;
+  background: #429ceb;
   color: #ffffff;
-  border: none;
+  border: 0px solid #1c75bd;
   cursor: pointer;
 }
 
@@ -167,7 +165,6 @@ h3 {
 /* line 110, ../sass/loginout.scss */
 .registration-content input[type='text'], .registration-content input[type='email'] {
   width: 100%;
-  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #717070;
@@ -178,15 +175,14 @@ h3 {
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
-  background: #1C75BD;
+  background: #429ceb;
   color: #ffffff;
-  border: none;
+  border: 0px solid #1c75bd;
   cursor: pointer;
   margin-top: 5px;
 }
 /* line 121, ../sass/loginout.scss */
 .registration-content textarea {
-  height: 2em;
   border-radius: 3px;
   border: 1px solid #666;
   color: #717070;

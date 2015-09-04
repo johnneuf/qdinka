@@ -1,15 +1,20 @@
 //Fonts
-@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+//@import url(http://fonts.googleapis.com/css?family=Domine|Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 @import "compass/css3";
 
-$headerFont: 'Domine', serif;
-$bodyFont: 'Josefin Sans', sans-serif;
+//$headerFont: 'Domine', serif;
+$headerFont: 'Enriqueta', serif;
+//$bodyFont: 'Josefin Sans', sans-serif;
+$bodyFont: 'Enriqueta', serif;
 
 //Color Constants
 $qdinkaBlue: #1C75BD;
 $qdinkaPurple: #662d91;
 $qdinkaRed: #971111;
+$qdinkaGreen: #4DA838;
 $qdinkaSafetyOrange: #FF6700;
+$qdinkaGrey: #D1D1D1;
 $fontColor: #717070;
 $backgroundOffset: #f1f1f1;
 $backgroundColor: #ffffff;
@@ -75,7 +80,7 @@ $siteWidth: 1300px;
 
 //Form Items
 @mixin standard_input() {
-  height: 2em;
+  //height: 2em;
   border-radius: 3px;
   border: 1px solid $lineColorDark;
 //  background: $inputColor;
@@ -84,8 +89,15 @@ $siteWidth: 1300px;
 
 @mixin standard_button() {
   @include box-shadow(1px 1px 4px 1px rgba(0, 0, 0, 0.4));
-  background: $qdinkaBlue;
+  background: rgb(66, 156, 235);
   color: $backgroundColor;
-  border: none;
+  border: 0px solid rgb(28, 117, 189);
   cursor: pointer;
+}
+
+@mixin standard_checkbox() {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0 0 5px 0;
 }
