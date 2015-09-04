@@ -72,6 +72,7 @@
 .row-one-wrapper {
   width: 100%;
   margin-top: 5px;
+  height: 540px;
 }
 
 .row-one-wrapper:after {
@@ -107,4 +108,159 @@
     height: 75px;
     border-radius: 0;
   }
+}
+
+//Overview area
+.overview-wrapper {
+  @include bubble;
+  @include box;
+  width: 380px;
+  float: right;
+  padding: 5px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.overview-vendor {
+  a {
+    color: $qdinkaBlue;
+  }
+}
+
+.overview-rating-wrapper {
+  img {
+    width: 10px;
+  }
+
+  a {
+    color: $qdinkaBlue;
+  }
+}
+
+.overview-price-wrapper {
+  width: 100%;
+}
+
+.overview-price-wrapper:after {
+  @include next_row;
+}
+
+.overview-price-col-left {
+  width: 50%;
+  float: left;
+}
+
+.overview-price-col-right {
+  padding: 10px 0;
+  width: 50%;
+  float: right;
+  text-align: center;
+  @include box;
+
+  a {
+    font-size: 16px;
+    color: $backgroundColor;
+    display: inline-block;
+    width: 100%;
+    background-color: $qdinkaGrey;
+  }
+
+  a:hover {
+    background-color: $qdinkaBlue;
+  }
+}
+
+.overview-price {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.overview-currency {
+  font-size: 13px;
+  color: $qdinkaBlue;
+}
+
+.overview-stock {
+  color: $qdinkaGreen;
+  font-weight: bold;
+}
+
+.overview-condition {
+  color: $qdinkaRed;
+  font-weight: bold;
+}
+
+.overview-options-wrapper {
+  @include box;
+  width: 100%;
+}
+
+.overview-options-wrapper::after {
+  @include next_row;
+}
+
+.overview-option-col-left {
+  float: left;
+  width: 50%;
+
+  input, select {
+    @include standard_input;
+    max-width: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+.overview-option-col-right {
+  float: right;
+  width: 50%;
+
+  input, select {
+    @include standard_input;
+    max-width: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+.overview-overview-wrapper {
+  margin-bottom: 5px;
+
+  h3,ul {
+    margin: 0;
+  }
+}
+
+.overview-cart-wrapper {
+  input[type="submit"] {
+    @include standard_button;
+    width: 100%;
+    font-size: 25px;
+    padding: 0;
+    line-height: 51px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: $qdinkaBlue;
+  }
+}
+
+//Product description area
+.product-description-wrapper {
+  @include bubble;
+  @include box;
+  padding: 5px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+//Row Two
+.detail-row {
+  width: 100%;
+}
+
+.detail-row:after {
+  @include next_row;
 }
