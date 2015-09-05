@@ -22,12 +22,20 @@ $lineColorDark: #666;
 $lineColorLight: #e5e5e5;
 $inputColor: #faffbd;
 $colorTableHighlight: #2596D1;
+$btnBackgroundPurple: #9370DB;
+$btnBackgroundRed: #FF0000;
+$btnBackgroundClearBlue: #99CCFF;
+$lightGrey: #eee;
+$mediumGrey: #ccc;
+$darkGrey: #333;
 
 //Font Sizes
 $bodyFontSize: 10pt;
 $bodyHeaderSize: 28pt;
 $bodySubHeaderSize: 14pt;
 $bodySmallSize: 8pt;
+$bodyHeadContentSize: 22pt;
+$bodySubHeaderContentSize: 12pt;
 
 //Site Width
 $siteWidth: 1300px;
@@ -101,3 +109,49 @@ $siteWidth: 1300px;
   vertical-align: middle;
   margin: 0 0 5px 0;
 }
+
+@mixin horizontal-nav() {
+    border-bottom: 1px solid $mediumGrey;
+    margin: 0;
+    border-top: 1px solid $mediumGrey ;
+    height: 30px;
+    background: $qdinkaBlue;  
+    
+    li {
+       float:left;    
+       list-style:none;  
+       margin-top: 0px; 
+       margin-left: 30px;
+       padding-right: 30px;
+        display: inline-block;
+        border-right: 2px solid $lightGrey;
+        padding: 0 1.5em;        
+    }
+    
+    /* remove the pipe from the last list item */
+    li:last-child { border: 0; }
+    
+    a {
+        color: $backgroundColor;
+        padding:0;
+        margin:0;
+        font-size: $bodySubHeaderSize;
+        text-align: center;
+    font-weight: bold;
+        //text-decoration:none;
+        display:block;    
+    }
+}
+
+@mixin horizontal-nav-hover() {
+    color: $mediumGrey; 
+    text-decoration:none; 
+}
+
+@mixin horizontal-nav-active() {
+    background-color: $backgroundColor;
+    color: $qdinkaBlue; 
+    text-decoration:none;    
+}
+
+

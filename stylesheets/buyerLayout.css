@@ -1,0 +1,335 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 2, 2015, 1:54:38 PM
+* @email nannalin14@gmail.com
+*/
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+/**
+* Nannalin Higgins
+* Created on : Sep 2, 2015, 1:54:38 PM
+* @email nannalin14@gmail.com
+*/
+.template-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 5px;
+  margin-left: 120px;
+  margin-right: 120px;
+  min-height: 90vh; }
+
+.buyer-top-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  margin-left: 170px;
+  width: 84%; }
+  .buyer-top-header h3 {
+    padding-left: 5px;
+    width: 70%;
+    float: left; }
+    .buyer-top-header h3 u {
+      color: #1C75BD; }
+
+.buyer-top-header:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.upgrade-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 10px 10px;
+  width: 15%;
+  float: right;
+  padding: 10px 10px;
+  text-align: center;
+  background: #9370DB; }
+  .upgrade-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10pt; }
+
+.buyer-profile-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  width: 100%;
+  height: 140px; }
+
+.buyer-image-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 15%;
+  float: left;
+  padding-top: 8px;
+  padding-left: 10px; }
+  .buyer-image-wrapper img {
+    width: 80%; }
+
+.buyer-profile-detail-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 55%;
+  float: left;
+  font-size: 14pt; }
+  .buyer-profile-detail-wrapper h2 {
+    color: #1C75BD;
+    margin: 0;
+    font-size: 28pt; }
+
+.buyerName a, #totPurchase, #completeReviews {
+  color: #1C75BD; }
+
+.buyer-button-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 55px;
+  padding-left: 10px;
+  width: 30%;
+  float: right;
+  font-size: 14pt; }
+
+.buyer-button-wrapper:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.shop-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 0px 20px 0px;
+  padding: 10px 20px;
+  background: #FF0000;
+  text-align: center; }
+  .shop-button a {
+    color: #ffffff;
+    font-size: 14pt; }
+
+.listing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+  background: #1C75BD;
+  text-align: center; }
+  .listing-button a {
+    color: #ffffff;
+    font-size: 14pt; }
+
+.buyer-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 5px;
+  width: 100%;
+  height: 600px; }
+
+/*.buyer-content-wrapper:after {
+  @include next_row;
+}*/
+.buyer-nav {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  border-top: 1px solid #ccc;
+  height: 30px;
+  background: #1C75BD;
+  /* remove the pipe from the last list item */ }
+  .buyer-nav li {
+    float: left;
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    border-right: 2px solid #eee;
+    padding: 0 1.5em; }
+  .buyer-nav li:last-child {
+    border: 0; }
+  .buyer-nav a {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-size: 14pt;
+    text-align: center;
+    font-weight: bold;
+    display: block; }
+
+.buyer-nav li a:hover {
+  color: #ccc;
+  text-decoration: none; }
+
+.buyer-nav li a:active {
+  background-color: #ffffff;
+  color: #1C75BD;
+  text-decoration: none; }
+
+.buyer-content-wrapper {
+  margin-top: 10px; }
+
+.buyer-content-menu-wrapper h2 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  font-size: 22pt;
+  color: #1C75BD;
+  text-align: right;
+  margin-top: 10px; }
+
+.buyer-content-menu-detail {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 65%;
+  margin-top: 10px;
+  float: left;
+  font-size: 14pt;
+  padding-left: 10px; }
+
+.buyer-content-body ul {
+  list-style-type: none; }
+.buyer-content-body li {
+  float: left;
+  list-style: none;
+  margin: 5px 5px;
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+  padding: 1.5em 1.5em;
+  width: 90%; }
+.buyer-content-body li:last-child {
+  border: 0; }
+
+.buyer-home-nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  margin-top: 5px; }
+
+.buyer-home-nav-image img {
+  width: 5%;
+  float: left; }
+
+.buyer-home-nav-title {
+  float: left; }
+
+.buyer-home-nav-title h2 {
+  color: #1C75BD;
+  font-size: 14pt;
+  margin: 0;
+  padding-left: 20px; }
+
+.buyer-home-nav-detail {
+  margin-top: 0;
+  font-size: 12pt;
+  padding-left: 20px; }
+
+.activity a {
+  text-decoration: underline; }
+
+.buyer-sell-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  margin-bottom: 6px;
+  width: 100%;
+  height: 180px; }
+  .buyer-sell-wrapper h2 {
+    font-size: 22pt;
+    color: #1C75BD;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 50px; }
+
+.buyer-sell-wrapper:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.buyer-sell-wrapper-detail {
+  font-size: 12pt;
+  padding: 10px 50px 0px 50px; }
+
+.buyer-sell-wrapper-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 50px;
+  float: left; }
+
+.listing-guide-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 0px 20px;
+  padding: 10px 20px;
+  background: #99CCFF;
+  text-align: center; }
+  .listing-guide-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14pt; }
+
+/*# sourceMappingURL=buyerLayout.css.map */
