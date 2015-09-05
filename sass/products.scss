@@ -259,8 +259,126 @@
 //Row Two
 .detail-row {
   width: 100%;
+  margin-top: 10px;
 }
 
 .detail-row:after {
   @include next_row;
+}
+
+.detail-left-wrapper {
+  @include bubble;
+  @include box;
+  width: 49%;
+  float: left;
+  padding: 5px;
+  height: 200px;
+  overflow: auto;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin: 5px 0 5px 25px;
+  }
+}
+
+.detail-title {
+  font-weight: bold;
+}
+
+.detail-right-wrapper {
+  @include bubble;
+  @include box;
+  padding: 5px;
+  width: 49%;
+  float: right;
+  height: 200px;
+  overflow: auto;
+
+  h2, ul {
+    margin: 0;
+  }
+}
+
+//Question and answer area
+.QandA-wrapper {
+  @include bubble;
+  @include box;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.QandA-header-wrapper {
+
+}
+
+.QandA-header-wrapper:after {
+  @include next_row;
+}
+
+.QandA-header-title {
+  float: left;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.QandA-header-ask {
+  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
+  float: right;
+  background-color: #F3F3F3;
+  display: block;
+  border: 1px solid grey;
+  border-radius: 6px;
+
+  input[type="text"] {
+    background: none;
+    border: none;
+    width: 400px;
+    padding: 5px;
+  }
+
+  input[type="submit"] {
+    border: none;
+    background-color: $qdinkaBlue;
+    color: $backgroundColor;
+    padding: 5px;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+    margin-right: -2px;
+  }
+}
+
+.QandA-answer-wrapper {
+  margin-top: 5px;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0 0 0 25px;
+  }
+}
+
+.QandA-question {
+  color: $qdinkaBlue;
+}
+
+.QandA-answer {
+  color: $qdinkaGreen;
+}
+
+.QandA-user {
+  color: $qdinkaGrey;
+  margin-left: 50px;
+}
+
+.QandA-more {
+  color: $qdinkaBlue;
+  margin-left: 25px;
 }

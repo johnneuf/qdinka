@@ -163,17 +163,17 @@ class ProductPage extends TemplateBase
         </div>
 
 <!--        Row two-->
-        <div>
-            <div>
+        <div class="detail-row">
+            <div class="detail-left-wrapper">
                 <h2>Product Details</h2>
-                <span>Title:</span><span>product detail line.</span>
-                <span>Title:</span><span>product detail line.</span>
-                <span>Title:</span><span>product detail line.</span>
-                <span>Title:</span><span>product detail line.</span>
-                <span>Title:</span><span>product detail line.</span>
-                <span>Title:</span><span>product detail line.</span>
+                <p><span class="detail-title">Title: </span>product detail line.</p>
+                <p><span class="detail-title">Title: </span>product detail line.</p>
+                <p><span class="detail-title">Title: </span>product detail line.</p>
+                <p><span class="detail-title">Title: </span>product detail line.</p>
+                <p><span class="detail-title">Title: </span>product detail line.</p>
+                <p><span class="detail-title">Title: </span>product detail line.</p>
             </div>
-            <div>
+            <div class="detail-right-wrapper">
                 <h2>What is in the box?</h2>
                 <ul>
                     <li>Item</li>
@@ -181,6 +181,81 @@ class ProductPage extends TemplateBase
                     <li>Item</li>
                     <li>Item</li>
                 </ul>
+            </div>
+        </div>
+
+<!--        Row three-->
+        <div class="QandA-wrapper">
+            <div class="QandA-header-wrapper">
+                <div class="QandA-header-title">
+                    <h2>Q&A About the Product</h2>
+                </div>
+                <div class="QandA-header-ask">
+                    <input type="text" name="txtAskQuestion" placeholder="Ask others what they thought..." />
+                    <input type="submit" name="btnAskQuestion" value="ASK" />
+                </div>
+            </div>
+
+            <div class="QandA-answer-wrapper">
+                <h3 class="QandA-question">What is a question that you would like to see here?</h3>
+                <h3 class="QandA-answer">Answer:</h3>
+                <p>
+                    Nullam scelerisque consequat libero ac tempus. Mauris quis convallis lectus, non ullamcorper nibh.
+                    Curabitur posuere est non felis pulvinar, et iaculis enim cursus. Praesent sit amet tincidunt justo.
+                    Vestibulum id neque mollis, iaculis ipsum id, finibus sem. Cras vehicula dictum erat. Praesent porta
+                    arcu eget commodo bibendum. Sed lectus massa, varius vel fringilla eu, iaculis sit amet dolor. Sed
+                    bibendum nisl in ante efficitur mattis. Vestibulum at augue consequat, gravida velit ac, eleifend
+                    odio.
+                </p>
+                <span class="QandA-user">- The Blah answered on January 1, 1972</span><br>
+                <span class="QandA-more">See more answers (0)</span>
+            </div>
+
+            <div class="QandA-answer-wrapper">
+                <h3 class="QandA-question">What is a question that you would like to see here?</h3>
+                <h3 class="QandA-answer">Answer:</h3>
+                <p>
+                    Nullam scelerisque consequat libero ac tempus. Mauris quis convallis lectus, non ullamcorper nibh.
+                    Curabitur posuere est non felis pulvinar, et iaculis enim cursus. Praesent sit amet tincidunt justo.
+                    Vestibulum id neque mollis, iaculis ipsum id, finibus sem. Cras vehicula dictum erat. Praesent porta
+                    arcu eget commodo bibendum. Sed lectus massa, varius vel fringilla eu, iaculis sit amet dolor. Sed
+                    bibendum nisl in ante efficitur mattis. Vestibulum at augue consequat, gravida velit ac, eleifend
+                    odio.
+                </p>
+                <span class="QandA-user">- The Blah answered on January 1, 1972</span><br>
+                <span class="QandA-more">See more answers (0)</span>
+            </div>
+
+            <div class="QandA-answer-wrapper">
+                <h3 class="QandA-question">What is a question that you would like to see here?</h3>
+                <h3 class="QandA-answer">Answer:</h3>
+                <p>
+                    Nullam scelerisque consequat libero ac tempus. Mauris quis convallis lectus, non ullamcorper nibh.
+                    Curabitur posuere est non felis pulvinar, et iaculis enim cursus. Praesent sit amet tincidunt justo.
+                    Vestibulum id neque mollis, iaculis ipsum id, finibus sem. Cras vehicula dictum erat. Praesent porta
+                    arcu eget commodo bibendum. Sed lectus massa, varius vel fringilla eu, iaculis sit amet dolor. Sed
+                    bibendum nisl in ante efficitur mattis. Vestibulum at augue consequat, gravida velit ac, eleifend
+                    odio.
+                </p>
+                <span class="QandA-user">- The Blah answered on January 1, 1972</span><br>
+                <span class="QandA-more">See more answers (0)</span>
+            </div>
+        </div>
+
+<!--        Row Four-->
+        <div>
+            <div>
+                <div>
+                    <h2>
+                        Customer Reviews -
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <img src="/images/icons/star.png" />
+                        <span>79 Reviews</span>
+                    </h2>
+                </div>
             </div>
         </div>
     <?php

@@ -349,11 +349,167 @@
 /* line 260, ../sass/products.scss */
 .detail-row {
   width: 100%;
+  margin-top: 10px;
 }
 
-/* line 264, ../sass/products.scss */
+/* line 265, ../sass/products.scss */
 .detail-row:after {
   content: '';
   display: table;
   clear: both;
+}
+
+/* line 269, ../sass/products.scss */
+.detail-left-wrapper {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 49%;
+  float: left;
+  padding: 5px;
+  height: 200px;
+  overflow: auto;
+}
+/* line 278, ../sass/products.scss */
+.detail-left-wrapper h2 {
+  margin: 0;
+}
+/* line 282, ../sass/products.scss */
+.detail-left-wrapper p {
+  margin: 5px 0 5px 25px;
+}
+
+/* line 287, ../sass/products.scss */
+.detail-title {
+  font-weight: bold;
+}
+
+/* line 291, ../sass/products.scss */
+.detail-right-wrapper {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 49%;
+  float: right;
+  height: 200px;
+  overflow: auto;
+}
+/* line 300, ../sass/products.scss */
+.detail-right-wrapper h2, .detail-right-wrapper ul {
+  margin: 0;
+}
+
+/* line 306, ../sass/products.scss */
+.QandA-wrapper {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* line 317, ../sass/products.scss */
+.QandA-header-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 321, ../sass/products.scss */
+.QandA-header-title {
+  float: left;
+}
+/* line 324, ../sass/products.scss */
+.QandA-header-title h2 {
+  margin: 0;
+}
+
+/* line 329, ../sass/products.scss */
+.QandA-header-ask {
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  float: right;
+  background-color: #F3F3F3;
+  display: block;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+/* line 337, ../sass/products.scss */
+.QandA-header-ask input[type="text"] {
+  background: none;
+  border: none;
+  width: 400px;
+  padding: 5px;
+}
+/* line 344, ../sass/products.scss */
+.QandA-header-ask input[type="submit"] {
+  border: none;
+  background-color: #1C75BD;
+  color: #ffffff;
+  padding: 5px;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+  margin-right: -2px;
+}
+
+/* line 356, ../sass/products.scss */
+.QandA-answer-wrapper {
+  margin-top: 5px;
+}
+/* line 359, ../sass/products.scss */
+.QandA-answer-wrapper h3 {
+  margin: 0;
+}
+/* line 363, ../sass/products.scss */
+.QandA-answer-wrapper p {
+  margin: 0 0 0 25px;
+}
+
+/* line 368, ../sass/products.scss */
+.QandA-question {
+  color: #1C75BD;
+}
+
+/* line 372, ../sass/products.scss */
+.QandA-answer {
+  color: #4DA838;
+}
+
+/* line 376, ../sass/products.scss */
+.QandA-user {
+  color: #D1D1D1;
+  margin-left: 50px;
+}
+
+/* line 381, ../sass/products.scss */
+.QandA-more {
+  color: #1C75BD;
+  margin-left: 25px;
 }
