@@ -3,3 +3,6 @@ system/system.php
 error_log
 .idea
 /plan
+/nbproject
+.DS_Store
+.sass-cache
