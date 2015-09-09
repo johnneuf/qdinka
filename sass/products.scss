@@ -382,3 +382,107 @@
   color: $qdinkaBlue;
   margin-left: 25px;
 }
+
+//Review area
+.review-wrapper {
+  @include box;
+  @include bubble;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.review-header-wrapper {
+  width: 100%;
+  @include box;
+}
+
+.review-header-wrapper:after {
+  @include next_row;
+}
+
+.review-header-left-col {
+  @include box;
+  padding: 5px 0;
+  width: 66%;
+  float: left;
+
+  h2 {
+    margin: 0;
+
+    img {
+      width: 14px;
+    }
+
+    span {
+      font-size: 10pt;
+      color: $qdinkaBlue;
+    }
+  }
+}
+
+.review-header-right-col {
+  @include box;
+  padding: 5px 0;
+  width: 33%;
+  float: right;
+  text-align: center;
+
+  a {
+    @include standard_button;
+    font-size: 14pt;
+    padding: 5px;
+  }
+
+  a:hover {
+    background: $qdinkaBlue;
+  }
+}
+
+.review-personal-header {
+
+  h3 {
+    margin: 0;
+
+    img {
+      width: 10px;
+    }
+  }
+}
+
+.review-author-header {
+  a {
+    color: $qdinkaBlue;
+  }
+}
+
+.review-question-header {
+  color: $qdinkaBlue;
+
+  a {
+    @include standard_button;
+    padding: 0 10px;
+  }
+
+  a:hover {
+    background: $qdinkaBlue;
+  }
+}
+
+.review-footer {
+  margin-top: 25px;
+  font-size: 14pt;
+}
+
+.review-see-more {
+  color: $qdinkaBlue;
+}
+
+.review-write {
+  @include standard_button;
+  padding: 0 50px;
+}
+
+.review-write:hover {
+  background: $qdinkaBlue;
+}

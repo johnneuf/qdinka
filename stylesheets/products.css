@@ -513,3 +513,148 @@
   color: #1C75BD;
   margin-left: 25px;
 }
+
+/* line 387, ../sass/products.scss */
+.review-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* line 395, ../sass/products.scss */
+.review-header-wrapper {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 400, ../sass/products.scss */
+.review-header-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 404, ../sass/products.scss */
+.review-header-left-col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 0;
+  width: 66%;
+  float: left;
+}
+/* line 410, ../sass/products.scss */
+.review-header-left-col h2 {
+  margin: 0;
+}
+/* line 413, ../sass/products.scss */
+.review-header-left-col h2 img {
+  width: 14px;
+}
+/* line 417, ../sass/products.scss */
+.review-header-left-col h2 span {
+  font-size: 10pt;
+  color: #1C75BD;
+}
+
+/* line 424, ../sass/products.scss */
+.review-header-right-col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 0;
+  width: 33%;
+  float: right;
+  text-align: center;
+}
+/* line 431, ../sass/products.scss */
+.review-header-right-col a {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  font-size: 14pt;
+  padding: 5px;
+}
+/* line 437, ../sass/products.scss */
+.review-header-right-col a:hover {
+  background: #1C75BD;
+}
+
+/* line 444, ../sass/products.scss */
+.review-personal-header h3 {
+  margin: 0;
+}
+/* line 447, ../sass/products.scss */
+.review-personal-header h3 img {
+  width: 10px;
+}
+
+/* line 454, ../sass/products.scss */
+.review-author-header a {
+  color: #1C75BD;
+}
+
+/* line 459, ../sass/products.scss */
+.review-question-header {
+  color: #1C75BD;
+}
+/* line 462, ../sass/products.scss */
+.review-question-header a {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  padding: 0 10px;
+}
+/* line 467, ../sass/products.scss */
+.review-question-header a:hover {
+  background: #1C75BD;
+}
+
+/* line 472, ../sass/products.scss */
+.review-footer {
+  margin-top: 25px;
+  font-size: 14pt;
+}
+
+/* line 477, ../sass/products.scss */
+.review-see-more {
+  color: #1C75BD;
+}
+
+/* line 481, ../sass/products.scss */
+.review-write {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  padding: 0 50px;
+}
+
+/* line 486, ../sass/products.scss */
+.review-write:hover {
+  background: #1C75BD;
+}

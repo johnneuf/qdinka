@@ -243,9 +243,9 @@ class ProductPage extends TemplateBase
         </div>
 
 <!--        Row Four-->
-        <div>
-            <div>
-                <div>
+        <div class="review-wrapper">
+            <div class="review-header-wrapper">
+                <div class="review-header-left-col">
                     <h2>
                         Customer Reviews -
                         <img src="/images/icons/star.png" />
@@ -256,6 +256,93 @@ class ProductPage extends TemplateBase
                         <span>79 Reviews</span>
                     </h2>
                 </div>
+                <div class="review-header-right-col">
+                    <a href="#">Write A Review</a>
+                </div>
+            </div>
+
+            <div class="review-personal-header">
+                <h3>
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    - Personal Review Header
+                </h3>
+                <div class="review-author-header">By <a href="#">John Smith</a> on January 1, 1970</div>
+                <p>
+                    Cras quis tellus leo. Duis eu dictum mauris. Mauris a gravida leo. Phasellus id velit nec odio
+                    scelerisque tristique a a leo. Duis id tincidunt lacus, non venenatis est. In hac habitasse platea
+                    dictumst. Nullam bibendum, odio ac sagittis mollis, justo elit sollicitudin dui, vel elementum risus
+                    nisl et diam. Vivamus consectetur risus et porttitor condimentum. Integer nunc orci, rhoncus vitae
+                    sem posuere, mollis pharetra diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
+                    sapien finibus, malesuada felis nec, tincidunt urna.
+                </p>
+                <div class="review-question-header">
+                    Was this review helpful to you?
+                    <a href="#">Yes</a>
+                    <a href="#">No</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="review-personal-header">
+                <h3>
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    - Personal Review Header
+                </h3>
+                <div class="review-author-header">By <a href="#">John Smith</a> on January 1, 1970</div>
+                <p>
+                    Cras quis tellus leo. Duis eu dictum mauris. Mauris a gravida leo. Phasellus id velit nec odio
+                    scelerisque tristique a a leo. Duis id tincidunt lacus, non venenatis est. In hac habitasse platea
+                    dictumst. Nullam bibendum, odio ac sagittis mollis, justo elit sollicitudin dui, vel elementum risus
+                    nisl et diam. Vivamus consectetur risus et porttitor condimentum. Integer nunc orci, rhoncus vitae
+                    sem posuere, mollis pharetra diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
+                    sapien finibus, malesuada felis nec, tincidunt urna.
+                </p>
+                <div class="review-question-header">
+                    Was this review helpful to you?
+                    <a href="#">Yes</a>
+                    <a href="#">No</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="review-personal-header">
+                <h3>
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    - Personal Review Header
+                </h3>
+                <div class="review-author-header">By <a href="#">John Smith</a> on January 1, 1970</div>
+                <p>
+                    Cras quis tellus leo. Duis eu dictum mauris. Mauris a gravida leo. Phasellus id velit nec odio
+                    scelerisque tristique a a leo. Duis id tincidunt lacus, non venenatis est. In hac habitasse platea
+                    dictumst. Nullam bibendum, odio ac sagittis mollis, justo elit sollicitudin dui, vel elementum risus
+                    nisl et diam. Vivamus consectetur risus et porttitor condimentum. Integer nunc orci, rhoncus vitae
+                    sem posuere, mollis pharetra diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
+                    sapien finibus, malesuada felis nec, tincidunt urna.
+                </p>
+                <div class="review-question-header">
+                    Was this review helpful to you?
+                    <a href="#">Yes</a>
+                    <a href="#">No</a>
+                </div>
+            </div>
+
+            <div class="review-footer">
+                <a class="review-see-more" href="#">See all 79 reviews ...</a>
+                <a class="review-write" href="#">Write A Review</a>
             </div>
         </div>
     <?php
