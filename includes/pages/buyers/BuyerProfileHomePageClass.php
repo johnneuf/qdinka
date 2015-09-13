@@ -15,7 +15,7 @@ class BuyerProfileHomePage extends TemplateBase {
         parent::__construct($title, $noTemplate, $maintenance);
 
         //CSS
-        $this->add_css('/stylesheets/buyerLayout.css');
+        $this->add_css('/stylesheets/buyerHomeLayout.css');
 
     }
 
@@ -34,31 +34,31 @@ class BuyerProfileHomePage extends TemplateBase {
 
             <div class="buyer-content-body">
                 <ul class="buyer-home-nav">
-                    <li>
+                    <li class="buyer-home-nav-list">
                         <div class="buyer-home-nav-image"><img src="/images/icons/all-products.png" /></div>
-                        <div class="buyer-home-nav-title"><a href="#"><h2>My Orders</h2></a>
+                        <div class="buyer-home-nav-title"><a href="/pages/buyers/myOrders.php"><h2>My Orders</h2></a>
                             <div class="buyer-home-nav-detail">View your current, pending, and previous orders and their status - <span class="activity"><a href="#">My Orders</a></span>
                         </div>
                     </li>
-                    <li>
+                    <li class="buyer-home-nav-list">
                         <div class="buyer-home-nav-image"><img src="/images/icons/envelope.png" /></div>
                         <div class="buyer-home-nav-title"><a href="#"><h2>Messages</h2></a>
                             <div class="buyer-home-nav-detail">Message with other Buyers/Sellers through your message tab - <span class="activity"><a href="#">Check Inbox</a></span>
                         </div>
                     </li>    
-                    <li>
+                    <li class="buyer-home-nav-list">
                         <div class="buyer-home-nav-image"><img src="/images/icons/star.png" /></div>
                         <div class="buyer-home-nav-title"><a href="#"><h2>Favorites</h2></a>
                             <div class="buyer-home-nav-detail">View all your favorited items and monitor how many are left - <span class="activity"><a href="#">View Favorited Items</a></span>
                         </div>
                     </li>
-                    <li>
+                    <li class="buyer-home-nav-list">
                         <div class="buyer-home-nav-image"><img src="/images/icons/all-products.png" /></div>
                         <div class="buyer-home-nav-title"><a href="#"><h2>Reviews</h2></a>
                             <div class="buyer-home-nav-detail">Edit and monitor your product reviews at any time - <span class="activity"><a href="#">See Reviews</a></span>
                         </div>
                     </li> 
-                    <li>
+                    <li class="buyer-home-nav-list">
                         <div class="buyer-home-nav-image"><img src="/images/icons/user.png" /></div>
                         <div class="buyer-home-nav-title"><a href="#"><h2>Manage Account</h2></a>
                             <div class="buyer-home-nav-detail">Manage, upgrade, and change account information - <span class="activity"><a href="#">Set-up Account</a></span>

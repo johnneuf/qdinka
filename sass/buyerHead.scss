@@ -1,0 +1,167 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 13, 2015, 2:47:18 PM
+* @email nannalin14@gmail.com
+*/
+
+@import "constants";
+
+// Adjust side menu
+.template-content-wrapper {
+    @include box;
+    padding: 0 5px;
+    margin-left: 120px;
+    margin-right: 120px;
+    min-height: 90vh;
+}
+
+.buyer-top-header {
+    @include box;
+    background: $backgroundColor; 
+    margin-left: 170px;
+    width: 84%;
+
+    h3 {
+        padding-left: 5px;
+        width: 70%;
+        float: left;
+
+        u {
+            color: $qdinkaBlue;
+        }
+    }
+}
+
+.buyer-top-header:after {
+    @include next_row;
+}
+
+.upgrade-button {
+    @include box;
+    margin: 10px 10px;
+    width: 15%;
+    float: right;
+    padding: 10px 10px;  
+    text-align: center;
+    background: $btnBackgroundPurple;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+        font-size: $bodyFontSize;
+    }    
+}
+
+.buyer-profile-wrapper {
+    @include box;
+    @include bubble;
+    margin-top: 10px;
+    width: 100%;
+    height: 140px;   
+}
+
+.buyer-image-wrapper {
+    @include box;
+    width: 15%;
+    float: left;
+    padding-top: 8px;
+    padding-left: 10px;
+
+    img {
+        width: 80%;        
+    }
+}
+
+.buyer-profile-detail-wrapper {
+    @include box;
+    padding: 5px;
+    width: 55%;
+    float: left;
+    font-size: $bodySubHeaderSize; 
+
+    h2 {
+        color: $qdinkaBlue;
+        margin: 0;
+        font-size: $bodyHeaderSize;   
+    }
+}
+
+.buyerName a, #totPurchase, #completeReviews {
+    color: $qdinkaBlue;    
+}
+
+.buyer-button-wrapper {
+    @include box;
+    padding-top: 55px; 
+    padding-left: 10px;
+    width: 30%;
+    float: right;
+    font-size: $bodySubHeaderSize;    
+}
+
+.buyer-button-wrapper:after {
+    @include next_row;
+}
+
+.shop-button {
+    @include box;
+    @include bubble;
+    margin: 0px 20px 0px;
+    padding: 10px 20px;
+    background: $btnBackgroundRed;
+    text-align: center;
+
+    a {
+        color: $backgroundColor;
+        font-size: $bodySubHeaderSize;
+    }
+}
+
+.listing-button {
+    @include box;
+    @include bubble;    
+    padding: 10px 20px;
+    background: $qdinkaBlue;
+    text-align: center;
+
+    a {
+        color: $backgroundColor;
+        font-size: $bodySubHeaderSize;
+    }
+}
+
+.buyer-content-wrapper {
+    @include box;
+    @include bubble; 
+    margin-top: 10px;
+    width: 100%;
+}
+
+.buyer-nav {
+    @include horizontal-nav(0,0,0,0,11%);
+    -webkit-padding-start: 0;
+
+    .buyer-nav-list-manage-account {
+        width: 19%;
+    }
+}
+
+.buyer-nav:after {
+    @include next_row;
+}
+
+.buyer-nav-list a:hover {
+    @include horizontal-nav-hover;
+}
+
+.buyer-nav-list-manage-account a:hover {
+    @include horizontal-nav-hover;
+}
+
+.buyer-nav-list a:active {
+    @include horizontal-nav-active;
+}
+
+.buyer-nav-list-manage-account a:active {
+    @include horizontal-nav-active;
+}
