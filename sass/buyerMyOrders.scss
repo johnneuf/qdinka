@@ -1,0 +1,453 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 2, 2015, 1:54:38 PM
+* @email nannalin14@gmail.com
+*/
+
+@import "buyerHead";
+
+.buyer-content-menu-wrapper {
+
+    h2{
+        @include box;
+        width: 25%;
+        float: left;
+        font-size: $bodyHeadContentSize;
+        color: #1C75BD;
+        padding-left: 50px;
+        margin-top: 10px; 
+    }
+}
+
+.buyer-content-menu-wrapper:after {
+    @include next_row;
+}
+
+.buyer-content-menu-detail {
+    @include box;
+    width: 60%;
+    margin-top: 10px;
+    float: left;
+    font-size: $bodySubHeaderSize; 
+}
+
+.head-activity {
+    @include box;
+    margin-top: 10px;
+    float: left;
+    font-size: $bodySubHeaderSize;
+    font-weight: bold;
+}
+
+.duration-nav {
+    @include box;
+    @include bubble_inner;
+    @include horizontal-nav(10px, 100px, 10px, 100px, 15%);
+    -webkit-padding-start: 0;
+    background: none;
+    margin-left: 50px;
+
+    a {
+        color: $qdinkaBlue; 
+        font-size: $bodySubHeaderContentSize;
+    }
+}
+
+.duration-nav li a:hover {
+    @include horizontal-nav-hover;
+}
+
+.duration-nav li a:active {
+    @include horizontal-nav-active;
+}
+
+.buyer-home-nav {
+    @include box;
+    width: 100%;
+    float: left;
+    margin-top: 5px;  
+    list-style-type: none;
+}
+
+.buyer-home-nav-list {
+    float:left;    
+    list-style:none;  
+    margin: 5px 5px;
+    display: inline-block;   
+    border-bottom: 1px solid $lightGrey;
+    padding: 1.5em 1.5em;
+    width: 90%;
+}
+
+.buyer-home-nav-list:last-child { border: 0; }
+
+.buyer-home-nav-image {
+
+    img {
+        width: 5%;
+        float: left;    
+    }
+}
+
+.buyer-home-nav-title {
+    float: left;  
+}
+
+.buyer-home-nav-title {
+    h2 {
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderSize;
+        margin: 0;
+        padding-left: 20px;
+    }
+}
+
+.buyer-home-nav-detail {
+    margin-top: 0;
+    font-size: $bodySubHeaderContentSize;
+    padding-left: 20px; 
+}
+
+.activity a {
+    text-decoration: underline;
+} 
+
+.buyer-content-ordered {
+    @include box;
+    @include bubble;
+    font-size: $bodySubHeaderContentSize;  
+    height: 500px;
+}
+
+.ordered-list-header {
+    @include box;
+    height: 40px;
+}
+
+.date {
+    @include orderedHeader(40px);
+}
+
+#orderedDate {
+    @include orderedHeaderDetail;
+}
+
+.totalCost {
+    @include orderedHeader(20px);
+}
+
+#totCost {
+    @include orderedHeaderDetail;
+}
+
+.receiver {
+    @include orderedHeader(20px);
+}
+
+#receiverName {
+    @include orderedHeaderDetail;
+}
+
+.orderedNumber {
+    @include orderedHeader(0);
+    a {
+        @include orderedHeaderDetail;
+    }
+}
+
+.orderedNumber:after {
+    @include next_row;
+}
+
+.ordered-detail {
+    padding-top: 10px;
+    width: 100%;
+    height: $heightOrderedDetail;
+}
+
+.dash {
+    @include dashLine;
+}
+
+.ordered-image {
+    float: left;
+    padding: 0 20px;
+    width: 10%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.ordered-list-1 {
+    float: left;
+    padding: 0 10px;
+    width: 40%;
+}
+
+.ordered-list-1:after {
+    @include next_row;
+}
+
+.ordered-name {
+    font-weight: bold;
+}
+
+.seller, .condition, .ordered-button-1 {
+    padding-top: 10px; 
+}
+
+#sellerName {
+    color: $qdinkaBlue;
+    text-decoration: underline;
+}
+
+#conditionStatus {
+    color: $btnBackgroundRed;
+}
+
+.rebuy-button {    
+    @include box;
+    margin: 10px 10px;
+    width: 40%;
+    float: left;
+    padding: 10px 10px;  
+    text-align: center;
+    background: $qdinkaBlue;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+    }
+}
+
+.track-package-button {    
+    @include box;
+    margin: 10px 10px;
+    width: 40%;
+    float: left;
+    padding: 10px 10px;  
+    text-align: center;
+    background: $darkBlue;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+    }
+} 
+
+.ordered-list-2 {
+    width: 40%;
+    float: left;
+}
+
+.ordered-list-2:after {
+    @include next_row;
+}
+
+.estimated-delivery {
+    padding-left: 150px;
+}
+
+.estimated-delivery-date {
+    color: $qdinkaRed;
+}
+
+.contact-seller { 
+    padding-left: 150px;
+    padding-top: 10px;      
+    a {
+        color: $qdinkaBlue;
+        font-weight: bold;
+    }
+}
+
+.ordered-quality {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    float: left;
+}
+
+.ordered-price {
+    float: left;
+    color: $qdinkaRed;
+    padding-left: 20px; 
+    padding-top: 10px;
+
+}
+
+.review-button {   
+    @include box;
+    margin: 10px 10px;
+    width: 50%;
+    float: left;
+    padding: 10px 10px;  
+    text-align: center;
+    background: $qdinkaBlue;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+    }
+}
+
+.rate-button {   
+    @include box;
+    margin: 10px 10px;
+    width: 30%;
+    float: left;
+    padding: 10px 10px;  
+    text-align: center;
+    background: $mediumGrey;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+    }
+}
+
+.pagesButtons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;    
+}
+
+.button {   
+    font-size: $bodySubHeaderSize;
+    font-weight: bold;
+    color: $qdinkaBlue;     
+    border: none;
+    background: none;
+    padding-bottom: 10px;
+
+}
+
+#page-number {
+    a {
+        font-size: $bodySubHeaderSize;    
+        color: $qdinkaBlue;     
+        font-weight: bold;
+        padding-bottom: 10px;
+
+    }
+}
+
+.new-listing-wrapper {
+    @include box;
+    @include bubble;
+    margin: 10px 125px;
+    height: 250px;
+}
+
+.new-listing-wrapper:after {
+    @include next_row;
+}
+
+.communicate-wrapper:after {
+    @include next_row;
+}
+
+.new-listing-wrapper-content {
+    padding-top: 10px;
+    width: 60%;
+    float: left;
+
+    h2 {
+        font-size: $bodyHeadContentSize;
+        color: $qdinkaBlue;
+        margin-top: 0px;
+        margin-bottom: 0px; 
+        padding-left: 50px;
+    }
+}
+
+.new-listing-wrapper-content-detail, .communicate-wrapper-content-detail {
+    font-size: $bodySubHeaderContentSize; 
+    padding: 10px 50px 0px 50px;
+}
+
+.new-listing-wrapper-content-button {
+    @include box;
+    padding-top: 10px;
+    padding-left: 50px;
+    float: left;
+}
+
+.follow-listing-button {
+    @include box;
+    @include bubble;
+    margin-bottom: 10px;
+    padding: 10px 100px;
+    background: $btnBackgroundClearBlue;
+    text-align: center;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+        font-size: $bodySubHeaderSize;   
+    }
+} 
+
+.new-listing-wrapper-image {
+    @include box;
+    width: 40%;
+    float: left;
+    padding-top: 8px;
+    padding-left: 40px;
+
+    img {
+        width: 95%;        
+    }
+}
+
+.communicate-wrapper {
+    @include box;
+    @include bubble;
+    margin: 10px 125px;
+    height: 180px;
+}
+
+.communicate-wrapper-content {
+    padding-top: 10px;
+    width: 70%;
+    float: left;
+
+    h2 {
+        font-size: $bodyHeadContentSize;
+        color: $qdinkaBlue;
+        margin-top: 0px;
+        margin-bottom: 0px; 
+        padding-left: 50px;
+    }
+}
+
+.communicate-wrapper-image {
+    @include box;
+    width: 30%;
+    float: left;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.communicate-wrapper-content-button {
+    @include box;
+    padding-top: 10px;
+    padding-right: 65px;
+    float: right;
+}
+
+.open-message-button {
+    @include box;
+    @include bubble;
+    margin-bottom: 10px;
+    padding: 10px 100px;
+    background: $qdinkaBlue;
+    text-align: center;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+        font-size: $bodySubHeaderSize;   
+    }
+}
