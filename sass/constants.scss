@@ -28,6 +28,7 @@ $btnBackgroundClearBlue: #99CCFF;
 $lightGrey: #eee;
 $mediumGrey: #ccc;
 $darkGrey: #333;
+$darkBlue: #191970;
 
 //Font Sizes
 $bodyFontSize: 10pt;
@@ -39,107 +40,108 @@ $bodySubHeaderContentSize: 12pt;
 
 //Site Width
 $siteWidth: 1300px;
+$heightOrderedDetail: 200px;
 
 //Utilities
 @mixin box() {
-  //Border boxes what ever you use it in.
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    //Border boxes what ever you use it in.
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @mixin next_row() {
-  //Clears floats. To be used with ::after
-  content: '';
-  display: table;
-  clear: both;
+    //Clears floats. To be used with ::after
+    content: '';
+    display: table;
+    clear: both;
 }
 
 //Bubbles
 @mixin bubble_outer($padding: 3px) {
-  background: $backgroundOffset;
-  border: 1px solid $lineColorLight;
-  border-radius: 6px;
-  padding: $padding;
-//  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
+    background: $backgroundOffset;
+    border: 1px solid $lineColorLight;
+    border-radius: 6px;
+    padding: $padding;
+    //  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
 }
 
 @mixin bubble_inner() {
-  background: $backgroundColor;
-  border: 1px solid $lineColorLight;
-  border-radius: 3px;
+    background: $backgroundColor;
+    border: 1px solid $lineColorLight;
+    border-radius: 3px;
 }
 
 @mixin bubble() {
-  background: $backgroundColor;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
+    background: $backgroundColor;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    @include box-shadow(0 0 4px 1px rgba(0, 0, 0, 0.08));
 }
 
 @mixin shadow_bubble() {
-  border: 1px solid $lineColorLight;
-  border-radius: 3px;
-  padding: 10px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    border: 1px solid $lineColorLight;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 //Form Items
 @mixin standard_input() {
-  //height: 2em;
-  border-radius: 3px;
-  border: 1px solid $lineColorDark;
-//  background: $inputColor;
-  color: $fontColor;
+    //height: 2em;
+    border-radius: 3px;
+    border: 1px solid $lineColorDark;
+    //  background: $inputColor;
+    color: $fontColor;
 }
 
 @mixin standard_button() {
-  @include box-shadow(1px 1px 4px 1px rgba(0, 0, 0, 0.4));
-  background: rgb(66, 156, 235);
-  color: $backgroundColor;
-  border: 0px solid rgb(28, 117, 189);
-  cursor: pointer;
+    @include box-shadow(1px 1px 4px 1px rgba(0, 0, 0, 0.4));
+    background: rgb(66, 156, 235);
+    color: $backgroundColor;
+    border: 0px solid rgb(28, 117, 189);
+    cursor: pointer;
 }
 
 @mixin standard_checkbox() {
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-  margin: 0 0 5px 0;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 0 5px 0;
 }
 
-@mixin horizontal-nav() {
+@mixin horizontal-nav($marginTop, $marginRight, $marginBottom, $marginLeft, $widthPercent) {
     border-bottom: 1px solid $mediumGrey;
-    margin: 0;
+    margin: $marginTop $marginRight $marginBottom $marginLeft;
     border-top: 1px solid $mediumGrey ;
     height: 30px;
-    background: $qdinkaBlue;  
+    background: $qdinkaBlue;
     
     li {
-       float:left;    
-       list-style:none;  
-       margin-top: 0px; 
-       margin-left: 30px;
-       padding-right: 30px;
+        width: $widthPercent;
+        float:left;    
+        list-style:none;  
+        text-align:center;
         display: inline-block;
         border-right: 2px solid $lightGrey;
-        padding: 0 1.5em;        
+        padding: 0.1em 1.6em;        
+
     }
-    
+
     /* remove the pipe from the last list item */
     li:last-child { border: 0; }
-    
+
     a {
         color: $backgroundColor;
         padding:0;
         margin:0;
         font-size: $bodySubHeaderSize;
         text-align: center;
-    font-weight: bold;
-        //text-decoration:none;
-        display:block;    
+        font-weight: normal;
+        text-decoration:none;
+        display: inline-block;
     }
 }
 
@@ -152,6 +154,25 @@ $siteWidth: 1300px;
     background-color: $backgroundColor;
     color: $qdinkaBlue; 
     text-decoration:none;    
+}
+
+@mixin orderedHeader($padLeft) {
+    @include box;
+    width: 25%;
+    margin-top : 5px;
+    padding-left: $padLeft;
+    float: left;
+}
+
+@mixin orderedHeaderDetail() {
+    color: $qdinkaBlue;
+}
+
+@mixin dashLine() {
+    border: 0 none;
+    border-top: 2px dashed $mediumGrey;
+    background: none;
+    margin: 5px 40px;    
 }
 
 
