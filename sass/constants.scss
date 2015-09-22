@@ -37,6 +37,7 @@ $bodySubHeaderSize: 14pt;
 $bodySmallSize: 8pt;
 $bodyHeadContentSize: 22pt;
 $bodySubHeaderContentSize: 12pt;
+$bodySubHeaderListSize: 18pt;
 
 //Site Width
 $siteWidth: 1300px;
@@ -118,7 +119,7 @@ $heightOrderedDetail: 200px;
     border-top: 1px solid $mediumGrey ;
     height: 30px;
     background: $qdinkaBlue;
-    
+
     li {
         width: $widthPercent;
         float:left;    
@@ -174,5 +175,35 @@ $heightOrderedDetail: 200px;
     background: none;
     margin: 5px 40px;    
 }
+
+@mixin solidLine() {
+    border: 0 none;
+    border-top: 1px solid $mediumGrey;
+    background: none;
+    margin: 5px 40px;    
+}
+
+@mixin subview-paginate-wrapper() {
+    text-align: center;    
+}
+
+@mixin subview-bottom-paginate() {
+    display: inline-block;
+    font-size: 14pt;
+}
+
+@mixin subview-paginate-active-link() {
+    color: $qdinkaBlue;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+@mixin subview-paginate-deactivated-link() {
+    font-weight: bold;
+    font-size: inherit;
+}
+
+
+
 
 
