@@ -70,20 +70,19 @@
 
 //Images area
 .row-one-wrapper {
+  display: flex;
+  align-content: stretch;
   width: 100%;
   margin-top: 5px;
   height: 540px;
-}
-
-.row-one-wrapper:after {
-  @include next_row;
 }
 
 .images-wrapper {
   @include box;
   width: 605px;
   padding-right: 5px;
-  float: left;
+  flex: 0 0 auto;
+  //float: left;
 }
 
 .images-content {
@@ -115,12 +114,21 @@
   @include bubble;
   @include box;
   width: 380px;
-  float: right;
+  //float: right;
   padding: 5px;
+  flex: 0 0 auto;
+  margin-bottom: 7px;
 
   h2 {
     margin: 0;
   }
+}
+
+.overview-content-wrapper {
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .overview-vendor {
@@ -130,6 +138,7 @@
 }
 
 .overview-rating-wrapper {
+  flex: 0 0 auto;
   img {
     width: 10px;
   }
@@ -140,6 +149,7 @@
 }
 
 .overview-price-wrapper {
+  flex: 0 0 auto;
   width: 100%;
 }
 
@@ -195,6 +205,7 @@
 .overview-options-wrapper {
   @include box;
   width: 100%;
+  flex: 0 0 auto;
 }
 
 .overview-options-wrapper::after {
@@ -224,7 +235,10 @@
 }
 
 .overview-overview-wrapper {
-  margin-bottom: 5px;
+  //margin-bottom: 5px;
+  flex: 0 0 auto;
+  height: 200px;
+  overflow-y: auto;
 
   h3,ul {
     margin: 0;
@@ -232,6 +246,8 @@
 }
 
 .overview-cart-wrapper {
+  flex: 0 0 auto;
+
   input[type="submit"] {
     @include standard_button;
     width: 100%;

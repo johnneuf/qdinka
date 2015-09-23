@@ -47,7 +47,7 @@ class ProductPage extends TemplateBase
                 <div class="overview-vendor">
                     Sold by: <a href="#">Someone</a>
                 </div>
-                <div>
+                <div class="overview-content-wrapper">
                     <div class="overview-rating-wrapper">
                         <img src="/images/icons/star.png" />
                         <img src="/images/icons/star.png" />
@@ -67,7 +67,7 @@ class ProductPage extends TemplateBase
                         </div>
                     </div>
 
-                    <div>
+                    <div style="flex: 0 0 auto;">
                         <span class="overview-stock">In Stock</span> - 00 still available<br>
                         Items condition: <span class="overview-condition">New</span>
                     </div>
@@ -96,6 +96,16 @@ class ProductPage extends TemplateBase
                     <div class="overview-overview-wrapper">
                         <h3>Overview</h3>
                         <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
