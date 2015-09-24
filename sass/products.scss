@@ -57,6 +57,7 @@
   @include box;
   background: $backgroundColor;
   padding: 5px;
+  flex: 0 0 auto;
 
   h3 {
     margin: 0;
@@ -75,6 +76,7 @@
   width: 100%;
   margin-top: 5px;
   height: 540px;
+  flex: 0 0 auto;
 }
 
 .images-wrapper {
@@ -205,7 +207,7 @@
 .overview-options-wrapper {
   @include box;
   width: 100%;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
 }
 
 .overview-options-wrapper::after {
@@ -236,8 +238,8 @@
 
 .overview-overview-wrapper {
   //margin-bottom: 5px;
-  flex: 0 0 auto;
-  height: 200px;
+  flex: 1 0 auto;
+  //height: 125px;
   overflow-y: auto;
 
   h3,ul {
@@ -254,6 +256,7 @@
     font-size: 25px;
     padding: 0;
     line-height: 51px;
+    font-family: $bodyFont;
   }
 
   input[type="submit"]:hover {
@@ -266,6 +269,7 @@
   @include bubble;
   @include box;
   padding: 5px;
+  flex: 1 1 auto;
 
   h2 {
     margin: 0;
@@ -276,20 +280,17 @@
 .detail-row {
   width: 100%;
   margin-top: 10px;
-}
-
-.detail-row:after {
-  @include next_row;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: stretch;
 }
 
 .detail-left-wrapper {
   @include bubble;
   @include box;
-  width: 49%;
-  float: left;
   padding: 5px;
-  height: 200px;
-  overflow: auto;
+  flex: 1 1 auto;
+  margin-right: 0.5em;
 
   h2 {
     margin: 0;
@@ -308,10 +309,7 @@
   @include bubble;
   @include box;
   padding: 5px;
-  width: 49%;
-  float: right;
-  height: 200px;
-  overflow: auto;
+  flex: 1 1 auto;
 
   h2, ul {
     margin: 0;
@@ -324,6 +322,7 @@
   @include box;
   margin-top: 10px;
   padding: 5px;
+  flex: 1 1 auto;
 }
 
 .QandA-header-wrapper {
@@ -406,6 +405,7 @@
   width: 100%;
   padding: 5px;
   margin-top: 5px;
+  flex: 1 1 auto;
 }
 
 .review-header-wrapper {
@@ -501,4 +501,86 @@
 
 .review-write:hover {
   background: $qdinkaBlue;
+}
+
+//Side Bar
+.also-sold-wrapper {
+  @include box;
+  @include bubble;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+
+  h2 {
+    color: $qdinkaBlue;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3 a {
+    color: $qdinkaBlue;
+    margin: 0;
+  }
+
+  > img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+.also-sold-by-wrapper {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+
+  img {
+    width: 10pt;
+  }
+}
+
+.also-sold-by-wrapper:after {
+  @include next_row;
+}
+
+.also-sold-by-left {
+  @include box;
+  width: 50%;
+  //padding: 0.5em;
+  float: left;
+}
+
+.also-sold-by-right {
+  @include box;
+  width: 50%;
+  //padding: 0.5em;
+  float: right;
+  text-align: right;
+}
+
+.also-sold-by-cart-wrapper:after {
+  @include next_row;
+}
+
+.also-sold-by-cart-left {
+  @include box;
+  width: 50%;
+  float: left;
+
+  input {
+    @include standard_button;
+    font-family: inherit;
+  }
+
+  input:hover {
+    color: $qdinkaBlue;
+    background: $qdinkaGrey;
+  }
+}
+
+.also-sold-by-cart-right {
+  @include box;
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: $qdinkaRed;
 }

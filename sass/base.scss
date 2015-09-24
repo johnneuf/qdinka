@@ -10,10 +10,14 @@ html {
 }
 
 body {
+  margin: 0;
+  font-family: inherit;
+}
+
+:root {
   font-family: $bodyFont;
   color: $fontColor;
   font-size: $bodyFontSize;
-  margin: 0;
 }
 
 h1 {
@@ -41,7 +45,13 @@ a {
 hr {
   border: none;
   height: 1px;
-  background: $lineColorDark;
+  background: $qdinkaBlue;
+}
+
+.dashed-hr {
+  border-bottom: 1px dashed $qdinkaBlue;
+  height: 1px;
+  background: none;
 }
 
 //Header Bar
@@ -147,6 +157,8 @@ hr {
   padding: 0 5px;
   margin-left: 305px;
   min-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .template-side-menu {

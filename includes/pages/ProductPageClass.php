@@ -102,15 +102,6 @@ class ProductPage extends TemplateBase
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                     </div>
 
@@ -368,6 +359,175 @@ class ProductPage extends TemplateBase
         //Contributors
         $contributors = new WeeklyContributors();
         $contributors->render();
+
+        ?>
+<!--        Also sold by whoever-->
+        <div class="also-sold-wrapper">
+            <h2>Also sold by John Smith</h2>
+            <hr />
+
+<!--            Card-->
+            <img src="/images/placeholder-product-image-large.png" />
+            <h3><a href="#">Some Product Name</a></h3>
+            <div class="also-sold-by-wrapper">
+                <div class="also-sold-by-left">
+                    by Jane Smith
+                </div>
+                <div class="also-sold-by-right">
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                </div>
+            </div>
+            <div class="also-sold-by-cart-wrapper">
+                <div class="also-sold-by-cart-left">
+                    <input type="submit" name="btnSomeName" value="Add to Cart" />
+                </div>
+                <div class="also-sold-by-cart-right">
+                    $00.00
+                </div>
+            </div>
+
+            <hr class="dashed-hr" />
+
+            <!--            Card-->
+            <img src="/images/placeholder-product-image-large.png" />
+            <h3><a href="#">Some Product Name</a></h3>
+            <div class="also-sold-by-wrapper">
+                <div class="also-sold-by-left">
+                    by Jane Smith
+                </div>
+                <div class="also-sold-by-right">
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                </div>
+            </div>
+            <div class="also-sold-by-cart-wrapper">
+                <div class="also-sold-by-cart-left">
+                    <input type="submit" name="btnSomeName" value="Add to Cart" />
+                </div>
+                <div class="also-sold-by-cart-right">
+                    $00.00
+                </div>
+            </div>
+
+            <hr class="dashed-hr" />
+
+            <!--            Card-->
+            <img src="/images/placeholder-product-image-large.png" />
+            <h3><a href="#">Some Product Name</a></h3>
+            <div class="also-sold-by-wrapper">
+                <div class="also-sold-by-left">
+                    by Jane Smith
+                </div>
+                <div class="also-sold-by-right">
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                </div>
+            </div>
+            <div class="also-sold-by-cart-wrapper">
+                <div class="also-sold-by-cart-left">
+                    <input type="submit" name="btnSomeName" value="Add to Cart" />
+                </div>
+                <div class="also-sold-by-cart-right">
+                    $00.00
+                </div>
+            </div>
+
+        </div>
+
+        <!--        Similar Items-->
+        <div class="also-sold-wrapper">
+            <h2>Similar Items</h2>
+            <hr />
+
+            <!--            Card-->
+            <img src="/images/placeholder-product-image-large.png" />
+            <h3><a href="#">Some Product Name</a></h3>
+            <div class="also-sold-by-wrapper">
+                <div class="also-sold-by-left">
+                    by Jane Smith
+                </div>
+                <div class="also-sold-by-right">
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                </div>
+            </div>
+            <div class="also-sold-by-cart-wrapper">
+                <div class="also-sold-by-cart-left">
+                    <input type="submit" name="btnSomeName" value="Add to Cart" />
+                </div>
+                <div class="also-sold-by-cart-right">
+                    $00.00
+                </div>
+            </div>
+
+            <hr class="dashed-hr" />
+
+            <!--            Card-->
+            <img src="/images/placeholder-product-image-large.png" />
+            <h3><a href="#">Some Product Name</a></h3>
+            <div class="also-sold-by-wrapper">
+                <div class="also-sold-by-left">
+                    by Jane Smith
+                </div>
+                <div class="also-sold-by-right">
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                </div>
+            </div>
+            <div class="also-sold-by-cart-wrapper">
+                <div class="also-sold-by-cart-left">
+                    <input type="submit" name="btnSomeName" value="Add to Cart" />
+                </div>
+                <div class="also-sold-by-cart-right">
+                    $00.00
+                </div>
+            </div>
+
+            <hr class="dashed-hr" />
+
+            <!--            Card-->
+            <img src="/images/placeholder-product-image-large.png" />
+            <h3><a href="#">Some Product Name</a></h3>
+            <div class="also-sold-by-wrapper">
+                <div class="also-sold-by-left">
+                    by Jane Smith
+                </div>
+                <div class="also-sold-by-right">
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                    <img src="/images/icons/star.png" />
+                </div>
+            </div>
+            <div class="also-sold-by-cart-wrapper">
+                <div class="also-sold-by-cart-left">
+                    <input type="submit" name="btnSomeName" value="Add to Cart" />
+                </div>
+                <div class="also-sold-by-cart-right">
+                    $00.00
+                </div>
+            </div>
+
+        </div>
+
+        <?php
     }
 
 }
