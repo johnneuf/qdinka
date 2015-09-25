@@ -105,9 +105,10 @@ class ProductPage extends TemplateBase
                         </ul>
                     </div>
 
-                    <div class="overview-cart-wrapper">
-                        <input type="submit" name="btnAddToCart" value="Add to Cart" />
-                    </div>
+<!--                    <div class="overview-cart-wrapper">-->
+<!--                        <input type="submit" name="btnAddToCart" value="Add to Cart" />-->
+<!--                    </div>-->
+                    <input class="overview-cart-wrapper" type="submit" name="btnAddToCart" value="Add to Cart" />
                 </div>
             </div>
 
