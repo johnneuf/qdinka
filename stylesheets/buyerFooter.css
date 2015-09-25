@@ -1,0 +1,185 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 16, 2015, 4:00 PM
+* @email nannalin14@gmail.com
+*/
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+/* line 9, ../sass/buyerFooter.scss */
+.new-listing-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 10px 125px;
+  height: 250px;
+}
+
+/* line 16, ../sass/buyerFooter.scss */
+.new-listing-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 20, ../sass/buyerFooter.scss */
+.communicate-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 24, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content {
+  padding-top: 10px;
+  width: 60%;
+  float: left;
+}
+/* line 29, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content h2 {
+  font-size: 22pt;
+  color: #1C75BD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+/* line 38, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content-detail, .communicate-wrapper-content-detail {
+  font-size: 12pt;
+  padding: 10px 50px 0px 50px;
+}
+
+/* line 43, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 50px;
+  float: left;
+}
+
+/* line 50, ../sass/buyerFooter.scss */
+.follow-listing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: #99CCFF;
+  text-align: center;
+}
+/* line 58, ../sass/buyerFooter.scss */
+.follow-listing-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+/* line 65, ../sass/buyerFooter.scss */
+.new-listing-wrapper-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 40%;
+  float: left;
+  padding-top: 8px;
+  padding-left: 40px;
+}
+/* line 72, ../sass/buyerFooter.scss */
+.new-listing-wrapper-image img {
+  width: 95%;
+}
+
+/* line 77, ../sass/buyerFooter.scss */
+.communicate-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 10px 125px;
+  height: 180px;
+}
+
+/* line 84, ../sass/buyerFooter.scss */
+.communicate-wrapper-content {
+  padding-top: 10px;
+  width: 70%;
+  float: left;
+}
+/* line 89, ../sass/buyerFooter.scss */
+.communicate-wrapper-content h2 {
+  font-size: 22pt;
+  color: #1C75BD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+/* line 98, ../sass/buyerFooter.scss */
+.communicate-wrapper-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+/* line 106, ../sass/buyerFooter.scss */
+.communicate-wrapper-content-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-right: 65px;
+  float: right;
+}
+
+/* line 113, ../sass/buyerFooter.scss */
+.open-message-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: #1C75BD;
+  text-align: center;
+}
+/* line 121, ../sass/buyerFooter.scss */
+.open-message-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14pt;
+}

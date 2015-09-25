@@ -247,23 +247,6 @@
   }
 }
 
-//.overview-cart-wrapper {
-//  flex: 1 0 auto;
-//
-//  input[type="submit"] {
-//    @include standard_button;
-//    width: 100%;
-//    font-size: 25px;
-//    padding: 0;
-//    line-height: 51px;
-//    font-family: $bodyFont;
-//  }
-//
-//  input[type="submit"]:hover {
-//    background-color: $qdinkaBlue;
-//  }
-//}
-
 .overview-cart-wrapper {
   flex: 1 0 auto;
   @include standard_button;
