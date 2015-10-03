@@ -5,6 +5,8 @@
 * @email kendalldarkmere@gmail.com
 */
 
+//The blah change
+
 require_once('./includes/autoload.php');
 
 $page = new \includes\frontpage\FrontPage('Qdinka Home');
