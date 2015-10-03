@@ -1,0 +1,345 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 15, 2015, 7:00 PM
+* @email nannalin14@gmail.com
+*/
+
+@import "buyerHeader";
+@import "buyerFooter";
+
+.buyer-content-wrapper {
+    @include box;
+    @include bubble; 
+    margin-top: 5px;
+    width: 100%;
+}
+
+.buyer-content-wrapper:after {
+    @include next_row;
+}
+
+.buyer-content-wrapper {
+    margin-top: 10px;
+}
+
+.buyer-content-menu-wrapper h2 {
+    @include box;
+    width: 30%;
+    float: left;
+    font-size: $bodyHeadContentSize;
+    color: $qdinkaBlue;
+    margin-top: 10px; 
+    margin-bottom: 0;
+    padding-left: 50px;
+}
+
+.buyer-content-menu-wrapper:after {
+    @include next_row;
+}
+
+.favorite-item-head {
+    @include box;
+    margin-top: 10;
+    margin-bottom: 0;
+    padding-left: 50px;
+    list-style:none;  
+    color: $qdinkaRed;
+    font-size: $bodySubHeaderSize;
+    font-weight: bold;  
+
+    li {
+        margin-top: 0;
+        float: left;
+    }
+    .item-head {
+        width: 20%;
+    }
+
+    .price-head {
+        width: 16%;
+    }
+
+    .view-head {
+        width: 15%;
+    }
+
+    .stock-head {
+        width: 15%;
+    }
+
+    .date-head {
+        width: 23%; 
+    }
+
+    .active-head {
+
+    }
+}
+
+.favorite-item-head:after {
+    @include next_row;
+}
+
+.favorite-overview-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include solidLine;
+}
+
+.favorite-overview-wrapper:after {
+    @include next_row;
+}
+
+.favorite-item-wrapper {
+    @include bubble;
+    @include box;
+    width: 18%;
+    float: left;
+    margin-top: 5px;
+}
+
+.view-list-link {
+    float: left;
+    padding: 5px;
+
+    a {
+        font-size: $bodyFontSize;
+        font-weight: bold;
+        color: $qdinkaBlue;
+    }
+}
+
+.remove-item {
+    padding: 5px;
+    float: right;
+
+    a {
+        font-size: $bodySmallSize;
+        color: $qdinkaBlue;
+    }
+}
+
+.remove-item:after{
+    @include next_row;
+}
+
+.favorite-image {
+    margin-top: 20px;   
+
+    img {
+        width: 60%;
+        border-radius: 0;
+        display: block;   
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+.item-name {
+    margin-top: 5px;   
+    text-align: center;
+
+    a{
+        font-size: $bodyFontSize;
+        font-weight: bold;
+        color: $qdinkaBlue;
+    }
+}
+
+.vender {
+    padding: 5px;
+    float: left;
+    font-weight: bold;
+}
+
+.favorite-overview-rating-wrapper {
+    padding: 5px;
+    float: right;
+
+    img {
+        width: 10px;
+    }
+}
+
+.favorite-overview-cart-wrapper {
+
+    input[type="submit"] {
+        @include standard_button;
+        width: 100%;
+        font-size: 15px;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: $qdinkaBlue;
+    }
+}
+
+.favorite-item-detail {
+    @include box;
+    margin-top: 40px;
+    padding-left: 20px; 
+    float: left;
+    width: 82%;
+}
+
+.favorite-item-detail-top {
+    @include box;
+}
+
+
+.listed-price {
+    float: left;
+    font-size: $bodyHeadContentSize;
+    color: $qdinkaBlue; 
+    width: 22%;
+}
+
+.views {
+    float: left;
+    font-size: $bodyFontSize;
+    color: black;
+    width: 19%;
+}
+
+.views-num {
+    font-size: $bodyHeadContentSize;
+}
+
+.instock {
+    float: left;
+    font-size: $bodyFontSize;
+    color: $darkBlue;
+    width: 20%;
+}
+
+.instock-num {
+    font-size: $bodyHeadContentSize;
+}
+
+.posted-date {
+    float: left;
+    font-size: $bodyHeadContentSize;
+    color: $btnBackgroundRed; 
+    width: 30%;    
+}
+
+.active {
+    float: left;
+    font-size: $bodyHeadContentSize;
+    color: $qdinkaGreen;
+    font-weight: bold;
+}
+
+.not-active {
+    float: left;
+    font-size: $bodyHeadContentSize;
+    color: $qdinkaRed;
+    font-weight: bold;
+}
+
+.favorite-item-detail-bottom {
+    @include box;
+    margin-top: 120px; 
+}   
+
+
+.detail-bottom-left-col {
+    float: left; 
+
+    h2 {
+        float: left;
+        font-size: $bodySubHeaderSize;
+        font-weight: bold; 
+    }
+
+    .marketplace-link {
+        float: left;
+        //padding-top: 10px;
+        margin-left: 40px;
+        -webkit-padding-start: 0;
+
+        .logo-amazon img {
+            padding-top: 10px;
+        }
+
+        .logo-ebay img {
+            padding-top: 6px;
+            width: 90%;            
+        }
+
+        .logo-etsy img, .logo-cragslist img {
+            padding-top: 7px;
+        }
+
+        .logo-bonanza img {
+            padding-top: 8px;
+        }
+    }
+
+    li {
+        height: 30px;
+        float: left;
+        list-style: none; 
+        vertical-align: middle;
+        border-right: 1px solid $darkBlue;
+        padding: 0 0.5em 0;   
+
+        img {
+            padding: 0;
+            display: inline-block;
+        }
+    }
+
+    /* remove the pipe from the last list item */
+    li:last-child { border: 0; }
+
+}
+
+.detail-bottom-right-col {
+    @include box;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+
+    .buy-now-button a {
+        @include standard_button;
+        font-size: 14pt;
+        padding: 5px 40px;
+    }
+
+    .buy-now-button a:hover {
+        background: $qdinkaBlue;
+    }
+
+    .contact-seller-button a {
+        @include standard_button;
+        background: grey;
+        color: white;
+        font-size: 14pt;
+        padding: 5px 20px;
+    }
+
+    .contact-seller-button:hover {
+        background: grey;
+    }
+}
+
+.subview-bottom-paginate-wrapper {
+    @include solidLine;
+    @include subview-paginate-wrapper; 
+}
+
+.subview-bottom-paginate {
+    @include subview-bottom-paginate;
+}
+
+.active-link {
+    @include subview-paginate-active-link;
+}
+
+.deactivated-link {
+    @include subview-paginate-deactivated-link;
+}

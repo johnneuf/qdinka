@@ -1,0 +1,126 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 16, 2015, 4:00 PM
+* @email nannalin14@gmail.com
+*/
+
+@import "constants";
+
+.new-listing-wrapper {
+    @include box;
+    @include bubble;
+    margin: 10px 125px;
+    height: 250px;
+}
+
+.new-listing-wrapper:after {
+    @include next_row;
+}
+
+.communicate-wrapper:after {
+    @include next_row;
+}
+
+.new-listing-wrapper-content {
+    padding-top: 10px;
+    width: 60%;
+    float: left;
+
+    h2 {
+        font-size: $bodyHeadContentSize;
+        color: $qdinkaBlue;
+        margin-top: 0px;
+        margin-bottom: 0px; 
+        padding-left: 50px;
+    }
+}
+
+.new-listing-wrapper-content-detail, .communicate-wrapper-content-detail {
+    font-size: $bodySubHeaderContentSize; 
+    padding: 10px 50px 0px 50px;
+}
+
+.new-listing-wrapper-content-button {
+    @include box;
+    padding-top: 10px;
+    padding-left: 50px;
+    float: left;
+}
+
+.follow-listing-button {
+    @include box;
+    @include bubble;
+    margin-bottom: 10px;
+    padding: 10px 100px;
+    background: $btnBackgroundClearBlue;
+    text-align: center;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+        font-size: $bodySubHeaderSize;   
+    }
+} 
+
+.new-listing-wrapper-image {
+    @include box;
+    width: 40%;
+    float: left;
+    padding-top: 8px;
+    padding-left: 40px;
+
+    img {
+        width: 95%;        
+    }
+}
+
+.communicate-wrapper {
+    @include box;
+    @include bubble;
+    margin: 10px 125px;
+    height: 180px;
+}
+
+.communicate-wrapper-content {
+    padding-top: 10px;
+    width: 70%;
+    float: left;
+
+    h2 {
+        font-size: $bodyHeadContentSize;
+        color: $qdinkaBlue;
+        margin-top: 0px;
+        margin-bottom: 0px; 
+        padding-left: 50px;
+    }
+}
+
+.communicate-wrapper-image {
+    @include box;
+    width: 30%;
+    float: left;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.communicate-wrapper-content-button {
+    @include box;
+    padding-top: 10px;
+    padding-right: 65px;
+    float: right;
+}
+
+.open-message-button {
+    @include box;
+    @include bubble;
+    margin-bottom: 10px;
+    padding: 10px 100px;
+    background: $qdinkaBlue;
+    text-align: center;
+
+    a {
+        color: $backgroundColor;
+        text-decoration: none;
+        font-size: $bodySubHeaderSize;   
+    }
+}
