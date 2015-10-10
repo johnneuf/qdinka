@@ -51,11 +51,6 @@ class BuyerCustomerReviewsPage extends TemplateBase {
                         <div class="item-name"><a href="#">Item Name</a></div>
                         <div class="vender">by Someone</div>
                         <div class="overview-rating-wrapper">
-                            <img src="/images/icons/star.png" />
-                            <img src="/images/icons/star.png" />
-                            <img src="/images/icons/star.png" />
-                            <img src="/images/icons/star.png" />
-                            <img src="/images/icons/star.png" />
                         </div>
                         <div class="overview-cart-wrapper">
                             <input type="submit" name="btnAddToCart" value="Buy Another" />
