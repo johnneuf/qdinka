@@ -17,14 +17,16 @@
 
 .buyer-top-header {
     @include box;
+    padding: 0 0 0 40px;
     background: $backgroundColor; 
-    margin-left: 170px;
-    width: 84%;
+    height: 32px;
+    width: 100%;
 
-    h3 {
-        padding-left: 5px;
-        width: 70%;
+    p {
+        margin-top: 5px;
+        width: 88%;
         float: left;
+        font-size: 13pt;
 
         u {
             color: $qdinkaBlue;
@@ -38,17 +40,17 @@
 
 .upgrade-button {
     @include box;
-    margin: 10px 10px;
-    width: 15%;
+    width: 12%;
     float: right;
-    padding: 10px 10px;  
+    padding: 6px 10px;  
     text-align: center;
-    background: $btnBackgroundPurple;
+    background: #9999CC;
 
     a {
         color: $backgroundColor;
         text-decoration: none;
-        font-size: $bodyFontSize;
+        font-size: $bodySubHeaderContentSize;
+
     }    
 }
 

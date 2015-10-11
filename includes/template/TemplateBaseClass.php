@@ -271,9 +271,9 @@ available; post products, track sales, integrate QuickBooks, market and promote 
 <!--            <h3>Browse Products</h3>-->
             <?php $this->side_menu(); ?>
         </div>
-        <div class="template-copyright">
+<!--        <div class="template-copyright">
             <p>Copyright &#64; Qdinka 2015 All rights reserved</p>
-        </div>
+        </div>-->
     <?php
     }
 }

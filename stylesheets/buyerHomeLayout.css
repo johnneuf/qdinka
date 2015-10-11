@@ -17,14 +17,16 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0 0 0 40px;
   background: #ffffff;
-  margin-left: 170px;
-  width: 84%; }
-  .buyer-top-header h3 {
-    padding-left: 5px;
-    width: 70%;
-    float: left; }
-    .buyer-top-header h3 u {
+  height: 32px;
+  width: 100%; }
+  .buyer-top-header p {
+    margin-top: 5px;
+    width: 88%;
+    float: left;
+    font-size: 13pt; }
+    .buyer-top-header p u {
       color: #1C75BD; }
 
 .buyer-top-header:after {
@@ -36,16 +38,15 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 10px 10px;
-  width: 15%;
+  width: 12%;
   float: right;
-  padding: 10px 10px;
+  padding: 6px 10px;
   text-align: center;
-  background: #9370DB; }
+  background: #9999CC; }
   .upgrade-button a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 10pt; }
+    font-size: 12pt; }
 
 .buyer-profile-wrapper {
   -webkit-box-sizing: border-box;
