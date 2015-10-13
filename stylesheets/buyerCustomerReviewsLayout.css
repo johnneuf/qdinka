@@ -1,6 +1,6 @@
 /**
 * Nannalin Higgins
-* Created on : Sep 2, 2015, 1:54:38 PM
+* Created on : Sep 23, 2015, 11.40 PM
 * @email nannalin14@gmail.com
 */
 /**
@@ -371,7 +371,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 25%;
+  width: 37%;
   float: left;
   font-size: 22pt;
   color: #1C75BD;
@@ -389,6 +389,7 @@
   box-sizing: border-box;
   width: 60%;
   margin-top: 10px;
+  padding-right: 20px;
   float: left;
   font-size: 14pt; }
 
@@ -409,7 +410,7 @@
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
-  margin: 10px 100px 10px 100px;
+  margin: 10px 50px 10px 100px;
   border-top: 1px solid #ccc;
   height: 30px;
   background: #1C75BD;
@@ -449,49 +450,9 @@
   color: #1C75BD;
   text-decoration: none; }
 
-.buyer-home-nav {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  margin-top: 5px;
-  list-style-type: none; }
-
-.buyer-home-nav-list {
-  float: left;
-  list-style: none;
-  margin: 5px 5px;
-  display: inline-block;
-  border-bottom: 1px solid #eee;
-  padding: 1.5em 1.5em;
-  width: 90%; }
-
-.buyer-home-nav-list:last-child {
-  border: 0; }
-
-.buyer-home-nav-image img {
-  width: 5%;
-  float: left; }
-
-.buyer-home-nav-title {
-  float: left; }
-
-.buyer-home-nav-title h2 {
-  color: #1C75BD;
-  font-size: 14pt;
-  margin: 0;
-  padding-left: 20px; }
-
-.buyer-home-nav-detail {
-  margin-top: 0;
-  font-size: 12pt;
-  padding-left: 20px; }
-
-.activity a {
-  text-decoration: underline; }
-
-.buyer-content-ordered {
+.buyer-content-review {
+  padding-top: 5px;
+  padding-bottom: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -503,197 +464,156 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  font-size: 12pt;
-  height: 500px; }
+  margin: 15px 20px; }
 
-.ordered-list-header {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 40px; }
+.buyer-content-review:after {
+  content: '';
+  display: table;
+  clear: both; }
 
-.date {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 40px;
+.item-wrapper {
+  width: 18%;
   float: left; }
 
-#orderedDate {
-  color: #1C75BD; }
-
-.totalCost {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left; }
-
-#totCost {
-  color: #1C75BD; }
-
-.receiver {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left; }
-
-#receiverName {
-  color: #1C75BD; }
-
-.orderedNumber {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 0;
-  float: left; }
-  .orderedNumber a {
+.view-list-link {
+  float: left;
+  padding-left: 5px; }
+  .view-list-link a {
+    font-size: 10pt;
+    font-weight: bold;
     color: #1C75BD; }
 
-.orderedNumber:after {
+.contact-seller-link {
+  padding-left: 5px;
+  float: right; }
+  .contact-seller-link a {
+    font-size: 8pt;
+    color: #1C75BD; }
+
+.contact-seller-link:after {
   content: '';
   display: table;
   clear: both; }
 
-.ordered-detail {
-  padding-top: 10px;
-  width: 100%;
-  height: 200px; }
+.item-image {
+  margin-top: 25px; }
+  .item-image img {
+    width: 60%;
+    border-radius: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
-.dash {
-  border: 0 none;
-  border-top: 2px dashed #ccc;
-  background: none;
-  margin: 5px 40px; }
+.item-name {
+  margin-top: 5px;
+  text-align: center; }
+  .item-name a {
+    font-size: 10pt;
+    font-weight: bold;
+    color: #1C75BD; }
 
-.ordered-image {
+.vender {
+  padding-left: 5px;
   float: left;
-  padding: 0 20px;
-  width: 10%; }
-  .ordered-image img {
-    width: 100%; }
-
-.ordered-list-1 {
-  float: left;
-  padding: 0 10px;
-  width: 40%; }
-
-.ordered-list-1:after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.ordered-name {
   font-weight: bold; }
 
-.seller, .condition, .ordered-button-1 {
-  padding-top: 10px; }
+.overview-rating-wrapper {
+  padding-left: 5px;
+  float: right; }
+  .overview-rating-wrapper img {
+    width: 10px; }
 
-#sellerName {
-  color: #1C75BD;
-  text-decoration: underline; }
-
-#conditionStatus {
-  color: #FF0000; }
-
-.rebuy-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #1C75BD; }
-  .rebuy-button a {
+.overview-cart-wrapper {
+  margin-top: 25px;
+  padding-left: 5px; }
+  .overview-cart-wrapper input[type="submit"] {
+    -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+    background: #429ceb;
     color: #ffffff;
-    text-decoration: none; }
+    border: 0px solid #1c75bd;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+    line-height: 30px; }
+  .overview-cart-wrapper input[type="submit"]:hover {
+    background-color: #1C75BD; }
 
-.track-package-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
+.review-wrapper {
   float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #191970; }
-  .track-package-button a {
-    color: #ffffff;
-    text-decoration: none; }
+  width: 80%; }
 
-.ordered-list-2 {
-  width: 40%;
-  float: left; }
+.review-header-wrapper {
+  float: left;
+  padding-left: 40px;
+  width: 60%; }
+  .review-header-wrapper .overview-rating-wrapper {
+    float: left; }
+  .review-header-wrapper .review-header-detail {
+    font-weight: bold; }
+  .review-header-wrapper .customer-name {
+    color: #1C75BD; }
 
-.ordered-list-2:after {
+.review-header-wrapper:after {
   content: '';
   display: table;
   clear: both; }
 
-.estimated-delivery {
-  padding-left: 150px; }
+.review-buttons {
+  float: right; }
 
-.estimated-delivery-date {
-  color: #971111; }
-
-.contact-seller {
-  padding-left: 150px;
-  padding-top: 10px; }
-  .contact-seller a {
-    color: #1C75BD;
-    font-weight: bold; }
-
-.ordered-quality {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 150px;
-  float: left; }
-
-.ordered-price {
-  float: left;
-  color: #971111;
-  padding-left: 20px;
-  padding-top: 10px; }
-
-.review-button {
+.add-comment-button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 10px 10px;
-  width: 50%;
+  margin: 5px 5px;
   float: left;
-  padding: 10px 10px;
+  padding: 5px 10px;
+  text-align: center;
+  background: grey; }
+  .add-comment-button a {
+    color: #ffffff;
+    text-decoration: none; }
+
+.edit-post-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  float: left;
+  padding: 5px 30px;
   text-align: center;
   background: #1C75BD; }
-  .review-button a {
+  .edit-post-button a {
     color: #ffffff;
     text-decoration: none; }
 
-.rate-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 30%;
+.review-body-wrapper {
   float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #ccc; }
-  .rate-button a {
-    color: #ffffff;
-    text-decoration: none; }
+  padding-left: 40px; }
+
+.review-body-wrapper-top {
+  margin-bottom: 0; }
+  .review-body-wrapper-top .full-review a {
+    color: #1C75BD; }
+
+.review-body-wrapper-buttom {
+  margin-top: 0; }
+
+.review-body-wrapper-buttom {
+  color: #1C75BD;
+  font-weight: bold; }
+
+.review-body-wrapper-buttom-left {
+  float: left; }
+
+.review-body-wrapper-buttom-right {
+  float: right; }
+
+.num-people, .num-comments {
+  font-size: 18pt; }
 
 .subview-bottom-paginate-wrapper {
   text-align: center; }
@@ -711,4 +631,4 @@
   font-weight: bold;
   font-size: inherit; }
 
-/*# sourceMappingURL=buyerMyOrdersLayout.css.map */
+/*# sourceMappingURL=buyerCustomerReviewsLayout.css.map */

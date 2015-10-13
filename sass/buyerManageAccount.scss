@@ -1,0 +1,194 @@
+/**
+* Nannalin Higgins
+* Created on : Oct 4, 2015, 11.40 AM
+* @email nannalin14@gmail.com
+*/
+
+@import "buyerHeader";
+@import "buyerFooter";
+
+.buyer-content-wrapper {
+    height: 700pt;
+}
+
+.buyer-content-menu-wrapper {
+
+    h2{
+        @include box;
+        width: 40%;
+        float: left;
+        font-size: $bodyHeadContentSize;
+        color: #1C75BD;
+        padding-left: 50px;
+        margin-top: 10px; 
+    }
+}
+
+.buyer-content-menu-wrapper:after {
+    @include next_row;
+}
+
+.buyer-content-menu-detail {
+    @include box;
+    width: 60%;
+    margin-top: 10px;
+    padding-right: 20px;
+    float: left;
+    font-size: $bodySubHeaderSize; 
+}
+
+.head-activity {
+    @include box;
+    margin-top: 10px;
+    float: left;
+    font-size: $bodySubHeaderSize;
+    font-weight: bold;
+}
+
+.subheader-nav {
+    @include box;
+    @include bubble_inner;
+    @include horizontal-nav(10px, 50px, 10px, 100px, 15%);
+    
+    -webkit-padding-start: 0;
+    background: none;
+    margin-left: 50px;
+
+    a {
+        color: $qdinkaBlue; 
+        font-size: $bodySubHeaderContentSize;
+    }
+}
+
+.subheader-nav li a:hover {
+    @include horizontal-nav-hover;
+}
+
+.subheader-nav li a:active {
+    @include horizontal-nav-active;
+}
+
+.buyer-content-manage-account {
+    margin : 15px 20px;
+}
+
+.buyer-content-review:after {
+    @include next_row;
+}
+
+.manage-account-wrapper {
+    form {
+        height: none;
+    }
+    
+    margin-left: 30px;
+    .subheader-form {
+        padding-top: 10px;
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderListSize;
+    }   
+}
+
+.left-manage-account-wrapper, .right-manage-content-wrapper, .full-manage-content-wrapper, .sub-manage-content-wrapper{
+    width: 50%;
+    float: left;
+    
+    label {
+        width: 30%;
+        margin-top: 20px;
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderContentSize; 
+        float: left;
+    }
+    
+    input {
+        @include bubble;
+        height: 20pt;
+        width: 55%;
+        font-size: $bodySubHeaderContentSize;      
+    }
+    
+    .form-detail {
+        width: 200pt;
+        padding-left: 150px;
+        padding-top: 10px;
+    }
+}
+
+
+.full-manage-content-wrapper {
+    width: 100%;
+    
+    label {
+        width: 20%;
+    }
+    
+    input {
+        width: 70%;
+    }
+    
+    .form-detail {
+        width: 70%;
+        padding-left: 195px;
+    }
+}
+
+.sub-manage-content-wrapper {
+    padding-left: 195px;
+}
+
+.phone-number-form {
+    font-size: $bodySubHeaderContentSize;
+    color: $qdinkaBlue;
+}
+
+#phone-number-part1, #phone-number-part2 {
+    width: 14%;
+    text-align: center;
+}
+
+#phone-number-part3 {
+    width: 19%;
+    text-align: center;
+}
+
+.dash-line {
+    border-bottom: 1px dashed #ccc;
+    margin-right: 30px;
+    padding: 20px 0;
+}
+
+.dash-line:after {
+    @include next_row;
+}
+
+.form-special-detail {
+    font-family: "Enriqueta", serif;
+    color: #717070;
+    font-size: 10pt;
+}
+
+#special-direction {
+    height: 80pt;
+}
+
+textarea {
+    @include standard_input;
+    border-color: $qdinkaBlue;
+    color: $qdinkaBlue;
+    font-size: $bodySubHeaderContentSize; 
+    width: 54%;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 145px;
+}
+
+
+input[type='submit'] {
+    @include standard_button;
+    background: $qdinkaBlue;
+    margin-left: 145px;
+    height: 40px;
+}  
+
+

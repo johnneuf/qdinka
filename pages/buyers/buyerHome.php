@@ -12,3 +12,4 @@ debug_errors();
 
 $page = new \includes\pages\buyers\BuyerProfileHomePage('Buyer Profile Home');
 $page->render();
+$page->turnon()

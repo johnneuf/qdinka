@@ -14,7 +14,7 @@ class BuyerMyOrdersPage extends TemplateBase {
         parent::__construct($title, $noTemplate, $maintenance);
 
         //CSS
-        $this->add_css('/stylesheets/buyerMyordersLayout.css');
+        $this->add_css('/stylesheets/buyerMyOrdersLayout.css');
 
     }
 

@@ -8,9 +8,8 @@
 
 echo'       <!-- Header -->
         <div class="buyer-top-header">
-            <h3>Sell unlimited products on the only available <u>0% commission</u> platform around. Post more, sell
-                more, and make a higher percentage per sale...
-            </h3>
+            <p>Sell unlimited products on the <u>0% structure</u> . Post more, sell more, and make a higer percentage from each sale...
+            </p>
             
             <div class="upgrade-button">
                     <a href="#">Upgrade</a>
