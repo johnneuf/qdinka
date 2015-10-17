@@ -3,7 +3,7 @@
 <head>
 <!--<link rel="import"" href="template.php"/>-->
 </head>
-<link rel="stylesheet" href="newcss.css" type="text/css"/>
+<link rel="stylesheet" href="Myaccountcss.css" type="text/css"/>
    <body>
    
    
@@ -24,7 +24,7 @@
   
   <div class ="buyer-profile-wrapper">
         <div class="buyer-image-wrapper">
-         <img src="https://github.com/johnneuf/qdinka/blob/master/images/icons/user.png?raw=true"/>
+         <img src="..qdinka/images/icons/user.png"/>
           </div>
    
           <div class="buyer-profile-detail-wrapper">
@@ -56,10 +56,10 @@
 		<br/>
 		<hr>
 		<div class="buyer-profile-image">
-		<img src="https://github.com/johnneuf/qdinka/blob/master/images/icons/user.png?raw=true"/>
+		<img src="..qdinka/images/icons/user.png"/>
 		</div>
 		<div class="seller-profile-image">
-		<img src="https://github.com/johnneuf/qdinka/blob/master/images/icons/user.png?raw=true"/>
+		<img src="../qdinka/blob/master/images/icons/user.png"/>
 		</div>
     
 	 </div>
