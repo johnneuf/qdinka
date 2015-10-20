@@ -1,6 +1,6 @@
 /**
 * Nannalin Higgins
-* Created on : Sep 2, 2015, 1:54:38 PM
+* Created on : Oct 4, 2015, 11.40 AM
 * @email nannalin14@gmail.com
 */
 /**
@@ -463,12 +463,17 @@
   font-size: 14pt;
 }
 
-/* line 12, ../sass/buyerMyOrders.scss */
+/* line 10, ../sass/buyerManageAccount.scss */
+.buyer-content-wrapper {
+  height: 700pt;
+}
+
+/* line 16, ../sass/buyerManageAccount.scss */
 .buyer-content-menu-wrapper h2 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 25%;
+  width: 40%;
   float: left;
   font-size: 22pt;
   color: #1C75BD;
@@ -476,25 +481,26 @@
   margin-top: 10px;
 }
 
-/* line 23, ../sass/buyerMyOrders.scss */
+/* line 27, ../sass/buyerManageAccount.scss */
 .buyer-content-menu-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 27, ../sass/buyerMyOrders.scss */
+/* line 31, ../sass/buyerManageAccount.scss */
 .buyer-content-menu-detail {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 60%;
   margin-top: 10px;
+  padding-right: 20px;
   float: left;
   font-size: 14pt;
 }
 
-/* line 35, ../sass/buyerMyOrders.scss */
+/* line 40, ../sass/buyerManageAccount.scss */
 .head-activity {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -505,8 +511,8 @@
   font-weight: bold;
 }
 
-/* line 43, ../sass/buyerMyOrders.scss */
-.duration-nav {
+/* line 48, ../sass/buyerManageAccount.scss */
+.subheader-nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -514,7 +520,7 @@
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
-  margin: 10px 100px 10px 100px;
+  margin: 10px 50px 10px 100px;
   border-top: 1px solid #ccc;
   height: 30px;
   background: #1C75BD;
@@ -524,7 +530,7 @@
   margin-left: 50px;
 }
 /* line 123, ../sass/constants.scss */
-.duration-nav li {
+.subheader-nav li {
   width: 15%;
   float: left;
   list-style: none;
@@ -534,11 +540,11 @@
   padding: 0.1em 1.6em;
 }
 /* line 135, ../sass/constants.scss */
-.duration-nav li:last-child {
+.subheader-nav li:last-child {
   border: 0;
 }
 /* line 137, ../sass/constants.scss */
-.duration-nav a {
+.subheader-nav a {
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -548,88 +554,67 @@
   text-decoration: none;
   display: inline-block;
 }
-/* line 51, ../sass/buyerMyOrders.scss */
-.duration-nav a {
+/* line 57, ../sass/buyerManageAccount.scss */
+.subheader-nav a {
   color: #1C75BD;
   font-size: 12pt;
 }
 
-/* line 57, ../sass/buyerMyOrders.scss */
-.duration-nav li a:hover {
+/* line 63, ../sass/buyerManageAccount.scss */
+.subheader-nav li a:hover {
   color: #ccc;
   text-decoration: none;
 }
 
-/* line 61, ../sass/buyerMyOrders.scss */
-.duration-nav li a:active {
+/* line 67, ../sass/buyerManageAccount.scss */
+.subheader-nav li a:active {
   background-color: #ffffff;
   color: #1C75BD;
   text-decoration: none;
 }
 
-/* line 65, ../sass/buyerMyOrders.scss */
-.buyer-home-nav {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  margin-top: 5px;
-  list-style-type: none;
+/* line 71, ../sass/buyerManageAccount.scss */
+.buyer-content-manage-account {
+  margin: 15px 20px;
 }
 
-/* line 73, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-list {
-  float: left;
-  list-style: none;
-  margin: 5px 5px;
-  display: inline-block;
-  border-bottom: 1px solid #eee;
-  padding: 1.5em 1.5em;
-  width: 90%;
+/* line 75, ../sass/buyerManageAccount.scss */
+.buyer-content-review:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-/* line 83, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-list:last-child {
-  border: 0;
+/* line 79, ../sass/buyerManageAccount.scss */
+.manage-account-wrapper {
+  margin-left: 30px;
 }
-
-/* line 87, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-image img {
-  width: 5%;
-  float: left;
+/* line 80, ../sass/buyerManageAccount.scss */
+.manage-account-wrapper form {
+  height: none;
 }
-
-/* line 93, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-title {
-  float: left;
-}
-
-/* line 98, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-title h2 {
+/* line 85, ../sass/buyerManageAccount.scss */
+.manage-account-wrapper .subheader-form {
+  padding-top: 10px;
   color: #1C75BD;
-  font-size: 14pt;
-  margin: 0;
-  padding-left: 20px;
+  font-size: 18pt;
 }
 
-/* line 106, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-detail {
-  margin-top: 0;
+/* line 92, ../sass/buyerManageAccount.scss */
+.left-manage-account-wrapper, .right-manage-content-wrapper, .full-manage-content-wrapper, .sub-manage-content-wrapper {
+  width: 50%;
+  float: left;
+}
+/* line 96, ../sass/buyerManageAccount.scss */
+.left-manage-account-wrapper label, .right-manage-content-wrapper label, .full-manage-content-wrapper label, .sub-manage-content-wrapper label {
+  width: 30%;
+  margin-top: 20px;
+  color: #1C75BD;
   font-size: 12pt;
-  padding-left: 20px;
+  float: left;
 }
-
-/* line 112, ../sass/buyerMyOrders.scss */
-.activity a {
-  text-decoration: underline;
-}
-
-/* line 116, ../sass/buyerMyOrders.scss */
-.buyer-content-ordered {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 104, ../sass/buyerManageAccount.scss */
+.left-manage-account-wrapper input, .right-manage-content-wrapper input, .full-manage-content-wrapper input, .sub-manage-content-wrapper input {
   background: #ffffff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -638,291 +623,108 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  height: 20pt;
+  width: 55%;
   font-size: 12pt;
-  height: 500px;
+}
+/* line 111, ../sass/buyerManageAccount.scss */
+.left-manage-account-wrapper .form-detail, .right-manage-content-wrapper .form-detail, .full-manage-content-wrapper .form-detail, .sub-manage-content-wrapper .form-detail {
+  width: 200pt;
+  padding-left: 150px;
+  padding-top: 10px;
 }
 
-/* line 123, ../sass/buyerMyOrders.scss */
-.ordered-list-header {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 119, ../sass/buyerManageAccount.scss */
+.full-manage-content-wrapper {
+  width: 100%;
+}
+/* line 122, ../sass/buyerManageAccount.scss */
+.full-manage-content-wrapper label {
+  width: 20%;
+}
+/* line 126, ../sass/buyerManageAccount.scss */
+.full-manage-content-wrapper input {
+  width: 70%;
+}
+/* line 130, ../sass/buyerManageAccount.scss */
+.full-manage-content-wrapper .form-detail {
+  width: 70%;
+  padding-left: 195px;
+}
+
+/* line 136, ../sass/buyerManageAccount.scss */
+.sub-manage-content-wrapper {
+  padding-left: 195px;
+}
+
+/* line 140, ../sass/buyerManageAccount.scss */
+.phone-number-form {
+  font-size: 12pt;
+  color: #1C75BD;
+}
+
+/* line 145, ../sass/buyerManageAccount.scss */
+#phone-number-part1, #phone-number-part2 {
+  width: 14%;
+  text-align: center;
+}
+
+/* line 150, ../sass/buyerManageAccount.scss */
+#phone-number-part3 {
+  width: 19%;
+  text-align: center;
+}
+
+/* line 155, ../sass/buyerManageAccount.scss */
+.dash-line {
+  border-bottom: 1px dashed #ccc;
+  margin-right: 30px;
+  padding: 20px 0;
+}
+
+/* line 161, ../sass/buyerManageAccount.scss */
+.dash-line:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 165, ../sass/buyerManageAccount.scss */
+.form-special-detail {
+  font-family: "Enriqueta", serif;
+  color: #717070;
+  font-size: 10pt;
+}
+
+/* line 171, ../sass/buyerManageAccount.scss */
+#special-direction {
+  height: 80pt;
+}
+
+/* line 175, ../sass/buyerManageAccount.scss */
+textarea {
+  border-radius: 3px;
+  border: 1px solid #666;
+  color: #717070;
+  border-color: #1C75BD;
+  color: #1C75BD;
+  font-size: 12pt;
+  width: 54%;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 145px;
+}
+
+/* line 187, ../sass/buyerManageAccount.scss */
+input[type='submit'] {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  background: #1C75BD;
+  margin-left: 145px;
   height: 40px;
-}
-
-/* line 128, ../sass/buyerMyOrders.scss */
-.date {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 40px;
-  float: left;
-}
-
-/* line 132, ../sass/buyerMyOrders.scss */
-#orderedDate {
-  color: #1C75BD;
-}
-
-/* line 136, ../sass/buyerMyOrders.scss */
-.totalCost {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left;
-}
-
-/* line 140, ../sass/buyerMyOrders.scss */
-#totCost {
-  color: #1C75BD;
-}
-
-/* line 144, ../sass/buyerMyOrders.scss */
-.receiver {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left;
-}
-
-/* line 148, ../sass/buyerMyOrders.scss */
-#receiverName {
-  color: #1C75BD;
-}
-
-/* line 152, ../sass/buyerMyOrders.scss */
-.orderedNumber {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 0;
-  float: left;
-}
-/* line 154, ../sass/buyerMyOrders.scss */
-.orderedNumber a {
-  color: #1C75BD;
-}
-
-/* line 159, ../sass/buyerMyOrders.scss */
-.orderedNumber:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 163, ../sass/buyerMyOrders.scss */
-.ordered-detail {
-  padding-top: 10px;
-  width: 100%;
-  height: 200px;
-}
-
-/* line 169, ../sass/buyerMyOrders.scss */
-.dash {
-  border: 0 none;
-  border-top: 2px dashed #ccc;
-  background: none;
-  margin: 5px 40px;
-}
-
-/* line 173, ../sass/buyerMyOrders.scss */
-.ordered-image {
-  float: left;
-  padding: 0 20px;
-  width: 10%;
-}
-/* line 178, ../sass/buyerMyOrders.scss */
-.ordered-image img {
-  width: 100%;
-}
-
-/* line 183, ../sass/buyerMyOrders.scss */
-.ordered-list-1 {
-  float: left;
-  padding: 0 10px;
-  width: 40%;
-}
-
-/* line 189, ../sass/buyerMyOrders.scss */
-.ordered-list-1:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 193, ../sass/buyerMyOrders.scss */
-.ordered-name {
-  font-weight: bold;
-}
-
-/* line 197, ../sass/buyerMyOrders.scss */
-.seller, .condition, .ordered-button-1 {
-  padding-top: 10px;
-}
-
-/* line 201, ../sass/buyerMyOrders.scss */
-#sellerName {
-  color: #1C75BD;
-  text-decoration: underline;
-}
-
-/* line 206, ../sass/buyerMyOrders.scss */
-#conditionStatus {
-  color: #FF0000;
-}
-
-/* line 210, ../sass/buyerMyOrders.scss */
-.rebuy-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #1C75BD;
-}
-/* line 219, ../sass/buyerMyOrders.scss */
-.rebuy-button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* line 225, ../sass/buyerMyOrders.scss */
-.track-package-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #191970;
-}
-/* line 234, ../sass/buyerMyOrders.scss */
-.track-package-button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* line 240, ../sass/buyerMyOrders.scss */
-.ordered-list-2 {
-  width: 40%;
-  float: left;
-}
-
-/* line 245, ../sass/buyerMyOrders.scss */
-.ordered-list-2:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 249, ../sass/buyerMyOrders.scss */
-.estimated-delivery {
-  padding-left: 150px;
-}
-
-/* line 253, ../sass/buyerMyOrders.scss */
-.estimated-delivery-date {
-  color: #971111;
-}
-
-/* line 257, ../sass/buyerMyOrders.scss */
-.contact-seller {
-  padding-left: 150px;
-  padding-top: 10px;
-}
-/* line 260, ../sass/buyerMyOrders.scss */
-.contact-seller a {
-  color: #1C75BD;
-  font-weight: bold;
-}
-
-/* line 266, ../sass/buyerMyOrders.scss */
-.ordered-quality {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 150px;
-  float: left;
-}
-
-/* line 273, ../sass/buyerMyOrders.scss */
-.ordered-price {
-  float: left;
-  color: #971111;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-
-/* line 281, ../sass/buyerMyOrders.scss */
-.review-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 50%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #1C75BD;
-}
-/* line 290, ../sass/buyerMyOrders.scss */
-.review-button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* line 296, ../sass/buyerMyOrders.scss */
-.rate-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 30%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #ccc;
-}
-/* line 305, ../sass/buyerMyOrders.scss */
-.rate-button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* line 311, ../sass/buyerMyOrders.scss */
-.subview-bottom-paginate-wrapper {
-  text-align: center;
-}
-
-/* line 315, ../sass/buyerMyOrders.scss */
-.subview-bottom-paginate {
-  display: inline-block;
-  font-size: 14pt;
-}
-
-/* line 319, ../sass/buyerMyOrders.scss */
-.active-link {
-  color: #1C75BD;
-  font-weight: bold;
-  font-size: inherit;
-}
-
-/* line 323, ../sass/buyerMyOrders.scss */
-.deactivated-link {
-  font-weight: bold;
-  font-size: inherit;
 }

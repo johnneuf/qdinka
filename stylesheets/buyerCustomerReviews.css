@@ -1,6 +1,6 @@
 /**
 * Nannalin Higgins
-* Created on : Sep 2, 2015, 1:54:38 PM
+* Created on : Sep 23, 2015, 11.40 PM
 * @email nannalin14@gmail.com
 */
 /**
@@ -463,12 +463,12 @@
   font-size: 14pt;
 }
 
-/* line 12, ../sass/buyerMyOrders.scss */
+/* line 12, ../sass/buyerCustomerReviews.scss */
 .buyer-content-menu-wrapper h2 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 25%;
+  width: 37%;
   float: left;
   font-size: 22pt;
   color: #1C75BD;
@@ -476,25 +476,26 @@
   margin-top: 10px;
 }
 
-/* line 23, ../sass/buyerMyOrders.scss */
+/* line 23, ../sass/buyerCustomerReviews.scss */
 .buyer-content-menu-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 27, ../sass/buyerMyOrders.scss */
+/* line 27, ../sass/buyerCustomerReviews.scss */
 .buyer-content-menu-detail {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 60%;
   margin-top: 10px;
+  padding-right: 20px;
   float: left;
   font-size: 14pt;
 }
 
-/* line 35, ../sass/buyerMyOrders.scss */
+/* line 36, ../sass/buyerCustomerReviews.scss */
 .head-activity {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -505,7 +506,7 @@
   font-weight: bold;
 }
 
-/* line 43, ../sass/buyerMyOrders.scss */
+/* line 44, ../sass/buyerCustomerReviews.scss */
 .duration-nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -514,7 +515,7 @@
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
-  margin: 10px 100px 10px 100px;
+  margin: 10px 50px 10px 100px;
   border-top: 1px solid #ccc;
   height: 30px;
   background: #1C75BD;
@@ -548,85 +549,29 @@
   text-decoration: none;
   display: inline-block;
 }
-/* line 51, ../sass/buyerMyOrders.scss */
+/* line 53, ../sass/buyerCustomerReviews.scss */
 .duration-nav a {
   color: #1C75BD;
   font-size: 12pt;
 }
 
-/* line 57, ../sass/buyerMyOrders.scss */
+/* line 59, ../sass/buyerCustomerReviews.scss */
 .duration-nav li a:hover {
   color: #ccc;
   text-decoration: none;
 }
 
-/* line 61, ../sass/buyerMyOrders.scss */
+/* line 63, ../sass/buyerCustomerReviews.scss */
 .duration-nav li a:active {
   background-color: #ffffff;
   color: #1C75BD;
   text-decoration: none;
 }
 
-/* line 65, ../sass/buyerMyOrders.scss */
-.buyer-home-nav {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  margin-top: 5px;
-  list-style-type: none;
-}
-
-/* line 73, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-list {
-  float: left;
-  list-style: none;
-  margin: 5px 5px;
-  display: inline-block;
-  border-bottom: 1px solid #eee;
-  padding: 1.5em 1.5em;
-  width: 90%;
-}
-
-/* line 83, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-list:last-child {
-  border: 0;
-}
-
-/* line 87, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-image img {
-  width: 5%;
-  float: left;
-}
-
-/* line 93, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-title {
-  float: left;
-}
-
-/* line 98, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-title h2 {
-  color: #1C75BD;
-  font-size: 14pt;
-  margin: 0;
-  padding-left: 20px;
-}
-
-/* line 106, ../sass/buyerMyOrders.scss */
-.buyer-home-nav-detail {
-  margin-top: 0;
-  font-size: 12pt;
-  padding-left: 20px;
-}
-
-/* line 112, ../sass/buyerMyOrders.scss */
-.activity a {
-  text-decoration: underline;
-}
-
-/* line 116, ../sass/buyerMyOrders.scss */
-.buyer-content-ordered {
+/* line 67, ../sass/buyerCustomerReviews.scss */
+.buyer-content-review {
+  padding-top: 5px;
+  padding-bottom: 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -638,290 +583,249 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  font-size: 12pt;
-  height: 500px;
+  margin: 15px 20px;
 }
 
-/* line 123, ../sass/buyerMyOrders.scss */
-.ordered-list-header {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 40px;
+/* line 75, ../sass/buyerCustomerReviews.scss */
+.buyer-content-review:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-/* line 128, ../sass/buyerMyOrders.scss */
-.date {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
+/* line 79, ../sass/buyerCustomerReviews.scss */
+.item-wrapper {
+  width: 18%;
+  float: left;
+}
+
+/* line 84, ../sass/buyerCustomerReviews.scss */
+.view-list-link {
+  float: left;
+  padding-left: 5px;
+}
+/* line 88, ../sass/buyerCustomerReviews.scss */
+.view-list-link a {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #1C75BD;
+}
+
+/* line 95, ../sass/buyerCustomerReviews.scss */
+.contact-seller-link {
+  padding-left: 5px;
+  float: right;
+}
+/* line 99, ../sass/buyerCustomerReviews.scss */
+.contact-seller-link a {
+  font-size: 8pt;
+  color: #1C75BD;
+}
+
+/* line 105, ../sass/buyerCustomerReviews.scss */
+.contact-seller-link:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 109, ../sass/buyerCustomerReviews.scss */
+.item-image {
+  margin-top: 25px;
+}
+/* line 112, ../sass/buyerCustomerReviews.scss */
+.item-image img {
+  width: 60%;
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 121, ../sass/buyerCustomerReviews.scss */
+.item-name {
   margin-top: 5px;
+  text-align: center;
+}
+/* line 125, ../sass/buyerCustomerReviews.scss */
+.item-name a {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #1C75BD;
+}
+
+/* line 132, ../sass/buyerCustomerReviews.scss */
+.vender {
+  padding-left: 5px;
+  float: left;
+  font-weight: bold;
+}
+
+/* line 138, ../sass/buyerCustomerReviews.scss */
+.overview-rating-wrapper {
+  padding-left: 5px;
+  float: right;
+}
+/* line 142, ../sass/buyerCustomerReviews.scss */
+.overview-rating-wrapper img {
+  width: 10px;
+}
+
+/* line 147, ../sass/buyerCustomerReviews.scss */
+.overview-cart-wrapper {
+  margin-top: 25px;
+  padding-left: 5px;
+}
+/* line 151, ../sass/buyerCustomerReviews.scss */
+.overview-cart-wrapper input[type="submit"] {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  padding: 0;
+  line-height: 30px;
+}
+/* line 159, ../sass/buyerCustomerReviews.scss */
+.overview-cart-wrapper input[type="submit"]:hover {
+  background-color: #1C75BD;
+}
+
+/* line 164, ../sass/buyerCustomerReviews.scss */
+.review-wrapper {
+  float: left;
+  width: 80%;
+}
+
+/* line 169, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper {
+  float: left;
   padding-left: 40px;
+  width: 60%;
+}
+/* line 174, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper .overview-rating-wrapper {
   float: left;
 }
-
-/* line 132, ../sass/buyerMyOrders.scss */
-#orderedDate {
-  color: #1C75BD;
-}
-
-/* line 136, ../sass/buyerMyOrders.scss */
-.totalCost {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left;
-}
-
-/* line 140, ../sass/buyerMyOrders.scss */
-#totCost {
-  color: #1C75BD;
-}
-
-/* line 144, ../sass/buyerMyOrders.scss */
-.receiver {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left;
-}
-
-/* line 148, ../sass/buyerMyOrders.scss */
-#receiverName {
-  color: #1C75BD;
-}
-
-/* line 152, ../sass/buyerMyOrders.scss */
-.orderedNumber {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 0;
-  float: left;
-}
-/* line 154, ../sass/buyerMyOrders.scss */
-.orderedNumber a {
-  color: #1C75BD;
-}
-
-/* line 159, ../sass/buyerMyOrders.scss */
-.orderedNumber:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 163, ../sass/buyerMyOrders.scss */
-.ordered-detail {
-  padding-top: 10px;
-  width: 100%;
-  height: 200px;
-}
-
-/* line 169, ../sass/buyerMyOrders.scss */
-.dash {
-  border: 0 none;
-  border-top: 2px dashed #ccc;
-  background: none;
-  margin: 5px 40px;
-}
-
-/* line 173, ../sass/buyerMyOrders.scss */
-.ordered-image {
-  float: left;
-  padding: 0 20px;
-  width: 10%;
-}
-/* line 178, ../sass/buyerMyOrders.scss */
-.ordered-image img {
-  width: 100%;
-}
-
-/* line 183, ../sass/buyerMyOrders.scss */
-.ordered-list-1 {
-  float: left;
-  padding: 0 10px;
-  width: 40%;
-}
-
-/* line 189, ../sass/buyerMyOrders.scss */
-.ordered-list-1:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* line 193, ../sass/buyerMyOrders.scss */
-.ordered-name {
+/* line 178, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper .review-header-detail {
   font-weight: bold;
 }
-
-/* line 197, ../sass/buyerMyOrders.scss */
-.seller, .condition, .ordered-button-1 {
-  padding-top: 10px;
-}
-
-/* line 201, ../sass/buyerMyOrders.scss */
-#sellerName {
+/* line 182, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper .customer-name {
   color: #1C75BD;
-  text-decoration: underline;
 }
 
-/* line 206, ../sass/buyerMyOrders.scss */
-#conditionStatus {
-  color: #FF0000;
+/* line 188, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-/* line 210, ../sass/buyerMyOrders.scss */
-.rebuy-button {
+/* line 192, ../sass/buyerCustomerReviews.scss */
+.review-buttons {
+  float: right;
+}
+
+/* line 196, ../sass/buyerCustomerReviews.scss */
+.add-comment-button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
+  margin: 5px 5px;
   float: left;
-  padding: 10px 10px;
+  padding: 5px 10px;
+  text-align: center;
+  background: grey;
+}
+/* line 204, ../sass/buyerCustomerReviews.scss */
+.add-comment-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 210, ../sass/buyerCustomerReviews.scss */
+.edit-post-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  float: left;
+  padding: 5px 30px;
   text-align: center;
   background: #1C75BD;
 }
-/* line 219, ../sass/buyerMyOrders.scss */
-.rebuy-button a {
+/* line 218, ../sass/buyerCustomerReviews.scss */
+.edit-post-button a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 225, ../sass/buyerMyOrders.scss */
-.track-package-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
+/* line 224, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper {
   float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #191970;
-}
-/* line 234, ../sass/buyerMyOrders.scss */
-.track-package-button a {
-  color: #ffffff;
-  text-decoration: none;
+  padding-left: 40px;
 }
 
-/* line 240, ../sass/buyerMyOrders.scss */
-.ordered-list-2 {
-  width: 40%;
-  float: left;
+/* line 229, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-top {
+  margin-bottom: 0;
+}
+/* line 232, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-top .full-review a {
+  color: #1C75BD;
 }
 
-/* line 245, ../sass/buyerMyOrders.scss */
-.ordered-list-2:after {
-  content: '';
-  display: table;
-  clear: both;
+/* line 237, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom {
+  margin-top: 0;
 }
 
-/* line 249, ../sass/buyerMyOrders.scss */
-.estimated-delivery {
-  padding-left: 150px;
-}
-
-/* line 253, ../sass/buyerMyOrders.scss */
-.estimated-delivery-date {
-  color: #971111;
-}
-
-/* line 257, ../sass/buyerMyOrders.scss */
-.contact-seller {
-  padding-left: 150px;
-  padding-top: 10px;
-}
-/* line 260, ../sass/buyerMyOrders.scss */
-.contact-seller a {
+/* line 241, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom {
   color: #1C75BD;
   font-weight: bold;
 }
 
-/* line 266, ../sass/buyerMyOrders.scss */
-.ordered-quality {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 150px;
+/* line 246, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom-left {
   float: left;
 }
 
-/* line 273, ../sass/buyerMyOrders.scss */
-.ordered-price {
-  float: left;
-  color: #971111;
-  padding-left: 20px;
-  padding-top: 10px;
+/* line 250, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom-right {
+  float: right;
 }
 
-/* line 281, ../sass/buyerMyOrders.scss */
-.review-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 50%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #1C75BD;
-}
-/* line 290, ../sass/buyerMyOrders.scss */
-.review-button a {
-  color: #ffffff;
-  text-decoration: none;
+/* line 254, ../sass/buyerCustomerReviews.scss */
+.num-people, .num-comments {
+  font-size: 18pt;
 }
 
-/* line 296, ../sass/buyerMyOrders.scss */
-.rate-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 30%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #ccc;
-}
-/* line 305, ../sass/buyerMyOrders.scss */
-.rate-button a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* line 311, ../sass/buyerMyOrders.scss */
+/* line 258, ../sass/buyerCustomerReviews.scss */
 .subview-bottom-paginate-wrapper {
   text-align: center;
 }
 
-/* line 315, ../sass/buyerMyOrders.scss */
+/* line 262, ../sass/buyerCustomerReviews.scss */
 .subview-bottom-paginate {
   display: inline-block;
   font-size: 14pt;
 }
 
-/* line 319, ../sass/buyerMyOrders.scss */
+/* line 266, ../sass/buyerCustomerReviews.scss */
 .active-link {
   color: #1C75BD;
   font-weight: bold;
   font-size: inherit;
 }
 
-/* line 323, ../sass/buyerMyOrders.scss */
+/* line 270, ../sass/buyerCustomerReviews.scss */
 .deactivated-link {
   font-weight: bold;
   font-size: inherit;

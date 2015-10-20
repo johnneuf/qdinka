@@ -25,48 +25,49 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0 0 0 40px;
   background: #ffffff;
-  margin-left: 170px;
-  width: 84%;
+  height: 32px;
+  width: 100%;
 }
-/* line 24, ../sass/buyerHeader.scss */
-.buyer-top-header h3 {
-  padding-left: 5px;
-  width: 70%;
+/* line 25, ../sass/buyerHeader.scss */
+.buyer-top-header p {
+  margin-top: 5px;
+  width: 88%;
   float: left;
+  font-size: 13pt;
 }
-/* line 29, ../sass/buyerHeader.scss */
-.buyer-top-header h3 u {
+/* line 31, ../sass/buyerHeader.scss */
+.buyer-top-header p u {
   color: #1C75BD;
 }
 
-/* line 35, ../sass/buyerHeader.scss */
+/* line 37, ../sass/buyerHeader.scss */
 .buyer-top-header:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 39, ../sass/buyerHeader.scss */
+/* line 41, ../sass/buyerHeader.scss */
 .upgrade-button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 10px 10px;
-  width: 15%;
+  width: 12%;
   float: right;
-  padding: 10px 10px;
+  padding: 6px 10px;
   text-align: center;
-  background: #9370DB;
+  background: #9999CC;
 }
-/* line 48, ../sass/buyerHeader.scss */
+/* line 49, ../sass/buyerHeader.scss */
 .upgrade-button a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 
-/* line 55, ../sass/buyerHeader.scss */
+/* line 57, ../sass/buyerHeader.scss */
 .buyer-profile-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -84,7 +85,7 @@
   height: 140px;
 }
 
-/* line 63, ../sass/buyerHeader.scss */
+/* line 65, ../sass/buyerHeader.scss */
 .buyer-image-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -94,12 +95,12 @@
   padding-top: 8px;
   padding-left: 10px;
 }
-/* line 70, ../sass/buyerHeader.scss */
+/* line 72, ../sass/buyerHeader.scss */
 .buyer-image-wrapper img {
   width: 80%;
 }
 
-/* line 75, ../sass/buyerHeader.scss */
+/* line 77, ../sass/buyerHeader.scss */
 .buyer-profile-detail-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -109,19 +110,19 @@
   float: left;
   font-size: 14pt;
 }
-/* line 82, ../sass/buyerHeader.scss */
+/* line 84, ../sass/buyerHeader.scss */
 .buyer-profile-detail-wrapper h2 {
   color: #1C75BD;
   margin: 0;
   font-size: 28pt;
 }
 
-/* line 89, ../sass/buyerHeader.scss */
+/* line 91, ../sass/buyerHeader.scss */
 .buyerName a, #totPurchase, #completeReviews {
   color: #1C75BD;
 }
 
-/* line 93, ../sass/buyerHeader.scss */
+/* line 95, ../sass/buyerHeader.scss */
 .buyer-button-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -133,14 +134,14 @@
   font-size: 14pt;
 }
 
-/* line 102, ../sass/buyerHeader.scss */
+/* line 104, ../sass/buyerHeader.scss */
 .buyer-button-wrapper:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 106, ../sass/buyerHeader.scss */
+/* line 108, ../sass/buyerHeader.scss */
 .shop-button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -158,13 +159,13 @@
   background: #FF0000;
   text-align: center;
 }
-/* line 114, ../sass/buyerHeader.scss */
+/* line 116, ../sass/buyerHeader.scss */
 .shop-button a {
   color: #ffffff;
   font-size: 14pt;
 }
 
-/* line 120, ../sass/buyerHeader.scss */
+/* line 122, ../sass/buyerHeader.scss */
 .listing-button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -181,13 +182,13 @@
   background: #1C75BD;
   text-align: center;
 }
-/* line 127, ../sass/buyerHeader.scss */
+/* line 129, ../sass/buyerHeader.scss */
 .listing-button a {
   color: #ffffff;
   font-size: 14pt;
 }
 
-/* line 133, ../sass/buyerHeader.scss */
+/* line 135, ../sass/buyerHeader.scss */
 .buyer-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -204,7 +205,7 @@
   width: 100%;
 }
 
-/* line 140, ../sass/buyerHeader.scss */
+/* line 142, ../sass/buyerHeader.scss */
 .buyer-nav {
   border-bottom: 1px solid #ccc;
   margin: 0 0 0 0;
@@ -214,7 +215,7 @@
   /* remove the pipe from the last list item */
   -webkit-padding-start: 0;
 }
-/* line 123, ../sass/constants.scss */
+/* line 124, ../sass/constants.scss */
 .buyer-nav li {
   width: 11%;
   float: left;
@@ -224,11 +225,11 @@
   border-right: 2px solid #eee;
   padding: 0.1em 1.6em;
 }
-/* line 135, ../sass/constants.scss */
+/* line 136, ../sass/constants.scss */
 .buyer-nav li:last-child {
   border: 0;
 }
-/* line 137, ../sass/constants.scss */
+/* line 138, ../sass/constants.scss */
 .buyer-nav a {
   color: #ffffff;
   padding: 0;
@@ -239,38 +240,38 @@
   text-decoration: none;
   display: inline-block;
 }
-/* line 144, ../sass/buyerHeader.scss */
+/* line 146, ../sass/buyerHeader.scss */
 .buyer-nav .buyer-nav-list-manage-account {
   width: 19%;
 }
 
-/* line 149, ../sass/buyerHeader.scss */
+/* line 151, ../sass/buyerHeader.scss */
 .buyer-nav:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 153, ../sass/buyerHeader.scss */
+/* line 155, ../sass/buyerHeader.scss */
 .buyer-nav-list a:hover {
   color: #ccc;
   text-decoration: none;
 }
 
-/* line 157, ../sass/buyerHeader.scss */
+/* line 159, ../sass/buyerHeader.scss */
 .buyer-nav-list-manage-account a:hover {
   color: #ccc;
   text-decoration: none;
 }
 
-/* line 161, ../sass/buyerHeader.scss */
+/* line 163, ../sass/buyerHeader.scss */
 .buyer-nav-list a:active {
   background-color: #ffffff;
   color: #1C75BD;
   text-decoration: none;
 }
 
-/* line 165, ../sass/buyerHeader.scss */
+/* line 167, ../sass/buyerHeader.scss */
 .buyer-nav-list-manage-account a:active {
   background-color: #ffffff;
   color: #1C75BD;
@@ -381,7 +382,7 @@
 }
 /* line 72, ../sass/buyerFooter.scss */
 .new-listing-wrapper-image img {
-  width: 95%;
+  width: 94%;
 }
 
 /* line 77, ../sass/buyerFooter.scss */
