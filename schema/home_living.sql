@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS home_living'
+(
+'ID' int(11) PRIMARY KEY
+
+);
