@@ -10,5 +10,5 @@ require_once('../../includes/autoload.php');
 
 debug_errors();
 
-$page = new \includes\pages\buyers\BuyerManageAccountPage('Personal Info');
+$page = new \includes\pages\buyers\BuyerPaymentInfoPage('Payment Info');
 $page->render();
