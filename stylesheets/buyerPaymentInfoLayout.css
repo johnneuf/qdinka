@@ -1,3 +1,4 @@
+
 /**
 * Nannalin Higgins
 * Created on : Sep 13, 2015, 2:47:18 PM
@@ -453,41 +454,41 @@
   text-decoration: none; }
 
 .buyer-content-wrapper {
-  height: 700pt; }
+  height: 397pt; }
 
-.personalInfo {
+.paymentInfo {
   background: #1C75BD; }
-  .personalInfo a {
+  .paymentInfo a {
     color: white;
     padding-bottom: 5px; }
 
-.buyer-content-manage-account {
-  margin: 15px 20px; }
+.buyer-content-manage-account-paymentInfo {
+  margin: 30px 20px; }
 
 .buyer-content-review:after {
   content: '';
   display: table;
   clear: both; }
 
-.manage-account-wrapper {
+.manage-account-paymentInfo-wrapper {
   margin-left: 30px; }
-  .manage-account-wrapper form {
+  .manage-account-paymentInfo-wrapper form {
     height: none; }
-  .manage-account-wrapper .subheader-form {
+  .manage-account-paymentInfo-wrapper .subheader-form {
     padding-top: 10px;
     color: #1C75BD;
     font-size: 18pt; }
 
-.left-manage-account-wrapper, .right-manage-content-wrapper, .full-manage-content-wrapper, .sub-manage-content-wrapper {
+.left-manage-account-paymentInfo-wrapper, .right-manage-content-paymentInfo-wrapper {
   width: 50%;
   float: left; }
-  .left-manage-account-wrapper label, .right-manage-content-wrapper label, .full-manage-content-wrapper label, .sub-manage-content-wrapper label {
+  .left-manage-account-paymentInfo-wrapper label, .right-manage-content-paymentInfo-wrapper label {
     width: 30%;
     margin-top: 20px;
     color: #1C75BD;
     font-size: 12pt;
     float: left; }
-  .left-manage-account-wrapper input, .right-manage-content-wrapper input, .full-manage-content-wrapper input, .sub-manage-content-wrapper input {
+  .left-manage-account-paymentInfo-wrapper input, .right-manage-content-paymentInfo-wrapper input {
     background: #ffffff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -499,65 +500,25 @@
     height: 20pt;
     width: 55%;
     font-size: 12pt; }
-  .left-manage-account-wrapper .form-detail, .right-manage-content-wrapper .form-detail, .full-manage-content-wrapper .form-detail, .sub-manage-content-wrapper .form-detail {
+  .left-manage-account-paymentInfo-wrapper .form-detail, .right-manage-content-paymentInfo-wrapper .form-detail {
     width: 200pt;
     padding-left: 150px;
     padding-top: 10px; }
 
-.full-manage-content-wrapper {
-  width: 100%; }
-  .full-manage-content-wrapper label {
-    width: 20%; }
-  .full-manage-content-wrapper input {
-    width: 70%; }
-  .full-manage-content-wrapper .form-detail {
-    width: 70%;
-    padding-left: 195px; }
+.subheading {
+  color: #717070;
+  padding-left: 2%; }
 
-.sub-manage-content-wrapper {
-  padding-left: 195px; }
+.expiration-number-form {
+  padding-left: 2%; }
 
-.phone-number-form {
-  font-size: 12pt;
-  color: #1C75BD; }
-
-#phone-number-part1, #phone-number-part2 {
-  width: 14%;
+#expirationMonth {
+  width: 10%;
   text-align: center; }
 
-#phone-number-part3 {
-  width: 19%;
+#expirationYear {
+  width: 18%;
   text-align: center; }
-
-.dash-line {
-  border-bottom: 1px dashed #ccc;
-  margin-right: 30px;
-  padding: 20px 0; }
-
-.dash-line:after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.form-special-detail {
-  font-family: "Enriqueta", serif;
-  color: #717070;
-  font-size: 10pt; }
-
-#special-direction {
-  height: 80pt; }
-
-textarea {
-  border-radius: 3px;
-  border: 1px solid #666;
-  color: #717070;
-  border-color: #1C75BD;
-  color: #1C75BD;
-  font-size: 12pt;
-  width: 54%;
-  height: 70px;
-  margin-top: 20px;
-  margin-left: 145px; }
 
 input[type='submit'] {
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
@@ -569,6 +530,10 @@ input[type='submit'] {
   cursor: pointer;
   background: #1C75BD;
   margin-left: 145px;
+  margin-top: 20px;
   height: 40px; }
 
-/*# sourceMappingURL=buyerManageAccountLayout.css.map */
+.new-listing-wrapper {
+  padding-top: 0; }
+
+/*# sourceMappingURL=buyerPaymentInfoLayout.css.map */
