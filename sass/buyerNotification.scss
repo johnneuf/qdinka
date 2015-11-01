@@ -1,0 +1,51 @@
+/* 
+    Created on : Oct 31, 2015, 12:47:33 PM
+    Author     : Nannalin
+*/
+
+@import "buyerHeader";
+@import "buyerFooter";
+@import "buyerManageAccountHeaderStyle";
+
+.notifications {
+    background: $qdinkaBlue;
+    
+    a{
+        color: white;
+            padding-bottom: 5px;
+    }
+}
+
+.buyer-content-manage-account-notifications {
+    margin : 15px 20px;
+}
+
+.buyer-content-review:after {
+    @include next_row;
+}
+
+.manage-account-notifications-wrapper {
+    form {
+        height: none;
+    }
+    
+    margin-left: 30px;
+    
+    .subheader-form {
+        padding-top: 10px;
+        font-size: $bodySubHeaderContentSize;
+    } 
+    
+    .multipleList {
+       padding-top: 5px;
+       color: $qdinkaBlue;
+       font-size: $bodyFontSize; 
+    }
+}
+
+input[type='submit'] {
+    @include standard_button;
+    background: $qdinkaBlue;
+    padding: 10px 20px;
+    font-size: $bodySubHeaderContentSize;
+} 
