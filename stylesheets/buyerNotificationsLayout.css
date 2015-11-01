@@ -1,4 +1,3 @@
-
 /**
 * Nannalin Higgins
 * Created on : Sep 13, 2015, 2:47:18 PM
@@ -453,72 +452,31 @@
   color: #1C75BD;
   text-decoration: none; }
 
-.buyer-content-wrapper {
-  height: 397pt; }
-
-.paymentInfo {
+.notifications {
   background: #1C75BD; }
-  .paymentInfo a {
+  .notifications a {
     color: white;
     padding-bottom: 5px; }
 
-.buyer-content-manage-account-paymentInfo {
-  margin: 30px 20px; }
+.buyer-content-manage-account-notifications {
+  margin: 15px 20px; }
 
 .buyer-content-review:after {
   content: '';
   display: table;
   clear: both; }
 
-.manage-account-paymentInfo-wrapper {
+.manage-account-notifications-wrapper {
   margin-left: 30px; }
-  .manage-account-paymentInfo-wrapper form {
+  .manage-account-notifications-wrapper form {
     height: none; }
-  .manage-account-paymentInfo-wrapper .subheader-form {
+  .manage-account-notifications-wrapper .subheader-form {
     padding-top: 10px;
-    color: #1C75BD;
-    font-size: 18pt; }
-
-.left-manage-account-paymentInfo-wrapper, .right-manage-content-paymentInfo-wrapper {
-  width: 50%;
-  float: left; }
-  .left-manage-account-paymentInfo-wrapper label, .right-manage-content-paymentInfo-wrapper label {
-    width: 30%;
-    margin-top: 20px;
-    color: #1C75BD;
-    font-size: 12pt;
-    float: left; }
-  .left-manage-account-paymentInfo-wrapper input, .right-manage-content-paymentInfo-wrapper input {
-    background: #ffffff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-    height: 20pt;
-    width: 55%;
     font-size: 12pt; }
-  .left-manage-account-paymentInfo-wrapper .form-detail, .right-manage-content-paymentInfo-wrapper .form-detail {
-    width: 200pt;
-    padding-left: 150px;
-    padding-top: 10px; }
-
-.subheading {
-  color: #717070;
-  padding-left: 2%; }
-
-.expiration-number-form {
-  padding-left: 2%; }
-
-#expirationMonth {
-  width: 10%;
-  text-align: center; }
-
-#expirationYear {
-  width: 18%;
-  text-align: center; }
+  .manage-account-notifications-wrapper .multipleList {
+    padding-top: 5px;
+    color: #1C75BD;
+    font-size: 10pt; }
 
 input[type='submit'] {
   -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
@@ -529,11 +487,7 @@ input[type='submit'] {
   border: 0px solid #1c75bd;
   cursor: pointer;
   background: #1C75BD;
-  margin-left: 145px;
-  margin-top: 20px;
-  height: 40px; }
+  padding: 10px 20px;
+  font-size: 12pt; }
 
-.new-listing-wrapper {
-  padding-top: 0; }
-
-/*# sourceMappingURL=buyerPaymentInfoLayout.css.map */
+/*# sourceMappingURL=buyerNotificationsLayout.css.map */

@@ -21,28 +21,10 @@ class BuyerPaymentInfoPage extends TemplateBase {
     protected function body() {
 ?>
         <!--- Buyer Header area --->
-        <?php include 'BuyerContentHead.php'; ?>
-
-            <!--- Buyer Body area --->
-            <div class="buyer-content-menu-wrapper">
-                <h2>Manage Account Details - </h2>
-                <div class="buyer-content-menu-detail">
-                    View, edit, and update your account information. 
-                    Make all information sound and accurate so sellers may smoothly fufil your orders.                
-                </div>
-            </div>
-            
-            <div class="buyer-content-body">
-                <div class="subheader-wrapper">
-                    <ul class="subheader-nav">
-                        <li><a href="#">Personal Info</a></li>
-                        <li><a href="#">Payment Info</a></li>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Seller Profile</a></li>
-                    </ul>
-                </div>                
-                
+        <?php 
+            include 'BuyerContentHead.php';
+            include 'BuyerManageAccountContentBodyHead.php';
+        ?>               
                 <div class="buyer-content-manage-account-paymentInfo">
                     <div class="manage-account-paymentInfo-wrapper">
                         <form action="" method="post">

@@ -1,10 +1,5 @@
 /**
 * Nannalin Higgins
-* Created on : Oct 4, 2015, 11.40 AM
-* @email nannalin14@gmail.com
-*/
-/**
-* Nannalin Higgins
 * Created on : Sep 13, 2015, 2:47:18 PM
 * @email nannalin14@gmail.com
 */
@@ -367,8 +362,12 @@
     text-decoration: none;
     font-size: 14pt; }
 
+/* 
+    Created on : Oct 31, 2015, 3:22:28 PM
+    Author     : Nannalin
+*/
 .buyer-content-wrapper {
-  height: 700pt; }
+  margin-bottom: 0; }
 
 .buyer-content-menu-wrapper h2 {
   -webkit-box-sizing: border-box;
@@ -452,6 +451,15 @@
   background-color: #ffffff;
   color: #1C75BD;
   text-decoration: none; }
+
+.buyer-content-wrapper {
+  height: 700pt; }
+
+.personalInfo {
+  background: #1C75BD; }
+  .personalInfo a {
+    color: white;
+    padding-bottom: 5px; }
 
 .buyer-content-manage-account {
   margin: 15px 20px; }
