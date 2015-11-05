@@ -10,97 +10,40 @@ namespace includes\database;
 
 
 class DatabaseUtil {
-    //database constants
-    const DATABASE_USER = 0;
-    const DATABASE_NORMAL = 1;
 
     /**
-     * Generates a PDO database connection
-     * @param int $database This is what database you are wanting to connect to. The default is the normal database.
-     * @return bool|\PDO Returns a database object or false if something is not right
+     * Private function to setup a connection for database connection
+     * @param string $schema The schema you wish to connect to
+     * @return \PDO
      */
-    public static function db_connect($database = self::DATABASE_NORMAL)
+    private static function connect($schema)
     {
-        if ($database == self::DATABASE_USER) {
-            return new \PDO(DB_USER_DNS, DB_USER_USER, DB_USER_PASSWORD);
-        } elseif ($database == self::DATABASE_NORMAL) {
-            return new \PDO(DB_MAIN_DNS, DB_MAIN_USER, DB_MAIN_PASSWORD);
-        }
+        //Create the DNS
+        $DNS = 'mysql:host=localhost;dbname=' . $schema . ';charset=utf8';
 
-        return false;
+        //Return the PHP Database Object
+        return new \PDO($DNS, DB_USER_USER, DB_USER_PASSWORD);
     }
 
     /**
-     * Gets data from the database and saves the values in a record form
-     * @param \PDO $PDO Connection to the database
-     * @param string $sql Query statement that you
-     * @param array $values Values to pass
-     * @return bool|array key=>record will return false if there is nothing found by the query
+     * Gets a row or rows from the database and returns an array of or a single database row object
+     * @param string $schema Name of the schema that you are wanting to connect to
+     * @param string $sqlQuery The sql query to run against the database
+     * @param array $values The values that compliment the sql statement
      */
-    public static function get(\PDO $PDO, $sql, array $values = null)
+    public static function get_rows($schema, $sqlQuery, array $values = array())
     {
-        //Execute the SQL
-        if (is_null($values)) {
-            $stmt = $PDO->query($sql);
-        } else {
-            $stmt = $PDO->prepare($sql);
-            $stmt->execute($values);
-        }
-
-        $rows = $stmt->fetchAll(\PDO::FETCH_ASSOC);
-
-        //Make Objects from the data
-        $objects = array();
-
-        if (!$rows || empty($rows)) {
-            return false;
-        }
-
-        foreach ($rows as $row) {
-
-            $object = new \stdClass();
-
-            foreach ($row as $key => $value) {
-                $object->$key = $value;
-            }
-
-            $objects[] = $object;
-
-        }
-
-        //Do not send an array if there is only one object
-        return $objects;
 
     }
 
-    public static function insert(\PDO $PDO, $table, \stdClass $stdClass)
+    /**
+     * Used to alter a row or rows of a database and returns true if the operation was successful
+     * @param string $schema The schema you want to connect to
+     * @param string $sqlQuery The sql query that you want to run against the database
+     * @param array $values The values that compliment the sql statement
+     */
+    public static function alter_rows($schema, $sqlQuery, array $values = array())
     {
-        //Init
-        $preparedArray = array();
-        $names = array();
-        $namedValues = array();
-
-        //Convert the class into the strings and arrays we need.
-        $fields = get_object_vars($stdClass);
-
-        foreach ($fields as $key=>$value) {
-            $names[] = $key;
-            $namedValues[] = ':' . $key;
-            $preparedArray[':' . $key] = $value;
-        }
-
-        $columns = implode(', ', $names);
-        $values = implode(', ', $namedValues);
-
-        //prepare and execute
-
-        $sql = 'INSERT INTO ' . $table . '(' . $columns . ') VALUES (' . $values . ')';
-        $statementHandler = $PDO->prepare($sql);
-        if ($statementHandler->execute($fields)){
-            return false;
-        } else {
-            return $statementHandler->errorInfo();
-        }
 
     }
 }
