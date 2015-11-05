@@ -57,3 +57,12 @@ function verify_captcha($response)
 
     return (isset($data->sucess) && $data->sucess == true);
 }
+
+/**
+ * Retrieves the IP from which the user is connecting from
+ * @return string The users IP that they are connecting from
+ */
+function get_user_ip()
+{
+    return $_SERVER['REMOTE_ADDR'];
+}

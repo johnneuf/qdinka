@@ -26,24 +26,39 @@ class DatabaseUtil {
     }
 
     /**
-     * Gets a row or rows from the database and returns an array of or a single database row object
+     * Default way to access the database
      * @param string $schema Name of the schema that you are wanting to connect to
      * @param string $sqlQuery The sql query to run against the database
      * @param array $values The values that compliment the sql statement
      */
-    public static function get_rows($schema, $sqlQuery, array $values = array())
+    public static function query($schema, $sqlQuery, array $values = array())
     {
 
     }
 
-    /**
-     * Used to alter a row or rows of a database and returns true if the operation was successful
-     * @param string $schema The schema you want to connect to
-     * @param string $sqlQuery The sql query that you want to run against the database
-     * @param array $values The values that compliment the sql statement
-     */
-    public static function alter_rows($schema, $sqlQuery, array $values = array())
+    public static function record_error($class, $function, $message)
     {
+        //Try to do the query
+        try {
+            //Connect
+            $PDO = self::connect(DB_USER_SCHEMA);
 
+            //Double check to see there is a connection
+            if (!$PDO) {
+                return;
+            }
+
+            //Do the query
+            $sql = 'insert into system_errors (ip, class, function, message, dts) value (?, ?, ?, ?, now())';
+            $statement = $PDO->prepare($sql);
+            $statement->execute([get_user_ip(),
+                $class,
+                $function,
+                $message
+            ]);
+
+        } catch (\PDOException $exception) {
+            return;
+        }
     }
 }
