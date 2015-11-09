@@ -1,0 +1,131 @@
+/* 
+    Created on : Nov 7, 2015, 2:55:32 PM
+    Author     : Nannalin
+*/
+
+@import "buyerHeader";
+@import "buyerFooter";
+@import "buyerManageAccountHeaderStyle";
+
+
+
+.security {
+    background: $qdinkaBlue;
+    
+    a{
+        color: white;
+        padding-bottom: 5px;
+    }
+}
+
+.buyer-content-manage-account-security {
+    margin : 0 20px;
+}
+
+.manage-account-security-wrapper {
+    form {
+        height: none;
+    }
+    
+    margin-left: 30px;
+    
+    .subheader-form {
+        font-size: $bodySubHeaderContentSize;
+        clear: both;
+        padding-top: 20px;
+    }
+}
+
+.left-manage-account-wrapper, .mid-manage-content-wrapper {
+    width: 42%;
+    padding-right: 17px;
+}
+
+.right-manage-content-wrapper {
+    width: 10%;
+    margin-top: 17px;
+}
+
+.right-manage-content-wrapper:after {
+    @include next_row;
+}
+
+.left-manage-account-wrapper, .mid-manage-content-wrapper, .right-manage-content-wrapper, .full-manage-content-wrapper, .sub-manage-content-wrapper{
+    float: left;
+    
+    label {
+        width: 5%;
+        margin-top: 20px;
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderContentSize; 
+        float: left;
+        padding-right: 10px;
+
+    }
+    
+    input {
+        @include bubble;
+        height: 20pt;
+        width: 90%;
+        font-size: $bodySubHeaderContentSize;      
+    }
+}
+
+input[type='submit'] {
+    @include standard_button;
+    background: $qdinkaBlue;
+    height: 30px;
+} 
+
+.left-manage-account-wrapper-notification, .right-manage-content-wrapper-notification {
+    width: 10%;
+    padding-right: 17px;
+}
+
+.left-manage-account-wrapper-notification, .right-manage-content-wrapper-notification{
+    float: left;
+    
+    label {
+        margin-top: 20px;
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderContentSize; 
+        float: left;
+        padding-right: 10px;
+
+    }
+    
+    input[type="radio"] {
+        margin-top: 8px;
+    }
+   
+}
+
+.right-manage-content-wrapper-notification:after {
+    @include next_row;
+}
+
+.table-sign-in-history {
+    width: 97%;
+    max-width: 97%;
+    margin-top: 20px;
+    border:#191970;
+    border-collapse:collapse;
+    
+    th {
+        height: 20px;
+        font-weight: normal;
+    }
+    
+    td {
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+ 
+
+
