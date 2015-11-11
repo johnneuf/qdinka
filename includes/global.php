@@ -14,13 +14,38 @@ define('SERVER_IP', $_SERVER['REMOTE_ADDR']); //Servers IP address
  */
 function param($parameter)
 {
-    if (isset($_POST[$parameter])) {
-        return $_POST[$parameter];
-    } elseif (isset($_GET[$parameter])) {
-        return $_GET[$parameter];
-    }
+    return ($_REQUEST[$parameter]) ? $_REQUEST[$parameter] : false;
+}
 
-    return false;
+/**
+ * Retrieves the session variable
+ * @param string $parameter The parameter to look for
+ * @return bool|mixed False if nothing was found else it will return anything it finds
+ */
+function session_param($parameter)
+{
+    return ($_SESSION[$parameter]) ? $_SESSION[$parameter] : false;
+}
+
+/**
+ * Will save information to the session. If it is an object it will auto serialize it
+ * @param string $parameter The parameter that you want to save to
+ * @param mixed $variable The variable that you want to save
+ */
+function session_save($parameter, $variable)
+{
+    //If the variable is an object you have to serialize it in order to save it.
+    $_SESSION[$parameter] = (is_object($variable)) ? serialize($variable) : $variable;
+}
+
+/**
+ * Same as session_param but this one will unserialize the object that is stored
+ * @param string $parameter The parameter you want to look for
+ * @return bool|mixed False if nothing is found else the object you are looking for
+ */
+function session_object($parameter)
+{
+    return (session_param($parameter)) ? unserialize(session_param($parameter)) : false;
 }
 
 /**
@@ -44,7 +69,7 @@ function debug_errors()
 
 /**
  * Verifies the response $_POST['g-recaptcha-response'] from google
- * @param string $response This is the responce from $_POST['g-recaptcha-response']
+ * @param string $response This is the response from $_POST['g-recaptcha-response']
  * @return bool returns true if the person checks out to not be a robot
  */
 function verify_captcha($response)

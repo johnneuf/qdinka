@@ -93,8 +93,6 @@ class LoginPage extends TemplateBase {
 
     protected function side_menu()
     {
-        $menu = new MainMenu();
-        echo $menu;
     }
 
     private function post()

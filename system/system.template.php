@@ -25,3 +25,8 @@ define('DB_MAIN_PASSWORD', 'root');
 define('CAPTCHA_ENABLED', false);
 define('CAPTCHA_SITE_KEY', '6LcysAYTAAAAAL-OxP4o88-vAzvX-ltJVOZKnl36');
 define('CAPTCHA_SECRET_KEY', '6LcysAYTAAAAAFxhC18Lk_l7BnVmD9pZQqmLPQOk');
+
+//Authentication
+define('AUTH_ALLOWED_FAIL', 3);
+define('AUTH_KEY', 'user');
+define('AUTH_HASH', 'SHA1');

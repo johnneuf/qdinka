@@ -8,161 +8,167 @@
 
 namespace includes\users;
 
-
-use includes\database\DatabaseObject;
 use includes\database\DatabaseUtil;
 
 class AuthenticationUtil {
-    //Privilege Constants
-    const PRIVILEGE_VIEW_MERCHANT_PAGE = 1;
-    const PRIVILEGE_VIEW_ADMIN_PAGE = 2;
-    const PRIVILEGE_PAGE_ADMIN = 4;
-    const PRIVILEGE_USER_ADMIN = 8;
-    const PRIVILEGE_ASSIGN_PRIVILEGES = 16;
+    //Privilege Levels
+    const ENUM_AUTH_NULL = 0;
+    const ENUM_AUTH_VIEW = 1;
+    const ENUM_AUTH_WRITE = 2;
+    const ENUM_AUTH_EDIT = 4;
+
+    //Group IDs
+    const ENUM_GROUP_NONE = 0;
+    const ENUM_GROUP_ADMIN = 1;
+    const ENUM_GROUP_VENDOR = 2;
+    const ENUM_GROUP_CUSTOMER = 3;
 
     /**
-     * Logs a user in
-     * @param string $userEmail Email address the user is trying to login as
-     * @param string $password The password the user is trying to login as
-     * @return bool|string Returns false if the login is successful or returns an error string if unsuccessful
-     */
-    public static function login($userEmail, $password)
-    {
-        //Retrieve information from the users table
-        if (!$conn = DatabaseUtil::db_connect(DatabaseUtil::DATABASE_USER)) {
-            return 'Database Error contact administration.';
-        }
-
-        if ($result = DatabaseUtil::get($conn, 'SELECT * FROM users WHERE emailAddress=? LIMIT 1', [$userEmail])) {
-
-            //check the password
-            $result = array_shift($result);
-            if (self::hash($password, $result->salt) == $result->password) {
-                SessionUtil::session_set('loggedIn', self::user_token($result->salt));
-                SessionUtil::session_set('user', serialize($result));
-            } else {
-                return 'Email or Password are incorrect.';
-            }
-
-        } else {
-            return 'Email or Password are incorrect.';
-        }
-    }
-
-    /**
-     * Logs a user out
-     */
-    public static function logout()
-    {
-        $_SESSION = array();
-
-        if (ini_get('session.use_cookies')) {
-            $params = session_get_cookie_params();
-            setcookie(session_name(), '', time() - 4200, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
-        }
-
-        session_destroy();
-    }
-
-    /**
-     * Checks to see if a user is logged in
-     * @return bool True if the user is logged in
+     * Checks to see if a person is logged in
+     * @return bool True if the person is logged in and false if they are not
      */
     public static function is_logged_in()
     {
-        if (SessionUtil::session('user') && SessionUtil::session('loggedIn')) {
+        $user = session_object(AUTH_KEY);
 
-            $user = unserialize(SessionUtil::session('user'));
-
-            if (self::user_token($user->salt) == SessionUtil::session('loggedIn')) {
-                return true;
-            }
+        if (!$user) {
+            return false;
         }
 
+        return ($user->get_token() == hash(AUTH_HASH, get_user_ip()));
+    }
+
+    /**
+     * Gets the user from the session
+     * @return bool|\stdClass False if there is no one to get. A user if there is one.
+     */
+    public static function get_user()
+    {
+        return (self::is_logged_in()) ? session_object(AUTH_KEY) : false;
+    }
+
+    /**
+     * Checks to see if a user has a privilege
+     * @param User $user The user you want to check
+     * @param int $group The group check
+     * @param int $level The level you want to check
+     * @return bool True of the person has the privilege
+     */
+    public static function has_privilege(User $user, $group, $level)
+    {
+        $groups = [
+            self::ENUM_GROUP_ADMIN => 'adminPriv',
+            self::ENUM_GROUP_VENDOR => 'vendorPriv',
+            self::ENUM_GROUP_CUSTOMER => 'customerPriv'
+        ];
+
+        //We dont use the none group
+        if ($group == self::ENUM_GROUP_NONE) {
+            return false;
+        }
+
+        return ($user->get_userDBO()->$groups[$group] & $level) ? true : false;
+    }
+
+    private static function log_login_failure()
+    {
+        //Get any past attempts
+        $sql = 'select * from failed_attempts where ip = ? limit 1';
+        $pastAttempt = DatabaseUtil::query(DB_USER_SCHEMA, $sql, [get_user_ip()]);
+
+        $updateSQL = ($pastAttempt) ?
+            'update failed_attempts set "count"=? where ip=?' :
+            'insert into failed_attempts (ip, "count", override) values (?, ?, ?)';
+
+        if ($pastAttempt) {
+
+            $result = DatabaseUtil::query(
+                DB_USER_SCHEMA,
+                $updateSQL,
+                [($pastAttempt->count + 1)]
+            );
+
+        } else {
+
+            $result = DatabaseUtil::query(
+                DB_USER_SCHEMA,
+                $updateSQL, [get_user_ip(), 1, 0]
+            );
+        }
+
+        //Something went wrong so we need to log this
+        if (!$result) {
+            DatabaseUtil::record_error(
+                'AuthenticationUtil',
+                'log_login_failure',
+                'There was an error when logging an attempted failed login'
+            );
+        }
+    }
+
+    /**
+     * Logs a user in
+     * @param string $username User name
+     * @param string $password Users Password
+     * @return bool True if the login was successful and false if it wasnt
+     */
+    public static function login($username, $password)
+    {
+        //Get the user
+        $sql = 'select * from "user" where userName = ? limit 1';
+        $userQuery = DatabaseUtil::query(DB_USER_SCHEMA, $sql, [$username]);
+
+        //If there was nothing returned then there is a fail
+        if (!$userQuery) {
+            self::log_login_failure();
+            return false;
+        }
+
+        //Check the password
+        if ($userQuery->password == hash(AUTH_HASH, $username . ':' . $password . ':' . $userQuery->salt)) {
+            $user = new User($userQuery);
+            session_save(AUTH_KEY, $user);
+            return true;
+        }
+
+        //Failed Login
+        self::log_login_failure();
         return false;
     }
 
     /**
-     * Intrusion detection. Checks for brute force attempts. Returns true if there was more than 5 attempts in a two hour period.
-     * @param int $userID User ID to check
-     * @param \mysqli $dbc The database connection
-     * @return bool True if there was 5 failed attempts in two hours
+     * Logs user out of the system
+     * @return bool True if the user was logged out and false if they are not.
      */
-    private static function brute_force($userID, \mysqli $dbc)
+    public static function logout()
     {
-        $now = time();
-
-        //Set the time for two hours (7200 seconds) in the past
-        $checkTime = $now - 7200;
-
-        if ($result = $dbc->prepare('select * from login_attemps where ID = ? and \'time\' > ' . $checkTime)) {
-            $result->bind_param('i', $userID);
-            $result->execute();
-            $result->store_result();
-
-            //If there was more than 5 attempts return true
-            if ($result->num_rows > 5) {
-                return true;
-            } else {
-                return false;
-            }
+        //Destroys the cookies as well
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 42000,
+                $params["path"], $params["domain"],
+                $params["secure"], $params["httponly"]
+            );
         }
 
-        //There was something that went wrong don't let the login attempt to go further
-        return true;
+        return session_destroy();
     }
 
     /**
-     * Hash a String
-     * @param $string String to be hashed
-     * @param string $salt The salt for the string
-     * @return string Hashed string
+     * Sees if a user is banned
+     * @return bool True if the user is banned
      */
-    public static function hash($string, $salt)
+    public static function is_banned()
     {
-        return hash('sha512', $string . $salt);
-    }
+        //See if there is any occurrences
+        $SQL = 'select `count` from failed_attempts where ip=? limit 1';
+        $result = DatabaseUtil::query(DB_USER_SCHEMA, $SQL, [get_user_ip()]);
 
-    /**
-     * @param \stdClass $user The user to check
-     * @param int $privilege The privilege to check for
-     * @return bool True if that person has privileges
-     */
-    public static function check_privilege(\stdClass $user, $privilege)
-    {
-        return ($user->privs & $privilege) ? true : false;
-    }
-
-    /**
-     * Makes a Salt from the time and IP of the user
-     * @return string Salt
-     */
-    public static function salt()
-    {
-        return hash('sha512', time() . $_SERVER['REMOTE_ADDR']);
-    }
-
-    /**
-     * Returns a user token for login
-     * @param string $salt The users salt
-     * @return string The token
-     */
-    public static function user_token($salt)
-    {
-        return self::hash($_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'], $salt);
-    }
-
-    public static function generate_password()
-    {
-        $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
-        $pass = array();
-        $alphaLength = strlen($alphabet) - 1;
-
-        for ($i = 0; $i < 8; $i++) {
-            $n = rand(0, $alphaLength);
-            $pass[] = $alphabet[$n];
+        //Nothing was returned
+        if (!$result) {
+            return false;
         }
 
-        return implode($pass); //turn the array into a string
+        return ($result->count > AUTH_ALLOWED_FAIL);
     }
 }
