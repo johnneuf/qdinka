@@ -169,6 +169,6 @@ class AuthenticationUtil {
             return false;
         }
 
-        return ($result->count > AUTH_ALLOWED_FAIL);
+        return ($result->count > AUTH_ALLOWED_FAIL && !$result->override);
     }
 }
