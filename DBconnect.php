@@ -11,13 +11,13 @@ class DBconnect{
 	
 	//stores connection values
 	private static function setupconn($db_server,$db_username,$db_password,$db_name){
-		
+		;
 	}
 	
 	//quires database
 	$query_database=get_user_inp();
 	public static function query($query_database){
-		
+		;
 		
 	}
 	//test connection and query database or return error
