@@ -4,6 +4,7 @@
 * @email nannalin14@gmail.com
 */
 @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -230,8 +231,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 250px; }
+  margin: 10px 125px; }
 
 .new-listing-wrapper:after {
   content: '';
@@ -310,8 +310,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 180px; }
+  margin: 10px 125px; }
 
 .communicate-wrapper-content {
   padding-top: 10px;
@@ -366,8 +365,11 @@
     Created on : Oct 31, 2015, 3:22:28 PM
     Author     : Nannalin
 */
+.template-content-wrapper {
+  min-height: 100%; }
+
 .buyer-content-wrapper {
-  margin-bottom: 0; }
+  padding-bottom: 20px; }
 
 .buyer-content-menu-wrapper h2 {
   -webkit-box-sizing: border-box;
@@ -451,9 +453,6 @@
   background-color: #ffffff;
   color: #1C75BD;
   text-decoration: none; }
-
-.buyer-content-wrapper {
-  height: 700pt; }
 
 .personalInfo {
   background: #1C75BD; }
