@@ -14,7 +14,7 @@ define('SERVER_IP', $_SERVER['REMOTE_ADDR']); //Servers IP address
  */
 function param($parameter)
 {
-    return ($_REQUEST[$parameter]) ? $_REQUEST[$parameter] : false;
+    return (isset($_REQUEST[$parameter])) ? $_REQUEST[$parameter] : false;
 }
 
 /**
@@ -24,7 +24,7 @@ function param($parameter)
  */
 function session_param($parameter)
 {
-    return ($_SESSION[$parameter]) ? $_SESSION[$parameter] : false;
+    return (isset($_SESSION[$parameter])) ? $_SESSION[$parameter] : false;
 }
 
 /**
