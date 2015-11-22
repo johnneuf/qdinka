@@ -43,11 +43,11 @@ echo'       <!-- Header -->
         <div class="buyer-content-wrapper">
             <div class="buyer-content-header-wrapper">
                 <ul class="buyer-nav">
-                    <li class="buyer-nav-list"><a href="/pages/buyers/buyerHome.php">Home</a></li>
-                    <li class="buyer-nav-list"><a href="#">My Orders</a></li>
-                    <li class="buyer-nav-list"><a href="../../pages/buyers/buyerMessage">Messages</a></li>
-                    <li class="buyer-nav-list"><a href="#">Favorites</a></li>
-                    <li class="buyer-nav-list"><a href="#">Reviews</a></li>
+                    <li class="buyer-nav-list-home"><a href="/pages/buyers/buyerHome.php">Home</a></li>
+                    <li class="buyer-nav-list-orders"><a href="#">My Orders</a></li>
+                    <li class="buyer-nav-list-messages"><a href="../../pages/buyers/buyerMessage">Messages</a></li>
+                    <li class="buyer-nav-list-favorites"><a href="#">Favorites</a></li>
+                    <li class="buyer-nav-list-reviews"><a href="#">Reviews</a></li>
                     <li class="buyer-nav-list-manage-account"><a href="#">Manage Account</a></li>
                 </ul>
             </div>'
