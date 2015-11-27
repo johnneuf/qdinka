@@ -4,8 +4,8 @@
 		class UsersPage
 		{
 			//defines variables and sets to empty values
-			private static $firstName=$lastName=$email=$userID=$userName=$password="";
-			private static $fnERR=$lnERR=$emailERR=$userIDERR=$userNameERR=$passwordERR="";
+			public static $firstName=$lastName=$email=$userID=$userName=$password="";
+			public static $fnERR=$lnERR=$emailERR=$userIDERR=$userNameERR=$passwordERR="";
 		
 			//tests user input on the names of the form controls
 			public static function test_user_input($user_input)
@@ -86,12 +86,12 @@
 		
 		<fieldset>
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ;?>" method="post">
-			First Name: <input type="text" name="firstName" value="<?php echo $firstName ;?>"><span class="error">*<?php echo $fnERR;?></span><br>
-			Last Name:<input type="text" name="lastName" value="<?php echo $lastName ;?>"><span class="error">*<?php echo $lnERR ;?></span><br>
-			E-mail:<input type="text" name="email" value="<?php echo $email;?>"><span class="error">*<?php echo $emailERR ;?></span><br>
-			User ID:<input type="text" name="userID" value="<?php echo $userID ;?>"><span class="error">*<?php echo $userIDERR ;?></span><br>
-			User Name:<input type="text" name="userName" value="<?php echo $userName ;?>"><span class="error">*<?php echo $userNameERR ;?></span><br>
-			Password: <input type="text" name="password" value="<?php echo $password ;?>"><span class="error">*<?php echo $passwordERR ;?></span><br>
+			First Name: <input type="text" name="firstName" value="<?php echo UsersPage::firstName ;?>"><span class="error">*<?php echo UsersPage::fnERR;?></span><br>
+			Last Name:<input type="text" name="lastName" value="<?php echo UsersPage::lastName ;?>"><span class="error">*<?php echo UsersPage::lnERR ;?></span><br>
+			E-mail:<input type="text" name="email" value="<?php echo UsersPage::email;?>"><span class="error">*<?php echo UsersPage::emailERR ;?></span><br>
+			User ID:<input type="text" name="userID" value="<?php echo UsersPage::userID ;?>"><span class="error">*<?php echo UsersPage::userIDERR ;?></span><br>
+			User Name:<input type="text" name="userName" value="<?php echo UsersPage::userName ;?>"><span class="error">*<?php echo UsersPage::userNameERR ;?></span><br>
+			Password: <input type="text" name="password" value="<?php echo UsersPage::password ;?>"><span class="error">*<?php echo UsersPage::passwordERR ;?></span><br>
 			
 			<input type="submit" >
 			
