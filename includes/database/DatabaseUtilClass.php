@@ -10,97 +10,92 @@ namespace includes\database;
 
 
 class DatabaseUtil {
-    //database constants
-    const DATABASE_USER = 0;
-    const DATABASE_NORMAL = 1;
 
     /**
-     * Generates a PDO database connection
-     * @param int $database This is what database you are wanting to connect to. The default is the normal database.
-     * @return bool|\PDO Returns a database object or false if something is not right
+     * Private function to setup a connection for database connection
+     * @param string $schema The schema you wish to connect to
+     * @return \PDO
      */
-    public static function db_connect($database = self::DATABASE_NORMAL)
+    private static function connect($schema)
     {
-        if ($database == self::DATABASE_USER) {
-            return new \PDO(DB_USER_DNS, DB_USER_USER, DB_USER_PASSWORD);
-        } elseif ($database == self::DATABASE_NORMAL) {
-            return new \PDO(DB_MAIN_DNS, DB_MAIN_USER, DB_MAIN_PASSWORD);
-        }
+        //Create the DNS
+        $DNS = 'mysql:host=localhost;dbname=' . $schema . ';charset=utf8';
 
-        return false;
+        //Return the PHP Database Object
+        return new \PDO($DNS, DB_USER_USER, DB_USER_PASSWORD);
     }
 
     /**
-     * Gets data from the database and saves the values in a record form
-     * @param \PDO $PDO Connection to the database
-     * @param string $sql Query statement that you
-     * @param array $values Values to pass
-     * @return bool|array key=>record will return false if there is nothing found by the query
+     * Default way to access the database
+     * @param string $schema Name of the schema that you are wanting to connect to
+     * @param string $sqlQuery The sql query to run against the database
+     * @param array $values The values that compliment the sql statement
+     * @return array|bool|\stdClass Returns false if fail, array or single stdClass object
      */
-    public static function get(\PDO $PDO, $sql, array $values = null)
+    public static function query($schema, $sqlQuery, array $values = array())
     {
-        //Execute the SQL
-        if (is_null($values)) {
-            $stmt = $PDO->query($sql);
-        } else {
-            $stmt = $PDO->prepare($sql);
-            $stmt->execute($values);
-        }
+        //Make the connection
+        $PDO = self::connect($schema);
 
-        $rows = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        //Try to do the query and catch any errors
+        try {
+            //prepare the statement
+            $statement = $PDO->prepare($sqlQuery);
 
-        //Make Objects from the data
-        $objects = array();
+            //If there is any values then execute with the values
+            $result = (empty($values)) ? $statement->execute() : $statement->execute($values);
 
-        if (!$rows || empty($rows)) {
-            return false;
-        }
-
-        foreach ($rows as $row) {
-
-            $object = new \stdClass();
-
-            foreach ($row as $key => $value) {
-                $object->$key = $value;
+            if (!$result) {
+                //The query was a failure
+                $PDO = null;
+                return false;
             }
 
-            $objects[] = $object;
+            $rows = $statement->fetchAll(\PDO::FETCH_OBJ);
 
+            if (is_array($rows) && count($rows) == 1) {
+                //There is only a row
+                $PDO = null;
+                return $rows[0];
+            }
+
+            if ($result && !$rows) {
+                //This is not supposed to return anything
+                $PDO = null;
+                return $result;
+            }
+
+            //Return all of the rows
+            return $rows;
+        } catch (\PDOException $exception) {
+            self::record_error('DatabaseUtil', 'query', $exception->getMessage());
+            return false;
         }
-
-        //Do not send an array if there is only one object
-        return $objects;
-
     }
 
-    public static function insert(\PDO $PDO, $table, \stdClass $stdClass)
+    public static function record_error($class, $function, $message)
     {
-        //Init
-        $preparedArray = array();
-        $names = array();
-        $namedValues = array();
+        //Try to do the query
+        try {
+            //Connect
+            $PDO = self::connect(DB_USER_SCHEMA);
 
-        //Convert the class into the strings and arrays we need.
-        $fields = get_object_vars($stdClass);
+            //Double check to see there is a connection
+            if (!$PDO) {
+                return;
+            }
 
-        foreach ($fields as $key=>$value) {
-            $names[] = $key;
-            $namedValues[] = ':' . $key;
-            $preparedArray[':' . $key] = $value;
+            //Do the query
+            $sql = 'insert into system_errors (ip, class, function, message, dts) value (?, ?, ?, ?, now())';
+            $statement = $PDO->prepare($sql);
+            $statement->execute([get_user_ip(),
+                $class,
+                $function,
+                $message
+            ]);
+
+        } catch (\PDOException $exception) {
+            return;
         }
-
-        $columns = implode(', ', $names);
-        $values = implode(', ', $namedValues);
-
-        //prepare and execute
-
-        $sql = 'INSERT INTO ' . $table . '(' . $columns . ') VALUES (' . $values . ')';
-        $statementHandler = $PDO->prepare($sql);
-        if ($statementHandler->execute($fields)){
-            return false;
-        } else {
-            return $statementHandler->errorInfo();
-        }
-
     }
 }

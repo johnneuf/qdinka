@@ -1,9 +1,13 @@
+/* 
+    Created on : Nov 12, 2015, 11:58:23 PM
+    Author     : Nannalin
+*/
 /**
 * Nannalin Higgins
-* Created on : Sep 2, 2015, 1:54:38 PM
+* Created on : Sep 13, 2015, 2:47:18 PM
 * @email nannalin14@gmail.com
 */
-
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
@@ -12,7 +16,7 @@
   padding: 0 5px;
   margin-left: 120px;
   margin-right: 120px;
-  min-height: 90vh; }
+  min-height: 100%; }
 
 .buyer-top-header {
   -webkit-box-sizing: border-box;
@@ -165,7 +169,6 @@
   border-bottom: 1px solid #ccc;
   margin: 0 0 0 0;
   border-top: 1px solid #ccc;
-  height: 30px;
   background: #1C75BD;
   /* remove the pipe from the last list item */
   -webkit-padding-start: 0; }
@@ -189,29 +192,19 @@
     text-decoration: none;
     display: inline-block; }
   .buyer-nav .buyer-nav-list-manage-account {
-    width: 19%; }
+    width: 19.6%; }
 
 .buyer-nav:after {
   content: '';
   display: table;
   clear: both; }
 
-.buyer-nav-list a:hover {
+.buyer-nav-list-home a:hover, .buyer-nav-list-orders a:hover, .buyer-nav-list-messages a:hover, .buyer-nav-list-favorites a:hover, .buyer-nav-list-reviews a:hover, .buyer-nav-list-manage-account a:hover {
   color: #ccc;
   text-decoration: none; }
 
-.buyer-nav-list-manage-account a:hover {
+.buyer-nav-list-home a:active, .buyer-nav-list-orders a:active, .buyer-nav-list-messages a:active, .buyer-nav-list-favorites a:active, .buyer-nav-list-reviews a:active, .buyer-nav-list-manage-account a:active {
   color: #ccc;
-  text-decoration: none; }
-
-.buyer-nav-list a:active {
-  background-color: #ffffff;
-  color: #1C75BD;
-  text-decoration: none; }
-
-.buyer-nav-list-manage-account a:active {
-  background-color: #ffffff;
-  color: #1C75BD;
   text-decoration: none; }
 
 /**
@@ -231,8 +224,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 250px; }
+  margin: 10px 125px; }
 
 .new-listing-wrapper:after {
   content: '';
@@ -311,8 +303,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 180px; }
+  margin: 10px 125px; }
 
 .communicate-wrapper-content {
   padding-top: 10px;
@@ -363,134 +354,50 @@
     text-decoration: none;
     font-size: 14pt; }
 
-.buyer-content-menu-wrapper h2 {
+.buyer-nav-list-messages {
+  background-color: white; }
+  .buyer-nav-list-messages a {
+    color: #1C75BD; }
+
+.buyer-content-menu-messages-wrapper h2 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 25%;
+  width: 35%;
   float: left;
   font-size: 22pt;
   color: #1C75BD;
   padding-left: 50px;
   margin-top: 10px; }
 
-.buyer-content-menu-wrapper:after {
+.buyer-content-menu-messages-wrapper:after {
   content: '';
   display: table;
   clear: both; }
 
-.buyer-content-menu-detail {
+.buyer-content-menu-messages-detail {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 60%;
   margin-top: 10px;
+  padding-right: 20px;
   float: left;
   font-size: 14pt; }
 
-.head-activity {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-top: 10px;
-  float: left;
-  font-size: 14pt;
-  font-weight: bold; }
-
-.duration-nav {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  border-bottom: 1px solid #ccc;
-  margin: 10px 100px 10px 100px;
+.message-manager-header-wrapper {
+  margin-top: 20px;
   border-top: 1px solid #ccc;
-  height: 30px;
-  background: #1C75BD;
-  /* remove the pipe from the last list item */
-  -webkit-padding-start: 0;
-  background: none;
-  margin-left: 50px; }
-  .duration-nav li {
-    width: 15%;
-    float: left;
-    list-style: none;
-    text-align: center;
-    display: inline-block;
-    border-right: 2px solid #eee;
-    padding: 0.1em 1.6em; }
-  .duration-nav li:last-child {
-    border: 0; }
-  .duration-nav a {
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
-    font-size: 14pt;
-    text-align: center;
-    font-weight: normal;
-    text-decoration: none;
-    display: inline-block; }
-  .duration-nav a {
-    color: #1C75BD;
-    font-size: 12pt; }
+  border-bottom: 1px solid #ccc;
+  height: 21pt; }
 
-.duration-nav li a:hover {
-  color: #ccc;
-  text-decoration: none; }
-
-.duration-nav li a:active {
-  background-color: #ffffff;
-  color: #1C75BD;
-  text-decoration: none; }
-
-.buyer-home-nav {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
+.first-header-message-manager {
+  width: 18.9%;
   float: left;
-  margin-top: 5px;
-  list-style-type: none; }
+  text-align: center;
+  padding-top: 2px; }
 
-.buyer-home-nav-list {
-  float: left;
-  list-style: none;
-  margin: 5px 5px;
-  display: inline-block;
-  border-bottom: 1px solid #eee;
-  padding: 1.5em 1.5em;
-  width: 90%; }
-
-.buyer-home-nav-list:last-child {
-  border: 0; }
-
-.buyer-home-nav-image img {
-  width: 5%;
-  float: left; }
-
-.buyer-home-nav-title {
-  float: left; }
-
-.buyer-home-nav-title h2 {
-  color: #1C75BD;
-  font-size: 14pt;
-  margin: 0;
-  padding-left: 20px; }
-
-.buyer-home-nav-detail {
-  margin-top: 0;
-  font-size: 12pt;
-  padding-left: 20px; }
-
-.activity a {
-  text-decoration: underline; }
-
-.buyer-content-ordered {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+input[type='submit'] {
   background: #ffffff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -499,200 +406,197 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  background: #1C75BD;
   font-size: 12pt;
-  height: 500px; }
+  font-family: "Enriqueta", serif;
+  margin-left: 0;
+  padding: 1px 18.6%; }
 
-.ordered-list-header {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 40px; }
+.second-header-messages-manager {
+  padding-left: 11%;
+  border-left: 1px solid #ccc; }
 
-.date {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 40px;
+.second-header-messages-manager, .third-header-messages-manager, .fourth-header-messages-manager {
+  float: left;
+  padding-right: 12%; }
+  .second-header-messages-manager input, .third-header-messages-manager input, .fourth-header-messages-manager input {
+    color: #1C75BD;
+    font-size: 13pt;
+    border: none;
+    background: none;
+    background-color: transparent;
+    /* make the button transparent */
+    background-repeat: no-repeat;
+    /* make the background image appear only once */
+    background-position: 0px 0px;
+    /* equivalent to 'top left' */
+    border: none;
+    /* assuming we don't want any borders */
+    cursor: pointer;
+    /* make the cursor like hovering over an <a> element */
+    padding-left: 25px;
+    /* make text start to the right of the image */
+    vertical-align: middle;
+    /* align the text vertically centered */
+    font-family: "Enriqueta", serif; }
+
+.fifth-header-messages-manager {
+  padding-left: 1%;
   float: left; }
 
-#orderedDate {
-  color: #1C75BD; }
-
-.totalCost {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left; }
-
-#totCost {
-  color: #1C75BD; }
-
-.receiver {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 20px;
-  float: left; }
-
-#receiverName {
-  color: #1C75BD; }
-
-.orderedNumber {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  margin-top: 5px;
-  padding-left: 0;
-  float: left; }
-  .orderedNumber a {
-    color: #1C75BD; }
-
-.orderedNumber:after {
+.fifth-header-messages-manager:after {
   content: '';
   display: table;
   clear: both; }
 
-.ordered-detail {
+.third-header-messages-manager input {
+  background-image: url(../images/icons/archive.png);
+  /* 16px x 16px */ }
+
+.fourth-header-messages-manager input {
+  background-image: url(../images/icons/trash.png); }
+
+.fifth-header-messages-manager input {
+  margin-top: 8px; }
+
+.message-manager-body-wrapper-left {
+  width: 18%;
+  margin-top: 0;
+  float: left; }
+  .message-manager-body-wrapper-left ul {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .message-manager-body-wrapper-left li {
+    padding-top: 10px;
+    list-style: none; }
+    .message-manager-body-wrapper-left li a {
+      color: #1C75BD;
+      font-size: 12pt; }
+    .message-manager-body-wrapper-left li input[type="button"] {
+      color: #1C75BD;
+      font-size: 12pt;
+      border: none;
+      background: none;
+      padding: 0;
+      background-color: transparent;
+      /* make the button transparent */
+      border: none;
+      /* assuming we don't want any borders */
+      cursor: pointer;
+      /* make the cursor like hovering over an <a> element */ }
+
+.message-number, .sent-number {
+  color: #1C75BD;
+  font-size: 14pt; }
+
+.template-search-bar-wrapper-small {
+  width: 84%;
+  margin-top: 14px;
+  padding-left: 10%;
+  padding-bottom: 10px; }
+
+.template-search-bar-wrapper-small form {
+  border-radius: 3px;
+  background: #1C75BD; }
+
+.template-search-bar-wrapper-small input[type='text'] {
+  text-align: center;
+  color: #717070;
+  font-size: 10pt;
+  background: #F0F0F0;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  vertical-align: middle;
+  padding: 5px;
+  width: 80%; }
+
+.template-search-bar-wrapper-small input[type='image'] {
+  width: 10%;
+  vertical-align: middle;
+  border-radius: 0 3px 3px 0;
+  padding-left: 5px;
+  margin-left: -5px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%); }
+
+.message-manager-body-wrapper-right {
+  float: right;
+  margin-left: 0;
   padding-top: 10px;
-  width: 100%;
-  height: 200px; }
+  padding-bottom: 10px;
+  width: 81%;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc; }
 
-.dash {
-  border: 0 none;
-  border-top: 2px dashed #ccc;
-  background: none;
-  margin: 5px 40px; }
+.message-manager-body-wrapper-right:after {
+  content: '';
+  display: table;
+  clear: both; }
 
-.ordered-image {
-  float: left;
-  padding: 0 20px;
-  width: 10%; }
-  .ordered-image img {
+.account-image-wrapper {
+  width: 13%;
+  float: left; }
+  .account-image-wrapper img {
     width: 100%; }
 
-.ordered-list-1 {
+.message-wrapper {
   float: left;
-  padding: 0 10px;
-  width: 40%; }
+  margin-left: 5px;
+  width: 86%; }
 
-.ordered-list-1:after {
+.message-wrapper-top-left {
+  float: left;
+  width: 80%; }
+
+.sellerDetail {
+  font-size: 14px; }
+  .sellerDetail .sellerAccountName {
+    color: black;
+    font-weight: bold; }
+
+#totSales, #listedPtoducts {
+  color: #1C75BD; }
+
+.message-wrapper-top-right {
+  float: right;
+  padding-right: 3.3%; }
+
+.message-wrapper-top-right:after {
   content: '';
   display: table;
   clear: both; }
 
-.ordered-name {
-  font-weight: bold; }
+.message-wrapper-bottom {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 3.3%;
+  float: left; }
 
-.seller, .condition, .ordered-button-1 {
-  padding-top: 10px; }
+.message-header a {
+  color: #787878;
+  font-weight: bold;
+  text-decoration: underline; }
 
-#sellerName {
+.full-review a {
   color: #1C75BD;
   text-decoration: underline; }
 
-#conditionStatus {
-  color: #FF0000; }
-
-.rebuy-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #1C75BD; }
-  .rebuy-button a {
-    color: #ffffff;
-    text-decoration: none; }
-
-.track-package-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 40%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #191970; }
-  .track-package-button a {
-    color: #ffffff;
-    text-decoration: none; }
-
-.ordered-list-2 {
-  width: 40%;
-  float: left; }
-
-.ordered-list-2:after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.estimated-delivery {
-  padding-left: 150px; }
-
-.estimated-delivery-date {
-  color: #971111; }
-
-.contact-seller {
-  padding-left: 150px;
-  padding-top: 10px; }
-  .contact-seller a {
-    color: #1C75BD;
-    font-weight: bold; }
-
-.ordered-quality {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 150px;
-  float: left; }
-
-.ordered-price {
-  float: left;
-  color: #971111;
-  padding-left: 20px;
-  padding-top: 10px; }
-
-.review-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 50%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #1C75BD; }
-  .review-button a {
-    color: #ffffff;
-    text-decoration: none; }
-
-.rate-button {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px 10px;
-  width: 30%;
-  float: left;
-  padding: 10px 10px;
-  text-align: center;
-  background: #ccc; }
-  .rate-button a {
-    color: #ffffff;
-    text-decoration: none; }
-
 .subview-bottom-paginate-wrapper {
-  text-align: center; }
+  border: 0 none;
+  border-top: 1px solid #ccc;
+  background: none;
+  margin: 5px 40px;
+  text-align: center;
+  border-top: none;
+  width: 81%;
+  float: right; }
 
 .subview-bottom-paginate {
   display: inline-block;
@@ -707,4 +611,4 @@
   font-weight: bold;
   font-size: inherit; }
 
-/*# sourceMappingURL=buyerMyOrdersLayout.css.map */
+/*# sourceMappingURL=buyerMessageManagerLayout.css.map */

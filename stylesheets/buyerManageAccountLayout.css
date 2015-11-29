@@ -1,13 +1,9 @@
 /**
 * Nannalin Higgins
-* Created on : Oct 4, 2015, 11.40 AM
-* @email nannalin14@gmail.com
-*/
-/**
-* Nannalin Higgins
 * Created on : Sep 13, 2015, 2:47:18 PM
 * @email nannalin14@gmail.com
 */
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
@@ -235,8 +231,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 250px; }
+  margin: 10px 125px; }
 
 .new-listing-wrapper:after {
   content: '';
@@ -315,8 +310,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 180px; }
+  margin: 10px 125px; }
 
 .communicate-wrapper-content {
   padding-top: 10px;
@@ -367,8 +361,15 @@
     text-decoration: none;
     font-size: 14pt; }
 
+/* 
+    Created on : Oct 31, 2015, 3:22:28 PM
+    Author     : Nannalin
+*/
+.template-content-wrapper {
+  min-height: 100%; }
+
 .buyer-content-wrapper {
-  height: 700pt; }
+  padding-bottom: 20px; }
 
 .buyer-content-menu-wrapper h2 {
   -webkit-box-sizing: border-box;
@@ -452,6 +453,12 @@
   background-color: #ffffff;
   color: #1C75BD;
   text-decoration: none; }
+
+.personalInfo {
+  background: #1C75BD; }
+  .personalInfo a {
+    color: white;
+    padding-bottom: 5px; }
 
 .buyer-content-manage-account {
   margin: 15px 20px; }

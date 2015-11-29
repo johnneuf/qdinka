@@ -9,6 +9,7 @@
 * @email nannalin14@gmail.com
 */
 @import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
 .template-content-wrapper {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -169,7 +170,6 @@
   border-bottom: 1px solid #ccc;
   margin: 0 0 0 0;
   border-top: 1px solid #ccc;
-  height: 30px;
   background: #1C75BD;
   /* remove the pipe from the last list item */
   -webkit-padding-start: 0; }
@@ -193,29 +193,19 @@
     text-decoration: none;
     display: inline-block; }
   .buyer-nav .buyer-nav-list-manage-account {
-    width: 19%; }
+    width: 19.6%; }
 
 .buyer-nav:after {
   content: '';
   display: table;
   clear: both; }
 
-.buyer-nav-list a:hover {
+.buyer-nav-list-home a:hover, .buyer-nav-list-orders a:hover, .buyer-nav-list-messages a:hover, .buyer-nav-list-favorites a:hover, .buyer-nav-list-reviews a:hover, .buyer-nav-list-manage-account a:hover {
   color: #ccc;
   text-decoration: none; }
 
-.buyer-nav-list-manage-account a:hover {
+.buyer-nav-list-home a:active, .buyer-nav-list-orders a:active, .buyer-nav-list-messages a:active, .buyer-nav-list-favorites a:active, .buyer-nav-list-reviews a:active, .buyer-nav-list-manage-account a:active {
   color: #ccc;
-  text-decoration: none; }
-
-.buyer-nav-list a:active {
-  background-color: #ffffff;
-  color: #1C75BD;
-  text-decoration: none; }
-
-.buyer-nav-list-manage-account a:active {
-  background-color: #ffffff;
-  color: #1C75BD;
   text-decoration: none; }
 
 /**
@@ -235,8 +225,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 250px; }
+  margin: 10px 125px; }
 
 .new-listing-wrapper:after {
   content: '';
@@ -315,8 +304,7 @@
   -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
-  margin: 10px 125px;
-  height: 180px; }
+  margin: 10px 125px; }
 
 .communicate-wrapper-content {
   padding-top: 10px;
@@ -367,6 +355,11 @@
     text-decoration: none;
     font-size: 14pt; }
 
+.buyer-nav-list-reviews {
+  background-color: white; }
+  .buyer-nav-list-reviews a {
+    color: #1C75BD; }
+
 .buyer-content-menu-wrapper h2 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -412,9 +405,9 @@
   border-bottom: 1px solid #ccc;
   margin: 10px 50px 10px 100px;
   border-top: 1px solid #ccc;
-  height: 30px;
   background: #1C75BD;
   /* remove the pipe from the last list item */
+  height: 30px;
   -webkit-padding-start: 0;
   background: none;
   margin-left: 50px; }

@@ -13,6 +13,8 @@ define('SERVER_IN_USE', 'http://192.168.1.18');
 define('DB_USER_USER', 'usr_secure');
 define('DB_USER_PASSWORD', 'usr_secure');
 define('DB_USER_DNS', 'mysql:host=localhost;dbname=qdinka_secure;charset=utf8');
+define('DB_USER_SCHEMA', 'qdinka_secure');
+
 
 //Login Constants Main
 define('DB_MAIN_DNS', 'mysql:host=localhost;dbname=qdinka3;charset=utf8');
@@ -23,3 +25,8 @@ define('DB_MAIN_PASSWORD', 'root');
 define('CAPTCHA_ENABLED', false);
 define('CAPTCHA_SITE_KEY', '6LcysAYTAAAAAL-OxP4o88-vAzvX-ltJVOZKnl36');
 define('CAPTCHA_SECRET_KEY', '6LcysAYTAAAAAFxhC18Lk_l7BnVmD9pZQqmLPQOk');
+
+//Authentication
+define('AUTH_ALLOWED_FAIL', 3);
+define('AUTH_KEY', 'user');
+define('AUTH_HASH', 'SHA1');

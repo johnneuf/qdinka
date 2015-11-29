@@ -1,0 +1,95 @@
+/* 
+    Created on : Oct 21, 2015, 10:35:31 PM
+    Author     : Nannalin
+*/
+
+@import "buyerHeader";
+@import "buyerFooter";
+@import "buyerManageAccountHeaderStyle";
+
+.paymentInfo {
+    background: $qdinkaBlue;
+    
+    a{
+        color: white;
+            padding-bottom: 5px;
+    }
+}
+
+.buyer-content-manage-account-paymentInfo {
+    margin : 30px 20px;
+}
+
+.buyer-content-review:after {
+    @include next_row;
+}
+
+.manage-account-paymentInfo-wrapper {
+    form {
+        height: none;
+    }
+    
+    margin-left: 30px;
+    .subheader-form {
+        padding-top: 10px;
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderListSize;
+    }   
+}
+
+.left-manage-account-paymentInfo-wrapper, .right-manage-content-paymentInfo-wrapper {
+    width: 50%;
+    float: left;
+    
+    label {
+        width: 30%;
+        margin-top: 20px;
+        color: $qdinkaBlue;
+        font-size: $bodySubHeaderContentSize; 
+        float: left;
+    }
+    
+    input {
+        @include bubble;
+        height: 20pt;
+        width: 55%;
+        font-size: $bodySubHeaderContentSize;      
+    }
+    
+    .form-detail {
+        width: 200pt;
+        padding-left: 150px;
+        padding-top: 10px;
+    }
+}
+
+.subheading {
+    color: #717070;
+    padding-left: 2%;
+}
+
+.expiration-number-form {
+    padding-left: 2%;
+}
+
+#expirationMonth {
+    width: 10%;
+    text-align: center;
+}
+
+#expirationYear {
+    width: 18%;
+    text-align: center;
+}
+
+input[type='submit'] {
+    @include standard_button;
+    background: $qdinkaBlue;
+    margin-left: 145px;
+    margin-top: 20px;
+    height: 40px;
+}  
+
+.new-listing-wrapper {
+    padding-top:0;
+}

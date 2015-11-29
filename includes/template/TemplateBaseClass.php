@@ -41,9 +41,7 @@ abstract class TemplateBase {
         SessionUtil::start_session();
 
         //Check for a user and save the data
-        if (SessionUtil::session('user')) {
-            $this->user = unserialize(SessionUtil::session('user'));
-        }
+       $this->user = AuthenticationUtil::get_user();
     }
 
     public function render()
@@ -145,12 +143,12 @@ abstract class TemplateBase {
                 <li class="template-header-menu-right"><a href="/index.php"><img class="template-header-menu-right" src="/images/icons/Shopping-Cart.png" alt="shopping cart" title="Shopping Cart"/></a></li>
                 <?php
         //Print the admin page if they have access to it
-        if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_ADMIN_PAGE)) {
+        if ($this->user && AuthenticationUtil::has_privilege($this->user, AuthenticationUtil::ENUM_GROUP_ADMIN, AuthenticationUtil::ENUM_AUTH_VIEW)) {
             echo '<li class="template-header-menu-right"><a href="/pages/admin/admin.php"> | Admin</a></li>';
         }
 
-        //Print the merchant page if they have access to it.
-        if (!is_null($this->user) && AuthenticationUtil::check_privilege($this->user, AuthenticationUtil::PRIVILEGE_VIEW_MERCHANT_PAGE)) {
+//        Print the merchant page if they have access to it.
+        if ($this->user && AuthenticationUtil::has_privilege($this->user, AuthenticationUtil::ENUM_GROUP_VENDOR, AuthenticationUtil::ENUM_AUTH_VIEW)) {
             echo '<li class="template-header-menu-right"><a href="/index.php"> | Sell</a></li>';
         }
 

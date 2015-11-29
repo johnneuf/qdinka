@@ -12,7 +12,8 @@
     padding: 0 5px;
     margin-left: 120px;
     margin-right: 120px;
-    min-height: 90vh;
+    //min-height: 90vh;
+    min-height: 100%;        
 }
 
 .buyer-top-header {
@@ -144,7 +145,7 @@
     -webkit-padding-start: 0;
 
     .buyer-nav-list-manage-account {
-        width: 19%;
+        width: 19.6%;
     }
 }
 
@@ -152,18 +153,11 @@
     @include next_row;
 }
 
-.buyer-nav-list a:hover {
+.buyer-nav-list-home a:hover, .buyer-nav-list-orders a:hover, .buyer-nav-list-messages a:hover, .buyer-nav-list-favorites a:hover, .buyer-nav-list-reviews a:hover, .buyer-nav-list-manage-account a:hover {
     @include horizontal-nav-hover;
 }
 
-.buyer-nav-list-manage-account a:hover {
+.buyer-nav-list-home a:active, .buyer-nav-list-orders a:active, .buyer-nav-list-messages a:active, .buyer-nav-list-favorites a:active, .buyer-nav-list-reviews a:active, .buyer-nav-list-manage-account a:active {
     @include horizontal-nav-hover;
 }
 
-.buyer-nav-list a:active {
-    @include horizontal-nav-active;
-}
-
-.buyer-nav-list-manage-account a:active {
-    @include horizontal-nav-active;
-}
