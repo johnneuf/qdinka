@@ -1,6 +1,10 @@
 <html>
 	<body>
 		<?php
+		/**
+		*@author Partha Maiti <maiti.partha@yahoo.com>
+		*/
+		
 		class UsersPage
 		{
 			//defines variables and sets to empty values
@@ -17,7 +21,7 @@
 			}
 		
 			//When form data is sent with http POST method
-			public static function validate_form_data()
+			public static function validate_form_data($_SERVER["REQUEST_METHOD"])
 			{	
 				if ($_SERVER["REQUEST_METHOD"]=="POST")
 					{
