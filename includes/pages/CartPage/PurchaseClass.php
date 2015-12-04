@@ -83,15 +83,20 @@ class Purchase extends TemplateBase {
 	                <label class="card-no">Number on Front of Card*</label>
 	                <input class="inputbox" type="text" id="card-no"/>
 	                </div>
+					<div class="exp">
 	                <label class="block1"> <span>Expiration*</span>
                     <input class="inputclass2" type="text" id="expiration" />
 				    </label>
 	                <label class="block"> <span> </span><br>
                     <input class="inputclass2" type="text" id=" " />
                     </label>
+					</div>
+					<div class="cvvclass">
 		            <label class="block2"> <span> CVV </span><br>
                     <input class="inputclass2" type="text" id="cvv" />
                     </label>
+					</div>
+					
 		            </form>
 		            <br>
 	     
@@ -104,61 +109,63 @@ class Purchase extends TemplateBase {
 	               <div class="order-summary-wrapper">
 	               <h2><span class="color">Step3.</span><span class="colorheader">Confirm Order</span></h2>
 				   
-	              
- 				  <div class="table" >
-                   <div id="tablehead">
 				   
-                   <div class="products">Products</div>
-                  <div class="quantity">quantity</div>
-				  <div class="price">price</div>
-	               <div class="subtotal">Subtotal</div>
+			      <div class="table" >
+                   <div class="tablehead">
+                   <div class="products-header">Products</div>
+                   <div class="quantity-header">Qty.</div>		
+                   <div class="price-header">Price</div>
+	               <div class="subtotal-header">Subtotal</div>
                    </div>
-		
-	              <div class="row">	  
-	              <div class="products" id="product1">Head Phones</div>
-                  <div class="quantity" id="quantity1">1</div>		
-                  <div class="price"    id="price1">$15.95</div>
-	              <div class="subtotal" id="subtotal1">$15.95</div>
-                  </div>
-     
-    	          <div class="row">	  
-		          <div class="products" id="product2">8GB Hard Drive</div>
-                  <div class="quantity" id="quantity2">1</div>		
-                  <div class="price" id="price2">$59.95</div>
-	              <div class="subtotal" id="subtotal2">$59.95</div>
-                  </div>
-	   
-	              <div class="row2">	  
-		          <div class="total">SubTotal</div>
-                  <div class="total-value" id="total-value">$75.90</div>
-                  </div>
-				  
-	              <div class="row2">	  
-		          <div class="total">Tax</div>
-                  <div class="total-value" id="tax">$0.00</div>
+				   
+				   
+				   
+				   <div class="row">
+                   <div class="products">Head Phones</div>
+                   <div class="quantity">1</div>		
+                   <div class="price">$15.95</div>
+	               <div class="subtotal">$15.95</div>
                    </div>
-	   
-	              <div class="row2">	  
-		          <div class="total">Shipping</div>
-                  <div class="total-value" id="shipping-cost">$0.00</div>
-                  </div>
-	  
-            	  <div class="row2">	  
-		          <div class="total">Total</div>
-                  <div class="total-value" id="total">$75.90</div>
-                  </div>
-	   
-                  <br>
+				   
+				   <div class="row">
+                   <div class="products">8GB Hard drive</div>
+                   <div class="quantity">1</div>		
+                   <div class="price">$59.95</div>
+	               <div class="subtotal">$59.95</div>
+                   </div>
+				   
+				   <div class="row">
+                   <div class="sub-total">SubTotal</div>
+                   <div class="quantity"></div>		
+                   <div class="price"></div>
+	               <div class="subtotal-amount">$75.90</div>
+                   </div>
+				   
+				   <div class="row">
+                   <div class="Tax">Tax</div>
+                   <div class="quantity"></div>		
+                   <div class="price"></div>
+	               <div class="Tax-amount">$00</div>
+                   </div>
+				   
+				   <div class="row">
+                   <div class="shipping">Shipping</div>
+                   <div class="quantity"></div>		
+                   <div class="price"></div>
+	               <div class="shipping-amount">$00</div>
+                   </div>
+				   <br>
                   <div class="delivery-date">
-                  Estimated Delivery date:<span id="delivery-date-from">06/09/15</span>-<span id="delivery-ddate-2">06/15/15</span>
+                  Estimated Delivery date:<span id="delivery-date-from">06/09/15</span>-<span id="delivery-date-to">06/15/15</span>
                   </div>
                   
 				  <div>
                   <a href="" class="place-order-button">Place Order</a>
                   </div>
 	 
-	 
-	        </div>
+				   
+                  </div>				   
+				  
 			
 
 	 </div>
