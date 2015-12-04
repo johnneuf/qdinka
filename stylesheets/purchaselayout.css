@@ -106,7 +106,7 @@ display:inline-block;}
  height:87%;
  background:#f3f3f3;
  float:left;
-  margin-left:30px;
+  margin-left:25px;
  text-align:center;
  display:inline-block;
  margin-top:20px;margin-bottom:20px;
@@ -114,14 +114,14 @@ display:inline-block;}
  h2{float:left;margin-left:30px;}
  .color{color:gray;}
  .colorheader{color:#1C75BD}
-label { width:130px; float:left;margin: 0 25px 0 0; display:inline-block;font-size:12pt;}
+label { width:140px; float:left;margin: 0 0px 0 0; display:inline-block;font-size:12pt;}
 
 .message label{width:145px;margin-left:10px;}
-.block {width:75px;margin: 0 0px 0 0}
+.block {width:75px;margin: 0 0px 0 0;}
 .block1{width:65px;margin: 0 0px 0 0;margin-left:30px;}
-.block2{width:95px;margin: 0 95px 0 30px;text-align:left;}
-.state{width:95px;margin: 0 25px 0 0;float:left;display:inline-block;}
-.zipcode{width:115px;margin: 0 45px 0 0;float:right;display:inline-block;}
+.block2{width:25px;margin: 0 85px 0 30px;text-align:left;display:inline;}
+.state{width:95px;margin: 0 40px 0 0;float:left;display:inline-block;}
+.zipcode{width:115px;margin: 0 55px 0 0;float:right;display:inline-block;}
 .form label{width:190px;margin-left:30px;}
 .form input{float:left;}
 .card-name{width:170px;}
@@ -129,7 +129,8 @@ label { width:130px; float:left;margin: 0 25px 0 0; display:inline-block;font-si
 .form{text-align:left;margin-left:10px;}
  .left{float:left;display:inline;}
  .right{float:right;display:inline;}
-
+.exp{display:inline-block;float:left;}
+.cvvclass{float:right;}
 .inputclass2{-webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
  box-sizing: border-box;
@@ -138,7 +139,7 @@ label { width:130px; float:left;margin: 0 25px 0 0; display:inline-block;font-si
 -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.04);
 -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.04);
  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.04);
- width:70px; padding:5px; }
+ width:70px; padding:5px; display:inline-block;}
 .inputclass {-webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
  box-sizing: border-box;
@@ -147,7 +148,7 @@ label { width:130px; float:left;margin: 0 25px 0 0; display:inline-block;font-si
 -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.04);
 -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.04);
  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.04);
- width:100px; padding:5px;margin-left:30px; display:inline-block;}
+ width:110px; padding:5px;margin-left:30px; display:inline-block;}
 .left{text-align:left;margin-left:30px;}
 .textarea{-webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
@@ -234,7 +235,7 @@ font-weight:bold;
  height:50%;
  background:#f3f3f3;
 float:left;
-margin-left:30px;
+margin-left:20px;
 margin-top:20px;
  display:inline-block;
  }
@@ -289,10 +290,10 @@ margin-top:20px;
 -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
 -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
- width:30%;
+ width:32%;
  height:82%;
  background:#f3f3f3;
- margin-left:30px;
+ margin-left:20px;
  float:left;
  display:inline-block;
  text-align:center;
@@ -330,36 +331,23 @@ margin-top:20px;
 
 	
  .delivery-date {color:#1C75BD;font-size:12pt;padding-top:40px;}
- .table{float:right;width:100%;padding-left:20px;width:100%;}
-#tablehead{color:#1C75BD;font-weight:Bold;font-size:14pt;}
-.Products{float:left;width:20%;margin-left:10px;margin-right:5px;display:table-row;float:left;}
-.quantity{float:left;width:20%;margin-right:5px;display:table-row;}
-.price{float:left;width:20%;margin-right:5px;display:table-row;}
-.subtotal{float:left;width:20%;margin-left:10px;display:table-row;}
  
-.row{padding-top:20px;}
-.row2{padding-top:40px;}
-.total{float:left;width:30%;margin-left:10px;margin-right:20px;display:inline;text-align:left;}
-.total-value{float:right;margin-right:45px;}
-
-.footer
-  {
-	position:absolute;
-	width:100%;
-	bottom:0; /* stick to bottom */}
+ .tablehead,.row{width:100%;font-weight:bold;clear:both;}
+ .tablehead{font-size:14pt;color:#1C75BD;}
+ .quantity,.quantity-header,.price,.price-header,.subtotal,.subtotal-amount,.Tax,.Tax-amount,.shipping,.shipping-amount{
+ display:inline-block;
+ width:15%;
+ margin-left:10px;}
+ .products-header{margin-left:10px;}
+ .products,.sub-total,.products-header,.Tax,.shipping{
+ display:inline-block;
+ text-align:left;
+ width:28%;
+ }
+ .subtotal-header,.subtotal-amount,.subtotal,.Tax-amount,.shipping-amount{display:inline;
+ margin-right:10px;}
+.row{font-size:14pt;
+margin-top:20px;}
+ 
 	
-.boxer {
-   display: table;
-   border-collapse: collapse;
-}
- 
-.boxer .box-row {
-   display: table-row;width:20%;
-}
- 
-.boxer .box {
-   display: table-cell;
-   text-align: left;
-   vertical-align: top;
-   border:1px solid gray;
-}
+
