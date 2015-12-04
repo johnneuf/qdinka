@@ -8,7 +8,7 @@ require_once
 
 function __autoload($class_name)
 {
-include_once '$_SERVER["DOCUMENT_ROOT"]'.$class_name .'Class.php'
+	include_once '$_SERVER["DOCUMENT_ROOT"]'.$class_name .'Class.php'
 }
 
 ;?>
