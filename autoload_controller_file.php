@@ -4,11 +4,13 @@
 *@author Partha Maiti <maiti.partha@yaho.com>
 */
 
-require_once
+require_once '$_SERVER["DOCUMENT_ROOT"]';
+require_once '$GLOBALS[""] ';
 
-function __autoload($class_name)
+
+spl_autoload_register(function($class_name)
 {
-	include_once '$_SERVER["DOCUMENT_ROOT"]'.$class_name .'Class.php'
-}
+	include_once '$_SERVER["DOCUMENT_ROOT"]'.$class_name .'Class.php';
+});
 
-;?>
+?>
