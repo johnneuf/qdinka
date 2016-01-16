@@ -120,7 +120,7 @@ abstract class TemplateBase {
         <?php $this->render_css(); ?>
 
 <!--        JS-->
-        <script src="/javascript/jquery-2.1.3.min.js"></script>
+        <script src="/javascript/angular.min.js"></script>
         <?php $this->render_js(); ?>
         <title><?php echo $this->title; ?></title>
     </head>

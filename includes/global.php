@@ -5,7 +5,8 @@
 * @email kendalldarkmere@gmail.com
 */
 
-define('SERVER_IP', $_SERVER['REMOTE_ADDR']); //Servers IP address
+define('USER_IP', $_SERVER['REMOTE_ADDR']); //Servers IP address
+define('SERVER_ADDR', $_SERVER['SERVER_NAME']);
 
 /**
  * Will check for a get or post with a defined parameter and return it if exists
