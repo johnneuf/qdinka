@@ -9,20 +9,17 @@
 namespace includes\menus;
 
 
-class AdminMenu extends MenuBase {
+use includes\traits\MenuTrait;
+
+class AdminMenu {
+
+    use MenuTrait;
 
     function __construct($highlightItem = 'none')
     {
-        //Set the item to highlight when the page is rendered out
-        $this->highlightItem = $highlightItem;
+        $this->highlight = $highlightItem;
 
-        //Group One
-        $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Admin Messages'];
-        $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Account Requests'];
-        $this->menuItems[0][] = ['/images/icons/envelope.png', '#', 'Send Message'];
+        //Menu Items
 
-        //Group Two
-        $this->menuItems[1][] = ['/images/icons/user.png', '/pages/admin/useradmin.php', 'User Admin'];
-        $this->menuItems[1][] = ['/images/icons/staff-pick.png', '#', 'Product Admin'];
     }
 }

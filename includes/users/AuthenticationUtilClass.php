@@ -171,4 +171,9 @@ class AuthenticationUtil {
 
         return ($result->count > AUTH_ALLOWED_FAIL && !$result->override);
     }
+
+    public static function GetProgramIdentity ($programUserName)
+    {
+
+    }
 }
