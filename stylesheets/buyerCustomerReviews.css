@@ -1,0 +1,824 @@
+/**
+* Nannalin Higgins
+* Created on : Sep 23, 2015, 11.40 PM
+* @email nannalin14@gmail.com
+*/
+/**
+* Nannalin Higgins
+* Created on : Sep 13, 2015, 2:47:18 PM
+* @email nannalin14@gmail.com
+*/
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+/* line 10, ../sass/buyerHeader.scss */
+.template-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 5px;
+  margin-left: 120px;
+  margin-right: 120px;
+  min-height: 100%;
+}
+
+/* line 19, ../sass/buyerHeader.scss */
+.buyer-top-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0 40px;
+  background: #ffffff;
+  height: 32px;
+  width: 100%;
+}
+/* line 26, ../sass/buyerHeader.scss */
+.buyer-top-header p {
+  margin-top: 5px;
+  width: 88%;
+  float: left;
+  font-size: 13pt;
+}
+/* line 32, ../sass/buyerHeader.scss */
+.buyer-top-header p u {
+  color: #1C75BD;
+}
+
+/* line 38, ../sass/buyerHeader.scss */
+.buyer-top-header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 42, ../sass/buyerHeader.scss */
+.upgrade-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12%;
+  float: right;
+  padding: 6px 10px;
+  text-align: center;
+  background: #9999CC;
+}
+/* line 50, ../sass/buyerHeader.scss */
+.upgrade-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+/* line 58, ../sass/buyerHeader.scss */
+.buyer-profile-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  width: 100%;
+  height: 140px;
+}
+
+/* line 66, ../sass/buyerHeader.scss */
+.buyer-image-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 15%;
+  float: left;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+/* line 73, ../sass/buyerHeader.scss */
+.buyer-image-wrapper img {
+  width: 80%;
+}
+
+/* line 78, ../sass/buyerHeader.scss */
+.buyer-profile-detail-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 55%;
+  float: left;
+  font-size: 14pt;
+}
+/* line 85, ../sass/buyerHeader.scss */
+.buyer-profile-detail-wrapper h2 {
+  color: #1C75BD;
+  margin: 0;
+  font-size: 28pt;
+}
+
+/* line 92, ../sass/buyerHeader.scss */
+.buyerName a, #totPurchase, #completeReviews {
+  color: #1C75BD;
+}
+
+/* line 96, ../sass/buyerHeader.scss */
+.buyer-button-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 55px;
+  padding-left: 10px;
+  width: 30%;
+  float: right;
+  font-size: 14pt;
+}
+
+/* line 105, ../sass/buyerHeader.scss */
+.buyer-button-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 109, ../sass/buyerHeader.scss */
+.shop-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 0px 20px 0px;
+  padding: 10px 20px;
+  background: #FF0000;
+  text-align: center;
+}
+/* line 117, ../sass/buyerHeader.scss */
+.shop-button a {
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+/* line 123, ../sass/buyerHeader.scss */
+.listing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+  background: #1C75BD;
+  text-align: center;
+}
+/* line 130, ../sass/buyerHeader.scss */
+.listing-button a {
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+/* line 136, ../sass/buyerHeader.scss */
+.buyer-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 143, ../sass/buyerHeader.scss */
+.buyer-nav {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 0 0;
+  border-top: 1px solid #ccc;
+  background: #1C75BD;
+  /* remove the pipe from the last list item */
+  -webkit-padding-start: 0;
+}
+/* line 123, ../sass/constants.scss */
+.buyer-nav li {
+  width: 11%;
+  float: left;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  border-right: 2px solid #eee;
+  padding: 0.1em 1.6em;
+}
+/* line 135, ../sass/constants.scss */
+.buyer-nav li:last-child {
+  border: 0;
+}
+/* line 137, ../sass/constants.scss */
+.buyer-nav a {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 147, ../sass/buyerHeader.scss */
+.buyer-nav .buyer-nav-list-manage-account {
+  width: 19.6%;
+}
+
+/* line 152, ../sass/buyerHeader.scss */
+.buyer-nav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 156, ../sass/buyerHeader.scss */
+.buyer-nav-list-home a:hover, .buyer-nav-list-orders a:hover, .buyer-nav-list-messages a:hover, .buyer-nav-list-favorites a:hover, .buyer-nav-list-reviews a:hover, .buyer-nav-list-manage-account a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 160, ../sass/buyerHeader.scss */
+.buyer-nav-list-home a:active, .buyer-nav-list-orders a:active, .buyer-nav-list-messages a:active, .buyer-nav-list-favorites a:active, .buyer-nav-list-reviews a:active, .buyer-nav-list-manage-account a:active {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/**
+* Nannalin Higgins
+* Created on : Sep 16, 2015, 4:00 PM
+* @email nannalin14@gmail.com
+*/
+/* line 9, ../sass/buyerFooter.scss */
+.new-listing-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 10px 125px;
+}
+
+/* line 15, ../sass/buyerFooter.scss */
+.new-listing-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 19, ../sass/buyerFooter.scss */
+.communicate-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 23, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content {
+  padding-top: 10px;
+  width: 60%;
+  float: left;
+}
+/* line 28, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content h2 {
+  font-size: 22pt;
+  color: #1C75BD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+/* line 37, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content-detail, .communicate-wrapper-content-detail {
+  font-size: 12pt;
+  padding: 10px 50px 0px 50px;
+}
+
+/* line 42, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 50px;
+  float: left;
+}
+
+/* line 49, ../sass/buyerFooter.scss */
+.follow-listing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: #99CCFF;
+  text-align: center;
+}
+/* line 57, ../sass/buyerFooter.scss */
+.follow-listing-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+/* line 64, ../sass/buyerFooter.scss */
+.new-listing-wrapper-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 40%;
+  float: left;
+  padding-top: 8px;
+  padding-left: 40px;
+}
+/* line 71, ../sass/buyerFooter.scss */
+.new-listing-wrapper-image img {
+  width: 94%;
+}
+
+/* line 76, ../sass/buyerFooter.scss */
+.communicate-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 10px 125px;
+}
+
+/* line 83, ../sass/buyerFooter.scss */
+.communicate-wrapper-content {
+  padding-top: 10px;
+  width: 70%;
+  float: left;
+}
+/* line 88, ../sass/buyerFooter.scss */
+.communicate-wrapper-content h2 {
+  font-size: 22pt;
+  color: #1C75BD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+/* line 97, ../sass/buyerFooter.scss */
+.communicate-wrapper-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+/* line 105, ../sass/buyerFooter.scss */
+.communicate-wrapper-content-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-right: 65px;
+  float: right;
+}
+
+/* line 112, ../sass/buyerFooter.scss */
+.open-message-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: #1C75BD;
+  text-align: center;
+}
+/* line 120, ../sass/buyerFooter.scss */
+.open-message-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+/* line 10, ../sass/buyerCustomerReviews.scss */
+.buyer-nav-list-reviews {
+  background-color: white;
+}
+/* line 12, ../sass/buyerCustomerReviews.scss */
+.buyer-nav-list-reviews a {
+  color: #1C75BD;
+}
+
+/* line 19, ../sass/buyerCustomerReviews.scss */
+.buyer-content-menu-wrapper h2 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 37%;
+  float: left;
+  font-size: 22pt;
+  color: #1C75BD;
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+/* line 30, ../sass/buyerCustomerReviews.scss */
+.buyer-content-menu-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 34, ../sass/buyerCustomerReviews.scss */
+.buyer-content-menu-detail {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+  margin-top: 10px;
+  padding-right: 20px;
+  float: left;
+  font-size: 14pt;
+}
+
+/* line 43, ../sass/buyerCustomerReviews.scss */
+.head-activity {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+  float: left;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* line 51, ../sass/buyerCustomerReviews.scss */
+.duration-nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 50px 10px 100px;
+  border-top: 1px solid #ccc;
+  background: #1C75BD;
+  /* remove the pipe from the last list item */
+  height: 30px;
+  -webkit-padding-start: 0;
+  background: none;
+  margin-left: 50px;
+}
+/* line 123, ../sass/constants.scss */
+.duration-nav li {
+  width: 15%;
+  float: left;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  border-right: 2px solid #eee;
+  padding: 0.1em 1.6em;
+}
+/* line 135, ../sass/constants.scss */
+.duration-nav li:last-child {
+  border: 0;
+}
+/* line 137, ../sass/constants.scss */
+.duration-nav a {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 60, ../sass/buyerCustomerReviews.scss */
+.duration-nav a {
+  color: #1C75BD;
+  font-size: 12pt;
+}
+
+/* line 66, ../sass/buyerCustomerReviews.scss */
+.duration-nav li a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 70, ../sass/buyerCustomerReviews.scss */
+.duration-nav li a:active {
+  background-color: #ffffff;
+  color: #1C75BD;
+  text-decoration: none;
+}
+
+/* line 74, ../sass/buyerCustomerReviews.scss */
+.buyer-content-review {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 15px 20px;
+}
+
+/* line 82, ../sass/buyerCustomerReviews.scss */
+.buyer-content-review:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 86, ../sass/buyerCustomerReviews.scss */
+.item-wrapper {
+  width: 18%;
+  float: left;
+}
+
+/* line 91, ../sass/buyerCustomerReviews.scss */
+.view-list-link {
+  float: left;
+  padding-left: 5px;
+}
+/* line 95, ../sass/buyerCustomerReviews.scss */
+.view-list-link a {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #1C75BD;
+}
+
+/* line 102, ../sass/buyerCustomerReviews.scss */
+.contact-seller-link {
+  padding-left: 5px;
+  float: right;
+}
+/* line 106, ../sass/buyerCustomerReviews.scss */
+.contact-seller-link a {
+  font-size: 8pt;
+  color: #1C75BD;
+}
+
+/* line 112, ../sass/buyerCustomerReviews.scss */
+.contact-seller-link:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 116, ../sass/buyerCustomerReviews.scss */
+.item-image {
+  margin-top: 25px;
+}
+/* line 119, ../sass/buyerCustomerReviews.scss */
+.item-image img {
+  width: 60%;
+  border-radius: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 128, ../sass/buyerCustomerReviews.scss */
+.item-name {
+  margin-top: 5px;
+  text-align: center;
+}
+/* line 132, ../sass/buyerCustomerReviews.scss */
+.item-name a {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #1C75BD;
+}
+
+/* line 139, ../sass/buyerCustomerReviews.scss */
+.vender {
+  padding-left: 5px;
+  float: left;
+  font-weight: bold;
+}
+
+/* line 145, ../sass/buyerCustomerReviews.scss */
+.overview-rating-wrapper {
+  padding-left: 5px;
+  float: right;
+}
+/* line 149, ../sass/buyerCustomerReviews.scss */
+.overview-rating-wrapper img {
+  width: 10px;
+}
+
+/* line 154, ../sass/buyerCustomerReviews.scss */
+.overview-cart-wrapper {
+  margin-top: 25px;
+  padding-left: 5px;
+}
+/* line 158, ../sass/buyerCustomerReviews.scss */
+.overview-cart-wrapper input[type="submit"] {
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  padding: 0;
+  line-height: 30px;
+}
+/* line 166, ../sass/buyerCustomerReviews.scss */
+.overview-cart-wrapper input[type="submit"]:hover {
+  background-color: #1C75BD;
+}
+
+/* line 171, ../sass/buyerCustomerReviews.scss */
+.review-wrapper {
+  float: left;
+  width: 80%;
+}
+
+/* line 176, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper {
+  float: left;
+  padding-left: 40px;
+  width: 60%;
+}
+/* line 181, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper .overview-rating-wrapper {
+  float: left;
+}
+/* line 185, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper .review-header-detail {
+  font-weight: bold;
+}
+/* line 189, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper .customer-name {
+  color: #1C75BD;
+}
+
+/* line 195, ../sass/buyerCustomerReviews.scss */
+.review-header-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 199, ../sass/buyerCustomerReviews.scss */
+.review-buttons {
+  float: right;
+}
+
+/* line 203, ../sass/buyerCustomerReviews.scss */
+.add-comment-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  float: left;
+  padding: 5px 10px;
+  text-align: center;
+  background: grey;
+}
+/* line 211, ../sass/buyerCustomerReviews.scss */
+.add-comment-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 217, ../sass/buyerCustomerReviews.scss */
+.edit-post-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  float: left;
+  padding: 5px 30px;
+  text-align: center;
+  background: #1C75BD;
+}
+/* line 225, ../sass/buyerCustomerReviews.scss */
+.edit-post-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 231, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper {
+  float: left;
+  padding-left: 40px;
+}
+
+/* line 236, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-top {
+  margin-bottom: 0;
+}
+/* line 239, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-top .full-review a {
+  color: #1C75BD;
+}
+
+/* line 244, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom {
+  margin-top: 0;
+}
+
+/* line 248, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom {
+  color: #1C75BD;
+  font-weight: bold;
+}
+
+/* line 253, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom-left {
+  float: left;
+}
+
+/* line 257, ../sass/buyerCustomerReviews.scss */
+.review-body-wrapper-buttom-right {
+  float: right;
+}
+
+/* line 261, ../sass/buyerCustomerReviews.scss */
+.num-people, .num-comments {
+  font-size: 18pt;
+}
+
+/* line 265, ../sass/buyerCustomerReviews.scss */
+.subview-bottom-paginate-wrapper {
+  text-align: center;
+}
+
+/* line 269, ../sass/buyerCustomerReviews.scss */
+.subview-bottom-paginate {
+  display: inline-block;
+  font-size: 14pt;
+}
+
+/* line 273, ../sass/buyerCustomerReviews.scss */
+.active-link {
+  color: #1C75BD;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+/* line 277, ../sass/buyerCustomerReviews.scss */
+.deactivated-link {
+  font-weight: bold;
+  font-size: inherit;
+}

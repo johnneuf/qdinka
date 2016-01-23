@@ -1,0 +1,118 @@
+/* 
+    Created on : Oct 31, 2015, 3:22:28 PM
+    Author     : Nannalin
+*/
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+/* line 8, ../sass/buyerManageAccountHeaderStyle.scss */
+.template-content-wrapper {
+  min-height: 100%;
+}
+
+/* line 12, ../sass/buyerManageAccountHeaderStyle.scss */
+.buyer-content-wrapper {
+  padding-bottom: 20px;
+}
+
+/* line 18, ../sass/buyerManageAccountHeaderStyle.scss */
+.buyer-content-menu-wrapper h2 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 40%;
+  float: left;
+  font-size: 22pt;
+  color: #1C75BD;
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+/* line 29, ../sass/buyerManageAccountHeaderStyle.scss */
+.buyer-content-menu-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 33, ../sass/buyerManageAccountHeaderStyle.scss */
+.buyer-content-menu-detail {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+  margin-top: 10px;
+  padding-right: 20px;
+  float: left;
+  font-size: 14pt;
+}
+
+/* line 42, ../sass/buyerManageAccountHeaderStyle.scss */
+.head-activity {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 10px;
+  float: left;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* line 50, ../sass/buyerManageAccountHeaderStyle.scss */
+.subheader-nav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 50px 10px 100px;
+  border-top: 1px solid #ccc;
+  background: #1C75BD;
+  /* remove the pipe from the last list item */
+  -webkit-padding-start: 0;
+  background: none;
+  margin-left: 50px;
+}
+/* line 123, ../sass/constants.scss */
+.subheader-nav li {
+  width: 15%;
+  float: left;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  border-right: 2px solid #eee;
+  padding: 0.1em 1.6em;
+}
+/* line 135, ../sass/constants.scss */
+.subheader-nav li:last-child {
+  border: 0;
+}
+/* line 137, ../sass/constants.scss */
+.subheader-nav a {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 59, ../sass/buyerManageAccountHeaderStyle.scss */
+.subheader-nav a {
+  color: #1C75BD;
+  font-size: 12pt;
+}
+
+/* line 65, ../sass/buyerManageAccountHeaderStyle.scss */
+.subheader-nav li a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 69, ../sass/buyerManageAccountHeaderStyle.scss */
+.subheader-nav li a:active {
+  background-color: #ffffff;
+  color: #1C75BD;
+  text-decoration: none;
+}

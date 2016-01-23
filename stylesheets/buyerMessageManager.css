@@ -1,0 +1,791 @@
+/* 
+    Created on : Nov 12, 2015, 11:58:23 PM
+    Author     : Nannalin
+*/
+/**
+* Nannalin Higgins
+* Created on : Sep 13, 2015, 2:47:18 PM
+* @email nannalin14@gmail.com
+*/
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+/* line 10, ../sass/buyerHeader.scss */
+.template-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 5px;
+  margin-left: 120px;
+  margin-right: 120px;
+  min-height: 100%;
+}
+
+/* line 19, ../sass/buyerHeader.scss */
+.buyer-top-header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0 40px;
+  background: #ffffff;
+  height: 32px;
+  width: 100%;
+}
+/* line 26, ../sass/buyerHeader.scss */
+.buyer-top-header p {
+  margin-top: 5px;
+  width: 88%;
+  float: left;
+  font-size: 13pt;
+}
+/* line 32, ../sass/buyerHeader.scss */
+.buyer-top-header p u {
+  color: #1C75BD;
+}
+
+/* line 38, ../sass/buyerHeader.scss */
+.buyer-top-header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 42, ../sass/buyerHeader.scss */
+.upgrade-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12%;
+  float: right;
+  padding: 6px 10px;
+  text-align: center;
+  background: #9999CC;
+}
+/* line 50, ../sass/buyerHeader.scss */
+.upgrade-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+/* line 58, ../sass/buyerHeader.scss */
+.buyer-profile-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  width: 100%;
+  height: 140px;
+}
+
+/* line 66, ../sass/buyerHeader.scss */
+.buyer-image-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 15%;
+  float: left;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+/* line 73, ../sass/buyerHeader.scss */
+.buyer-image-wrapper img {
+  width: 80%;
+}
+
+/* line 78, ../sass/buyerHeader.scss */
+.buyer-profile-detail-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 55%;
+  float: left;
+  font-size: 14pt;
+}
+/* line 85, ../sass/buyerHeader.scss */
+.buyer-profile-detail-wrapper h2 {
+  color: #1C75BD;
+  margin: 0;
+  font-size: 28pt;
+}
+
+/* line 92, ../sass/buyerHeader.scss */
+.buyerName a, #totPurchase, #completeReviews {
+  color: #1C75BD;
+}
+
+/* line 96, ../sass/buyerHeader.scss */
+.buyer-button-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 55px;
+  padding-left: 10px;
+  width: 30%;
+  float: right;
+  font-size: 14pt;
+}
+
+/* line 105, ../sass/buyerHeader.scss */
+.buyer-button-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 109, ../sass/buyerHeader.scss */
+.shop-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 0px 20px 0px;
+  padding: 10px 20px;
+  background: #FF0000;
+  text-align: center;
+}
+/* line 117, ../sass/buyerHeader.scss */
+.shop-button a {
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+/* line 123, ../sass/buyerHeader.scss */
+.listing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+  background: #1C75BD;
+  text-align: center;
+}
+/* line 130, ../sass/buyerHeader.scss */
+.listing-button a {
+  color: #ffffff;
+  font-size: 14pt;
+}
+
+/* line 136, ../sass/buyerHeader.scss */
+.buyer-content-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 143, ../sass/buyerHeader.scss */
+.buyer-nav {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 0 0;
+  border-top: 1px solid #ccc;
+  background: #1C75BD;
+  /* remove the pipe from the last list item */
+  -webkit-padding-start: 0;
+}
+/* line 123, ../sass/constants.scss */
+.buyer-nav li {
+  width: 11%;
+  float: left;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  border-right: 2px solid #eee;
+  padding: 0.1em 1.6em;
+}
+/* line 135, ../sass/constants.scss */
+.buyer-nav li:last-child {
+  border: 0;
+}
+/* line 137, ../sass/constants.scss */
+.buyer-nav a {
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 147, ../sass/buyerHeader.scss */
+.buyer-nav .buyer-nav-list-manage-account {
+  width: 19.6%;
+}
+
+/* line 152, ../sass/buyerHeader.scss */
+.buyer-nav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 156, ../sass/buyerHeader.scss */
+.buyer-nav-list-home a:hover, .buyer-nav-list-orders a:hover, .buyer-nav-list-messages a:hover, .buyer-nav-list-favorites a:hover, .buyer-nav-list-reviews a:hover, .buyer-nav-list-manage-account a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 160, ../sass/buyerHeader.scss */
+.buyer-nav-list-home a:active, .buyer-nav-list-orders a:active, .buyer-nav-list-messages a:active, .buyer-nav-list-favorites a:active, .buyer-nav-list-reviews a:active, .buyer-nav-list-manage-account a:active {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/**
+* Nannalin Higgins
+* Created on : Sep 16, 2015, 4:00 PM
+* @email nannalin14@gmail.com
+*/
+/* line 9, ../sass/buyerFooter.scss */
+.new-listing-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 10px 125px;
+}
+
+/* line 15, ../sass/buyerFooter.scss */
+.new-listing-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 19, ../sass/buyerFooter.scss */
+.communicate-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 23, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content {
+  padding-top: 10px;
+  width: 60%;
+  float: left;
+}
+/* line 28, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content h2 {
+  font-size: 22pt;
+  color: #1C75BD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+/* line 37, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content-detail, .communicate-wrapper-content-detail {
+  font-size: 12pt;
+  padding: 10px 50px 0px 50px;
+}
+
+/* line 42, ../sass/buyerFooter.scss */
+.new-listing-wrapper-content-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 50px;
+  float: left;
+}
+
+/* line 49, ../sass/buyerFooter.scss */
+.follow-listing-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: #99CCFF;
+  text-align: center;
+}
+/* line 57, ../sass/buyerFooter.scss */
+.follow-listing-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+/* line 64, ../sass/buyerFooter.scss */
+.new-listing-wrapper-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 40%;
+  float: left;
+  padding-top: 8px;
+  padding-left: 40px;
+}
+/* line 71, ../sass/buyerFooter.scss */
+.new-listing-wrapper-image img {
+  width: 94%;
+}
+
+/* line 76, ../sass/buyerFooter.scss */
+.communicate-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin: 10px 125px;
+}
+
+/* line 83, ../sass/buyerFooter.scss */
+.communicate-wrapper-content {
+  padding-top: 10px;
+  width: 70%;
+  float: left;
+}
+/* line 88, ../sass/buyerFooter.scss */
+.communicate-wrapper-content h2 {
+  font-size: 22pt;
+  color: #1C75BD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+/* line 97, ../sass/buyerFooter.scss */
+.communicate-wrapper-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+/* line 105, ../sass/buyerFooter.scss */
+.communicate-wrapper-content-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-right: 65px;
+  float: right;
+}
+
+/* line 112, ../sass/buyerFooter.scss */
+.open-message-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  background: #1C75BD;
+  text-align: center;
+}
+/* line 120, ../sass/buyerFooter.scss */
+.open-message-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+/* line 9, ../sass/buyerMessageManager.scss */
+.buyer-nav-list-messages {
+  background-color: white;
+}
+/* line 11, ../sass/buyerMessageManager.scss */
+.buyer-nav-list-messages a {
+  color: #1C75BD;
+}
+
+/* line 18, ../sass/buyerMessageManager.scss */
+.buyer-content-menu-messages-wrapper h2 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 35%;
+  float: left;
+  font-size: 22pt;
+  color: #1C75BD;
+  padding-left: 50px;
+  margin-top: 10px;
+}
+
+/* line 29, ../sass/buyerMessageManager.scss */
+.buyer-content-menu-messages-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 33, ../sass/buyerMessageManager.scss */
+.buyer-content-menu-messages-detail {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+  margin-top: 10px;
+  padding-right: 20px;
+  float: left;
+  font-size: 14pt;
+}
+
+/* line 42, ../sass/buyerMessageManager.scss */
+.message-manager-header-wrapper {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 21pt;
+}
+
+/* line 49, ../sass/buyerMessageManager.scss */
+.first-header-message-manager {
+  width: 18.9%;
+  float: left;
+  text-align: center;
+  padding-top: 2px;
+}
+
+/* line 57, ../sass/buyerMessageManager.scss */
+input[type='submit'] {
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+  background: #429ceb;
+  color: #ffffff;
+  border: 0px solid #1c75bd;
+  cursor: pointer;
+  background: #1C75BD;
+  font-size: 12pt;
+  font-family: "Enriqueta", serif;
+  margin-left: 0;
+  padding: 1px 18.6%;
+}
+
+/* line 67, ../sass/buyerMessageManager.scss */
+.second-header-messages-manager {
+  padding-left: 11%;
+  border-left: 1px solid #ccc;
+}
+
+/* line 72, ../sass/buyerMessageManager.scss */
+.second-header-messages-manager, .third-header-messages-manager, .fourth-header-messages-manager {
+  float: left;
+  padding-right: 12%;
+}
+/* line 76, ../sass/buyerMessageManager.scss */
+.second-header-messages-manager input, .third-header-messages-manager input, .fourth-header-messages-manager input {
+  color: #1C75BD;
+  font-size: 13pt;
+  border: none;
+  background: none;
+  background-color: transparent;
+  /* make the button transparent */
+  background-repeat: no-repeat;
+  /* make the background image appear only once */
+  background-position: 0px 0px;
+  /* equivalent to 'top left' */
+  border: none;
+  /* assuming we don't want any borders */
+  cursor: pointer;
+  /* make the cursor like hovering over an <a> element */
+  padding-left: 25px;
+  /* make text start to the right of the image */
+  vertical-align: middle;
+  /* align the text vertically centered */
+  font-family: "Enriqueta", serif;
+}
+
+/* line 95, ../sass/buyerMessageManager.scss */
+.fifth-header-messages-manager {
+  padding-left: 1%;
+  float: left;
+}
+
+/* line 100, ../sass/buyerMessageManager.scss */
+.fifth-header-messages-manager:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 104, ../sass/buyerMessageManager.scss */
+.third-header-messages-manager input {
+  background-image: url(../images/icons/archive.png);
+  /* 16px x 16px */
+}
+
+/* line 108, ../sass/buyerMessageManager.scss */
+.fourth-header-messages-manager input {
+  background-image: url(../images/icons/trash.png);
+}
+
+/* line 112, ../sass/buyerMessageManager.scss */
+.fifth-header-messages-manager input {
+  margin-top: 8px;
+}
+
+/* line 116, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-left {
+  width: 18%;
+  margin-top: 0;
+  float: left;
+}
+/* line 121, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-left ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 126, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-left li {
+  padding-top: 10px;
+  list-style: none;
+}
+/* line 130, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-left li a {
+  color: #1C75BD;
+  font-size: 12pt;
+}
+/* line 135, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-left li input[type="button"] {
+  color: #1C75BD;
+  font-size: 12pt;
+  border: none;
+  background: none;
+  padding: 0;
+  background-color: transparent;
+  /* make the button transparent */
+  border: none;
+  /* assuming we don't want any borders */
+  cursor: pointer;
+  /* make the cursor like hovering over an <a> element */
+}
+
+/* line 148, ../sass/buyerMessageManager.scss */
+.message-number, .sent-number {
+  color: #1C75BD;
+  font-size: 14pt;
+}
+
+/* line 153, ../sass/buyerMessageManager.scss */
+.template-search-bar-wrapper-small {
+  width: 84%;
+  margin-top: 14px;
+  padding-left: 10%;
+  padding-bottom: 10px;
+}
+
+/* line 160, ../sass/buyerMessageManager.scss */
+.template-search-bar-wrapper-small form {
+  border-radius: 3px;
+  background: #1C75BD;
+}
+
+/* line 165, ../sass/buyerMessageManager.scss */
+.template-search-bar-wrapper-small input[type='text'] {
+  text-align: center;
+  color: #717070;
+  font-size: 10pt;
+  background: #F0F0F0;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  vertical-align: middle;
+  padding: 5px;
+  width: 80%;
+}
+
+/* line 177, ../sass/buyerMessageManager.scss */
+.template-search-bar-wrapper-small input[type='image'] {
+  width: 10%;
+  vertical-align: middle;
+  border-radius: 0 3px 3px 0;
+  padding-left: 5px;
+  margin-left: -5px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/* line 187, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-right {
+  float: right;
+  margin-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 81%;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+/* line 197, ../sass/buyerMessageManager.scss */
+.message-manager-body-wrapper-right:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 201, ../sass/buyerMessageManager.scss */
+.account-image-wrapper {
+  width: 13%;
+  float: left;
+}
+/* line 205, ../sass/buyerMessageManager.scss */
+.account-image-wrapper img {
+  width: 100%;
+}
+
+/* line 210, ../sass/buyerMessageManager.scss */
+.message-wrapper {
+  float: left;
+  margin-left: 5px;
+  width: 86%;
+}
+
+/* line 216, ../sass/buyerMessageManager.scss */
+.message-wrapper-top-left {
+  float: left;
+  width: 80%;
+}
+
+/* line 221, ../sass/buyerMessageManager.scss */
+.sellerDetail {
+  font-size: 14px;
+}
+/* line 224, ../sass/buyerMessageManager.scss */
+.sellerDetail .sellerAccountName {
+  color: black;
+  font-weight: bold;
+}
+
+/* line 230, ../sass/buyerMessageManager.scss */
+#totSales, #listedPtoducts {
+  color: #1C75BD;
+}
+
+/* line 234, ../sass/buyerMessageManager.scss */
+.message-wrapper-top-right {
+  float: right;
+  padding-right: 3.3%;
+}
+
+/* line 239, ../sass/buyerMessageManager.scss */
+.message-wrapper-top-right:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 243, ../sass/buyerMessageManager.scss */
+.message-wrapper-bottom {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 3.3%;
+  float: left;
+}
+
+/* line 251, ../sass/buyerMessageManager.scss */
+.message-header a {
+  color: #787878;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 259, ../sass/buyerMessageManager.scss */
+.full-review a {
+  color: #1C75BD;
+  text-decoration: underline;
+}
+
+/* line 265, ../sass/buyerMessageManager.scss */
+.subview-bottom-paginate-wrapper {
+  border: 0 none;
+  border-top: 1px solid #ccc;
+  background: none;
+  margin: 5px 40px;
+  text-align: center;
+  border-top: none;
+  width: 81%;
+  float: right;
+}
+
+/* line 273, ../sass/buyerMessageManager.scss */
+.subview-bottom-paginate {
+  display: inline-block;
+  font-size: 14pt;
+}
+
+/* line 277, ../sass/buyerMessageManager.scss */
+.active-link {
+  color: #1C75BD;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+/* line 281, ../sass/buyerMessageManager.scss */
+.deactivated-link {
+  font-weight: bold;
+  font-size: inherit;
+}
