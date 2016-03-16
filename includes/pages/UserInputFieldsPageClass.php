@@ -39,7 +39,10 @@
 						}else
 						{
 							self::$name_of_user=self::test_user_input($_POST["name_of_user"]);
-							
+							if(!preg_match("/^[a-zA-Z ]*$/"),$name_of_user)
+							{
+								self::$nameOfUserERR="only letters and white space are allowed";
+							}
 						}
 						if(empty($_POST["reviews"])
 						{
@@ -84,12 +87,12 @@
 		
 		<fieldset>
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ;?>" method="post">
-			First Name: <input type="text" name="profile_pic" value="<?php echo UsersPage::$profile_pic ;?>"><span class="error">*<?php echo UsersPage::$profilePicERR;?></span><br>
-			Last Name:<input type="text" name="name_of_user" value="<?php echo UsersPage::$name_of_user ;?>"><span class="error">*<?php echo UsersPage::$nameOfUserERR;?></span><br>
-			E-mail:<input type="text" name="reviews" value="<?php echo UsersPage::$reviews;?>"><span class="error">*<?php echo UsersPage::$reviewsERR ;?></span><br>
+			Profile Picture: <input type="text" name="profile_pic" value="<?php echo UsersPage::$profile_pic ;?>"><span class="error">*<?php echo UsersPage::$profilePicERR;?></span><br>
+			Name of User:<input type="text" name="name_of_user" value="<?php echo UsersPage::$name_of_user ;?>"><span class="error">*<?php echo UsersPage::$nameOfUserERR;?></span><br>
+			Reviews:<input type="text" name="reviews" value="<?php echo UsersPage::$reviews;?>"><span class="error">*<?php echo UsersPage::$reviewsERR ;?></span><br>
 			User ID:<input type="text" name="userID" value="<?php echo UsersPage::$userID ;?>"><span class="error">*<?php echo UsersPage::$userIDERR ;?></span><br>
-			User Name:<input type="text" name="purchases" value="<?php echo UsersPage::$purchases ;?>"><span class="error">*<?php echo UsersPage::$purchasesERR ;?></span><br>
-			Password: <input type="text" name="favorites" value="<?php echo UsersPage::$favorites ;?>"><span class="error">*<?php echo UsersPage::$favoritesERR ;?></span><br>
+			Purchases:<input type="text" name="purchases" value="<?php echo UsersPage::$purchases ;?>"><span class="error">*<?php echo UsersPage::$purchasesERR ;?></span><br>
+			Favorites: <input type="text" name="favorites" value="<?php echo UsersPage::$favorites ;?>"><span class="error">*<?php echo UsersPage::$favoritesERR ;?></span><br>
 			
 			<input type="submit" >
 			
