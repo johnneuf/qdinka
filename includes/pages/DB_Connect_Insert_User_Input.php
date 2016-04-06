@@ -12,24 +12,24 @@ class Dbase_connect_insert_user_input
 	
 	try
 	{
-		//establish the connection
-		$connec = new PDO("mysql:host =; dbname = ",$username,$password);
+		//establish the connection using PDO class and create an instance of the PDO class and thus an object
+		$pdoobjconnec = new PDO("mysql:host =; dbname = ",$username,$password);
 		
 		//set the errormode to throwing an exception
-		$connec -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+		$pdoobjconnec -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 		
 		//constructing the sql query
 		$sql_insert = "INSERT INTO () VALUES()";
 		
-		//make a prepared statements for repeated later execution with different values
-		$stmnt = $connec -> prepare($sql_insert)
+		//make a prepared statements for repeated later execution with different values and the prepared statement is essentially a PDO statement object from the PDO statement class
+		$pdostmntobj = $connec -> prepare($sql_insert)
 		
 		//bind parameters to the prepared statements
-		$stmnt -> bindParam();
+		$pdostmntobj -> bindParam();
 		
 		//inserting a row of values which corresponds with its given binded parameters
 		
-		$stmnt -> exec();
+		$pdostmntobj -> exec();
 		echo "row of values successfully inserted into db";
 	//	catching errors with PDO 
 	} 
