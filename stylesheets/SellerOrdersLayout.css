@@ -198,12 +198,12 @@ margin-top:5px;
    background: #1C75BD;
    -webkit-padding-start: 0; }
   .seller-nav li {
-    width:14%;
+    width:13.5%;
     float: left;
     list-style: none;
     text-align: center;
     display: inline-block;
-    border-right: 2px solid #eee;height:30px;
+    border-right: 1px solid #eee;height:30px;
     }
   .seller-nav li:last-child { width:15%;
     border: 0; }

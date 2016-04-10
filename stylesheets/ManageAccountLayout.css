@@ -186,9 +186,9 @@ margin-top:5px;
     list-style: none;
     text-align: center;
     display: inline-block;
-    border-right: 2px solid #eee;
+    border-right: 1px solid #eee;
     height:30px; }
-  .seller-nav li:last-child { width:15%;
+  .seller-nav li:last-child { width:14.5%;
     border: 0; }
   .seller-nav a {
     color: #ffffff;
