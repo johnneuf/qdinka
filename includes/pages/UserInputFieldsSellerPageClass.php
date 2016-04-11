@@ -8,8 +8,8 @@
 		class UserInputFieldsSellerPageClass
 		{
 			//defines variables and sets to empty values
-			public static $listings = $messages = $orders;
-			public static $listings_err = $messages_err = $orders_err;
+			public static $listings = $messages = $orders = $payments;
+			public static $listings_err = $messages_err = $orders_err$ = $payments_err;
 		
 			//tests user input on the names of the form controls
 			public static function test_user_input($user_input)
