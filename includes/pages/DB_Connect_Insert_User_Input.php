@@ -5,10 +5,10 @@
 class Dbase_connect_insert_user_input
 {
 	//variables needed in establishing a connection between php and database server using PDO class
-	public $server_name = "";
-	public $dbname = "";
-	public $username = "";
-	public $password = "";
+	public static $server_name = "localhost";
+	public static $dbname = "";
+	public static $username = "";
+	public static $password = "";
 	
 	try
 	{
