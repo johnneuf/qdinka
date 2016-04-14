@@ -4,7 +4,7 @@
 namespace includes\pages\Loginpage;
 
 use includes\template\TemplateBase;
-use includes\autoload;
+
 
 class loginpage extends TemplateBase {
 
