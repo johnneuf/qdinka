@@ -19,6 +19,15 @@
 				$user_input=stripslashes($user_input);
 				return $user_input;
 			}
+			//function to validate payment user inputs
+			function validate_payment_info_user_input($credit_card_info,$len_of_card)
+			{
+				if(strlen($credit_card_info)==$len_of_card)
+				{
+					
+				}
+			}
+			
 		
 			//When form data is sent with http POST method
 			public static function validate_form_data($_SERVER["REQUEST_METHOD"])
