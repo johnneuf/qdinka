@@ -8,8 +8,8 @@
 		class UserInputFieldsSellerPageClass
 		{
 			//defines variables and sets to empty values
-			public static $listings = $messages = $orders;
-			public static $listings_err = $messages_err = $orders_err;
+			public static $listings = $messages = $orders = $payments;
+			public static $listings_err = $messages_err = $orders_err$ = $payments_err;
 		
 			//tests user input on the names of the form controls
 			public static function test_user_input($user_input)
@@ -19,6 +19,15 @@
 				$user_input=stripslashes($user_input);
 				return $user_input;
 			}
+			//function to validate payment user inputs
+			function validate_payment_info_user_input($credit_card_info,$len_of_card)
+			{
+				if(strlen($credit_card_info)==$len_of_card)
+				{
+					
+				}
+			}
+			
 		
 			//When form data is sent with http POST method
 			public static function validate_form_data($_SERVER["REQUEST_METHOD"])
@@ -62,9 +71,9 @@
 		
 		<fieldset>
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ;?>" method="post">
-			Listings: <input type="text" name="listings" value="<?php echo UsersPage::$listings ;?>"><span class="error">*<?php echo UsersPage::$listings_err;?></span><br>
-			Messages:<input type="text" name="messages" value="<?php echo UsersPage::$messages ;?>"><span class="error">*<?php echo UsersPage::$messages_err?></span><br>
-			Orders:<input type="text" name="orders" value="<?php echo UsersPage::$orders;?>"><span class="error">*<?php echo UsersPage::$orders_err;?></span><br>
+			Listings: <input type="text" name="listings" value="<?php echo UserInputFieldsSellerPageClass::$listings ;?>"><span class="error">*<?php echo UserInputFieldsSellerPageClass::$listings_err;?></span><br>
+			Messages:<input type="text" name="messages" value="<?php echo UserInputFieldsSellerPageClass::$messages ;?>"><span class="error">*<?php echo UserInputFieldsSellerPageClass::$messages_err?></span><br>
+			Orders:<input type="text" name="orders" value="<?php echo UserInputFieldsSellerPageClass::$orders;?>"><span class="error">*<?php echo UserInputFieldsSellerPageClass::$orders_err;?></span><br>
 			
 			
 			<input type="submit" >

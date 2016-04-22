@@ -2,19 +2,19 @@
 /**
 *@author Partha Maiti <maiti.partha@yahoo.com>
 */
-class Dbase_connect_insert_user_input
-{
+//class Dbase_connect_insert_user_input
+//{
 	//variables needed in establishing a connection between php and database server using PDO class
-	public static $server_name = "localhost";
-	public static $dbname = "pman";
-	public static $username = "partha";
-	public static $password = "Number11";
-}
+	//public static $server_name = "localhost";
+	//public static $dbname = "pman";
+	//public static $username = "partha";
+	//public static $password = "Number11";
+//}
 	
 	try
 	{
 		//establish the connection using PDO class and create an instance of the PDO class and thus an object
-		$pdoconnecobj = new PDO("mysql:host = Dbase_connect_insert_user_input::$server_name; dbname = Dbase_connect_insert_user_input::$dbname", $username = Dbase_connect_insert_user_input::$username ,$password = Dbase_connect_insert_user_input::$password);
+		$pdoconnecobj = new PDO("mysql:host = $server_name; dbname = $dbname", $username = $username ,$password = $password);
 		
 		//set the errormode to throwing an exception
 		$pdoconnecobj -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
