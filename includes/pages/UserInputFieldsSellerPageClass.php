@@ -8,8 +8,8 @@
 		class UserInputFieldsSellerPageClass
 		{
 			//defines variables and sets to empty values
-			public static $listings = $messages = $orders = $card_number;
-			public static $listings_err = $messages_err = $orders_err$ = $card_number_err;
+			public static $listings = $messages = $orders = $card_number = $card_type = "";
+			public static $listings_err = $messages_err = $orders_err$ = $card_number_err = $card_type_error = "";
 		
 			//tests user input on the names of the form controls
 			public static function test_user_input($user_input)
@@ -25,9 +25,9 @@
 				if(strlen($credit_card_number)==$len_of_card_num)
 				{
 					self::$card_number = $credit_card_number;
-					if ()
+					if ($credit_card_number == stristr($credit_card_number,"4"))
 					{
-						
+						self::$card_type = "Visa";
 					}
 				}
 				else{
