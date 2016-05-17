@@ -1,6 +1,8 @@
 <html>
 	<body>
 		<?php
+		
+		require_once ("last_four_zip_lookup1.php");
 		/**
 		*@author Partha Maiti <maiti.partha@yahoo.com>
 		*/
@@ -8,8 +10,8 @@
 		class UserInputFieldsSellerPageClass
 		{
 			//defines variables and sets to empty values
-			public static $listings = $messages = $orders = $address = $city = $state = $zip_code =  "" ;
-			public static $listings_err = $messages_err = $orders_err = $address_err = $city_err= $state_err = $zip_code_err =   "";
+			public static $listings = $messages = $orders = $address = $city = $stateabbrv = $zip_code =  "" ;
+			public static $listings_err = $messages_err = $orders_err = $address_err = $city_err= $state_abbrv_err = $zip_code_err =   "";
 		
 			//tests user input on the names of the form controls
 			public static function test_user_input($user_input)
@@ -93,12 +95,12 @@
 						{
 							self::$city = $_POST["city"];
 						}
-						if(empty($_POST["state"]))
+						if(empty($_POST["stateabbrv"]))
 						{
-							self::$state_err="state required";
+							self::$state_abbrv_err="state required";
 						}else
 						{
-							self::$state = $_POST["state"];
+							self::$stateabbrv = $_POST["state"];
 						}
 						if(empty($_POST["zipcode"]))
 						{
@@ -124,8 +126,8 @@
 			Orders:<input type="text" name="orders" value="<?php echo UserInputFieldsSellerPageClass::$orders;?>"><span class="error">*<?php echo UserInputFieldsSellerPageClass::$orders_err;?></span><br>
 			Address:<input type = "text" name= "address">
 			City: <input type = "text" name ="city">
-			State: <input type = "text" name= "state">
-			Zip Code: <input type ="text" name= "zipcode" value ="<?php echo ;?>"><span class= "error">*<?php echo ;?></span><br>
+			State: <input type = "text" name= "stateabbrv">
+			Zip Code: <input type ="text" name= "zipcode" value ="<?php echo LastFourOfZipcode::$zipcode ;?>"><span class= "error">*<?php echo ;?></span><br>
 			
 			<input type="submit" >
 			
