@@ -60,7 +60,7 @@ data="https://www.youtube.com/embed/PMWmYf2043g">
 <div class="emailbox">
 <fieldset>
 <form action ="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ;?>"  method="post">
-email: <type = "text" name= "email"><br>
+email: <type = "text" name= "email" value=<?php echo "FormValidation::$email";?>><span class ="error">* <?php echo FormValidation::$email_err ;?></span><br>
 <input type = "submit">
 </form>
 </fieldset>
