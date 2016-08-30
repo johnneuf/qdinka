@@ -63,8 +63,8 @@ protected function body() {
             <div class="message-content-header-wrapper">
                 <ul class="message-nav">
                     <li class="message-nav-list">All Messages</li>
-                    <li class="message-nav-list"><img src="/images/icons/Archieve.png"/>Archieve</li>
-                    <li class="message-nav-list"><img src="/images/icons/Trash.png">Trash</li>
+                    <li class="message-nav-list"><img src="/images/icons/Archive.png"/>Archieve</li>
+                    <li class="message-nav-list"><img src="/images/icons/Trash_1.png">Trash</li>
                     <li class="message-nav-list"><input id = "checkbox" type="checkbox" /></li>
                     
                 </ul>
