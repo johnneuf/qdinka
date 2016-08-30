@@ -38,10 +38,9 @@ class FrontPage extends TemplateBase {
             </div>
             <div class="marketing-content-wrapper">
                 <div class="marketing-content">
-                    <h2>Changing the Industry</h2>
-                    Qdinka has created the most comprehensive online marketplace to-date. Here anyone can buy, sell,
-                    market, trade, and track products. Allow yourself the chance to make more money than ever before.
-                    All of your favorite tools in one place...
+                    <h2>Innovating the Future</h2>
+                    As we step farther, and farther into the 21st century, innovation will become more and more a way of
+                    life. Discover the top leading, most innovative, and influential consumer products available to-date!
                 </div>
                 <div class="marketing-button">
                     <a href="#">Start Growing Your Business</a>
